@@ -1,0 +1,143 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.9.23)  23 SEP 2017 15:31
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**FYPReportBarrettTom_14171198
+(./FYPReportBarrettTom_14171198.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/fleqn.clo
+File: fleqn.clo 2015/03/31 v1.1i Standard LaTeX option (flush left equations)
+\mathindent=\dimen102
+Applying: [2015/01/01] Make \[ robust on input line 50.
+LaTeX Info: Redefining \[ on input line 51.
+Already applied: [0000/00/00] Make \[ robust on input line 62.
+Applying: [2015/01/01] Make \] robust on input line 74.
+LaTeX Info: Redefining \] on input line 75.
+Already applied: [0000/00/00] Make \] robust on input line 83.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen103
+) (./psfig.sty
+\@unused=\write3
+
+psfig/tex 1.2-dvips
+\ps@stream=\read1
+) (./FYPReportBarrettTom_14171198.aux (./tex/abstract.aux))
+\openout1 = `FYPReportBarrettTom_14171198.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 28.
+ [1
+
+]
+\openout2 = `tex/abstract.aux'.
+
+
+(./tex/abstract.tex [1
+
+]) (./FYPReportBarrettTom_14171198.toc)
+\tf@toc=\write4
+\openout4 = `FYPReportBarrettTom_14171198.toc'.
+
+ [1
+
+
+]
+(./FYPReportBarrettTom_14171198.lof)
+\tf@lof=\write5
+\openout5 = `FYPReportBarrettTom_14171198.lof'.
+
+ [2
+
+] (./FYPReportBarrettTom_14171198.lot)
+\tf@lot=\write6
+\openout6 = `FYPReportBarrettTom_14171198.lot'.
+
+
+[3
+
+]
+\openout2 = `tex/intro.aux'.
+
+ (./tex/intro.tex
+Chapter 1.
+) [4
+
+
+]
+\openout2 = `tex/background.aux'.
+
+ (./tex/background.tex
+Chapter 2.
+) [5
+
+
+
+]
+\openout2 = `tex/design&Imo.aux'.
+
+
+No file tex/design&Imo.tex.
+\openout2 = `tex/empirical.aux'.
+
+(./tex/empirical.tex
+Chapter 3.
+) [6
+
+
+
+
+
+] (./FYPReportBarrettTom_14171198.bbl
+
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
+) [7
+
+
+] (./FYPReportBarrettTom_14171198.aux (./tex/abstract.aux) (./tex/intro.aux) (.
+/tex/background.aux) (./tex/design&Imo.aux) (./tex/empirical.aux))
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 404 strings out of 494954
+ 4786 string characters out of 6181003
+ 49746 words of memory out of 5000000
+ 3728 multiletter control sequences out of 15000+600000
+ 6063 words of font info for 22 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 23i,6n,24p,158b,177s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on FYPReportBarrettTom_14171198.dvi (9 pages, 1384 bytes).
