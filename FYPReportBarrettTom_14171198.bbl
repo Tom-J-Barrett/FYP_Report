@@ -16,5 +16,30 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \sortlist[entry]{nty/global}
+    \entry{ML}{book}{}
+      \name{author}{1}{}{%
+        {{hash=bcd7526dd1cfb546aa6337f801dfc4cd}{%
+           family={Mitchell},
+           family_i={M\bibinitperiod},
+           given={Tom\bibnamedelima M.},
+           given_i={T\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The McGraw-Hill Companies, Inc.}%
+      }
+      \strng{namehash}{bcd7526dd1cfb546aa6337f801dfc4cd}
+      \strng{fullhash}{bcd7526dd1cfb546aa6337f801dfc4cd}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Machine Learning}
+      \field{year}{1997}
+    \endentry
+  \endsortlist
+\endrefsection
 \endinput
 
