@@ -2,6 +2,8 @@
 %\usepackage{epsf}
 \linespread{1.3}    
 \usepackage{psfig}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{references.bib}
 
 \setlength{\textheight}{8.5in}
 \setlength{\oddsidemargin}{0.7in}
@@ -37,12 +39,12 @@
 
 \include{tex/intro}
 \include{tex/background}
-\include{tex/design&Imp}
+\include{tex/experiments}
 \include{tex/empirical}
 \include{tex/conclusion}
 
-%\bibliographystyle{plainat}
-\bibliography{tex/references}
-\bibliographystyle{plain}  
+%As \textcite{test} says lololo
+
+\printbibliography
 
 \end{document}   
