@@ -36,46 +36,46 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Introduction to Machine Learning}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Machine Learning Paradigms}{9}
+\contentsline {section}{\numberline {2.2}Machine Learning Paradigms}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Artificial Neural Networks}{9}
+\contentsline {subsection}{\numberline {2.2.1}Artificial Neural Networks}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Percetron}{10}
+\contentsline {subsubsection}{Percetron}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Multi Layered Perceptron and Backpropogation}{10}
+\contentsline {subsubsection}{Multi Layered Perceptron and Backpropogation}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Convolutional Neural Networks}{10}
+\contentsline {subsubsection}{Convolutional Neural Networks}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Fully Convolutional Networks}{11}
+\contentsline {subsubsection}{Fully Convolutional Networks}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Other Paradigms}{11}
+\contentsline {subsection}{\numberline {2.2.2}Other Paradigms}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Decision Trees}{11}
+\contentsline {subsubsection}{Decision Trees}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Meta/Ensemble Classifiers}{11}
+\contentsline {subsubsection}{Meta/Ensemble Classifiers}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Logistic Regression}{11}
+\contentsline {subsubsection}{Logistic Regression}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Support Vector Machine}{11}
+\contentsline {subsubsection}{Support Vector Machine}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Regression Analysis}{11}
+\contentsline {subsubsection}{Regression Analysis}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Unsupervised Learning}{11}
+\contentsline {subsubsection}{Unsupervised Learning}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Reinforcement Learning}{11}
+\contentsline {subsubsection}{Reinforcement Learning}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Overview of Machine Vision Approaches to Identification and Classification}{11}
+\contentsline {section}{\numberline {2.3}Overview of Machine Vision Approaches to Identification and Classification}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Identification}{11}
+\contentsline {subsection}{\numberline {2.3.1}Identification}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Classification}{11}
+\contentsline {subsection}{\numberline {2.3.2}Classification}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}API's}{11}
+\contentsline {section}{\numberline {2.4}API's}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Evaluating the Output}{11}
+\contentsline {section}{\numberline {2.5}Evaluating the Output}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Experiments}{12}
+\contentsline {chapter}{\numberline {3}Experiments}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Empirical Studies}{13}
+\contentsline {chapter}{\numberline {4}Empirical Studies}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Discussion and Conclusion}{14}
+\contentsline {chapter}{\numberline {5}Discussion and Conclusion}{18}

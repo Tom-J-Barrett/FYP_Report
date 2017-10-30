@@ -4,6 +4,33 @@
 \section{Introduction to Machine Learning}
 In \textcite{ML}, Machine Learning is defined as "the question of how to
 construct computer programs that auotmatically improve with experience".
+MAchine Learning has blossomed in recent years with applications across multiple
+domains using vastly different paradigms and technologies.
+
+There are many ways in which Machine Learning can be used in the modern world,
+many of which are being utilised to great affect.
+Some of these applications, are image recognition, natural language processing,
+medical diagnosis and many more.
+There may be fear that Machine Learning will start to take away many jobs from
+humans but this may not be the case. Imagine a doctor, having to diagnose a
+patient, a machine can offer suggestions based on very large datasets of what
+the diagnosis is. This is not to say that a Machine would be
+perscribing patients, but merely act as an assisstant to the doctor.
+
+Machine Ethics is a large problem tat comes hand in hand with Machine Learning.
+There is a very important question of who takes the blame when things go wrong,
+that is why I think it is important that we only use Machine Learning to advise
+and not to determine but this can be very difficult in a world where, for
+example, an autonomous car has to decide between crashing into a vechile beside
+them with an unknown number of people inside or the two children playing in the
+street.
+
+One of the most exciting avenues in Machine Learning, in my opinion, is Computer
+Vision. Computer Vision can be used in many areas to improve our lives. As
+mentioned earlier, autonomous cars are only possible when a machine can
+determine what objects are around it. Computer Vision can allow a machine to
+recognise skin diseases in an image. The applications are nearly limitless and
+that is without taking into account other uses.
 
 \section{Machine Learning Paradigms}
 There are many Machine Learning paradigms, all of which I will
@@ -11,11 +38,78 @@ discuss briefly below, but the main area of my focus for this project is in
 Artificial Neural Networks (ANN). This is because I have researched extensively into Convolutional Neural Networks which are based on ANN's.
 \subsection{Artificial Neural Networks}
 An Artificial Neural Network is a bio-inspired system that is used to model the human brain in how it learns from experience.
+The ANN uses this model to build a very complex web of connected units called
+artificial neurons.
+An ANN has a set of inputs that take in a value, sometimes from network outputs
+and produce a single result or classification.
+While an ANN is bio-inspired from the human brain, there are many elements of
+the brain that are not present in ANN and many new elements in ANN that are not
+modelled from the human brain.
+
+Before I can talk about Convolution Neural Networks which are vital the image
+processing, I will have to talk about the perceptron learning algorithm, the multi
+layer percepton, and backpropogation.
+
 \subsubsection{Percetron}
 \subsubsection{Multi Layered Perceptron and Backpropogation}
+Multi Layer Perceptrons (MLP) are a class of feed forward Artificial Neural Networks
 \subsubsection{Convolutional Neural Networks}
-Convolutional Neural Networks are esentially a Multi Layered Percetron with a
-special stucture.
+Convolutional Neural Networks (CNN's) are esentially a Multi Layered Percetron with a
+special stucture. CNN's have one major difference from a MLP, they have extra
+laer of convolution and pooling.
+
+\begin{figure}
+    \includegraphics{XtoRec}
+    \caption{Image to Classify}
+    \label{fig:XtoRec}
+\end{figure}
+\begin{figure}
+     \includegraphics{XtoComp}
+     \caption{Image to Compare}
+     \label{fig:XtoComp}
+\end{figure}
+Figure \ref{fig:XtoRec} show an image that we want to compare against
+Figure \ref{fig:XtoComp}.
+For humans, it is quite easy to determine that these images are very similar but
+for a computer this task is suprisingly difficult.
+
+\begin{figure}
+    \includegraphics{ImageFeature}
+    \caption{Image Feature to Search}
+    \label{fig:feature}
+\end{figure}
+\begin{figure}
+    \includegraphics{ConvImage}
+    \caption{Convoluted Image}
+    \label{fig:convoluted}
+\end{figure}
+So what a CNN does, to combat this problem, is to take a small feature from
+Figure \ref{fig:XtoRec} and compare it to a subsection of Figure \ref{fig:XtoComp}.
+The CNN multiplies the feature and a section of Figure \ref{fig:XtoComp}, adds
+up the results and divides by 9. This then gives a decimal value of how likely
+it is that the feature is in the part of the image, as seen in Figure
+\ref{fig:convoluted}.
+This is called filtering. The Convolutional layer is composed of carrying out
+this filtering for every single possible location in Figure \ref{fig:XtoComp}.
+
+\begin{figure}
+    \includegraphics{PooledImage}
+    \caption{Pooled Image}
+    \label{fig:pooled}
+\end{figure}
+Next is the Pooling Layer, what this layer does, is it takes the convoluted
+layer output, you can use Figure \ref{fig:convoluted} as reference, and from a
+user defined size ie. 2x2, gets either the highest decimal value (Max pooling)
+or the average value (Mean pooling) and records that as the new value for the
+section. This is then applied to the entire image. As we can see in Figure
+\ref{fig:pooled} we know have a much smaller image stack in which to classify,
+thus making the computation easier.
+
+In between the Convolution and Pooling layer, there is sometimes a Normalization
+layer. This Normalization layer creates Rectified Linear Units (RLU's). In other
+words, if we take Figure \ref{fig:convoluted}, it changes all minus values to
+zero.
+
 \subsubsection{Fully Convolutional Networks}
 
 \subsection{Other Paradigms}
@@ -34,4 +128,5 @@ special stucture.
 \section{API's}
 
 \section{Evaluating the Output}
+
 

@@ -1,15 +1,15 @@
-[2] Config.pm:340> INFO - This is Biber 2.4
-[3] Config.pm:343> INFO - Logfile is 'FYPReportBarrettTom_14171198.blg'
-[96] biber:287> INFO - === Sun Oct 29, 2017, 20:42:36
-[286] Biber.pm:348> INFO - Reading 'FYPReportBarrettTom_14171198.bcf'
-[508] Biber.pm:742> INFO - Found 1 citekeys in bib section 0
-[514] Biber.pm:3151> INFO - Processing section 0
-[575] Biber.pm:3308> INFO - Looking for bibtex format file 'references.bib' for section 0
-[578] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
-[584] bibtex.pm:974> INFO - Found BibTeX data source 'references.bib'
-[630] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[637] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[637] Biber.pm:3028> INFO - Sorting list 'nty/global' of type 'entry' with scheme 'nty' and locale 'en-US'
-[637] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
-[638] bbl.pm:519> INFO - Writing 'FYPReportBarrettTom_14171198.bbl' with encoding 'ascii'
-[656] bbl.pm:615> INFO - Output to FYPReportBarrettTom_14171198.bbl
+[0] Config.pm:340> INFO - This is Biber 2.4
+[0] Config.pm:343> INFO - Logfile is 'FYPReportBarrettTom_14171198.blg'
+[75] biber:287> INFO - === Mon Oct 30, 2017, 12:01:18
+[170] Biber.pm:348> INFO - Reading 'FYPReportBarrettTom_14171198.bcf'
+[441] Biber.pm:742> INFO - Found 1 citekeys in bib section 0
+[458] Biber.pm:3151> INFO - Processing section 0
+[536] Biber.pm:3308> INFO - Looking for bibtex format file 'references.bib' for section 0
+[539] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
+[540] bibtex.pm:974> INFO - Found BibTeX data source 'references.bib'
+[585] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[588] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[588] Biber.pm:3028> INFO - Sorting list 'nty/global' of type 'entry' with scheme 'nty' and locale 'en-US'
+[588] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
+[589] bbl.pm:519> INFO - Writing 'FYPReportBarrettTom_14171198.bbl' with encoding 'ascii'
+[605] bbl.pm:615> INFO - Output to FYPReportBarrettTom_14171198.bbl
