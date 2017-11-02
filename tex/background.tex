@@ -3,8 +3,8 @@
 
 \section{Introduction to Machine Learning}
 In \textcite{ML}, Machine Learning is defined as "the question of how to
-construct computer programs that auotmatically improve with experience".
-MAchine Learning has blossomed in recent years with applications across multiple
+construct computer programs that automatically improve with experience".
+Machine Learning has blossomed in recent years with applications across multiple
 domains using vastly different paradigms and technologies.
 
 There are many ways in which Machine Learning can be used in the modern world,
@@ -15,13 +15,13 @@ There may be fear that Machine Learning will start to take away many jobs from
 humans but this may not be the case. Imagine a doctor, having to diagnose a
 patient, a machine can offer suggestions based on very large datasets of what
 the diagnosis is. This is not to say that a Machine would be
-perscribing patients, but merely act as an assisstant to the doctor.
+perscribing patients, but merely act as an assistant to the doctor.
 
 Machine Ethics is a large problem tat comes hand in hand with Machine Learning.
 There is a very important question of who takes the blame when things go wrong,
 that is why I think it is important that we only use Machine Learning to advise
 and not to determine but this can be very difficult in a world where, for
-example, an autonomous car has to decide between crashing into a vechile beside
+example, an autonomous car has to decide between crashing into a vehicle beside
 them with an unknown number of people inside or the two children playing in the
 street.
 
@@ -48,41 +48,54 @@ modelled from the human brain.
 
 Before I can talk about Convolution Neural Networks which are vital the image
 processing, I will have to talk about the perceptron learning algorithm, the multi
-layer percepton, and backpropogation.
+layer percepton, and bacpropogation.
 
-\subsubsection{Percetron}
+\subsubsection{Perceptron Training}
+
+\subsubsection{Gradient Descent}
+
 \subsubsection{Multi Layered Perceptron and Backpropogation}
-Multi Layer Perceptrons (MLP) are a class of feed forward Artificial Neural Networks
+Multi Layer Perceptrons (MLP) are a class of feed forward Artificial Neural
+Networks.
+
 \subsubsection{Convolutional Neural Networks}
-Convolutional Neural Networks (CNN's) are esentially a Multi Layered Percetron with a
-special stucture. CNN's have one major difference from a MLP, they have extra
-laer of convolution and pooling.
+Convolutional Neural Networks (CNN's) are essentially a Multi Layered Percetron with a
+special structure. CNN's have one major difference from a MLP, they have extra
+layer of convolution and pooling.
 
 \begin{figure}
-    \includegraphics{XtoRec}
-    \caption{Image to Classify}
-    \label{fig:XtoRec}
+      \begin{subfigure}[b]{0.4\textwidth}
+          \includegraphics[width=\textwidth]{XtoRec}
+          \caption{Image to Classify}
+          \label{XtoRec}
+      \end{subfigure}
+    %
+      \begin{subfigure}[b]{0.4\textwidth}
+      \includegraphics[width=\textwidth]{XtoComp}
+      \caption{Image to Compare}
+      \label{XtoComp}
+      \end{subfigure}
 \end{figure}
+
 \begin{figure}
-     \includegraphics{XtoComp}
-     \caption{Image to Compare}
-     \label{fig:XtoComp}
+      \begin{subfigure}[b]{0.4\textwidth}
+          \includegraphics[width=\textwidth]{ImageFeature}
+          \caption{Image Feature to Search}
+          \label{fig:feature}
+      \end{subfigure}
+     %
+      \begin{subfigure}[b]{0.4\textwidth}
+           \includegraphics[width=\textwidth]{ConvImage}
+           \caption{Convoluted Image}
+           \label{fig:convoluted}
+      \end{subfigure}
 \end{figure}
+
 Figure \ref{fig:XtoRec} show an image that we want to compare against
 Figure \ref{fig:XtoComp}.
 For humans, it is quite easy to determine that these images are very similar but
-for a computer this task is suprisingly difficult.
+for a computer this task is surprisingly difficult.
 
-\begin{figure}
-    \includegraphics{ImageFeature}
-    \caption{Image Feature to Search}
-    \label{fig:feature}
-\end{figure}
-\begin{figure}
-    \includegraphics{ConvImage}
-    \caption{Convoluted Image}
-    \label{fig:convoluted}
-\end{figure}
 So what a CNN does, to combat this problem, is to take a small feature from
 Figure \ref{fig:XtoRec} and compare it to a subsection of Figure \ref{fig:XtoComp}.
 The CNN multiplies the feature and a section of Figure \ref{fig:XtoComp}, adds
@@ -93,7 +106,7 @@ This is called filtering. The Convolutional layer is composed of carrying out
 this filtering for every single possible location in Figure \ref{fig:XtoComp}.
 
 \begin{figure}
-    \includegraphics{PooledImage}
+    \includegraphics[width=50mm,scale=0.5]{PooledImage}
     \caption{Pooled Image}
     \label{fig:pooled}
 \end{figure}
@@ -111,6 +124,8 @@ words, if we take Figure \ref{fig:convoluted}, it changes all minus values to
 zero.
 
 \subsubsection{Fully Convolutional Networks}
+A Fully Convolutional Network is one that does not have a fully connected layer
+and in a fully connected layers place is another convolution layer.
 
 \subsection{Other Paradigms}
 \subsubsection{Decision Trees}
