@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.23)  13 DEC 2017 15:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.23)  13 DEC 2017 16:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -405,7 +405,15 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'FYPReportBarrettTom_14171198.bbl' found.
 
-(./FYPReportBarrettTom_14171198.bbl)
+(./FYPReportBarrettTom_14171198.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                fcn
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 34.
 Package biblatex Info: Reference segment=0 on input line 34.
 Package caption Info: Begin \AtBeginDocument code.
@@ -419,7 +427,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 \openout2 = `tex/abstract.aux'.
 
- (./tex/abstract.tex [1
+ (./tex/abstract.tex
+[1
 
 ]) (./FYPReportBarrettTom_14171198.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -428,8 +437,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 5.
-
-[1
+ [1
 
 
 ])
@@ -554,13 +562,13 @@ Overfull \hbox (1.83965pt too wide) in paragraph at lines 94--106
  [][] 
  []
 
-) (./tex/background/fcn.tex) (./tex/background/segmentation.tex)
-(./tex/background/cnn.tex)) [19] [20]
+) (./tex/background/fcn.tex) [19] (./tex/background/segmentation.tex)
+(./tex/background/cnn.tex)) [20]
 \openout2 = `tex/experiments.aux'.
 
  (./tex/experiments.tex
 Chapter 3.
-) [21
+(./tex/experiments/exp1.tex)) [21
 
 
 
@@ -610,10 +618,10 @@ Package logreq Info: Writing requests to 'FYPReportBarrettTom_14171198.run.xml'
 
  ) 
 Here is how much of TeX's memory you used:
- 8447 strings out of 494953
- 145518 string characters out of 6180977
- 548821 words of memory out of 5000000
- 11591 multiletter control sequences out of 15000+600000
+ 8452 strings out of 494953
+ 145598 string characters out of 6180977
+ 548825 words of memory out of 5000000
+ 11592 multiletter control sequences out of 15000+600000
  10061 words of font info for 35 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  44i,8n,45p,841b,1019s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -623,7 +631,7 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on FYPReportBarrettTom_14171198.pdf (26 pages, 599887 bytes).
+Output written on FYPReportBarrettTom_14171198.pdf (26 pages, 600873 bytes).
 PDF statistics:
  126 PDF objects out of 1000 (max. 8388607)
  78 compressed objects within 1 object stream
