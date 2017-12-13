@@ -3,19 +3,104 @@ of object detection using region based convolutional neural networks. There were
 four iterations of papers based on this work by Ross and groups in UC Berkley,
 Mircosoft and Facebook. A PHD student at the time of Ross's first paper also
 completed his dissertation on the subject. I will analyse this papers, their
-results and the changes made through each iteration.
+results (\ref{rcnnResults}) and the changes made through each iteration.
 
 \subsubsection{RCNN}
-In the first paper written by Ross Girshik focused on two main insights. These
-were that "one can apply high-capacity concolutional neural networks (CNNs) to
-bottom-up region proposals in order to localize and segment objects" and that
+In the first paper written by Ross Girshik, while researching at UC Berkeley,
+focused on two main insights. These were that "one can apply high-capacity convolutional neural networks (CNNs) to bottom-up region proposals in order to localize and segment objects" and that
 "when training data is scarce, supervised pre-training for n auxilary task,
 followed by domain-specific fine-tuning, yields a significant performance boost"
 \textcite{rcnn}.
+
+The system that they developed followed these steps:
+\begin{itemize}
+    \item{Take image as input}
+    \item{Extract approximately 2000 region proposals from the image}
+    \item{Compute fixed length vectors of features for the regions using a convolutional
+        neural network}
+    \item{Use a Support Vector Machine (SVM) to classify these regions}
+    \item{Bounding box regression for final region proposals}
+\end{itemize}
+
+This system utilised selective search to gather these region proposals but they
+mention that a sliding-window detector is also an option. Ross Girshik and his
+team used the open source Caffe CNN library for this system. The system is quite
+efficient and scalable. It is scalable because of the fixed length vector of
+features which will remain constant regardless of inputs and additional outputs.
+
+The team evaluated their results on a few metrics and test sets as seen in
+\ref{rcnnResults}.
+
 \subsubsection{Fast RCNN}
-\textcite{fastRcnn}
+Ross Girshik's next iteration of work on region based convolution neural
+networks took place in Microsoft Research. This paper was titled "Fast R-CNN" as
+it's aim was to decrease training and testing time "while also increasing
+detection accuracy" \textcite{fastRcnn}.
+
+This paper analyses why RCNN \textcite{rcnn} was slow and therefore how it could be improved.
+RCNN was classified to be slow because of three main factors:
+\begin{itemize}
+	\item{There are multiple stages to training as both a CNN and a SVM need to
+		be trained.}
+	\item{In training of the SVM, each region proposal must be written to disk
+		and is therefore expensive.}
+	\item{Object detection takes 47s per image \textcite{fastRcnn}.}
+\end{itemize}
+
+Due to these problems with RCNN, a new algorithm, titled Fast RCNN was proposed.
+The architecture is as follows. An image is taken as input along with a
+proposals for regions. The image is pushed through convolutional and pooling
+layers (using max pooling). A fixed-length vector of features is then extracted
+from each region proposal. These vectors are inputted to fully connected
+layers for bounding box location prediction \textcite{fastRcnn}.
+
+At detection time, a pass through of the net is all that is needed so this
+runtime is significantly less than RCNN.
+
 \subsubsection{Faster RCNN}
-\textcite{fatserRcnn}
+Due to the success of RCNN and Fast RCNN, Faster RCNN was introduced to combat
+the problem of region proposal computation \textcite{fasterRcnn}.
+
+The architecture for this system comprises of two modules. These consist of a
+convolutional neural network for region proposals (RPN) which the feeds into a Fast
+RCNN detector. These combine to produce a single neural network for object
+detection.
+
+Instead of training these networks seperately, the team had to look at how to
+share layers between the two networks. There were three option available:
+\begin{itemize}
+    \item{Alternating training whereby RPN is trained, and then used to train
+        Fast RCNN. The Fast RCNN network is then used to initialise RPN and the
+		process is iterated \textcite{fasterRcnn}. This paper follows this approach.}
+    \item{Approximate joint training.}
+    \item{Non- approximate joint training.}
+\end{itemize}
+
 \subsubsection{Mask RCNN}
-\textcite{maskRcnn}
-\subsubsection{Transferable Representations for Visual Recognition}
+The most recent paper on this topic was also written by Ross Girshik while
+working with Facebook AI Research \textcite{maskRcnn}. Mask RCNN "extends Faster
+RCNN by adding a branch for predicting an object mask in parallel with the
+existing branch for bounding box regression" \textcite{maskRcnn}.
+
+Mask RCNN has two modules, similar to Faster RCNN, where the first module is the
+Region Proposal Network. In the second module, in parallel to classification, a
+binary mask is outputted for each region. Bounding box regression and
+classification are done in parallel.
+
+\begin{table}[]
+    \centering
+    \caption{Results from Region Based CNN Research}
+    \label{rcnnResults}
+    \begin{tabular}{lllllll}
+                    & VOC07 & VOC10 & VOC11 & VOC12 & COCO15 &
+                    COCO16 \\
+                    RCNN        & 58.5\%  & 53.7\%  & 47.9\%  & N/A     & N/A
+                    & N/A      \\
+                    Fast RCNN   & 70.0\%  & 68.8\%  & N/A     & 68.4\%  & N/A
+                    & N/A      \\
+                    Faster RCNN & 78.8\%  & N/A     & N/A     & 75.9\%  & 42.7\%
+                    & N/A      \\
+                    Mask RCNN   & N/A     & N/A     & N/A     & N/A     & N/A
+                    & 63.1\%  
+    \end{tabular}
+\end{table}

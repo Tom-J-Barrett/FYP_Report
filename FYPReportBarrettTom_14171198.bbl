@@ -155,8 +155,40 @@
       \field{pages}{52\bibrangedash 78}
       \range{pages}{27}
     \endentry
+    \entry{fasterRcnn}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=bb295293acacd54387339079ebbe4ead}{%
+           family={Ren},
+           family_i={R\bibinitperiod},
+           given={Shaoqing},
+           given_i={S\bibinitperiod}}}%
+        {{hash=6b4b60e909e78633945f3f9c9dc83e01}{%
+           family={He},
+           family_i={H\bibinitperiod},
+           given={Kaiming},
+           given_i={K\bibinitperiod}}}%
+        {{hash=bd5dadbe57bedc5957c19a3154c4d424}{%
+           family={Girshick},
+           family_i={G\bibinitperiod},
+           given={Ross},
+           given_i={R\bibinitperiod}}}%
+        {{hash=f85751488058842b5777c7b4074077b5}{%
+           family={Sun},
+           family_i={S\bibinitperiod},
+           given={Jian},
+           given_i={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f086ca4da3e532e8a41cb758ea461825}
+      \strng{fullhash}{008a132af3e2d4ff15eb01a8fb4b005c}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Neural Information Processing Systems ({NIPS})}
+      \field{title}{Faster {R-CNN}: Towards Real-Time Object Detection with Region Proposal Networks}
+      \field{year}{2015}
+    \endentry
   \endsortlist
-  \missing{fatserRcnn}
 \endrefsection
 \endinput
 

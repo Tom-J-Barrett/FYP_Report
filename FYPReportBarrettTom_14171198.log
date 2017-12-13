@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.23)  13 DEC 2017 10:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.23)  13 DEC 2017 15:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -405,15 +405,7 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'FYPReportBarrettTom_14171198.bbl' found.
 
-(./FYPReportBarrettTom_14171198.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                fatserRcnn
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+(./FYPReportBarrettTom_14171198.bbl)
 Package biblatex Info: Reference section=0 on input line 34.
 Package biblatex Info: Reference segment=0 on input line 34.
 Package caption Info: Begin \AtBeginDocument code.
@@ -427,8 +419,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 \openout2 = `tex/abstract.aux'.
 
- (./tex/abstract.tex
-[1
+ (./tex/abstract.tex [1
 
 ]) (./FYPReportBarrettTom_14171198.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -437,7 +428,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 5.
- [1
+
+[1
 
 
 ])
@@ -552,12 +544,23 @@ Package pdftex.def Info: images/PooledImage.png used on input line 142.
 (pdftex.def)             Requested size: 115.43095pt x 114.42722pt.
  [13 <./images/XtoRec.png> <./images/XtoComp.png>]
 [14 <./images/ImageFeature.png> <./images/ConvImage.png> <./images/PooledImage.
-png>] [15] (./tex/background/rcnn.tex [16])) [17] [18]
+png>] [15] (./tex/background/rcnn.tex [16] [17] [18]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 90.
+
+
+Overfull \hbox (1.83965pt too wide) in paragraph at lines 94--106
+ [][] 
+ []
+
+) (./tex/background/fcn.tex) (./tex/background/segmentation.tex)
+(./tex/background/cnn.tex)) [19] [20]
 \openout2 = `tex/experiments.aux'.
 
  (./tex/experiments.tex
 Chapter 3.
-) [19
+) [21
 
 
 
@@ -566,7 +569,7 @@ Chapter 3.
 
  (./tex/empirical.tex
 Chapter 4.
-) [20
+) [22
 
 
 
@@ -575,7 +578,7 @@ Chapter 4.
 
  (./tex/conclusion.tex
 Chapter 5.
-) [21
+) [23
 
 
 
@@ -590,7 +593,7 @@ Overfull \hbox (3.32898pt too wide) in paragraph at lines 59--59
 m/n/12 . In-ter-na-tional Edi-tion 1997. NewYork:
  []
 
-[22
+[24
 
 
 
@@ -607,23 +610,23 @@ Package logreq Info: Writing requests to 'FYPReportBarrettTom_14171198.run.xml'
 
  ) 
 Here is how much of TeX's memory you used:
- 8436 strings out of 494953
- 145292 string characters out of 6180977
- 548810 words of memory out of 5000000
- 11589 multiletter control sequences out of 15000+600000
+ 8447 strings out of 494953
+ 145518 string characters out of 6180977
+ 548821 words of memory out of 5000000
+ 11591 multiletter control sequences out of 15000+600000
  10061 words of font info for 35 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 44i,8n,45p,841b,961s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,8n,45p,841b,1019s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on FYPReportBarrettTom_14171198.pdf (24 pages, 595290 bytes).
+Output written on FYPReportBarrettTom_14171198.pdf (26 pages, 599887 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
+ 126 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

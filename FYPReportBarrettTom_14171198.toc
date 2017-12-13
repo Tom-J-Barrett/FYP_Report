@@ -74,34 +74,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Fast RCNN}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Faster RCNN}{17}
+\contentsline {subsubsection}{Faster RCNN}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Mask RCNN}{17}
+\contentsline {subsubsection}{Mask RCNN}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Transferable Representations for Visual Recognition}{18}
+\contentsline {subsection}{\numberline {2.3.2}Fully Convolutional Neural Networks for Semantic Segmentation}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Fully Convolutional Neural Networks for Semantic Segmentation}{18}
+\contentsline {subsection}{\numberline {2.3.3}Image Segmentation}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Image Segmentation}{18}
+\contentsline {subsubsection}{Graph Based Segmentation}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Graph Based Segmentation}{18}
+\contentsline {subsubsection}{Sift/Surf}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Sift/Surf}{18}
+\contentsline {subsection}{\numberline {2.3.4}Convolutional Neural Networks for Classification}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.4}Convolutional Neural Networks for Classification}{18}
+\contentsline {section}{\numberline {2.4}Technologies}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.5}Classification}{18}
+\contentsline {subsection}{\numberline {2.4.1}Tensorflow}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Technologies}{18}
+\contentsline {subsection}{\numberline {2.4.2}Jupyter}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Tensorflow}{18}
+\contentsline {section}{\numberline {2.5}Evaluating the Output}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Jupyter}{18}
+\contentsline {chapter}{\numberline {3}Experiments}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Evaluating the Output}{18}
+\contentsline {chapter}{\numberline {4}Empirical Studies}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Experiments}{19}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Empirical Studies}{20}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Discussion and Conclusion}{21}
+\contentsline {chapter}{\numberline {5}Discussion and Conclusion}{23}
