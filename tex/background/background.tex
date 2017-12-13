@@ -161,13 +161,14 @@ A Fully Convolutional Network is one that does not have a fully connected layer
 and in a fully connected layers place is another convolution layer.
 
 \subsection{Other Paradigms}
-There are many other Machine Learning paradigms, of which I will give a brief
+There are many other Machine Learning paradigms apart from Neural Networks, each of which I will give a brief
 introduction.
 
 \subsubsection{Decision Trees}
 "Decision tree learning is  method for approcimating disrete-valued target
 functions, in which the learned function is represented by a descision tree"
-\textcite{MLDT}.
+\textcite{MLDT}. There are many different classification algorithms that can
+create decision trees from supervised learning.
 
 \subsubsection{Meta/Ensemble Classifiers}
 \subsubsection{Logistic Regression}
@@ -177,10 +178,26 @@ functions, in which the learned function is represented by a descision tree"
 \subsubsection{Reinforcement Learning}
 
 \section{Overview of Machine Vision Approaches to Identification and Classification}
-\subsection{Identification}
+There have been many attempts of identification and classification by many
+different researchers over the last number of years. There some approaches that
+decouple the two tasks of identification and classification from one another but
+mostly, researchers have attempted the two together. Sometimes, by semantic
+segmentation and in others simply building a classifier for the image without
+taking into account, the need for object identification.
+
+\subsection{Region Based Convolutional Neural Networks}
+\input{tex/background/rcnn}
+\subsection{Fully Convolutional Neural Networks for Semantic Segmentation}
+\subsection{Image Segmentation}
+\subsubsection{Graph Based Segmentation}
+\subsubsection{Sift/Surf}
+\subsection{Convolutional Neural Networks for Classification}
+
 \subsection{Classification}
 
-\section{API's}
+\section{Technologies}
+\subsection{Tensorflow}
+\subsection{Jupyter}
 
 \section{Evaluating the Output}
 

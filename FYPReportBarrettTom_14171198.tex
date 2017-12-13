@@ -6,6 +6,7 @@
 \graphicspath{{images/}}
 \usepackage[backend=biber]{biblatex}
 \usepackage{subcaption}
+\usepackage{afterpage}
 \addbibresource{references.bib}
 \setlength{\textheight}{8.5in}
 \setlength{\oddsidemargin}{0.7in}
@@ -20,6 +21,12 @@
 % spacing between paragraphs
 \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
 
+% Insert a black page after the cover page
+\newcommand\blankpage{%
+        \null
+        \thispagestyle{empty}%
+        \addtocounter{page}{-1}%
+        \newpage}
 
 %\usepackage{thesis}
 \pagestyle{plain}
@@ -28,6 +35,7 @@
 
 \title{Identification and Classification in Food Images}
 \author{Tom Barrett}
+%\afterpage{\blankpage}
 %\date{}
 \maketitle
 
@@ -40,11 +48,11 @@
 
 
 \include{tex/intro}
-\include{tex/background}
+\include{tex/background/background}
 \include{tex/experiments}
 \include{tex/empirical}
 \include{tex/conclusion}
-
+\include{tex/testJup}
 %As \textcite{test} says lololo
 
 \printbibliography

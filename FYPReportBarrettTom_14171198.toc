@@ -68,16 +68,40 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Overview of Machine Vision Approaches to Identification and Classification}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Identification}{16}
+\contentsline {subsection}{\numberline {2.3.1}Region Based Convolutional Neural Networks}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Classification}{16}
+\contentsline {subsubsection}{RCNN}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}API's}{16}
+\contentsline {subsubsection}{Fast RCNN}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Evaluating the Output}{16}
+\contentsline {subsubsection}{Faster RCNN}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Experiments}{17}
+\contentsline {subsubsection}{Mask RCNN}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Empirical Studies}{18}
+\contentsline {subsubsection}{Transferable Representations for Visual Recognition}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Discussion and Conclusion}{19}
+\contentsline {subsection}{\numberline {2.3.2}Fully Convolutional Neural Networks for Semantic Segmentation}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.3}Image Segmentation}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Graph Based Segmentation}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Sift/Surf}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.4}Convolutional Neural Networks for Classification}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.5}Classification}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Technologies}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.1}Tensorflow}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.2}Jupyter}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Evaluating the Output}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Experiments}{19}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Empirical Studies}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Discussion and Conclusion}{21}

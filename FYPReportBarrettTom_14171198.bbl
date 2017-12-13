@@ -19,6 +19,90 @@
 
 \refsection{0}
   \sortlist[entry]{nty/global}
+    \entry{fastRcnn}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=bd5dadbe57bedc5957c19a3154c4d424}{%
+           family={Girshick},
+           family_i={G\bibinitperiod},
+           given={Ross},
+           given_i={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{bd5dadbe57bedc5957c19a3154c4d424}
+      \strng{fullhash}{bd5dadbe57bedc5957c19a3154c4d424}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the International Conference on Computer Vision ({ICCV})}
+      \field{title}{Fast {R-CNN}}
+      \field{year}{2015}
+    \endentry
+    \entry{rcnn}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=bd5dadbe57bedc5957c19a3154c4d424}{%
+           family={Girshick},
+           family_i={G\bibinitperiod},
+           given={Ross},
+           given_i={R\bibinitperiod}}}%
+        {{hash=913090a0d65c7a300c602f5a5a5a61e3}{%
+           family={Donahue},
+           family_i={D\bibinitperiod},
+           given={Jeff},
+           given_i={J\bibinitperiod}}}%
+        {{hash=90180e1a30742e0d15328bfe637c2ef4}{%
+           family={Darrell},
+           family_i={D\bibinitperiod},
+           given={Trevor},
+           given_i={T\bibinitperiod}}}%
+        {{hash=c75a5377b6dc5213831576e88ffe553c}{%
+           family={Malik},
+           family_i={M\bibinitperiod},
+           given={Jitendra},
+           given_i={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{5aa9f085e8eccf547d1eb54a05cb1beb}
+      \strng{fullhash}{9147daa2f6a058d5b8880ff5cf38abd6}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition ({CVPR})}
+      \field{title}{Rich feature hierarchies for accurate object detection and semantic segmentation}
+      \field{year}{2014}
+    \endentry
+    \entry{maskRcnn}{article}{}
+      \name{author}{4}{}{%
+        {{hash=6b4b60e909e78633945f3f9c9dc83e01}{%
+           family={He},
+           family_i={H\bibinitperiod},
+           given={Kaiming},
+           given_i={K\bibinitperiod}}}%
+        {{hash=6e67eba235a8cccf3a69b746a53d5722}{%
+           family={Gkioxari},
+           family_i={G\bibinitperiod},
+           given={Georgia},
+           given_i={G\bibinitperiod}}}%
+        {{hash=ecd149fdcb3e0503881d49e545744c3d}{%
+           family={Doll\'{a}r},
+           family_i={D\bibinitperiod},
+           given={Piotr},
+           given_i={P\bibinitperiod}}}%
+        {{hash=bd5dadbe57bedc5957c19a3154c4d424}{%
+           family={Girshick},
+           family_i={G\bibinitperiod},
+           given={Ross},
+           given_i={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{fullhash}{25317aa10282a4a31c271050ed66c455}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1703.06870}
+      \field{title}{{Mask R-CNN}}
+      \field{year}{2017}
+    \endentry
     \entry{MLANN}{book}{}
       \name{author}{1}{}{%
         {{hash=bcd7526dd1cfb546aa6337f801dfc4cd}{%
@@ -72,6 +156,7 @@
       \range{pages}{27}
     \endentry
   \endsortlist
+  \missing{fatserRcnn}
 \endrefsection
 \endinput
 
