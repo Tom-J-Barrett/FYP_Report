@@ -188,8 +188,46 @@
       \field{title}{Faster {R-CNN}: Towards Real-Time Object Detection with Region Proposal Networks}
       \field{year}{2015}
     \endentry
+    \entry{fcn}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4ce499f8943cac7cba0a73388d289a2e}{%
+           family={Shelhamer},
+           family_i={S\bibinitperiod},
+           given={Evan},
+           given_i={E\bibinitperiod}}}%
+        {{hash=17faae490b91366d25e0e2d774e7b6b1}{%
+           family={Long},
+           family_i={L\bibinitperiod},
+           given={Jonathan},
+           given_i={J\bibinitperiod}}}%
+        {{hash=90180e1a30742e0d15328bfe637c2ef4}{%
+           family={Darrell},
+           family_i={D\bibinitperiod},
+           given={Trevor},
+           given_i={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Washington, DC, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{d070d0f5bba90c7ab76c10afeebb7698}
+      \strng{fullhash}{d070d0f5bba90c7ab76c10afeebb7698}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Trans. Pattern Anal. Mach. Intell.}
+      \field{month}{04}
+      \field{number}{4}
+      \field{title}{Fully Convolutional Networks for Semantic Segmentation}
+      \field{volume}{39}
+      \field{year}{2017}
+      \field{pages}{640\bibrangedash 651}
+      \range{pages}{12}
+    \endentry
   \endsortlist
-  \missing{fcn}
 \endrefsection
 \endinput
 
