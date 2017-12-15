@@ -19,6 +19,29 @@
 
 \refsection{0}
   \sortlist[entry]{nty/global}
+    \entry{donahue}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=0cca62f586f98049e35080f01c42db36}{%
+           family={Donahue},
+           family_i={D\bibinitperiod},
+           given={Jeffrey},
+           given_i={J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {EECS Department, University of California, Berkeley}%
+      }
+      \strng{namehash}{0cca62f586f98049e35080f01c42db36}
+      \strng{fullhash}{0cca62f586f98049e35080f01c42db36}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{05}
+      \field{number}{UCB/EECS-2017-106}
+      \field{title}{Transferrable Representations for Visual Recognition}
+      \field{type}{phdthesis}
+      \field{year}{2017}
+    \endentry
     \entry{fastRcnn}{inproceedings}{}
       \name{author}{1}{}{%
         {{hash=bd5dadbe57bedc5957c19a3154c4d424}{%
@@ -102,6 +125,69 @@
       \field{journaltitle}{arXiv preprint arXiv:1703.06870}
       \field{title}{{Mask R-CNN}}
       \field{year}{2017}
+    \endentry
+    \entry{diagnosingErrors}{inbook}{}
+      \name{author}{3}{}{%
+        {{hash=5dc4a38021d9a3a2f33342dab9f7e3dd}{%
+           family={Hoiem},
+           family_i={H\bibinitperiod},
+           given={Derek},
+           given_i={D\bibinitperiod}}}%
+        {{hash=6bc407e34d6d984ea5896fef6533e681}{%
+           family={Chodpathumwan},
+           family_i={C\bibinitperiod},
+           given={Yodsawalai},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=93e173eaed3bdcd806399ae8a663d0f2}{%
+           family={Dai},
+           family_i={D\bibinitperiod},
+           given={Qieyun},
+           given_i={Q\bibinitperiod}}}%
+      }
+      \name{editor}{5}{}{%
+        {{hash=8eb0347090bee0e3077a241bdad85387}{%
+           family={Fitzgibbon},
+           family_i={F\bibinitperiod},
+           given={Andrew},
+           given_i={A\bibinitperiod}}}%
+        {{hash=ed3e473df095b5791b5a5d837557bff7}{%
+           family={Lazebnik},
+           family_i={L\bibinitperiod},
+           given={Svetlana},
+           given_i={S\bibinitperiod}}}%
+        {{hash=e52876f830a8a20786ff3e4d7dd6f083}{%
+           family={Perona},
+           family_i={P\bibinitperiod},
+           given={Pietro},
+           given_i={P\bibinitperiod}}}%
+        {{hash=e292ab2afea048f7ad6399d6b3301f67}{%
+           family={Sato},
+           family_i={S\bibinitperiod},
+           given={Yoichi},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=58e4a9845eac42a4b0e5205cf0970fc0}{%
+           family={Schmid},
+           family_i={S\bibinitperiod},
+           given={Cordelia},
+           given_i={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{0b915ee89626955a8ce6f51e457ff43d}
+      \strng{fullhash}{0b915ee89626955a8ce6f51e457ff43d}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Computer Vision -- ECCV 2012: 12th European Conference on Computer Vision, Florence, Italy, October 7-13, 2012, Proceedings, Part III}
+      \field{title}{Diagnosing Error in Object Detectors}
+      \field{year}{2012}
+      \field{pages}{340\bibrangedash 353}
+      \range{pages}{14}
     \endentry
     \entry{MLANN}{book}{}
       \name{author}{1}{}{%

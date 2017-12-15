@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.23)  14 DEC 2017 15:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.23)  15 DEC 2017 21:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -435,11 +435,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 
-])
+] [2])
 \tf@toc=\write4
 \openout4 = `FYPReportBarrettTom_14171198.toc'.
 
- [2]
+ [3]
 \openout2 = `tex/intro.aux'.
 
  (./tex/intro.tex
@@ -450,16 +450,16 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
- [3
+ [4
 
 
-] [4] [5] [6]
-[7]) [8]
+] [5] [6] [7]
+[8]) [9]
 \openout2 = `tex/background/background.aux'.
 
  (./tex/background/background.tex
 Chapter 2.
-[9
+[10
 
 
 
@@ -472,13 +472,13 @@ Overfull \hbox (19.82735pt too wide) in paragraph at lines 40--51
 -ing a dataset.(Malachy)
  []
 
-[10] <images/Perceptron.png, id=44, 358.7001pt x 149.1171pt>
+[11] <images/Perceptron.png, id=48, 358.7001pt x 149.1171pt>
 File: images/Perceptron.png Graphic file (type png)
 
 <use images/Perceptron.png>
 Package pdftex.def Info: images/Perceptron.png used on input line 68.
 (pdftex.def)             Requested size: 358.69922pt x 149.11673pt.
- <images/mlp.png, id=45, 794.97pt x 614.295pt>
+ <images/mlp.png, id=49, 794.97pt x 614.295pt>
 File: images/mlp.png Graphic file (type png)
 
 <use images/mlp.png>
@@ -489,7 +489,7 @@ Overfull \hbox (29.31784pt too wide) in paragraph at lines 89--90
 [][] 
  []
 
-(./tex/background/gD_bP.tex [11 <./images/Perceptron.png>] [12 <./images/mlp.pn
+(./tex/background/gD_bP.tex [12 <./images/Perceptron.png>] [13 <./images/mlp.pn
 g>])
 Overfull \hbox (14.64964pt too wide) in paragraph at lines 98--101
 \OT1/cmr/m/n/12 Convolutional Neu-ral Net-works (CNN's) are es-sen-tially a Mul
@@ -497,57 +497,57 @@ ti Lay-ered Percetron
  []
 
 
-LaTeX Warning: Reference `fig:XtoRec' on page 13 undefined on input line 102.
+LaTeX Warning: Reference `fig:XtoRec' on page 14 undefined on input line 102.
 
 
-LaTeX Warning: Reference `fig:XtoComp' on page 13 undefined on input line 103.
+LaTeX Warning: Reference `fig:XtoComp' on page 14 undefined on input line 103.
 
 
-LaTeX Warning: Reference `fig:XtoRec' on page 13 undefined on input line 108.
+LaTeX Warning: Reference `fig:XtoRec' on page 14 undefined on input line 108.
 
 
-LaTeX Warning: Reference `fig:XtoComp' on page 13 undefined on input line 108.
+LaTeX Warning: Reference `fig:XtoComp' on page 14 undefined on input line 108.
 
 
-LaTeX Warning: Reference `fig:XtoComp' on page 13 undefined on input line 109.
+LaTeX Warning: Reference `fig:XtoComp' on page 14 undefined on input line 109.
 
 
-LaTeX Warning: Reference `fig:XtoComp' on page 13 undefined on input line 114.
+LaTeX Warning: Reference `fig:XtoComp' on page 14 undefined on input line 114.
 
-<images/XtoRec.png, id=55, 222.8325pt x 215.00325pt>
+<images/XtoRec.png, id=58, 222.8325pt x 215.00325pt>
 File: images/XtoRec.png Graphic file (type png)
  <use images/XtoRec.png>
 Package pdftex.def Info: images/XtoRec.png used on input line 117.
 (pdftex.def)             Requested size: 158.99156pt x 153.40793pt.
 
-<images/XtoComp.png, id=56, 366.36874pt x 355.3275pt>
+<images/XtoComp.png, id=59, 366.36874pt x 355.3275pt>
 File: images/XtoComp.png Graphic file (type png)
  <use images/XtoComp.png>
 Package pdftex.def Info: images/XtoComp.png used on input line 123.
 (pdftex.def)             Requested size: 158.99156pt x 154.20294pt.
 
-<images/ImageFeature.png, id=57, 115.43124pt x 111.41624pt>
+<images/ImageFeature.png, id=60, 115.43124pt x 111.41624pt>
 File: images/ImageFeature.png Graphic file (type png)
 
 <use images/ImageFeature.png>
 Package pdftex.def Info: images/ImageFeature.png used on input line 131.
 (pdftex.def)             Requested size: 158.99156pt x 153.47237pt.
 
-<images/ConvImage.png, id=58, 361.35pt x 353.32pt>
+<images/ConvImage.png, id=61, 361.35pt x 353.32pt>
 File: images/ConvImage.png Graphic file (type png)
  <use images/ConvImage.png>
 Package pdftex.def Info: images/ConvImage.png used on input line 137.
 (pdftex.def)             Requested size: 158.99156pt x 155.45589pt.
 
-<images/PooledImage.png, id=59, 230.8625pt x 228.855pt>
+<images/PooledImage.png, id=62, 230.8625pt x 228.855pt>
 File: images/PooledImage.png Graphic file (type png)
 
 <use images/PooledImage.png>
 Package pdftex.def Info: images/PooledImage.png used on input line 143.
 (pdftex.def)             Requested size: 115.43095pt x 114.42722pt.
- [13 <./images/XtoRec.png> <./images/XtoComp.png>]
-[14 <./images/ImageFeature.png> <./images/ConvImage.png> <./images/PooledImage.
-png>] [15] (./tex/background/rcnn.tex [16] [17] [18]
+ [14 <./images/XtoRec.png> <./images/XtoComp.png>]
+[15 <./images/ImageFeature.png> <./images/ConvImage.png> <./images/PooledImage.
+png>] [16] (./tex/background/rcnn.tex [17] [18] [19]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 90.
@@ -557,19 +557,87 @@ Overfull \hbox (1.83965pt too wide) in paragraph at lines 94--106
  [][] 
  []
 
-) (./tex/background/fcn.tex [19]
+) (./tex/background/fcn.tex [20]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 23.
 
 ) (./tex/background/segmentation.tex) (./tex/background/cnn.tex)
 (./tex/tech/tensorflow.tex) (./tex/tech/jupyter.tex) (./tex/tech/opencv.tex)
-(./tex/background/eval.tex [20])) [21]
+(./tex/background/eval.tex [21] [22]
+<images/DAP.png, id=97, 479.7925pt x 69.25874pt>
+File: images/DAP.png Graphic file (type png)
+ <use images/DAP.png>
+Package pdftex.def Info: images/DAP.png used on input line 47.
+(pdftex.def)             Requested size: 239.89565pt x 34.62927pt.
+
+Overfull \hbox (29.34227pt too wide) in paragraph at lines 47--48
+[][] 
+ []
+
+[23] <images/MAP.png, id=102, 496.85625pt x 213.79875pt>
+File: images/MAP.png Graphic file (type png)
+ <use images/MAP.png>
+Package pdftex.def Info: images/MAP.png used on input line 55.
+(pdftex.def)             Requested size: 248.4275pt x 106.89911pt.
+
+Overfull \hbox (29.34058pt too wide) in paragraph at lines 55--56
+[][] 
+ []
+
+<images/DFP.png, id=103, 460.72125pt x 306.14375pt>
+File: images/DFP.png Graphic file (type png)
+ <use images/DFP.png>
+Package pdftex.def Info: images/DFP.png used on input line 63.
+(pdftex.def)             Requested size: 230.36006pt x 153.07149pt.
+
+Overfull \hbox (29.33632pt too wide) in paragraph at lines 63--64
+[][] 
+ []
+
+<images/SMP.png, id=104, 453.695pt x 60.225pt>
+File: images/SMP.png Graphic file (type png)
+ <use images/SMP.png>
+Package pdftex.def Info: images/SMP.png used on input line 72.
+(pdftex.def)             Requested size: 226.84694pt x 30.11241pt.
+
+Overfull \hbox (29.31027pt too wide) in paragraph at lines 72--73
+[][] 
+ []
+
+<images/PCATSA.png, id=105, 488.82625pt x 88.33pt>
+File: images/PCATSA.png Graphic file (type png)
+ <use images/PCATSA.png>
+Package pdftex.def Info: images/PCATSA.png used on input line 81.
+(pdftex.def)             Requested size: 244.41252pt x 44.16489pt.
+
+Overfull \hbox (29.31575pt too wide) in paragraph at lines 81--82
+[][] 
+ []
+
+[24 <./images/DAP.png> <./images/MAP.png>] [25 <./images/DFP.png> <./images/SMP
+.png>]
+! Undefined control sequence.
+l.88 \See
+          \ref{fig:PCLASSA}.
+? 
+<images/PCLASSSA.png, id=112, 488.82625pt x 184.69pt>
+File: images/PCLASSSA.png Graphic file (type png)
+
+<use images/PCLASSSA.png>
+Package pdftex.def Info: images/PCLASSSA.png used on input line 90.
+(pdftex.def)             Requested size: 244.41252pt x 92.34476pt.
+
+Overfull \hbox (29.31575pt too wide) in paragraph at lines 90--91
+[][] 
+ []
+
+)) [26 <./images/PCATSA.png> <./images/PCLASSSA.png>]
 \openout2 = `tex/experiments.aux'.
 
  (./tex/experiments.tex
 Chapter 3.
-(./tex/experiments/exp1.tex)) [22
+(./tex/experiments/exp1.tex)) [27
 
 
 
@@ -578,7 +646,7 @@ Chapter 3.
 
  (./tex/empirical.tex
 Chapter 4.
-) [23
+) [28
 
 
 
@@ -587,7 +655,7 @@ Chapter 4.
 
  (./tex/conclusion.tex
 Chapter 5.
-) [24
+) [29
 
 
 
@@ -597,19 +665,30 @@ Chapter 5.
 
 No file tex/testJup.tex.
 
-Overfull \hbox (3.32898pt too wide) in paragraph at lines 59--59
-[]\OT1/cmr/m/n/12 Tom M. Mitchell. \OT1/cmr/m/it/12 Ma-chine Learn-ing\OT1/cmr/
-m/n/12 . In-ter-na-tional Edi-tion 1997. NewYork:
+Overfull \hbox (14.8319pt too wide) in paragraph at lines 59--59
+[]\OT1/cmr/m/n/12 Kaiming He et al. ``Mask R-CNN''. In: \OT1/cmr/m/it/12 arXiv 
+preprint arXiv:1703.06870
  []
 
-[25
+[30
 
 
 
 
-] (./FYPReportBarrettTom_14171198.aux (./tex/abstract.aux) (./tex/intro.aux) (.
-/tex/background/background.aux) (./tex/experiments.aux) (./tex/empirical.aux) (
-./tex/conclusion.aux) (./tex/testJup.aux))
+]
+
+! LaTeX Error: \begin{itemize} on input line 38 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 \end{document}
+                   
+? 
+[31] (./FYPReportBarrettTom_14171198.aux (./tex/abstract.aux) (./tex/intro.aux)
+(./tex/background/background.aux) (./tex/experiments.aux) (./tex/empirical.aux)
+(./tex/conclusion.aux) (./tex/testJup.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -620,25 +699,29 @@ Package logreq Info: Writing requests to 'FYPReportBarrettTom_14171198.run.xml'
 .
 \openout1 = `FYPReportBarrettTom_14171198.run.xml'.
 
- ) 
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 38 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 8353 strings out of 494953
- 144744 string characters out of 6180977
- 547842 words of memory out of 5000000
- 11479 multiletter control sequences out of 15000+600000
+ 8395 strings out of 494953
+ 145473 string characters out of 6180977
+ 547941 words of memory out of 5000000
+ 11515 multiletter control sequences out of 15000+600000
  10061 words of font info for 35 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 53i,8n,72p,841b,1221s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on FYPReportBarrettTom_14171198.pdf (27 pages, 603292 bytes).
+ 53i,8n,72p,841b,1284s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on FYPReportBarrettTom_14171198.pdf (33 pages, 707659 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
+ 154 PDF objects out of 1000 (max. 8388607)
+ 93 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
