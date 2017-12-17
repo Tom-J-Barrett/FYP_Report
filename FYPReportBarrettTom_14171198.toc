@@ -82,54 +82,64 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.2}Fully Convolutional Neural Networks for Semantic Segmentation}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Image Segmentation}{22}
+\contentsline {subsection}{\numberline {2.3.3}Image Segmentation}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Graph Based Segmentation}{22}
+\contentsline {subsubsection}{Graph Based Segmentation}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Sift/Surf}{22}
+\contentsline {subsubsection}{Local Variation Framework}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.4}Convolutional Neural Networks for Classification}{22}
+\contentsline {subsubsection}{Conclusion}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Technologies}{22}
+\contentsline {subsection}{\numberline {2.3.4}Convolutional Neural Networks for Classification}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Tensorflow}{22}
+\contentsline {subsubsection}{Deep Learning Based Food Recognition}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Jupyter}{22}
+\contentsline {subsubsection}{Food Image Recognition Using Deep Convolutional Neural Network With Pre-Training and Fine-Tuning}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.3}OpenCV}{22}
+\contentsline {subsubsection}{Food Detection and Recognition Using Convolutional Neural Network}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Evaluating the Output}{22}
+\contentsline {subsubsection}{DeepFood: Deep Learning-based Food Image Recognition for Computer-aided Dietary Assessment}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}Research into Diagnosing Errors in Object Detectors}{22}
+\contentsline {section}{\numberline {2.4}Technologies}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}Detection Average Precision}{24}
+\contentsline {subsection}{\numberline {2.4.1}Tensorflow}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.3}Mean Average Precision}{24}
+\contentsline {subsection}{\numberline {2.4.2}Jupyter}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.4}Distribution of top-ranked false positives}{24}
+\contentsline {subsection}{\numberline {2.4.3}OpenCV}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.5}Segmentation Mean Accuracy}{24}
+\contentsline {section}{\numberline {2.5}Evaluating the Output}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.6}Per-category segmentation accuracy}{26}
+\contentsline {subsection}{\numberline {2.5.1}Research into Diagnosing Errors in Object Detectors}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.7}Per-class segmentation accuracy}{26}
+\contentsline {subsection}{\numberline {2.5.2}Detection Average Precision}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Experiments}{27}
+\contentsline {subsection}{\numberline {2.5.3}Mean Average Precision}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Experiment 1}{27}
+\contentsline {subsection}{\numberline {2.5.4}Distribution of top-ranked false positives}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Network Architecture}{27}
+\contentsline {subsection}{\numberline {2.5.5}Segmentation Mean Accuracy}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Dataset}{27}
+\contentsline {subsection}{\numberline {2.5.6}Per-category segmentation accuracy}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}API's}{27}
+\contentsline {subsection}{\numberline {2.5.7}Per-class segmentation accuracy}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.4}Script}{27}
+\contentsline {chapter}{\numberline {3}Experiments}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.5}Results}{27}
+\contentsline {section}{\numberline {3.1}Experiment 1}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.6}Analysis}{27}
+\contentsline {subsection}{\numberline {3.1.1}Network Architecture}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Empirical Studies with Food Images}{28}
+\contentsline {subsection}{\numberline {3.1.2}Dataset}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Discussion and Conclusion}{29}
+\contentsline {subsection}{\numberline {3.1.3}API's}{31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.4}Script}{31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.5}Results}{31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.6}Analysis}{31}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Empirical Studies with Food Images}{32}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Discussion and Conclusion}{33}

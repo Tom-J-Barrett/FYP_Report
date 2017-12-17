@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.23)  15 DEC 2017 21:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.23)  17 DEC 2017 16:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -562,10 +562,24 @@ Overfull \hbox (1.83965pt too wide) in paragraph at lines 94--106
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 23.
 
-) (./tex/background/segmentation.tex) (./tex/background/cnn.tex)
-(./tex/tech/tensorflow.tex) (./tex/tech/jupyter.tex) (./tex/tech/opencv.tex)
-(./tex/background/eval.tex [21] [22]
-<images/DAP.png, id=97, 479.7925pt x 69.25874pt>
+) (./tex/background/segmentation.tex [21]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 18.
+
+) [22] (./tex/background/cnn.tex [23]
+Overfull \hbox (24.0067pt too wide) in paragraph at lines 45--45
+[]\OT1/cmr/bx/n/12 DeepFood: Deep Learning-based Food Im-age Recog-ni-tion for 
+Computer-
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 59.
+
+) (./tex/tech/tensorflow.tex) (./tex/tech/jupyter.tex) (./tex/tech/opencv.tex)
+(./tex/background/eval.tex [24] [25] [26]
+<images/DAP.png, id=110, 479.7925pt x 69.25874pt>
 File: images/DAP.png Graphic file (type png)
  <use images/DAP.png>
 Package pdftex.def Info: images/DAP.png used on input line 47.
@@ -575,7 +589,7 @@ Overfull \hbox (29.34227pt too wide) in paragraph at lines 47--48
 [][] 
  []
 
-[23] <images/MAP.png, id=102, 496.85625pt x 213.79875pt>
+<images/MAP.png, id=111, 496.85625pt x 213.79875pt>
 File: images/MAP.png Graphic file (type png)
  <use images/MAP.png>
 Package pdftex.def Info: images/MAP.png used on input line 55.
@@ -585,7 +599,7 @@ Overfull \hbox (29.34058pt too wide) in paragraph at lines 55--56
 [][] 
  []
 
-<images/DFP.png, id=103, 460.72125pt x 306.14375pt>
+<images/DFP.png, id=112, 460.72125pt x 306.14375pt>
 File: images/DFP.png Graphic file (type png)
  <use images/DFP.png>
 Package pdftex.def Info: images/DFP.png used on input line 63.
@@ -595,7 +609,7 @@ Overfull \hbox (29.33632pt too wide) in paragraph at lines 63--64
 [][] 
  []
 
-<images/SMP.png, id=104, 453.695pt x 60.225pt>
+<images/SMP.png, id=113, 453.695pt x 60.225pt>
 File: images/SMP.png Graphic file (type png)
  <use images/SMP.png>
 Package pdftex.def Info: images/SMP.png used on input line 72.
@@ -605,7 +619,8 @@ Overfull \hbox (29.31027pt too wide) in paragraph at lines 72--73
 [][] 
  []
 
-<images/PCATSA.png, id=105, 488.82625pt x 88.33pt>
+[27 <./images/DAP.png> <./images/MAP.png>] [28 <./images/DFP.png>]
+<images/PCATSA.png, id=120, 488.82625pt x 88.33pt>
 File: images/PCATSA.png Graphic file (type png)
  <use images/PCATSA.png>
 Package pdftex.def Info: images/PCATSA.png used on input line 81.
@@ -615,13 +630,11 @@ Overfull \hbox (29.31575pt too wide) in paragraph at lines 81--82
 [][] 
  []
 
-[24 <./images/DAP.png> <./images/MAP.png>] [25 <./images/DFP.png> <./images/SMP
-.png>]
 ! Undefined control sequence.
 l.88 \See
           \ref{fig:PCLASSA}.
 ? 
-<images/PCLASSSA.png, id=112, 488.82625pt x 184.69pt>
+<images/PCLASSSA.png, id=121, 488.82625pt x 184.69pt>
 File: images/PCLASSSA.png Graphic file (type png)
 
 <use images/PCLASSSA.png>
@@ -632,12 +645,13 @@ Overfull \hbox (29.31575pt too wide) in paragraph at lines 90--91
 [][] 
  []
 
-)) [26 <./images/PCATSA.png> <./images/PCLASSSA.png>]
+)) [29 <./images/SMP.png> <./images/PCATSA.png>] [30 <./images/PCLASSSA.png>]
 \openout2 = `tex/experiments.aux'.
 
- (./tex/experiments.tex
+
+(./tex/experiments.tex
 Chapter 3.
-(./tex/experiments/exp1.tex)) [27
+(./tex/experiments/exp1.tex)) [31
 
 
 
@@ -646,7 +660,7 @@ Chapter 3.
 
  (./tex/empirical.tex
 Chapter 4.
-) [28
+) [32
 
 
 
@@ -655,7 +669,7 @@ Chapter 4.
 
  (./tex/conclusion.tex
 Chapter 5.
-) [29
+) [33
 
 
 
@@ -665,17 +679,34 @@ Chapter 5.
 
 No file tex/testJup.tex.
 
-Overfull \hbox (14.8319pt too wide) in paragraph at lines 59--59
+Overfull \hbox (20.70683pt too wide) in paragraph at lines 59--59
 []\OT1/cmr/m/n/12 Kaiming He et al. ``Mask R-CNN''. In: \OT1/cmr/m/it/12 arXiv 
 preprint arXiv:1703.06870
  []
 
-[30
+[34
 
 
 
 
 ]
+Overfull \hbox (1.876pt too wide) in paragraph at lines 59--59
+\OT1/cmr/m/it/12 Con-fer-ence on Smart Homes and Health Telem-at-ics\OT1/cmr/m/
+n/12 . Springer. 2016,
+ []
+
+
+Overfull \hbox (2.88484pt too wide) in paragraph at lines 59--59
+[]\OT1/cmr/m/n/12 Dongyuan Mao, Qian Yu, and Jing-fan Wang. ``Deep Learn-ing Ba
+sed
+ []
+
+
+Overfull \hbox (1.69696pt too wide) in paragraph at lines 59--59
+\OT1/cmr/m/n/12 ment''. In: \OT1/cmr/m/it/12 Med-i-cal Mea-sure-ments and Ap-pl
+i-ca-tions (MeMeA), 2014
+ []
+
 
 ! LaTeX Error: \begin{itemize} on input line 38 ended by \end{document}.
 
@@ -686,14 +717,11 @@ Type  H <return>  for immediate help.
 l.60 \end{document}
                    
 ? 
-[31] (./FYPReportBarrettTom_14171198.aux (./tex/abstract.aux) (./tex/intro.aux)
+[35] (./FYPReportBarrettTom_14171198.aux (./tex/abstract.aux) (./tex/intro.aux)
 (./tex/background/background.aux) (./tex/experiments.aux) (./tex/empirical.aux)
 (./tex/conclusion.aux) (./tex/testJup.aux))
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'FYPReportBarrettTom_14171198.run.xml'
 .
@@ -705,10 +733,10 @@ Package logreq Info: Writing requests to 'FYPReportBarrettTom_14171198.run.xml'
 ### semi simple group (level 1) entered at line 38 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 8395 strings out of 494953
- 145473 string characters out of 6180977
- 547941 words of memory out of 5000000
- 11515 multiletter control sequences out of 15000+600000
+ 8404 strings out of 494953
+ 145716 string characters out of 6180977
+ 548035 words of memory out of 5000000
+ 11524 multiletter control sequences out of 15000+600000
  10061 words of font info for 35 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  53i,8n,72p,841b,1284s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -718,10 +746,10 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on FYPReportBarrettTom_14171198.pdf (33 pages, 707659 bytes).
+Output written on FYPReportBarrettTom_14171198.pdf (37 pages, 717285 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
+ 170 PDF objects out of 1000 (max. 8388607)
+ 104 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

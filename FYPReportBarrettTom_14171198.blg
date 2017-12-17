@@ -1,17 +1,17 @@
 [0] Config.pm:340> INFO - This is Biber 2.4
 [0] Config.pm:343> INFO - Logfile is 'FYPReportBarrettTom_14171198.blg'
-[68] biber:287> INFO - === Fri Dec 15, 2017, 21:44:10
-[257] Biber.pm:348> INFO - Reading 'FYPReportBarrettTom_14171198.bcf'
-[486] Biber.pm:742> INFO - Found 9 citekeys in bib section 0
-[492] Biber.pm:3151> INFO - Processing section 0
-[556] Biber.pm:3308> INFO - Looking for bibtex format file 'references.bib' for section 0
-[598] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
-[633] bibtex.pm:974> INFO - Found BibTeX data source 'references.bib'
-[942] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[943] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[943] Biber.pm:3028> INFO - Sorting list 'nty/global' of type 'entry' with scheme 'nty' and locale 'en-US'
-[943] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
-[961] bbl.pm:519> INFO - Writing 'FYPReportBarrettTom_14171198.bbl' with encoding 'ascii'
-[1019] Utils.pm:147> WARN - The entry 'maskRcnn' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
-[1109] bbl.pm:615> INFO - Output to FYPReportBarrettTom_14171198.bbl
-[1112] Biber.pm:109> INFO - WARNINGS: 1
+[70] biber:287> INFO - === Sun Dec 17, 2017, 16:04:57
+[210] Biber.pm:348> INFO - Reading 'FYPReportBarrettTom_14171198.bcf'
+[475] Biber.pm:742> INFO - Found 15 citekeys in bib section 0
+[480] Biber.pm:3151> INFO - Processing section 0
+[537] Biber.pm:3308> INFO - Looking for bibtex format file 'references.bib' for section 0
+[600] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
+[641] bibtex.pm:974> INFO - Found BibTeX data source 'references.bib'
+[1014] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1014] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1014] Biber.pm:3028> INFO - Sorting list 'nty/global' of type 'entry' with scheme 'nty' and locale 'en-US'
+[1014] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
+[1054] bbl.pm:519> INFO - Writing 'FYPReportBarrettTom_14171198.bbl' with encoding 'ascii'
+[1101] Utils.pm:147> WARN - The entry 'maskRcnn' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[1272] bbl.pm:615> INFO - Output to FYPReportBarrettTom_14171198.bbl
+[1272] Biber.pm:109> INFO - WARNINGS: 1
