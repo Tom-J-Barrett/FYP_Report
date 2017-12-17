@@ -1,3 +1,51 @@
 \subsubsection{Graph Based Segmentation}
+Graph cut segmentation has been used extensively  in image segmentation. OpenCV
+has an implementation of a graph cut algorithm called grabcut which has been
+used to segment food on occasion \textcite{graphCut}. 
 
-\subsubsection{Sift/Surf}
+According to \textcite{graphCut}, "Graph cut based method is well-known to be
+efficient, robust, and capable of finding the best contour of objects in n
+image, suggesting it to be a good method for separating food portions in a food
+image for calorie measurement". Along with the graph cut segmentation algorithm,
+this research team also used color and texture segmentation. Gabor filters were
+used to measure texture features \textcite{graphCut}. When color and texture
+segmentation was applied, the method came into difficulty with mixed foods but
+by applying graph cut segmentation, clearer object boundaries were shown.
+
+In conclusion, the accuracy of the classification increased when using graph
+based segmentation rather than color and texture as seen in \ref{graphCT}.
+
+\begin{table}[]
+	\centering
+	\caption{Results}
+	\label{graphCT}
+	\begin{tabular}{llll}
+		                  & Single Food Portion & Non-mixed Food & Mixed Food
+						  \\
+						  Color and Texture & 92.21               & N/A
+						  & N/A           \\
+						  Graph Based       & 95 (3\% increase)   & 5\% increase
+						  & 15\% increase
+	\end{tabular}
+\end{table}
+
+\subsubsection{Local Variation Framework}
+Another paper was published in which the research team attempted to create a
+food calorie extimation system \textcite{foodImageAnalysis}. This system would
+compromise of three steps, image segmentation, image classification and weight
+estimation. For the segmentation module, a local variation approach to
+segmentation was performed. Local variation is by which intensity differences
+between neighbouring pixels is measured. This is a type of graph based
+segmentation.
+
+The team also carried out some segmentation refinement when the segmentation
+algorithm had been performed. This consisted of removed small segments (defined
+as less than 50 pixels) and trying to prevent over and under segmentation. After
+classification was performed on each segment, segments with low confidence
+values were removed \textcite{foodImageAnalysis}.
+
+\subsubsection{Conclusion}
+Both of the above papers of \textcite{graphCut} and \textcite{foodImageAnalysis}
+used a graph based segmentation. The first paper used a more generic
+implementation while the second used a local variation framework. Both methods
+provided successful results in the image segmentation process.

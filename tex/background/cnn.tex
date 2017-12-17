@@ -1,0 +1,72 @@
+Many reserachers have used convolutional neural networks for image
+classification with various network architectures and many have used a food image dataset. I will be looking at
+some of these papers below.
+
+\subsubsection{Deep Learning Based Food Recognition}
+One paper focused on a deep learning approach to food image recognition based
+their neural network architecture on Inception-ResNet and Inception V3. They
+also used the Food-101 dataset \textcite{deepLearning}. For this system, Googles
+Tensorflow was used for image preprocessing. Preprocessing was needed as the
+environmental background is different in many food images. Because of these
+"Grey World method and Histogram equalization" \textcite{deepLearning} were
+used.
+
+AWS GPU instances were used for training and the results on completion were
+quite impressive with a Top-1 Accuracy of 72.55\% and a Top-5 Accuracy of
+91.31\% \textcite{deepLearning}
+
+\subsubsection{Food Image Recognition Using Deep Convolutional Neural Network
+With Pre-Training and Fine-Tuning}
+Another research team in Japan researched this topic. They were aware of how
+difficult the problem was and therefore employed many techniques to solve the
+problem such as "pre-training with the large-scale ImageNet data, fine-tuning
+and activateion features extracted from the pre-trained DCNN"
+\textcite{yanaiFood}. 
+
+In conclusion, they found that the "fine-tuned DCNN which was pre-trained
+with 2000 categories" \textcite{yanaiFood} from ImageNet was the best method. A
+DCNN is a Deep Convolution Neural Network. The achieved results of 78.77\% for
+Top-1 Accuracy in the UECFOOD100 dataset.
+
+\subsubsection{Food Detection and Recognition Using Convolutional Neural Network}
+\textcite{kagayaFood} also employed the use of convolutional neural networks for
+image detection. They used a CNN for the "tasks of food detection and recognition
+through parameter optimization" \textcite{kagayaFood}.
+
+They found that a CNN is much better suited to the task than a Support Vector
+Machine (SVM). They achieved an overall classification accuracy of 93.8\%
+against their baseline accuracy of 89.7\% \textcite{kagayaFood}. This accuracy
+was calculated using a dataset that they created specifically for this task.
+When they had completed the task they analysed the trained convolutional kernels
+and came to an interesting conclusion. They found that "color features are
+essential to food image recognition" \textcite{kagayaFood}.
+
+\subsubsection{DeepFood: Deep Learning-based Food Image Recognition for
+Computer-aided Dietary Assessment}
+The last paper that I will look at, oriented around using a convolutional neural
+network for food image recognition, focused on developing a dietary assessment
+application for use on a smartphone. They used the UEC-256 and Food-101 datset
+for their experiments and achieved impressive results.
+
+They used a convolutional neural network but "with a few major optimizations,
+such as optimized model and an optimized convolution technique"
+\textcite{deepFood}. They used the Inception module for their CNN. After the
+inception module was complete, they made the GoogleNet by combining modules. In
+total, the network had 22 layers.
+
+They achieved the results shown in \ref{resultsDeepFood}.
+
+\begin{table}[]
+	\centering
+	\caption{DeepFood Results}
+	\label{resultsDeepFood}
+	\begin{tabular}{lll}
+		                          & Top-1  & Top-5  \\
+								  UEC-256                   & 54.7\% & 81.5\% \\
+								  UEC-100                   & 76.3\% & 94.6\% \\
+								  Food-101                  & 77.4\% & 93.7\% \\
+								  UEC-256 With Bounding Box & 63.8\% & 87.2\% \\
+								  UEC-100 With Bounding Box & 77.2\% & 94.8\%
+	\end{tabular}
+\end{table}
+

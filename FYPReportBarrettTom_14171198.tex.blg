@@ -1,5 +1,0 @@
-[0] Config.pm:340> INFO - This is Biber 2.4
-[0] Config.pm:343> INFO - Logfile is 'FYPReportBarrettTom_14171198.tex.blg'
-[70] biber:287> INFO - === Tue Nov  7, 2017, 12:16:23
-[110] Utils.pm:163> ERROR - Cannot find control file 'FYPReportBarrettTom_14171198.tex.bcf'! - did you pass the "backend=biber" option to BibLaTeX?
-[111] Biber.pm:113> INFO - ERRORS: 1
