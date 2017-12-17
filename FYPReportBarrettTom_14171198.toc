@@ -136,10 +136,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.4}Script}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.5}Results}{31}
+\contentsline {subsection}{\numberline {3.1.5}Results}{36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.6}Analysis}{31}
+\contentsline {subsection}{\numberline {3.1.6}Analysis}{36}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Empirical Studies with Food Images}{32}
+\contentsline {chapter}{\numberline {4}Empirical Studies with Food Images}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Discussion and Conclusion}{33}
+\contentsline {chapter}{\numberline {5}Discussion and Conclusion}{38}
