@@ -32,9 +32,8 @@ determine what objects are around it. Computer Vision can allow a machine to
 recognise skin diseases in an image. The applications are nearly limitless and
 that is without taking into account other uses.
 
-\section{Machine Learning Paradigms}
-There are many Machine Learning paradigms, all of which I will
-discuss briefly below, but the main area of my focus for this project is in
+\section{Neural Computing}
+The main area of my focus for this project is in
 Artificial Neural Networks (ANN). This is because I have researched extensively into Convolutional Neural Networks which are based on ANN's.
 \subsection{Artificial Neural Networks}
 An Artificial Neural Network is a bio-inspired system that is used to model the human brain in how it learns from experience.
@@ -53,7 +52,7 @@ Before I can talk about Convolution Neural Networks which are vital the image
 processing, I will have to talk about the perceptron learning algorithm, the multi
 layer percepton, and backpropogation.
 
-\subsubsection{Perceptron Learning - Artificial Neuron}
+\section{Perceptron Learning - Artificial Neuron}
 In our Artificial Neural Network a Perecptron is an Artificial Neuron.
 It is called an Artifical Neuron because it is a bio-inspired neuron which models
 a neuron in the human brain in terms of inputs and output.
@@ -62,7 +61,7 @@ In Perceptron learning, we can take two inputs which are put towards an
 activation function with a bias attached as seen in \ref{fig:perceptron}.
 These inputs are multiplied by the weights that connect the input to the
 activation function and depending on the result, the activation function may
-fire an output.
+fire an output. These inputs are either 1 or -1.
 
 \begin{figure}
      \includegraphics{Perceptron}
@@ -71,9 +70,20 @@ fire an output.
 \end{figure}
 
 This Perceptron Learning Rule assumes that there are two sets of instances, a
-positive and negative set, and each of these has an input and output domain.
+positive and negative set, and that they are linearly seperable.
 
-\subsubsection{Multi Layered Perceptron}
+A perceptron is trained using supervised learning. When the perceptron
+classifies a results, it is told if it is correct or not. If the result is
+incorrect, weights are changed in value so that this error can be reduced
+\textcite{AI}. 
+
+The one major problem with perceptron learning and that is that it can't solve
+the problem if there is not a clear linear separation between the classes. There
+is a way in which we can attempt to solve this, through the delta rule. The
+delta rule utilizes gradient descent to find the best weight for the training
+samples \textcite{MLANN}. We will discuss gradient descent in the next section.
+
+\section{Multi Layered Perceptron}
 Multi Layer Perceptrons (MLP) are made up of multiple layers of perceprons connected
 together.
 Firstly, we have an input layer, followed by one of more hidden layers and then
@@ -81,9 +91,20 @@ finally an output layer.
 Any Neural Network with more than three hidden layers is categorised as a deep
 layer.
 
+The input layer of your network consists of the data you feed into the network
+in order to classify it. The input layer passes this data to a hidden layer
+whose purpose is to transform this data into something that the output layer can
+understand. The output layer normally consists of a class prediction.
+
 Multi Layer Perceptrons are a class of feed forward Artificial Neural Networks.
 These means that the output of each perceptron feeds into an input in the next
 layer of the network.
+
+There is one large problem with MLP's and this is why Convolutional Neural
+Networks (CNN) were created. If you attempting to classify images with an MLP then
+each pixel in that image would have to be a separate input. This created a
+massive amount of neurons through all the layers and this isn't feasible. CNN's
+solve this problem which we will discuss later.
 
 \begin{figure}
     \includegraphics[width=150mm,scale=0.5]{mlp}
@@ -91,10 +112,11 @@ layer of the network.
      \label{fig:mlp}
 \end{figure}
 
-\subsubsection{Gradient Descent and Backpropogation}
 \input{tex/background/gD_bP}
 
-\subsubsection{Convolutional Neural Networks}
+\section{Support Vector Machine}
+
+\section{Convolutional Neural Networks}
 Convolutional Neural Networks (CNN's) are essentially a Multi Layered Percetron with a
 special structure. CNN's have one major difference from a MLP, they have extra
 layer of convolution and pooling.
@@ -113,28 +135,31 @@ it is that the feature is in the part of the image, as seen in Figure
 This is called filtering. The Convolutional layer is composed of carrying out
 this filtering for every single possible location in Figure \ref{fig:XtoComp}.
 \begin{figure}
+	\caption{Image filtering}
+    \label{fig:filter}
       \begin{subfigure}[b]{0.4\textwidth}
           \includegraphics[width=\textwidth]{XtoRec}
           \caption{Image to Classify}
-          \label{XtoRec}
+          \label{fig:XtoRec}
       \end{subfigure}
     %
       \begin{subfigure}[b]{0.4\textwidth}
       \includegraphics[width=\textwidth]{XtoComp}
       \caption{Image to Compare}
-      \label{XtoComp}
+      \label{fig:XtoComp}
       \end{subfigure}
 \end{figure}
 
 \begin{figure}
-      \begin{subfigure}[b]{0.4\textwidth}
+    \caption{Image Convolution}  
+    \begin{subfigure}[b]{0.4\textwidth}
           \includegraphics[width=\textwidth]{ImageFeature}
           \caption{Image Feature to Search}
           \label{fig:feature}
       \end{subfigure}
      %
       \begin{subfigure}[b]{0.4\textwidth}
-           \includegraphics[width=\textwidth]{ConvImage}
+           \includegraphics[width=\textwidth]{ConvImage}x
            \caption{Convoluted Image}
            \label{fig:convoluted}
       \end{subfigure}
@@ -160,24 +185,6 @@ zero.
 \subsubsection{Fully Convolutional Networks}
 A Fully Convolutional Network is one that does not have a fully connected layer
 and in a fully connected layers place is another convolution layer.
-
-\subsection{Other Paradigms}
-There are many other Machine Learning paradigms apart from Neural Networks, each of which I will give a brief
-introduction.
-
-\subsubsection{Decision Trees}
-"Decision tree learning is  method for approcimating disrete-valued target
-functions, in which the learned function is represented by a descision tree"
-\textcite{MLDT}. There are many different classification algorithms that can
-create decision trees from supervised learning.
-
-\subsubsection{Bayesian Learning}
-\subsubsection{Instance Based Learning}
-\subsubsection{Logistic Regression}
-\subsubsection{Support Vector Machine}
-\subsubsection{Regression Analysis}
-\subsubsection{Unsupervised Learning}
-\subsubsection{Reinforcement Learning}
 
 \section{Overview of Machine Vision Approaches to Identification and Classification}
 There have been many attempts of identification and classification by many
