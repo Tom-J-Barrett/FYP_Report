@@ -1,4 +1,31 @@
+\subsubsection*{Gradient Descent}
 Gradient Descent is an algorithm used to find the optimal weights to produce the
-smallest prediction error.
+smallest prediction error. It is used to overcome problems of non linearly
+separable classes. Gradient descent search selects a random weight value and
+then modifies it gradually to minimize the error. "At each step, the weight
+vector is altered in the direction that produces the steepest descent along the
+surface" \textcite{MLANN}. This step is iterated until the lowest value is met.
 
-Backpropogation is used to calculate the error for each neuron.
+One problem with Gradient Descent is that if we look at \ref{fig:GD}, we may
+never get to the optimal point, point B. This is because we will find point A
+without too many problems but when the weights change we will get too high a
+slope of error and therefore will never reach point B.
+
+Another variation of Gradient Descent is Stochastic Gradient Descent (SGD). SGD
+is different because it updates "weights incrementally, following the
+calculation of the error of each individual example" \textcite{MLANN}. 
+
+\begin{figure}
+      \includegraphics{GradientDescent}
+      \caption{Gradient Descent}
+      \label{fig:GD}
+ \end{figure}
+
+\subsubsection*{Backpropagation}
+"The Backpropagation algorithm learns the weights of a multilayer network,
+given a network with a fixed set of units and interconnections" \textcite{MLANN}.
+Backpropgation attempts to minimise the mean squared error between the target
+output and the output of a network.
+
+Backpropagation works by starting at the output layer of the network and going
+back through previous hidden layers, updating weights as it goes.

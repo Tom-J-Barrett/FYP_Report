@@ -4,6 +4,7 @@
 \usepackage{psfig}
 \usepackage{graphicx}
 \usepackage{pdfpages}
+\usepackage{appendix}
 \graphicspath{{images/}}
 \usepackage[backend=biber]{biblatex}
 \usepackage{subcaption}
@@ -53,9 +54,13 @@
 \include{tex/experiments}
 \include{tex/empirical}
 \include{tex/conclusion}
-\include{tex/testJup}
 %As \textcite{test} says lololo
 
 \printbibliography
+
+\begin{appendices}
+\chapter{Appendix}
+\include{tex/appendix}
+\end{appendices}
 
 \end{document}   

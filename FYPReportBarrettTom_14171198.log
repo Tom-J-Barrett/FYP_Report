@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.23)  17 DEC 2017 20:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.23)  20 DEC 2017 23:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -130,6 +130,12 @@ File: pppdftex.def 2015/09/18 v0.5d Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count92
 \AM@templatesizebox=\box27
 )
+(/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count93
+\c@@ppsavesec=\count94
+\c@@ppsaveapp=\count95
+)
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2016/03/03 v3.3 programmable bibliographies (PK/JW/AB)
 
@@ -139,7 +145,7 @@ B)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count93
+\etb@tempcnta=\count96
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
@@ -161,7 +167,7 @@ Package etexcmds Info: Could not find \expanded.
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count94
+\lrq@indent=\count97
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -170,44 +176,44 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count95
-\c@listtotal=\count96
-\c@listcount=\count97
-\c@liststart=\count98
-\c@liststop=\count99
-\c@citecount=\count100
-\c@citetotal=\count101
-\c@multicitecount=\count102
-\c@multicitetotal=\count103
-\c@instcount=\count104
-\c@maxnames=\count105
-\c@minnames=\count106
-\c@maxitems=\count107
-\c@minitems=\count108
-\c@citecounter=\count109
-\c@savedcitecounter=\count110
-\c@uniquelist=\count111
-\c@uniquename=\count112
-\c@refsection=\count113
-\c@refsegment=\count114
-\c@maxextratitle=\count115
-\c@maxextratitleyear=\count116
-\c@maxextrayear=\count117
-\c@maxextraalpha=\count118
-\c@abbrvpenalty=\count119
-\c@highnamepenalty=\count120
-\c@lownamepenalty=\count121
-\c@maxparens=\count122
-\c@parenlevel=\count123
-\blx@tempcnta=\count124
-\blx@tempcntb=\count125
-\blx@tempcntc=\count126
-\blx@maxsection=\count127
-\blx@maxsegment@0=\count128
-\blx@notetype=\count129
-\blx@parenlevel@text=\count130
-\blx@parenlevel@foot=\count131
-\blx@sectionciteorder@0=\count132
+\c@tabx@nest=\count98
+\c@listtotal=\count99
+\c@listcount=\count100
+\c@liststart=\count101
+\c@liststop=\count102
+\c@citecount=\count103
+\c@citetotal=\count104
+\c@multicitecount=\count105
+\c@multicitetotal=\count106
+\c@instcount=\count107
+\c@maxnames=\count108
+\c@minnames=\count109
+\c@maxitems=\count110
+\c@minitems=\count111
+\c@citecounter=\count112
+\c@savedcitecounter=\count113
+\c@uniquelist=\count114
+\c@uniquename=\count115
+\c@refsection=\count116
+\c@refsegment=\count117
+\c@maxextratitle=\count118
+\c@maxextratitleyear=\count119
+\c@maxextrayear=\count120
+\c@maxextraalpha=\count121
+\c@abbrvpenalty=\count122
+\c@highnamepenalty=\count123
+\c@lownamepenalty=\count124
+\c@maxparens=\count125
+\c@parenlevel=\count126
+\blx@tempcnta=\count127
+\blx@tempcntb=\count128
+\blx@tempcntc=\count129
+\blx@maxsection=\count130
+\blx@maxsegment@0=\count131
+\blx@notetype=\count132
+\blx@parenlevel@text=\count133
+\blx@parenlevel@foot=\count134
+\blx@sectionciteorder@0=\count135
 \labelnumberwidth=\skip46
 \labelalphawidth=\skip47
 \biblabelsep=\skip48
@@ -218,81 +224,81 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibhang=\skip53
 \blx@bcfin=\read1
 \blx@bcfout=\write3
-\c@mincomprange=\count133
-\c@maxcomprange=\count134
-\c@mincompwidth=\count135
+\c@mincomprange=\count136
+\c@maxcomprange=\count137
+\c@mincompwidth=\count138
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def)
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count136
-\c@savedafterword=\count137
-\c@annotator=\count138
-\c@savedannotator=\count139
-\c@author=\count140
-\c@savedauthor=\count141
-\c@bookauthor=\count142
-\c@savedbookauthor=\count143
-\c@commentator=\count144
-\c@savedcommentator=\count145
-\c@editor=\count146
-\c@savededitor=\count147
-\c@editora=\count148
-\c@savededitora=\count149
-\c@editorb=\count150
-\c@savededitorb=\count151
-\c@editorc=\count152
-\c@savededitorc=\count153
-\c@foreword=\count154
-\c@savedforeword=\count155
-\c@holder=\count156
-\c@savedholder=\count157
-\c@introduction=\count158
-\c@savedintroduction=\count159
-\c@namea=\count160
-\c@savednamea=\count161
-\c@nameb=\count162
-\c@savednameb=\count163
-\c@namec=\count164
-\c@savednamec=\count165
-\c@translator=\count166
-\c@savedtranslator=\count167
-\c@shortauthor=\count168
-\c@savedshortauthor=\count169
-\c@shorteditor=\count170
-\c@savedshorteditor=\count171
-\c@labelname=\count172
-\c@savedlabelname=\count173
-\c@institution=\count174
-\c@savedinstitution=\count175
-\c@lista=\count176
-\c@savedlista=\count177
-\c@listb=\count178
-\c@savedlistb=\count179
-\c@listc=\count180
-\c@savedlistc=\count181
-\c@listd=\count182
-\c@savedlistd=\count183
-\c@liste=\count184
-\c@savedliste=\count185
-\c@listf=\count186
-\c@savedlistf=\count187
-\c@location=\count188
-\c@savedlocation=\count189
-\c@organization=\count190
-\c@savedorganization=\count191
-\c@origlocation=\count192
-\c@savedoriglocation=\count193
-\c@origpublisher=\count194
-\c@savedorigpublisher=\count195
-\c@publisher=\count196
-\c@savedpublisher=\count197
-\c@language=\count198
-\c@savedlanguage=\count199
-\c@pageref=\count266
-\c@savedpageref=\count267
+\c@afterword=\count139
+\c@savedafterword=\count140
+\c@annotator=\count141
+\c@savedannotator=\count142
+\c@author=\count143
+\c@savedauthor=\count144
+\c@bookauthor=\count145
+\c@savedbookauthor=\count146
+\c@commentator=\count147
+\c@savedcommentator=\count148
+\c@editor=\count149
+\c@savededitor=\count150
+\c@editora=\count151
+\c@savededitora=\count152
+\c@editorb=\count153
+\c@savededitorb=\count154
+\c@editorc=\count155
+\c@savededitorc=\count156
+\c@foreword=\count157
+\c@savedforeword=\count158
+\c@holder=\count159
+\c@savedholder=\count160
+\c@introduction=\count161
+\c@savedintroduction=\count162
+\c@namea=\count163
+\c@savednamea=\count164
+\c@nameb=\count165
+\c@savednameb=\count166
+\c@namec=\count167
+\c@savednamec=\count168
+\c@translator=\count169
+\c@savedtranslator=\count170
+\c@shortauthor=\count171
+\c@savedshortauthor=\count172
+\c@shorteditor=\count173
+\c@savedshorteditor=\count174
+\c@labelname=\count175
+\c@savedlabelname=\count176
+\c@institution=\count177
+\c@savedinstitution=\count178
+\c@lista=\count179
+\c@savedlista=\count180
+\c@listb=\count181
+\c@savedlistb=\count182
+\c@listc=\count183
+\c@savedlistc=\count184
+\c@listd=\count185
+\c@savedlistd=\count186
+\c@liste=\count187
+\c@savedliste=\count188
+\c@listf=\count189
+\c@savedlistf=\count190
+\c@location=\count191
+\c@savedlocation=\count192
+\c@organization=\count193
+\c@savedorganization=\count194
+\c@origlocation=\count195
+\c@savedoriglocation=\count196
+\c@origpublisher=\count197
+\c@savedorigpublisher=\count198
+\c@publisher=\count199
+\c@savedpublisher=\count266
+\c@language=\count267
+\c@savedlanguage=\count268
+\c@pageref=\count269
+\c@savedpageref=\count270
 \shorthandwidth=\skip54
 \shortjournalwidth=\skip55
 \shortserieswidth=\skip56
@@ -310,13 +316,13 @@ Package biblatex Info: ... file 'biblatex_.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex_.def
 File: biblatex_.def 
-\c@textcitecount=\count268
-\c@textcitetotal=\count269
-\c@textcitemaxnames=\count270
-\c@biburlnumpenalty=\count271
-\c@biburlucpenalty=\count272
-\c@biburllcpenalty=\count273
-\c@smartand=\count274
+\c@textcitecount=\count271
+\c@textcitetotal=\count272
+\c@textcitemaxnames=\count273
+\c@biburlnumpenalty=\count274
+\c@biburlucpenalty=\count275
+\c@biburllcpenalty=\count276
+\c@smartand=\count277
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -328,8 +334,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2016/03/03 v3.3 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count275
-\c@bbx:relatedtotal=\count276
+\c@bbx:relatedcount=\count278
+\c@bbx:relatedtotal=\count279
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -371,10 +377,10 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen115
 \caption@hangindent=\dimen116
 )
-\c@ContinuedFloat=\count277
+\c@ContinuedFloat=\count280
 )
-\c@subfigure=\count278
-\c@subtable=\count279
+\c@subfigure=\count281
+\c@subtable=\count282
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
@@ -388,39 +394,39 @@ Package biblatex Info: ... file 'english.lbx' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 )
-\@quotelevel=\count280
-\@quotereset=\count281
+\@quotelevel=\count283
+\@quotereset=\count284
 
 (./FYPReportBarrettTom_14171198.aux (./tex/abstract.aux) (./tex/intro.aux)
 (./tex/background/background.aux) (./tex/experiments.aux) (./tex/empirical.aux)
-(./tex/conclusion.aux) (./tex/testJup.aux))
+(./tex/conclusion.aux) (./tex/appendix.aux))
 \openout1 = `FYPReportBarrettTom_14171198.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count282
+\scratchcounter=\count285
 \scratchdimen=\dimen117
 \scratchbox=\box30
-\nofMPsegments=\count283
-\nofMParguments=\count284
+\nofMPsegments=\count286
+\nofMParguments=\count287
 \everyMPshowfont=\toks17
-\MPscratchCnt=\count285
+\MPscratchCnt=\count288
 \MPscratchDim=\dimen118
-\MPnumerator=\count286
-\makeMPintoPDFobject=\count287
+\MPnumerator=\count289
+\makeMPintoPDFobject=\count290
 \everyMPtoPDFconversion=\toks18
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -471,14 +477,14 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'FYPReportBarrettTom_14171198.bbl' found.
 
 (./FYPReportBarrettTom_14171198.bbl)
-Package biblatex Info: Reference section=0 on input line 35.
-Package biblatex Info: Reference segment=0 on input line 35.
+Package biblatex Info: Reference section=0 on input line 36.
+Package biblatex Info: Reference segment=0 on input line 36.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 41.
+(Font)              <14.4> on input line 42.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 41.
+(Font)              <7> on input line 42.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
@@ -497,11 +503,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 
-] [2])
+])
 \tf@toc=\write4
 \openout4 = `FYPReportBarrettTom_14171198.toc'.
 
- [3]
+ [2]
 \openout2 = `tex/intro.aux'.
 
  (./tex/intro.tex
@@ -512,15 +518,25 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
- [4
+ [3
 
 
-] [5] [6] [7]
-[8]) [9]
+]
+<images/segment.png, id=22, 183.68625pt x 276.03125pt>
+File: images/segment.png Graphic file (type png)
+
+<use images/segment.png>
+Package pdftex.def Info: images/segment.png used on input line 24.
+(pdftex.def)             Requested size: 183.68578pt x 276.03056pt.
+ [4 <./images/segment.png>] [5] [6] [7] [8]) [9]
 \openout2 = `tex/background/background.aux'.
 
- (./tex/background/background.tex
+
+(./tex/background/background.tex
 Chapter 2.
+
+LaTeX Warning: Citation 'MLANN' on page 10 undefined on input line 5.
+
 [10
 
 
@@ -529,87 +545,183 @@ Chapter 2.
 Missing character: There is no Â in font cmr12!
 Missing character: There is no   in font cmr12!
 
-Overfull \hbox (19.82735pt too wide) in paragraph at lines 40--51
+Overfull \hbox (19.82735pt too wide) in paragraph at lines 39--50
 \OT1/cmr/m/n/12 pac-ity of the net-work and these weights are cre-ated by learn
 -ing a dataset.(Malachy)
  []
 
-[11] <images/Perceptron.png, id=48, 358.7001pt x 149.1171pt>
+[11] <images/Perceptron.png, id=50, 358.7001pt x 149.1171pt>
 File: images/Perceptron.png Graphic file (type png)
 
 <use images/Perceptron.png>
-Package pdftex.def Info: images/Perceptron.png used on input line 68.
+Package pdftex.def Info: images/Perceptron.png used on input line 67.
 (pdftex.def)             Requested size: 358.69922pt x 149.11673pt.
- <images/mlp.png, id=49, 794.97pt x 614.295pt>
+
+
+LaTeX Warning: Citation 'AI' on page 12 undefined on input line 78.
+
+
+LaTeX Warning: Citation 'MLANN' on page 12 undefined on input line 84.
+
+[12 <./images/Perceptron.png>] <images/mlp.png, id=54, 794.97pt x 614.295pt>
 File: images/mlp.png Graphic file (type png)
 
 <use images/mlp.png>
-Package pdftex.def Info: images/mlp.png used on input line 89.
+Package pdftex.def Info: images/mlp.png used on input line 110.
 (pdftex.def)             Requested size: 397.48402pt x 307.14674pt.
 
-Overfull \hbox (29.31784pt too wide) in paragraph at lines 89--90
+Overfull \hbox (29.31784pt too wide) in paragraph at lines 110--111
 [][] 
  []
 
-(./tex/background/gD_bP.tex [12 <./images/Perceptron.png>] [13 <./images/mlp.pn
-g>])
-Overfull \hbox (14.64964pt too wide) in paragraph at lines 98--101
+(./tex/background/gD_bP.tex
+
+LaTeX Warning: Citation 'MLANN' on page 13 undefined on input line 7.
+
+
+LaTeX Warning: Citation 'MLANN' on page 13 undefined on input line 16.
+
+[13] [14 <./images/mlp.png>]
+<images/GradientDescent.png, id=63, 252.945pt x 271.0125pt>
+File: images/GradientDescent.png Graphic file (type png)
+
+<use images/GradientDescent.png>
+Package pdftex.def Info: images/GradientDescent.png used on input line 19.
+(pdftex.def)             Requested size: 252.94438pt x 271.01183pt.
+
+
+LaTeX Warning: Citation 'MLANN' on page 15 undefined on input line 26.
+
+) [15 <./images/GradientDescent.png>]
+
+LaTeX Warning: Citation 'svm' on page 16 undefined on input line 122.
+
+
+Overfull \hbox (14.64964pt too wide) in paragraph at lines 126--130
 \OT1/cmr/m/n/12 Convolutional Neu-ral Net-works (CNN's) are es-sen-tially a Mul
 ti Lay-ered Percetron
  []
 
+<images/convNet.png, id=67, 1003.5894pt x 264.2673pt>
+File: images/convNet.png Graphic file (type png)
+ <use images/convNet.png>
+Package pdftex.def Info: images/convNet.png used on input line 132.
+(pdftex.def)             Requested size: 501.79347pt x 132.13332pt.
 
-LaTeX Warning: Reference `fig:XtoRec' on page 14 undefined on input line 102.
+Overfull \hbox (29.3105pt too wide) in paragraph at lines 132--133
+[][] 
+ []
 
-
-LaTeX Warning: Reference `fig:XtoComp' on page 14 undefined on input line 103.
-
-
-LaTeX Warning: Reference `fig:XtoRec' on page 14 undefined on input line 108.
-
-
-LaTeX Warning: Reference `fig:XtoComp' on page 14 undefined on input line 108.
-
-
-LaTeX Warning: Reference `fig:XtoComp' on page 14 undefined on input line 109.
-
-
-LaTeX Warning: Reference `fig:XtoComp' on page 14 undefined on input line 114.
-
-<images/XtoRec.png, id=58, 222.8325pt x 215.00325pt>
+<images/XtoRec.png, id=68, 222.8325pt x 215.00325pt>
 File: images/XtoRec.png Graphic file (type png)
  <use images/XtoRec.png>
-Package pdftex.def Info: images/XtoRec.png used on input line 117.
+Package pdftex.def Info: images/XtoRec.png used on input line 154.
 (pdftex.def)             Requested size: 158.99156pt x 153.40793pt.
 
-<images/XtoComp.png, id=59, 366.36874pt x 355.3275pt>
+<images/XtoComp.png, id=69, 366.36874pt x 355.3275pt>
 File: images/XtoComp.png Graphic file (type png)
  <use images/XtoComp.png>
-Package pdftex.def Info: images/XtoComp.png used on input line 123.
+Package pdftex.def Info: images/XtoComp.png used on input line 160.
 (pdftex.def)             Requested size: 158.99156pt x 154.20294pt.
 
-<images/ImageFeature.png, id=60, 115.43124pt x 111.41624pt>
+[16 <./images/convNet.png>]
+<images/ImageFeature.png, id=73, 115.43124pt x 111.41624pt>
 File: images/ImageFeature.png Graphic file (type png)
 
 <use images/ImageFeature.png>
-Package pdftex.def Info: images/ImageFeature.png used on input line 131.
+Package pdftex.def Info: images/ImageFeature.png used on input line 169.
 (pdftex.def)             Requested size: 158.99156pt x 153.47237pt.
 
-<images/ConvImage.png, id=61, 361.35pt x 353.32pt>
+<images/ConvImage.png, id=74, 361.35pt x 353.32pt>
 File: images/ConvImage.png Graphic file (type png)
  <use images/ConvImage.png>
-Package pdftex.def Info: images/ConvImage.png used on input line 137.
+Package pdftex.def Info: images/ConvImage.png used on input line 175.
 (pdftex.def)             Requested size: 158.99156pt x 155.45589pt.
 
-<images/PooledImage.png, id=62, 230.8625pt x 228.855pt>
+Overfull \hbox (6.20132pt too wide) in paragraph at lines 175--176
+[][]\OT1/cmr/m/n/12 x 
+ []
+
+<images/PooledImage.png, id=75, 230.8625pt x 228.855pt>
 File: images/PooledImage.png Graphic file (type png)
 
 <use images/PooledImage.png>
-Package pdftex.def Info: images/PooledImage.png used on input line 143.
+Package pdftex.def Info: images/PooledImage.png used on input line 181.
 (pdftex.def)             Requested size: 115.43095pt x 114.42722pt.
- [14 <./images/XtoRec.png> <./images/XtoComp.png>]
-[15 <./images/ImageFeature.png> <./images/ConvImage.png> <./images/PooledImage.
-png>] [16] (./tex/background/rcnn.tex [17] [18] [19]
+ (./tex/background/cnn.tex [17 <./images/XtoRec.png> <./images/XtoComp.png>] [1
+8 <./images/ImageFeature.png> <./images/ConvImage.png> <./images/PooledImage.pn
+g>]
+
+LaTeX Warning: Citation 'deepLearning' on page 19 undefined on input line 8.
+
+
+LaTeX Warning: Citation 'deepLearning' on page 19 undefined on input line 11.
+
+
+LaTeX Warning: Citation 'deepLearning' on page 19 undefined on input line 16.
+
+
+LaTeX Warning: Citation 'yanaiFood' on page 19 undefined on input line 24.
+
+
+LaTeX Warning: Citation 'yanaiFood' on page 19 undefined on input line 27.
+
+
+LaTeX Warning: Citation 'kagayaFood' on page 19 undefined on input line 32.
+
+
+LaTeX Warning: Citation 'kagayaFood' on page 19 undefined on input line 34.
+
+[19]
+
+LaTeX Warning: Citation 'kagayaFood' on page 20 undefined on input line 38.
+
+
+LaTeX Warning: Citation 'kagayaFood' on page 20 undefined on input line 42.
+
+
+Overfull \hbox (24.0067pt too wide) in paragraph at lines 45--45
+[]\OT1/cmr/bx/n/12 DeepFood: Deep Learning-based Food Im-age Recog-ni-tion for 
+Computer-
+ []
+
+
+LaTeX Warning: Citation 'deepFood' on page 20 undefined on input line 53.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 59.
+
+) (./tex/background/rcnn.tex [20]
+
+LaTeX Warning: Citation 'rcnn' on page 21 undefined on input line 13.
+
+[21]
+
+LaTeX Warning: Citation 'fastRcnn' on page 22 undefined on input line 38.
+
+
+LaTeX Warning: Citation 'rcnn' on page 22 undefined on input line 40.
+
+
+LaTeX Warning: Citation 'fastRcnn' on page 22 undefined on input line 47.
+
+
+LaTeX Warning: Citation 'fastRcnn' on page 22 undefined on input line 55.
+
+[22]
+
+LaTeX Warning: Citation 'fasterRcnn' on page 23 undefined on input line 62.
+
+
+LaTeX Warning: Citation 'fasterRcnn' on page 23 undefined on input line 74.
+
+
+LaTeX Warning: Citation 'maskRcnn' on page 23 undefined on input line 81.
+
+
+LaTeX Warning: Citation 'maskRcnn' on page 23 undefined on input line 83.
+
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 90.
@@ -619,102 +731,84 @@ Overfull \hbox (1.83965pt too wide) in paragraph at lines 94--106
  [][] 
  []
 
-) (./tex/background/fcn.tex [20]
+[23]) (./tex/background/fcn.tex
+
+LaTeX Warning: Citation 'fcn' on page 24 undefined on input line 2.
+
+
+LaTeX Warning: Citation 'fcn' on page 24 undefined on input line 10.
+
+[24]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 23.
 
-) (./tex/background/segmentation.tex [21]
+
+LaTeX Warning: Citation 'fcn' on page 25 undefined on input line 25.
+
+
+LaTeX Warning: Citation 'fcn' on page 25 undefined on input line 25.
+
+) (./tex/background/segmentation.tex
+
+LaTeX Warning: Citation 'graphCut' on page 25 undefined on input line 4.
+
+
+LaTeX Warning: Citation 'graphCut' on page 25 undefined on input line 6.
+
+
+LaTeX Warning: Citation 'graphCut' on page 25 undefined on input line 11.
+
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 18.
 
-) [22] (./tex/background/cnn.tex [23]
-Overfull \hbox (24.0067pt too wide) in paragraph at lines 45--45
-[]\OT1/cmr/bx/n/12 DeepFood: Deep Learning-based Food Im-age Recog-ni-tion for 
-Computer-
+
+LaTeX Warning: Citation 'foodImageAnalysis' on page 25 undefined on input line 
+34.
+
+[25]
+
+LaTeX Warning: Citation 'foodImageAnalysis' on page 26 undefined on input line 
+45.
+
+
+LaTeX Warning: Citation 'graphCut' on page 26 undefined on input line 48.
+
+
+LaTeX Warning: Citation 'foodImageAnalysis' on page 26 undefined on input line 
+48.
+
+) (./tex/tech/tensorflow.tex [26]) (./tex/background/eval.tex [27]
+
+LaTeX Warning: Citation 'diagnosingErrors' on page 28 undefined on input line 9
+.
+
+
+LaTeX Warning: Citation 'diagnosingErrors' on page 28 undefined on input line 1
+2.
+
+
+LaTeX Warning: Citation 'diagnosingErrors' on page 28 undefined on input line 3
+0.
+
+
+LaTeX Warning: Citation 'diagnosingErrors' on page 28 undefined on input line 3
+6.
+
+
+Overfull \hbox (3.53648pt too wide) in paragraph at lines 34--38
+\OT1/cmr/m/n/12 de-tec-tion win-dows or con-fu-sion with sim-i-lar ob-jects" []
+. They
  []
 
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 59.
-
-) (./tex/tech/tensorflow.tex) (./tex/tech/jupyter.tex) (./tex/tech/opencv.tex)
-(./tex/background/eval.tex [24] [25] [26]
-<images/DAP.png, id=110, 479.7925pt x 69.25874pt>
-File: images/DAP.png Graphic file (type png)
- <use images/DAP.png>
-Package pdftex.def Info: images/DAP.png used on input line 47.
-(pdftex.def)             Requested size: 239.89565pt x 34.62927pt.
-
-Overfull \hbox (29.34227pt too wide) in paragraph at lines 47--48
-[][] 
- []
-
-<images/MAP.png, id=111, 496.85625pt x 213.79875pt>
-File: images/MAP.png Graphic file (type png)
- <use images/MAP.png>
-Package pdftex.def Info: images/MAP.png used on input line 55.
-(pdftex.def)             Requested size: 248.4275pt x 106.89911pt.
-
-Overfull \hbox (29.34058pt too wide) in paragraph at lines 55--56
-[][] 
- []
-
-<images/DFP.png, id=112, 460.72125pt x 306.14375pt>
-File: images/DFP.png Graphic file (type png)
- <use images/DFP.png>
-Package pdftex.def Info: images/DFP.png used on input line 63.
-(pdftex.def)             Requested size: 230.36006pt x 153.07149pt.
-
-Overfull \hbox (29.33632pt too wide) in paragraph at lines 63--64
-[][] 
- []
-
-<images/SMP.png, id=113, 453.695pt x 60.225pt>
-File: images/SMP.png Graphic file (type png)
- <use images/SMP.png>
-Package pdftex.def Info: images/SMP.png used on input line 72.
-(pdftex.def)             Requested size: 226.84694pt x 30.11241pt.
-
-Overfull \hbox (29.31027pt too wide) in paragraph at lines 72--73
-[][] 
- []
-
-[27 <./images/DAP.png> <./images/MAP.png>] [28 <./images/DFP.png>]
-<images/PCATSA.png, id=120, 488.82625pt x 88.33pt>
-File: images/PCATSA.png Graphic file (type png)
- <use images/PCATSA.png>
-Package pdftex.def Info: images/PCATSA.png used on input line 81.
-(pdftex.def)             Requested size: 244.41252pt x 44.16489pt.
-
-Overfull \hbox (29.31575pt too wide) in paragraph at lines 81--82
-[][] 
- []
-
-! Undefined control sequence.
-l.88 \See
-          \ref{fig:PCLASSA}.
-? 
-<images/PCLASSSA.png, id=121, 488.82625pt x 184.69pt>
-File: images/PCLASSSA.png Graphic file (type png)
-
-<use images/PCLASSSA.png>
-Package pdftex.def Info: images/PCLASSSA.png used on input line 90.
-(pdftex.def)             Requested size: 244.41252pt x 92.34476pt.
-
-Overfull \hbox (29.31575pt too wide) in paragraph at lines 90--91
-[][] 
- []
-
-)) [29 <./images/SMP.png> <./images/PCATSA.png>] [30 <./images/PCLASSSA.png>]
+[28] [29])) [30]
 \openout2 = `tex/experiments.aux'.
 
-
-(./tex/experiments.tex
+ (./tex/experiments.tex
 Chapter 3.
 (./tex/experiments/exp1.tex
-<tex/experiments/UdemyCNN.pdf, id=129, 614.295pt x 794.97pt>
+<tex/experiments/UdemyCNN.pdf, id=127, 614.295pt x 794.97pt>
 File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
 
 <use tex/experiments/UdemyCNN.pdf>
@@ -725,7 +819,7 @@ File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
 Package pdftex.def Info: tex/experiments/UdemyCNN.pdf used on input line 5.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<tex/experiments/UdemyCNN.pdf, id=132, page=1, 614.295pt x 794.97pt>
+<tex/experiments/UdemyCNN.pdf, id=130, page=1, 614.295pt x 794.97pt>
 File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
 
 <use tex/experiments/UdemyCNN.pdf, page 1>
@@ -761,7 +855,7 @@ File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
 Package pdftex.def Info: tex/experiments/UdemyCNN.pdf, page1 used on input line
  5.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [32 <./tex/experiments/UdemyCNN.pdf>] <tex/experiments/UdemyCNN.pdf, id=285, p
+ [32 <./tex/experiments/UdemyCNN.pdf>] <tex/experiments/UdemyCNN.pdf, id=283, p
 age=2, 614.295pt x 794.97pt>
 File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
 
@@ -781,7 +875,7 @@ File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
 Package pdftex.def Info: tex/experiments/UdemyCNN.pdf, page2 used on input line
  5.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [33 <./tex/experiments/UdemyCNN.pdf>] <tex/experiments/UdemyCNN.pdf, id=289, p
+ [33 <./tex/experiments/UdemyCNN.pdf>] <tex/experiments/UdemyCNN.pdf, id=287, p
 age=3, 614.295pt x 794.97pt>
 File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
 
@@ -801,7 +895,7 @@ File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
 Package pdftex.def Info: tex/experiments/UdemyCNN.pdf, page3 used on input line
  5.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [34 <./tex/experiments/UdemyCNN.pdf>] <tex/experiments/UdemyCNN.pdf, id=293, p
+ [34 <./tex/experiments/UdemyCNN.pdf>] <tex/experiments/UdemyCNN.pdf, id=291, p
 age=4, 614.295pt x 794.97pt>
 File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
 
@@ -840,87 +934,158 @@ Chapter 5.
 
 
 ]
-\openout2 = `tex/testJup.aux'.
 
+LaTeX Warning: Empty bibliography on input line 59.
 
-No file tex/testJup.tex.
-
-Overfull \hbox (20.70683pt too wide) in paragraph at lines 60--60
-[]\OT1/cmr/m/n/12 Kaiming He et al. ``Mask R-CNN''. In: \OT1/cmr/m/it/12 arXiv 
-preprint arXiv:1703.06870
- []
-
+Appendix A.
 [39
 
 
-
-
 ]
-Overfull \hbox (1.876pt too wide) in paragraph at lines 60--60
-\OT1/cmr/m/it/12 Con-fer-ence on Smart Homes and Health Telem-at-ics\OT1/cmr/m/
-n/12 . Springer. 2016,
+\openout2 = `tex/appendix.aux'.
+
+ (./tex/appendix.tex <images/DAP.png, id=309, 479.7925pt x 69.25874pt>
+File: images/DAP.png Graphic file (type png)
+
+<use images/DAP.png>
+Package pdftex.def Info: images/DAP.png used on input line 2.
+(pdftex.def)             Requested size: 239.89565pt x 34.62927pt.
+
+Overfull \hbox (29.34227pt too wide) in paragraph at lines 2--3
+[][] 
  []
 
 
-Overfull \hbox (2.88484pt too wide) in paragraph at lines 60--60
-[]\OT1/cmr/m/n/12 Dongyuan Mao, Qian Yu, and Jing-fan Wang. ``Deep Learn-ing Ba
-sed
+LaTeX Warning: Citation 'donahue' on page 40 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'donahue' on page 40 undefined on input line 3.
+
+<images/MAP.png, id=310, 496.85625pt x 213.79875pt>
+File: images/MAP.png Graphic file (type png)
+ <use images/MAP.png>
+Package pdftex.def Info: images/MAP.png used on input line 8.
+(pdftex.def)             Requested size: 248.4275pt x 106.89911pt.
+
+Overfull \hbox (29.34058pt too wide) in paragraph at lines 8--9
+[][] 
  []
 
 
-Overfull \hbox (1.69696pt too wide) in paragraph at lines 60--60
-\OT1/cmr/m/n/12 ment''. In: \OT1/cmr/m/it/12 Med-i-cal Mea-sure-ments and Ap-pl
-i-ca-tions (MeMeA), 2014
+LaTeX Warning: Citation 'donahue' on page 40 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'donahue' on page 40 undefined on input line 9.
+
+<images/DFP.png, id=311, 460.72125pt x 306.14375pt>
+File: images/DFP.png Graphic file (type png)
+ <use images/DFP.png>
+Package pdftex.def Info: images/DFP.png used on input line 14.
+(pdftex.def)             Requested size: 230.36006pt x 153.07149pt.
+
+Overfull \hbox (29.33632pt too wide) in paragraph at lines 14--16
+[][] 
  []
 
 
-! LaTeX Error: \begin{itemize} on input line 38 ended by \end{document}.
+LaTeX Warning: Citation 'donahue' on page 40 undefined on input line 16.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.61 \end{document}
-                   
-? 
-[40] (./FYPReportBarrettTom_14171198.aux (./tex/abstract.aux) (./tex/intro.aux)
+
+LaTeX Warning: Citation 'donahue' on page 40 undefined on input line 16.
+
+<images/SMP.png, id=312, 453.695pt x 60.225pt>
+File: images/SMP.png Graphic file (type png)
+ <use images/SMP.png>
+Package pdftex.def Info: images/SMP.png used on input line 21.
+(pdftex.def)             Requested size: 226.84694pt x 30.11241pt.
+
+Overfull \hbox (29.31027pt too wide) in paragraph at lines 21--22
+[][] 
+ []
+
+
+LaTeX Warning: Citation 'donahue' on page 40 undefined on input line 22.
+
+
+LaTeX Warning: Citation 'donahue' on page 40 undefined on input line 22.
+
+<images/PCATSA.png, id=313, 488.82625pt x 88.33pt>
+File: images/PCATSA.png Graphic file (type png)
+ <use images/PCATSA.png>
+Package pdftex.def Info: images/PCATSA.png used on input line 27.
+(pdftex.def)             Requested size: 244.41252pt x 44.16489pt.
+
+Overfull \hbox (29.31575pt too wide) in paragraph at lines 27--28
+[][] 
+ []
+
+
+LaTeX Warning: Citation 'donahue' on page 40 undefined on input line 28.
+
+
+LaTeX Warning: Citation 'donahue' on page 40 undefined on input line 28.
+
+<images/PCLASSSA.png, id=314, 488.82625pt x 184.69pt>
+File: images/PCLASSSA.png Graphic file (type png)
+
+<use images/PCLASSSA.png>
+Package pdftex.def Info: images/PCLASSSA.png used on input line 33.
+(pdftex.def)             Requested size: 244.41252pt x 92.34476pt.
+
+Overfull \hbox (29.31575pt too wide) in paragraph at lines 33--34
+[][] 
+ []
+
+
+LaTeX Warning: Citation 'donahue' on page 40 undefined on input line 34.
+
+
+LaTeX Warning: Citation 'donahue' on page 40 undefined on input line 34.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 38.
+
+) [40 <./images/DAP.png> <./images/MAP.png>] [41 <./images/DFP.png> <./images/S
+MP.png> <./images/PCATSA.png>] [42 <./images/PCLASSSA.png>]
+(./FYPReportBarrettTom_14171198.aux (./tex/abstract.aux) (./tex/intro.aux)
 (./tex/background/background.aux) (./tex/experiments.aux) (./tex/empirical.aux)
-(./tex/conclusion.aux) (./tex/testJup.aux))
+(./tex/conclusion.aux) (./tex/appendix.aux))
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                FYPReportBarrettTom_14171198
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'FYPReportBarrettTom_14171198.run.xml'
 .
 \openout1 = `FYPReportBarrettTom_14171198.run.xml'.
 
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 38 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 9661 strings out of 494953
- 164348 string characters out of 6180977
- 574003 words of memory out of 5000000
- 12745 multiletter control sequences out of 15000+600000
- 10061 words of font info for 35 fonts, out of 8000000 for 9000
+ 9731 strings out of 494953
+ 165168 string characters out of 6180977
+ 575743 words of memory out of 5000000
+ 12816 multiletter control sequences out of 15000+600000
+ 9714 words of font info for 34 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 53i,18n,72p,841b,1308s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/font
-s/type1/urw/palatino/uplr8a.pfb>
-Output written on FYPReportBarrettTom_14171198.pdf (42 pages, 785877 bytes).
+ 46i,18n,48p,841b,1043s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+urw/palatino/uplr8a.pfb>
+Output written on FYPReportBarrettTom_14171198.pdf (44 pages, 821786 bytes).
 PDF statistics:
- 340 PDF objects out of 1000 (max. 8388607)
- 137 compressed objects within 2 object streams
+ 347 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

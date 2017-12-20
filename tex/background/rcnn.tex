@@ -5,7 +5,7 @@ Mircosoft and Facebook. A PHD student at the time of Ross's first paper also
 completed his dissertation on the subject. I will analyse this papers, their
 results (\ref{rcnnResults}) and the changes made through each iteration.
 
-\subsubsection{RCNN}
+\subsubsection*{RCNN}
 In the first paper written by Ross Girshik, while researching at UC Berkeley,
 focused on two main insights. These were that "one can apply high-capacity convolutional neural networks (CNNs) to bottom-up region proposals in order to localize and segment objects" and that
 "when training data is scarce, supervised pre-training for n auxilary task,
@@ -31,7 +31,7 @@ features which will remain constant regardless of inputs and additional outputs.
 The team evaluated their results on a few metrics and test sets as seen in
 \ref{rcnnResults}.
 
-\subsubsection{Fast RCNN}
+\subsubsection*{Fast RCNN}
 Ross Girshik's next iteration of work on region based convolution neural
 networks took place in Microsoft Research. This paper was titled "Fast R-CNN" as
 it's aim was to decrease training and testing time "while also increasing
@@ -57,7 +57,7 @@ layers for bounding box location prediction \textcite{fastRcnn}.
 At detection time, a pass through of the net is all that is needed so this
 runtime is significantly less than RCNN.
 
-\subsubsection{Faster RCNN}
+\subsubsection*{Faster RCNN}
 Due to the success of RCNN and Fast RCNN, Faster RCNN was introduced to combat
 the problem of region proposal computation \textcite{fasterRcnn}.
 
@@ -76,7 +76,7 @@ share layers between the two networks. There were three option available:
     \item{Non- approximate joint training.}
 \end{itemize}
 
-\subsubsection{Mask RCNN}
+\subsubsection*{Mask RCNN}
 The most recent paper on this topic was also written by Ross Girshik while
 working with Facebook AI Research \textcite{maskRcnn}. Mask RCNN "extends Faster
 RCNN by adding a branch for predicting an object mask in parallel with the
