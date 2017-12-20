@@ -35,7 +35,7 @@ that is without taking into account other uses.
 \section{Neural Computing}
 The main area of my focus for this project is in
 Artificial Neural Networks (ANN). This is because I have researched extensively into Convolutional Neural Networks which are based on ANN's.
-\subsection{Artificial Neural Networks}
+\subsection*{Artificial Neural Networks}
 An Artificial Neural Network is a bio-inspired system that is used to model the human brain in how it learns from experience.
 The ANN uses this model to build a very complex web of connected units called
 artificial neurons.
@@ -122,7 +122,7 @@ A SVM works by creating an n-dimensional space, with n as the number of
 inputs you have \textcite{svm}. The SVM algorithm finds the hyperplane that splits this space.
 This hyperplane can then be used for classification.
 
-\section{Convolutional Neural Networks}
+\section{Convolutional Neural Networks Overview}
 Convolutional Neural Networks (CNN's) are essentially a Multi Layered Percetron with a
 special structure. CNN's have one major difference from a MLP, they have extra
 layer of convolution and pooling. The architecture of a convolution network can
@@ -200,34 +200,26 @@ need a very large dataset in order to produce am accurate model and the training
 can be very time consuming without a GPU.
 
 
-\subsubsection{Fully Convolutional Networks}
+\subsubsection*{Fully Convolutional Networks}
 A Fully Convolutional Network is one that does not have a fully connected layer
 and in a fully connected layers place is another convolution layer.
 
-\section{Overview of Machine Vision Approaches to Identification and Classification}
-There have been many attempts of identification and classification by many
-different researchers over the last number of years. There some approaches that
-decouple the two tasks of identification and classification from one another but
-mostly, researchers have attempted the two together. Sometimes, by semantic
-segmentation and in others simply building a classifier for the image without
-taking into account, the need for object identification.
-
-\subsection{Region Based Convolutional Neural Networks}
-\input{tex/background/rcnn}
-\subsection{Fully Convolutional Neural Networks for Semantic Segmentation}
-\input{tex/background/fcn}
-\subsection{Image Segmentation}
-\input{tex/background/segmentation}
-\subsection{Convolutional Neural Networks for Classification}
+\section{Convolutional Neural Networks for use in Classification}
 \input{tex/background/cnn}
 
+\section{Convolutional Neural Networks - Extensions}
+\subsection*{Region Based Convolutional Neural Networks}
+\input{tex/background/rcnn}
+
+\section{Image Segmentation}
+\subsection*{Fully Convolutional Neural Networks for Semantic Segmentation}
+\input{tex/background/fcn}
+\subsection*{Segmentation}
+\input{tex/background/segmentation}
+
 \section{Technologies}
-\subsection{Tensorflow}
+\subsection*{Tensorflow}
 \input{tex/tech/tensorflow}
-\subsection{Jupyter}
-\input{tex/tech/jupyter}
-\subsection{OpenCV}
-\input{tex/tech/opencv}
 
 \section{Evaluating the Output}
 \input{tex/background/eval}

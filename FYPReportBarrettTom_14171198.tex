@@ -4,6 +4,7 @@
 \usepackage{psfig}
 \usepackage{graphicx}
 \usepackage{pdfpages}
+\usepackage{appendix}
 \graphicspath{{images/}}
 \usepackage[backend=biber]{biblatex}
 \usepackage{subcaption}
@@ -57,7 +58,9 @@
 
 \printbibliography
 
-\section{Appendix}
-
+\begin{appendices}
+\chapter{Appendix}
 \include{tex/appendix}
+\end{appendices}
+
 \end{document}   
