@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.23)  17 DEC 2017 16:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.23)  17 DEC 2017 20:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -73,6 +73,63 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2015/09/18 v0.5d Insert pages of external PDF documents (AM)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count89
+\calc@Bcount=\count90
+\calc@Adimen=\dimen106
+\calc@Bdimen=\dimen107
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count91
+\calc@Cskip=\skip45
+)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+\AM@pagewidth=\dimen108
+\AM@pageheight=\dimen109
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2015/09/18 v0.5d Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box26
+\AM@toc@title=\toks15
+\c@AM@survey=\count92
+\AM@templatesizebox=\box27
+)
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2016/03/03 v3.3 programmable bibliographies (PK/JW/AB)
 
@@ -82,7 +139,7 @@ B)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count89
+\etb@tempcnta=\count93
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
@@ -104,147 +161,144 @@ Package etexcmds Info: Could not find \expanded.
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count90
+\lrq@indent=\count94
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count91
-\c@listtotal=\count92
-\c@listcount=\count93
-\c@liststart=\count94
-\c@liststop=\count95
-\c@citecount=\count96
-\c@citetotal=\count97
-\c@multicitecount=\count98
-\c@multicitetotal=\count99
-\c@instcount=\count100
-\c@maxnames=\count101
-\c@minnames=\count102
-\c@maxitems=\count103
-\c@minitems=\count104
-\c@citecounter=\count105
-\c@savedcitecounter=\count106
-\c@uniquelist=\count107
-\c@uniquename=\count108
-\c@refsection=\count109
-\c@refsegment=\count110
-\c@maxextratitle=\count111
-\c@maxextratitleyear=\count112
-\c@maxextrayear=\count113
-\c@maxextraalpha=\count114
-\c@abbrvpenalty=\count115
-\c@highnamepenalty=\count116
-\c@lownamepenalty=\count117
-\c@maxparens=\count118
-\c@parenlevel=\count119
-\blx@tempcnta=\count120
-\blx@tempcntb=\count121
-\blx@tempcntc=\count122
-\blx@maxsection=\count123
-\blx@maxsegment@0=\count124
-\blx@notetype=\count125
-\blx@parenlevel@text=\count126
-\blx@parenlevel@foot=\count127
-\blx@sectionciteorder@0=\count128
-\labelnumberwidth=\skip43
-\labelalphawidth=\skip44
-\biblabelsep=\skip45
-\bibitemsep=\skip46
-\bibnamesep=\skip47
-\bibinitsep=\skip48
-\bibparsep=\skip49
-\bibhang=\skip50
+\c@tabx@nest=\count95
+\c@listtotal=\count96
+\c@listcount=\count97
+\c@liststart=\count98
+\c@liststop=\count99
+\c@citecount=\count100
+\c@citetotal=\count101
+\c@multicitecount=\count102
+\c@multicitetotal=\count103
+\c@instcount=\count104
+\c@maxnames=\count105
+\c@minnames=\count106
+\c@maxitems=\count107
+\c@minitems=\count108
+\c@citecounter=\count109
+\c@savedcitecounter=\count110
+\c@uniquelist=\count111
+\c@uniquename=\count112
+\c@refsection=\count113
+\c@refsegment=\count114
+\c@maxextratitle=\count115
+\c@maxextratitleyear=\count116
+\c@maxextrayear=\count117
+\c@maxextraalpha=\count118
+\c@abbrvpenalty=\count119
+\c@highnamepenalty=\count120
+\c@lownamepenalty=\count121
+\c@maxparens=\count122
+\c@parenlevel=\count123
+\blx@tempcnta=\count124
+\blx@tempcntb=\count125
+\blx@tempcntc=\count126
+\blx@maxsection=\count127
+\blx@maxsegment@0=\count128
+\blx@notetype=\count129
+\blx@parenlevel@text=\count130
+\blx@parenlevel@foot=\count131
+\blx@sectionciteorder@0=\count132
+\labelnumberwidth=\skip46
+\labelalphawidth=\skip47
+\biblabelsep=\skip48
+\bibitemsep=\skip49
+\bibnamesep=\skip50
+\bibinitsep=\skip51
+\bibparsep=\skip52
+\bibhang=\skip53
 \blx@bcfin=\read1
 \blx@bcfout=\write3
-\c@mincomprange=\count129
-\c@maxcomprange=\count130
-\c@mincompwidth=\count131
+\c@mincomprange=\count133
+\c@maxcomprange=\count134
+\c@mincompwidth=\count135
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def)
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count132
-\c@savedafterword=\count133
-\c@annotator=\count134
-\c@savedannotator=\count135
-\c@author=\count136
-\c@savedauthor=\count137
-\c@bookauthor=\count138
-\c@savedbookauthor=\count139
-\c@commentator=\count140
-\c@savedcommentator=\count141
-\c@editor=\count142
-\c@savededitor=\count143
-\c@editora=\count144
-\c@savededitora=\count145
-\c@editorb=\count146
-\c@savededitorb=\count147
-\c@editorc=\count148
-\c@savededitorc=\count149
-\c@foreword=\count150
-\c@savedforeword=\count151
-\c@holder=\count152
-\c@savedholder=\count153
-\c@introduction=\count154
-\c@savedintroduction=\count155
-\c@namea=\count156
-\c@savednamea=\count157
-\c@nameb=\count158
-\c@savednameb=\count159
-\c@namec=\count160
-\c@savednamec=\count161
-\c@translator=\count162
-\c@savedtranslator=\count163
-\c@shortauthor=\count164
-\c@savedshortauthor=\count165
-\c@shorteditor=\count166
-\c@savedshorteditor=\count167
-\c@labelname=\count168
-\c@savedlabelname=\count169
-\c@institution=\count170
-\c@savedinstitution=\count171
-\c@lista=\count172
-\c@savedlista=\count173
-\c@listb=\count174
-\c@savedlistb=\count175
-\c@listc=\count176
-\c@savedlistc=\count177
-\c@listd=\count178
-\c@savedlistd=\count179
-\c@liste=\count180
-\c@savedliste=\count181
-\c@listf=\count182
-\c@savedlistf=\count183
-\c@location=\count184
-\c@savedlocation=\count185
-\c@organization=\count186
-\c@savedorganization=\count187
-\c@origlocation=\count188
-\c@savedoriglocation=\count189
-\c@origpublisher=\count190
-\c@savedorigpublisher=\count191
-\c@publisher=\count192
-\c@savedpublisher=\count193
-\c@language=\count194
-\c@savedlanguage=\count195
-\c@pageref=\count196
-\c@savedpageref=\count197
-\shorthandwidth=\skip51
-\shortjournalwidth=\skip52
-\shortserieswidth=\skip53
-\shorttitlewidth=\skip54
-\shortauthorwidth=\skip55
-\shorteditorwidth=\skip56
+\c@afterword=\count136
+\c@savedafterword=\count137
+\c@annotator=\count138
+\c@savedannotator=\count139
+\c@author=\count140
+\c@savedauthor=\count141
+\c@bookauthor=\count142
+\c@savedbookauthor=\count143
+\c@commentator=\count144
+\c@savedcommentator=\count145
+\c@editor=\count146
+\c@savededitor=\count147
+\c@editora=\count148
+\c@savededitora=\count149
+\c@editorb=\count150
+\c@savededitorb=\count151
+\c@editorc=\count152
+\c@savededitorc=\count153
+\c@foreword=\count154
+\c@savedforeword=\count155
+\c@holder=\count156
+\c@savedholder=\count157
+\c@introduction=\count158
+\c@savedintroduction=\count159
+\c@namea=\count160
+\c@savednamea=\count161
+\c@nameb=\count162
+\c@savednameb=\count163
+\c@namec=\count164
+\c@savednamec=\count165
+\c@translator=\count166
+\c@savedtranslator=\count167
+\c@shortauthor=\count168
+\c@savedshortauthor=\count169
+\c@shorteditor=\count170
+\c@savedshorteditor=\count171
+\c@labelname=\count172
+\c@savedlabelname=\count173
+\c@institution=\count174
+\c@savedinstitution=\count175
+\c@lista=\count176
+\c@savedlista=\count177
+\c@listb=\count178
+\c@savedlistb=\count179
+\c@listc=\count180
+\c@savedlistc=\count181
+\c@listd=\count182
+\c@savedlistd=\count183
+\c@liste=\count184
+\c@savedliste=\count185
+\c@listf=\count186
+\c@savedlistf=\count187
+\c@location=\count188
+\c@savedlocation=\count189
+\c@organization=\count190
+\c@savedorganization=\count191
+\c@origlocation=\count192
+\c@savedoriglocation=\count193
+\c@origpublisher=\count194
+\c@savedorigpublisher=\count195
+\c@publisher=\count196
+\c@savedpublisher=\count197
+\c@language=\count198
+\c@savedlanguage=\count199
+\c@pageref=\count266
+\c@savedpageref=\count267
+\shorthandwidth=\skip54
+\shortjournalwidth=\skip55
+\shortserieswidth=\skip56
+\shorttitlewidth=\skip57
+\shortauthorwidth=\skip58
+\shorteditorwidth=\skip59
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -256,13 +310,13 @@ Package biblatex Info: ... file 'biblatex_.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex_.def
 File: biblatex_.def 
-\c@textcitecount=\count198
-\c@textcitetotal=\count199
-\c@textcitemaxnames=\count266
-\c@biburlnumpenalty=\count267
-\c@biburlucpenalty=\count268
-\c@biburllcpenalty=\count269
-\c@smartand=\count270
+\c@textcitecount=\count268
+\c@textcitetotal=\count269
+\c@textcitemaxnames=\count270
+\c@biburlnumpenalty=\count271
+\c@biburlucpenalty=\count272
+\c@biburllcpenalty=\count273
+\c@smartand=\count274
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -274,8 +328,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2016/03/03 v3.3 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count271
-\c@bbx:relatedtotal=\count272
+\c@bbx:relatedcount=\count275
+\c@bbx:relatedtotal=\count276
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -309,24 +363,24 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen106
-\captionmargin@=\dimen107
-\captionwidth=\dimen108
-\caption@tempdima=\dimen109
-\caption@indent=\dimen110
-\caption@parindent=\dimen111
-\caption@hangindent=\dimen112
+\captionmargin=\dimen110
+\captionmargin@=\dimen111
+\captionwidth=\dimen112
+\caption@tempdima=\dimen113
+\caption@indent=\dimen114
+\caption@parindent=\dimen115
+\caption@hangindent=\dimen116
 )
-\c@ContinuedFloat=\count273
+\c@ContinuedFloat=\count277
 )
-\c@subfigure=\count274
-\c@subtable=\count275
+\c@subfigure=\count278
+\c@subtable=\count279
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
-\AP@output=\toks15
-\AP@partial=\box26
-\AP@footins=\box27
+\AP@output=\toks16
+\AP@partial=\box28
+\AP@footins=\box29
 )
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -334,47 +388,42 @@ Package biblatex Info: ... file 'english.lbx' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 )
-\@quotelevel=\count276
-\@quotereset=\count277
+\@quotelevel=\count280
+\@quotereset=\count281
 
 (./FYPReportBarrettTom_14171198.aux (./tex/abstract.aux) (./tex/intro.aux)
 (./tex/background/background.aux) (./tex/experiments.aux) (./tex/empirical.aux)
 (./tex/conclusion.aux) (./tex/testJup.aux))
 \openout1 = `FYPReportBarrettTom_14171198.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count278
-\scratchdimen=\dimen113
-\scratchbox=\box28
-\nofMPsegments=\count279
-\nofMParguments=\count280
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count281
-\MPscratchDim=\dimen114
-\MPnumerator=\count282
-\makeMPintoPDFobject=\count283
-\everyMPtoPDFconversion=\toks17
+\scratchcounter=\count282
+\scratchdimen=\dimen117
+\scratchbox=\box30
+\nofMPsegments=\count283
+\nofMParguments=\count284
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count285
+\MPscratchDim=\dimen118
+\MPnumerator=\count286
+\makeMPintoPDFobject=\count287
+\everyMPtoPDFconversion=\toks18
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -399,6 +448,19 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+\AtBeginShipoutBox=\box31
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
+
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+))
 Package biblatex Info: No input encoding detected.
 (biblatex)             Assuming 'ascii'.
 Package biblatex Info: Automatic encoding selection.
@@ -409,14 +471,14 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'FYPReportBarrettTom_14171198.bbl' found.
 
 (./FYPReportBarrettTom_14171198.bbl)
-Package biblatex Info: Reference section=0 on input line 34.
-Package biblatex Info: Reference segment=0 on input line 34.
+Package biblatex Info: Reference section=0 on input line 35.
+Package biblatex Info: Reference segment=0 on input line 35.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 40.
+(Font)              <14.4> on input line 41.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 40.
+(Font)              <7> on input line 41.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
@@ -651,16 +713,120 @@ Overfull \hbox (29.31575pt too wide) in paragraph at lines 90--91
 
 (./tex/experiments.tex
 Chapter 3.
-(./tex/experiments/exp1.tex)) [31
+(./tex/experiments/exp1.tex
+<tex/experiments/UdemyCNN.pdf, id=129, 614.295pt x 794.97pt>
+File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
+
+<use tex/experiments/UdemyCNN.pdf>
+Package pdftex.def Info: tex/experiments/UdemyCNN.pdf used on input line 5.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
+ <use tex/experiments/UdemyCNN.pdf>
+Package pdftex.def Info: tex/experiments/UdemyCNN.pdf used on input line 5.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+<tex/experiments/UdemyCNN.pdf, id=132, page=1, 614.295pt x 794.97pt>
+File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
+
+<use tex/experiments/UdemyCNN.pdf, page 1>
+Package pdftex.def Info: tex/experiments/UdemyCNN.pdf, page1 used on input line
+ 5.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
+
+<use tex/experiments/UdemyCNN.pdf, page 1>
+Package pdftex.def Info: tex/experiments/UdemyCNN.pdf, page1 used on input line
+ 5.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [31
 
 
 
 ]
+File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
+
+<use tex/experiments/UdemyCNN.pdf, page 1>
+Package pdftex.def Info: tex/experiments/UdemyCNN.pdf, page1 used on input line
+ 5.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
+
+<use tex/experiments/UdemyCNN.pdf, page 1>
+Package pdftex.def Info: tex/experiments/UdemyCNN.pdf, page1 used on input line
+ 5.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
+
+<use tex/experiments/UdemyCNN.pdf, page 1>
+Package pdftex.def Info: tex/experiments/UdemyCNN.pdf, page1 used on input line
+ 5.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [32 <./tex/experiments/UdemyCNN.pdf>] <tex/experiments/UdemyCNN.pdf, id=285, p
+age=2, 614.295pt x 794.97pt>
+File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
+
+<use tex/experiments/UdemyCNN.pdf, page 2>
+Package pdftex.def Info: tex/experiments/UdemyCNN.pdf, page2 used on input line
+ 5.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
+
+<use tex/experiments/UdemyCNN.pdf, page 2>
+Package pdftex.def Info: tex/experiments/UdemyCNN.pdf, page2 used on input line
+ 5.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
+
+<use tex/experiments/UdemyCNN.pdf, page 2>
+Package pdftex.def Info: tex/experiments/UdemyCNN.pdf, page2 used on input line
+ 5.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [33 <./tex/experiments/UdemyCNN.pdf>] <tex/experiments/UdemyCNN.pdf, id=289, p
+age=3, 614.295pt x 794.97pt>
+File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
+
+<use tex/experiments/UdemyCNN.pdf, page 3>
+Package pdftex.def Info: tex/experiments/UdemyCNN.pdf, page3 used on input line
+ 5.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
+
+<use tex/experiments/UdemyCNN.pdf, page 3>
+Package pdftex.def Info: tex/experiments/UdemyCNN.pdf, page3 used on input line
+ 5.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
+
+<use tex/experiments/UdemyCNN.pdf, page 3>
+Package pdftex.def Info: tex/experiments/UdemyCNN.pdf, page3 used on input line
+ 5.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [34 <./tex/experiments/UdemyCNN.pdf>] <tex/experiments/UdemyCNN.pdf, id=293, p
+age=4, 614.295pt x 794.97pt>
+File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
+
+<use tex/experiments/UdemyCNN.pdf, page 4>
+Package pdftex.def Info: tex/experiments/UdemyCNN.pdf, page4 used on input line
+ 5.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
+
+<use tex/experiments/UdemyCNN.pdf, page 4>
+Package pdftex.def Info: tex/experiments/UdemyCNN.pdf, page4 used on input line
+ 5.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: tex/experiments/UdemyCNN.pdf Graphic file (type pdf)
+
+<use tex/experiments/UdemyCNN.pdf, page 4>
+Package pdftex.def Info: tex/experiments/UdemyCNN.pdf, page4 used on input line
+ 5.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [35 <./tex/experiments/UdemyCNN.pdf>])) [36]
 \openout2 = `tex/empirical.aux'.
 
  (./tex/empirical.tex
 Chapter 4.
-) [32
+) [37
 
 
 
@@ -669,7 +835,7 @@ Chapter 4.
 
  (./tex/conclusion.tex
 Chapter 5.
-) [33
+) [38
 
 
 
@@ -679,30 +845,30 @@ Chapter 5.
 
 No file tex/testJup.tex.
 
-Overfull \hbox (20.70683pt too wide) in paragraph at lines 59--59
+Overfull \hbox (20.70683pt too wide) in paragraph at lines 60--60
 []\OT1/cmr/m/n/12 Kaiming He et al. ``Mask R-CNN''. In: \OT1/cmr/m/it/12 arXiv 
 preprint arXiv:1703.06870
  []
 
-[34
+[39
 
 
 
 
 ]
-Overfull \hbox (1.876pt too wide) in paragraph at lines 59--59
+Overfull \hbox (1.876pt too wide) in paragraph at lines 60--60
 \OT1/cmr/m/it/12 Con-fer-ence on Smart Homes and Health Telem-at-ics\OT1/cmr/m/
 n/12 . Springer. 2016,
  []
 
 
-Overfull \hbox (2.88484pt too wide) in paragraph at lines 59--59
+Overfull \hbox (2.88484pt too wide) in paragraph at lines 60--60
 []\OT1/cmr/m/n/12 Dongyuan Mao, Qian Yu, and Jing-fan Wang. ``Deep Learn-ing Ba
 sed
  []
 
 
-Overfull \hbox (1.69696pt too wide) in paragraph at lines 59--59
+Overfull \hbox (1.69696pt too wide) in paragraph at lines 60--60
 \OT1/cmr/m/n/12 ment''. In: \OT1/cmr/m/it/12 Med-i-cal Mea-sure-ments and Ap-pl
 i-ca-tions (MeMeA), 2014
  []
@@ -714,14 +880,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.60 \end{document}
+l.61 \end{document}
                    
 ? 
-[35] (./FYPReportBarrettTom_14171198.aux (./tex/abstract.aux) (./tex/intro.aux)
+[40] (./FYPReportBarrettTom_14171198.aux (./tex/abstract.aux) (./tex/intro.aux)
 (./tex/background/background.aux) (./tex/experiments.aux) (./tex/empirical.aux)
 (./tex/conclusion.aux) (./tex/testJup.aux))
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'FYPReportBarrettTom_14171198.run.xml'
 .
@@ -733,23 +902,25 @@ Package logreq Info: Writing requests to 'FYPReportBarrettTom_14171198.run.xml'
 ### semi simple group (level 1) entered at line 38 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 8404 strings out of 494953
- 145716 string characters out of 6180977
- 548035 words of memory out of 5000000
- 11524 multiletter control sequences out of 15000+600000
+ 9661 strings out of 494953
+ 164348 string characters out of 6180977
+ 574003 words of memory out of 5000000
+ 12745 multiletter control sequences out of 15000+600000
  10061 words of font info for 35 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 53i,8n,72p,841b,1284s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,18n,72p,841b,1308s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on FYPReportBarrettTom_14171198.pdf (37 pages, 717285 bytes).
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/font
+s/type1/urw/palatino/uplr8a.pfb>
+Output written on FYPReportBarrettTom_14171198.pdf (42 pages, 785877 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
- 104 compressed objects within 2 object streams
+ 340 PDF objects out of 1000 (max. 8388607)
+ 137 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
