@@ -12,103 +12,103 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Develop an application}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.2}Secondary Objectives}{6}
+\contentsline {subsection}{\numberline {1.2.2}Secondary Objectives}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Understanding of Convolutional Neural Networks}{6}
+\contentsline {subsubsection}{Understanding of Convolutional Neural Networks}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Learn about different image identification and classification techniques}{6}
+\contentsline {subsubsection}{Learn about different image identification and classification techniques}{7}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.3}Methodology}{7}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.3.1} Define the research question}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2} Literature Review}{7}
+\contentsline {subsection}{\numberline {1.3.2} Literature Review}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.3} Explore different image identification methods}{7}
+\contentsline {subsection}{\numberline {1.3.3} Explore different image identification methods}{8}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.3.4}Select an image identification method}{8}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.3.5}Research technologies and develop skills in these technologies}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.6}Build a prototype of the application}{8}
+\contentsline {subsection}{\numberline {1.3.6}Build a prototype of the application}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.7}Compare and analyse results to other implementations}{8}
+\contentsline {subsection}{\numberline {1.3.7}Compare and analyse results to other implementations}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Overview of Report}{8}
+\contentsline {section}{\numberline {1.4}Overview of Report}{9}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.5}Motivation}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Background}{10}
+\contentsline {chapter}{\numberline {2}Background}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Introduction to Machine Learning}{10}
+\contentsline {section}{\numberline {2.1}Introduction to Machine Learning}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Neural Computing}{11}
+\contentsline {section}{\numberline {2.2}Neural Computing}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Artificial Neural Networks}{11}
+\contentsline {subsection}{\numberline {2.2.1}Artificial Neural Networks}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Perceptron Learning - Artificial Neuron}{12}
+\contentsline {section}{\numberline {2.3}Perceptron Learning - Artificial Neuron}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Multi Layered Perceptron}{13}
+\contentsline {section}{\numberline {2.4}Multi Layered Perceptron}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Gradient Descent}{13}
+\contentsline {subsubsection}{Gradient Descent}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Backpropagation}{15}
+\contentsline {subsubsection}{Backpropagation}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Support Vector Machine}{16}
+\contentsline {section}{\numberline {2.5}Support Vector Machine}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Convolutional Neural Networks}{16}
+\contentsline {section}{\numberline {2.6}Convolutional Neural Networks}{17}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Fully Convolutional Networks}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Overview of Machine Vision Approaches to Identification and Classification}{18}
+\contentsline {section}{\numberline {2.7}Overview of Machine Vision Approaches to Identification and Classification}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.1}Region Based Convolutional Neural Networks}{18}
+\contentsline {subsection}{\numberline {2.7.1}Region Based Convolutional Neural Networks}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{RCNN}{19}
+\contentsline {subsubsection}{RCNN}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Fast RCNN}{19}
+\contentsline {subsubsection}{Fast RCNN}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Faster RCNN}{20}
+\contentsline {subsubsection}{Faster RCNN}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Mask RCNN}{21}
+\contentsline {subsubsection}{Mask RCNN}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.2}Fully Convolutional Neural Networks for Semantic Segmentation}{21}
+\contentsline {subsection}{\numberline {2.7.2}Fully Convolutional Neural Networks for Semantic Segmentation}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.3}Image Segmentation}{22}
+\contentsline {subsection}{\numberline {2.7.3}Image Segmentation}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Graph Based Segmentation}{22}
+\contentsline {subsubsection}{Graph Based Segmentation}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Local Variation Framework}{23}
+\contentsline {subsubsection}{Local Variation Framework}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Conclusion}{23}
+\contentsline {subsubsection}{Conclusion}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.4}Convolutional Neural Networks for Classification}{24}
+\contentsline {subsection}{\numberline {2.7.4}Convolutional Neural Networks for Classification}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Deep Learning Based Food Recognition}{24}
+\contentsline {subsubsection}{Deep Learning Based Food Recognition}{26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Food Image Recognition Using Deep Convolutional Neural Network With Pre-Training and Fine-Tuning}{24}
+\contentsline {subsubsection}{Food Image Recognition Using Deep Convolutional Neural Network With Pre-Training and Fine-Tuning}{26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Food Detection and Recognition Using Convolutional Neural Network}{25}
+\contentsline {subsubsection}{Food Detection and Recognition Using Convolutional Neural Network}{26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{DeepFood: Deep Learning-based Food Image Recognition for Computer-aided Dietary Assessment}{25}
+\contentsline {subsubsection}{DeepFood: Deep Learning-based Food Image Recognition for Computer-aided Dietary Assessment}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}Technologies}{26}
+\contentsline {section}{\numberline {2.8}Technologies}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.8.1}Tensorflow}{26}
+\contentsline {subsection}{\numberline {2.8.1}Tensorflow}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.8.2}Jupyter}{26}
+\contentsline {subsection}{\numberline {2.8.2}Jupyter}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.8.3}OpenCV}{26}
+\contentsline {subsection}{\numberline {2.8.3}OpenCV}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.9}Evaluating the Output}{26}
+\contentsline {section}{\numberline {2.9}Evaluating the Output}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.1}Research into Diagnosing Errors in Object Detectors}{26}
+\contentsline {subsection}{\numberline {2.9.1}Research into Diagnosing Errors in Object Detectors}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.2}Detection Average Precision}{28}
+\contentsline {subsection}{\numberline {2.9.2}Detection Average Precision}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.3}Mean Average Precision}{28}
+\contentsline {subsection}{\numberline {2.9.3}Mean Average Precision}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.4}Distribution of top-ranked false positives}{28}
+\contentsline {subsection}{\numberline {2.9.4}Distribution of top-ranked false positives}{30}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.9.5}Segmentation Mean Accuracy}{30}
 \defcounter {refsection}{0}\relax 
@@ -116,26 +116,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.9.7}Per-class segmentation accuracy}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Top-1 Accuracy}{30}
+\contentsline {subsubsection}{Top-1 and Top-5 Accuracy}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Top-5 Accuracy}{30}
+\contentsline {chapter}{\numberline {3}Experiments}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Experiments}{32}
+\contentsline {section}{\numberline {3.1}Experiment 1}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Experiment 1}{32}
+\contentsline {subsection}{\numberline {3.1.1}Network Architecture}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Network Architecture}{32}
+\contentsline {subsection}{\numberline {3.1.2}Dataset}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Dataset}{32}
+\contentsline {subsection}{\numberline {3.1.3}API's}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}API's}{32}
+\contentsline {subsection}{\numberline {3.1.4}Script}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.4}Script}{32}
+\contentsline {subsection}{\numberline {3.1.5}Results}{36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.5}Results}{37}
+\contentsline {subsection}{\numberline {3.1.6}Analysis}{36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.6}Analysis}{37}
+\contentsline {chapter}{\numberline {4}Empirical Studies with Food Images}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Empirical Studies with Food Images}{38}
+\contentsline {chapter}{\numberline {5}Discussion and Conclusion}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Discussion and Conclusion}{39}
+\contentsline {section}{\numberline {5.1}Appendix}{40}

@@ -41,59 +41,31 @@ detectors as follows:
 	\item{Reduce confusion with similar categories}
 	\item{Robustness to object variation}
 	\item{More detailed analysis}
+\end{itemize}
+
 \subsection{Detection Average Precision}
-See \ref{fig:dap}.
-\begin{figure}
-	\includegraphics[width=150mm,scale=0.5]{DAP}
-	\caption{Detection Average Precision \textcite{donahue}}
-    \label{fig:dap}
-\end{figure}
+The average detection accuracy of a system. See \ref{fig:dap}.
 
 \subsection{Mean Average Precision}
-See \ref{fig:MAP}.
-		\begin{figure}
-			\includegraphics[width=150mm,scale=0.5]{MAP}
-			\caption{Mean Average Precision \textcite{donahue}}
-			\label{fig:MAP}
-		\end{figure}
+The mean accuracy of a system across all results. See \ref{fig:MAP}.
 		
 \subsection{Distribution of top-ranked false positives}
-See \ref{fig:DFP}.
-		\begin{figure}
-			\includegraphics[width=150mm,scale=0.5]{DFP}
-			\caption{Distribution of top-ranked false positives \textcite{donahue}}
-			\label{fig:DFP}
-		\end{figure}
-		
+This metric is used to tell where most errors occur when false positives are
+evident. These errors are broken down into four categories of localization,
+similar objects, background confusion and others. See \ref{fig:DFP}.
 
 \subsection{Segmentation Mean Accuracy}
-See \ref{fig:SMP}.
-		\begin{figure}
-			\includegraphics[width=150mm,scale=0.5]{SMP}
-			\caption{Segmentation Mean Accuracy \textcite{donahue}}
-			\label{fig:SMP}
-		\end{figure}
-		
+This is the mean accuracy of segmentation. See \ref{fig:SMP}.
 
 \subsection{Per-category segmentation accuracy}
-See \ref{fig:PCATSA}.
-		\begin{figure}
-			\includegraphics[width=150mm,scale=0.5]{PCATSA}
-			\caption{Per-category segmentation accuracy \textcite{donahue}}
-			\label{fig:PCATSA}
-		\end{figure}
-		
+This metric measures the accuracy of segmentation at a category level. See \ref{fig:PCATSA}.	
 
 \subsection{Per-class segmentation accuracy}
-\See \ref{fig:PCLASSA}.
-		\begin{figure}
-			\includegraphics[width=150mm,scale=0.5]{PCLASSSA}
-			\caption{Per-class segmentation accuracy \textcite{donahue}}
-			\label{fig:PCLASSA}
-		\end{figure}
+The accuracy of segmentation at a class level is analysed. See \ref{fig:PCLASSA}.
 
-\subsubsection{Top-1 Accuracy}
-
-\subsubsection{Top-5 Accuracy}
+\subsubsection{Top-1 and Top-5 Accuracy}
+When a classifier is given an image it normally responds with a list of
+predictions along with a decimal representation of the likelihood that it is of
+that class. The Top-1 accuracy is the top valued prediction and Top-5 accuracy
+is the top 5 predictions.
 		
-

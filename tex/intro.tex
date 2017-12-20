@@ -13,9 +13,18 @@ When looking into calorie measurement using an image, there are three questions 
 \begin{itemize}
 \item{Where are the Regions of Interest (ROI) in this food image?}
 \item{What food types are in these ROI's?}
-\item{What is the portain size of each food type?}
+\item{What is the portion size of each food type?}
 \end{itemize}
-In this project, my main focus will be on the first question, 'Where are the Regions of Interest (ROI) in this food image?'.
+In this project, my main focus will be on the first question, 'Where are the
+Regions of Interest (ROI) in this food image?'. This is normally achieved
+through image segmentation. Image segmentation is the process in which you
+divide an image into multiple segments as per Figure \ref{fig:imageSeg}.
+
+\begin{figure}
+	\includegraphics{segment}
+	\caption{Segmented Image}
+	\label{fig:imageSeg}
+\end{figure}
 
 Many researchers in various machine vision labs have attempted to solve this
 problem using different methodologies.
@@ -26,7 +35,7 @@ Where CNN's have been shown to work best is in the area of face detection.
 
 I have researched many different methods of image segmentation but it seems that CNN's have had the best results for multiple objects in one image and I hope to apply these results for many foods in an image.
 This is because we will rarely want to classify an image that only has one food
-item in it. Therfore, the one shot approach apporach won't work by which we
+item in it. Therefore, the one shot approach approach won't work by which we
 build a classifier that takes in an image and gives back the most likely food in
 that image.
 

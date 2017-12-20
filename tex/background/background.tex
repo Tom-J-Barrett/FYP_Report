@@ -115,11 +115,24 @@ solve this problem which we will discuss later.
 \input{tex/background/gD_bP}
 
 \section{Support Vector Machine}
+A Support Vector Machine (SVM) is a machine learning algorithm that has been
+very popular before the power of a CNN was realised.
+
+A SVM works by creating an n-dimensional space, with n as the number of
+inputs you have \textcite{svm}. The SVM algorithm finds the hyperplane that splits this space.
+This hyperplane can then be used for classification.
 
 \section{Convolutional Neural Networks}
 Convolutional Neural Networks (CNN's) are essentially a Multi Layered Percetron with a
 special structure. CNN's have one major difference from a MLP, they have extra
-layer of convolution and pooling.
+layer of convolution and pooling. The architecture of a convolution network can
+be seen in Figure \ref{fig:convNet}.
+
+\begin{figure}
+	\includegraphics[width=150mm, scale=0.5]{convNet}
+	\caption{CNN Architecture}
+	\label{fig:convNet}
+\end{figure}
 
 Figure \ref{fig:XtoRec} show an image that we want to compare against
 Figure \ref{fig:XtoComp}.
@@ -181,6 +194,11 @@ In between the Convolution and Pooling layer, there is sometimes a Normalization
 layer. This Normalization layer creates Rectified Linear Units (RLU's). In other
 words, if we take Figure \ref{fig:convoluted}, it changes all minus values to
 zero.
+
+There are some problems with CNN's however. One of the main problems is that you
+need a very large dataset in order to produce am accurate model and the training
+can be very time consuming without a GPU.
+
 
 \subsubsection{Fully Convolutional Networks}
 A Fully Convolutional Network is one that does not have a fully connected layer
