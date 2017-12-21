@@ -32,7 +32,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.9}Image Segmentation}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.10}Technologies}{27}
+\contentsline {section}{\numberline {2.10}Technologies}{26}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.11}Evaluating the Output}{27}
 \defcounter {refsection}{0}\relax 
@@ -44,4 +44,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Discussion and Conclusion}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix}{39}
+\contentsline {chapter}{\numberline {A}Appendix}{41}

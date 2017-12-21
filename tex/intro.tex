@@ -2,7 +2,7 @@
 \label{intro}
 
 \section{Overview}
-This project explores the use of indentification and classification of food images for use in a calorie measurement android application.
+This project explores the use of identification and classification of food images for use in a calorie measurement android application.
 Food calorie consumption is a huge problem in the modern world.
 Over 25\% of the population in Ireland is obese and this figure is likely to rise over the coming years.
 A mobile application that could help keep track of a user's calorie intake by taking pictures of their meals would be a great help.
@@ -30,7 +30,7 @@ Many researchers in various machine vision labs have attempted to solve this
 problem using different methodologies.
 There has been promising results from some papers but these are mostly under highly constrained circumstances.
 When mixed foods are introduced to the problem, many of the methods fail.
-Convolution Neural Networks (CNN) have had very promising results in the field of image classification in the recent years but to get to the classification step, image segmentation is first needed, otherwise known as image identification.
+Convolutional Neural Networks (CNN) have had very promising results in the field of image classification in the recent years but to get to the classification step, image segmentation is first needed, otherwise known as image identification.
 Where CNN's have been shown to work best is in the area of face detection.
 
 I have researched many different methods of image segmentation but it seems that CNN's have had the best results for multiple objects in one image and I hope to apply these results for many foods in an image.
@@ -46,7 +46,7 @@ From here, the application would take the image, find the objects (ROI) in the i
 Concurrently, the application would attempt to classify each object detected.
 Once this is done, the size of each food type would be measured and through this an overall calorie count would be displayed for the user.
 This could be logged for user metrics. 
-I will focus on finding the objects for this application as I would not be able to implement the full system due to time constraints.
+I will focus on finding the objects for this application as I will not be able to implement the full system due to time constraints.
 
 \section{Objectives}
 \subsection*{Primary Objectives}
@@ -91,7 +91,8 @@ There are many attempts at Food Image Classification and these were not difficul
 Because of this, I had to follow quite a few references to different papers that focused solely on image segmentation.
 
 \subsection*{Explore different image identification methods}
-I had collected various image identification from the literature review that I carried out so there were many options to evaluate.
+I had collected various image identification methods from the literature review
+that I carried out, so there were many options to evaluate.
 I wanted to try something with Convolutional Neural Networks so more traditional
 methods of identification using colour and texture was not so strenuously explored.
 

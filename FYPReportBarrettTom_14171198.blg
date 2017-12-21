@@ -1,13 +1,17 @@
 [0] Config.pm:340> INFO - This is Biber 2.4
 [0] Config.pm:343> INFO - Logfile is 'FYPReportBarrettTom_14171198.blg'
-[67] biber:287> INFO - === Wed Dec 20, 2017, 23:01:52
-[203] Biber.pm:348> INFO - Reading 'FYPReportBarrettTom_14171198.bcf'
-[384] Biber.pm:742> INFO - Found 16 citekeys in bib section 0
-[389] Biber.pm:3151> INFO - Processing section 0
-[444] Biber.pm:3308> INFO - Looking for bibtex format file 'references.bib' for section 0
-[509] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
-[555] bibtex.pm:974> INFO - Found BibTeX data source 'references.bib'
-[558] Utils.pm:147> WARN - Entry svm does not parse correctly
-[771] Utils.pm:163> ERROR - BibTeX subsystem: /tmp/_VosMcX2hK/references.bib_3006.utf8, line 155, syntax error: found "howpublished", expected end of entry ("}" or ")") (skipping to next "@")
-[771] Biber.pm:109> INFO - WARNINGS: 1
-[771] Biber.pm:113> INFO - ERRORS: 1
+[81] biber:287> INFO - === Thu Dec 21, 2017, 11:20:45
+[232] Biber.pm:348> INFO - Reading 'FYPReportBarrettTom_14171198.bcf'
+[467] Biber.pm:742> INFO - Found 16 citekeys in bib section 0
+[472] Biber.pm:3151> INFO - Processing section 0
+[529] Biber.pm:3308> INFO - Looking for bibtex format file 'references.bib' for section 0
+[581] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
+[632] bibtex.pm:974> INFO - Found BibTeX data source 'references.bib'
+[1004] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1004] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1004] Biber.pm:3028> INFO - Sorting list 'nty/global' of type 'entry' with scheme 'nty' and locale 'en-US'
+[1004] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
+[1050] bbl.pm:519> INFO - Writing 'FYPReportBarrettTom_14171198.bbl' with encoding 'ascii'
+[1096] Utils.pm:147> WARN - The entry 'maskRcnn' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[1271] bbl.pm:615> INFO - Output to FYPReportBarrettTom_14171198.bbl
+[1271] Biber.pm:109> INFO - WARNINGS: 1
