@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.23)  21 JAN 2018 18:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.23)  21 JAN 2018 18:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1465,9 +1465,6 @@ MP.png> <./images/PCATSA.png>] [72 <./images/PCLASSSA.png>]
 (./FYPReportBarrettTom_14171198.aux (./tex/abstract.aux) (./tex/intro.aux)
 (./tex/background/background.aux) (./tex/experiments.aux) (./tex/empirical.aux)
 (./tex/conclusion.aux) (./tex/appendix.aux))
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package logreq Info: Writing requests to 'FYPReportBarrettTom_14171198.run.xml'
 .
 \openout1 = `FYPReportBarrettTom_14171198.run.xml'.
