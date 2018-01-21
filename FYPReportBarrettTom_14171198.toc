@@ -40,8 +40,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Experiment 1}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Empirical Studies with Food Images}{37}
+\contentsline {section}{\numberline {3.2}Experiment 2}{36}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Discussion and Conclusion}{38}
+\contentsline {section}{\numberline {3.3}Experiment 3}{46}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix}{41}
+\contentsline {section}{\numberline {3.4}Experiment 4}{57}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Empirical Studies with Food Images}{65}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Discussion and Conclusion}{66}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Appendix}{69}

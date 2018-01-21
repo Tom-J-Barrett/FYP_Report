@@ -1,0 +1,634 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    
+    
+    \usepackage[T1]{fontenc}
+    % Nicer default font (+ math font) than Computer Modern for most use cases
+    \usepackage{mathpazo}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{InteractiveCNNModel}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}1}]:} \PY{k+kn}{from} \PY{n+nn}{\PYZus{}\PYZus{}future\PYZus{}\PYZus{}} \PY{k}{import} \PY{n}{division}\PY{p}{,} \PY{n}{print\PYZus{}function}\PY{p}{,} \PY{n}{absolute\PYZus{}import}
+        
+        \PY{c+c1}{\PYZsh{} Import MNIST data}
+        \PY{k+kn}{from} \PY{n+nn}{tensorflow}\PY{n+nn}{.}\PY{n+nn}{examples}\PY{n+nn}{.}\PY{n+nn}{tutorials}\PY{n+nn}{.}\PY{n+nn}{mnist} \PY{k}{import} \PY{n}{input\PYZus{}data}
+        \PY{n}{mnist} \PY{o}{=} \PY{n}{input\PYZus{}data}\PY{o}{.}\PY{n}{read\PYZus{}data\PYZus{}sets}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{/tmp/data/}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{one\PYZus{}hot}\PY{o}{=}\PY{k+kc}{False}\PY{p}{)}
+        
+        \PY{k+kn}{import} \PY{n+nn}{tensorflow} \PY{k}{as} \PY{n+nn}{tf}
+        \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
+        \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{image} \PY{k}{as} \PY{n+nn}{mpimg}
+        \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
+        \PY{k+kn}{import} \PY{n+nn}{PIL}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Extracting /tmp/data/train-images-idx3-ubyte.gz
+Extracting /tmp/data/train-labels-idx1-ubyte.gz
+Extracting /tmp/data/t10k-images-idx3-ubyte.gz
+Extracting /tmp/data/t10k-labels-idx1-ubyte.gz
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}2}]:} \PY{c+c1}{\PYZsh{} Training Parameters}
+        \PY{n}{learning\PYZus{}rate} \PY{o}{=} \PY{l+m+mf}{0.001}
+        \PY{n}{num\PYZus{}steps} \PY{o}{=} \PY{l+m+mi}{5000}
+        \PY{n}{batch\PYZus{}size} \PY{o}{=} \PY{l+m+mi}{128}
+        
+        \PY{c+c1}{\PYZsh{} Network Parameters}
+        \PY{n}{num\PYZus{}input} \PY{o}{=} \PY{l+m+mi}{784} \PY{c+c1}{\PYZsh{} MNIST data input (img shape: 28*28)}
+        \PY{n}{num\PYZus{}classes} \PY{o}{=} \PY{l+m+mi}{10} \PY{c+c1}{\PYZsh{} MNIST total classes (0\PYZhy{}9 digits)}
+        \PY{n}{dropout} \PY{o}{=} \PY{l+m+mf}{0.25} \PY{c+c1}{\PYZsh{} Dropout, probability to drop a unit}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}3}]:} \PY{c+c1}{\PYZsh{} Create the neural network}
+        \PY{k}{def} \PY{n+nf}{conv\PYZus{}net}\PY{p}{(}\PY{n}{x\PYZus{}dict}\PY{p}{,} \PY{n}{n\PYZus{}classes}\PY{p}{,} \PY{n}{dropout}\PY{p}{,} \PY{n}{reuse}\PY{p}{,} \PY{n}{is\PYZus{}training}\PY{p}{)}\PY{p}{:}
+            
+            \PY{c+c1}{\PYZsh{} Define a scope for reusing the variables}
+            \PY{k}{with} \PY{n}{tf}\PY{o}{.}\PY{n}{variable\PYZus{}scope}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ConvNet}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{reuse}\PY{o}{=}\PY{n}{reuse}\PY{p}{)}\PY{p}{:}
+                \PY{c+c1}{\PYZsh{} TF Estimator input is a dict, in case of multiple inputs}
+                \PY{n}{x} \PY{o}{=} \PY{n}{x\PYZus{}dict}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{images}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+        
+                \PY{c+c1}{\PYZsh{} MNIST data input is a 1\PYZhy{}D vector of 784 features (28*28 pixels)}
+                \PY{c+c1}{\PYZsh{} Reshape to match picture format [Height x Width x Channel]}
+                \PY{c+c1}{\PYZsh{} Tensor input become 4\PYZhy{}D: [Batch Size, Height, Width, Channel]}
+                \PY{n}{x} \PY{o}{=} \PY{n}{tf}\PY{o}{.}\PY{n}{reshape}\PY{p}{(}\PY{n}{x}\PY{p}{,} \PY{n}{shape}\PY{o}{=}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{28}\PY{p}{,} \PY{l+m+mi}{28}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}
+        
+                \PY{c+c1}{\PYZsh{} Convolution Layer with 32 filters and a kernel size of 5}
+                \PY{n}{conv1} \PY{o}{=} \PY{n}{tf}\PY{o}{.}\PY{n}{layers}\PY{o}{.}\PY{n}{conv2d}\PY{p}{(}\PY{n}{x}\PY{p}{,} \PY{l+m+mi}{32}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{,} \PY{n}{activation}\PY{o}{=}\PY{n}{tf}\PY{o}{.}\PY{n}{nn}\PY{o}{.}\PY{n}{relu}\PY{p}{)}
+                \PY{c+c1}{\PYZsh{} Max Pooling (down\PYZhy{}sampling) with strides of 2 and kernel size of 2}
+                \PY{n}{conv1} \PY{o}{=} \PY{n}{tf}\PY{o}{.}\PY{n}{layers}\PY{o}{.}\PY{n}{max\PYZus{}pooling2d}\PY{p}{(}\PY{n}{conv1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{)}
+        
+                \PY{c+c1}{\PYZsh{} Convolution Layer with 64 filters and a kernel size of 3}
+                \PY{n}{conv2} \PY{o}{=} \PY{n}{tf}\PY{o}{.}\PY{n}{layers}\PY{o}{.}\PY{n}{conv2d}\PY{p}{(}\PY{n}{conv1}\PY{p}{,} \PY{l+m+mi}{64}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{n}{activation}\PY{o}{=}\PY{n}{tf}\PY{o}{.}\PY{n}{nn}\PY{o}{.}\PY{n}{relu}\PY{p}{)}
+                \PY{c+c1}{\PYZsh{} Max Pooling (down\PYZhy{}sampling) with strides of 2 and kernel size of 2}
+                \PY{n}{conv2} \PY{o}{=} \PY{n}{tf}\PY{o}{.}\PY{n}{layers}\PY{o}{.}\PY{n}{max\PYZus{}pooling2d}\PY{p}{(}\PY{n}{conv2}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{)}
+        
+                \PY{c+c1}{\PYZsh{} Flatten the data to a 1\PYZhy{}D vector for the fully connected layer}
+                \PY{n}{fc1} \PY{o}{=} \PY{n}{tf}\PY{o}{.}\PY{n}{contrib}\PY{o}{.}\PY{n}{layers}\PY{o}{.}\PY{n}{flatten}\PY{p}{(}\PY{n}{conv2}\PY{p}{)}
+        
+                \PY{c+c1}{\PYZsh{} Fully connected layer (in tf contrib folder for now)}
+                \PY{n}{fc1} \PY{o}{=} \PY{n}{tf}\PY{o}{.}\PY{n}{layers}\PY{o}{.}\PY{n}{dense}\PY{p}{(}\PY{n}{fc1}\PY{p}{,} \PY{l+m+mi}{1024}\PY{p}{)}
+                \PY{c+c1}{\PYZsh{} Apply Dropout (if is\PYZus{}training is False, dropout is not applied)}
+                \PY{n}{fc1} \PY{o}{=} \PY{n}{tf}\PY{o}{.}\PY{n}{layers}\PY{o}{.}\PY{n}{dropout}\PY{p}{(}\PY{n}{fc1}\PY{p}{,} \PY{n}{rate}\PY{o}{=}\PY{n}{dropout}\PY{p}{,} \PY{n}{training}\PY{o}{=}\PY{n}{is\PYZus{}training}\PY{p}{)}
+        
+                \PY{c+c1}{\PYZsh{} Output layer, class prediction}
+                \PY{n}{out} \PY{o}{=} \PY{n}{tf}\PY{o}{.}\PY{n}{layers}\PY{o}{.}\PY{n}{dense}\PY{p}{(}\PY{n}{fc1}\PY{p}{,} \PY{n}{n\PYZus{}classes}\PY{p}{)}
+        
+            \PY{k}{return} \PY{n}{out}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}4}]:} \PY{c+c1}{\PYZsh{} Define the model function (following TF Estimator Template)}
+        \PY{k}{def} \PY{n+nf}{model\PYZus{}fn}\PY{p}{(}\PY{n}{features}\PY{p}{,} \PY{n}{labels}\PY{p}{,} \PY{n}{mode}\PY{p}{)}\PY{p}{:}
+            
+            \PY{c+c1}{\PYZsh{} Build the neural network}
+            \PY{c+c1}{\PYZsh{} Because Dropout have different behavior at training and prediction time, we}
+            \PY{c+c1}{\PYZsh{} need to create 2 distinct computation graphs that still share the same weights.}
+            \PY{n}{logits\PYZus{}train} \PY{o}{=} \PY{n}{conv\PYZus{}net}\PY{p}{(}\PY{n}{features}\PY{p}{,} \PY{n}{num\PYZus{}classes}\PY{p}{,} \PY{n}{dropout}\PY{p}{,} \PY{n}{reuse}\PY{o}{=}\PY{k+kc}{False}\PY{p}{,} \PY{n}{is\PYZus{}training}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
+            \PY{n}{logits\PYZus{}test} \PY{o}{=} \PY{n}{conv\PYZus{}net}\PY{p}{(}\PY{n}{features}\PY{p}{,} \PY{n}{num\PYZus{}classes}\PY{p}{,} \PY{n}{dropout}\PY{p}{,} \PY{n}{reuse}\PY{o}{=}\PY{k+kc}{True}\PY{p}{,} \PY{n}{is\PYZus{}training}\PY{o}{=}\PY{k+kc}{False}\PY{p}{)}
+            
+            \PY{c+c1}{\PYZsh{} Predictions}
+            \PY{n}{pred\PYZus{}classes} \PY{o}{=} \PY{n}{tf}\PY{o}{.}\PY{n}{argmax}\PY{p}{(}\PY{n}{logits\PYZus{}test}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{)}
+            \PY{n}{pred\PYZus{}probas} \PY{o}{=} \PY{n}{tf}\PY{o}{.}\PY{n}{nn}\PY{o}{.}\PY{n}{softmax}\PY{p}{(}\PY{n}{logits\PYZus{}test}\PY{p}{)}
+            
+            \PY{c+c1}{\PYZsh{} If prediction mode, early return}
+            \PY{k}{if} \PY{n}{mode} \PY{o}{==} \PY{n}{tf}\PY{o}{.}\PY{n}{estimator}\PY{o}{.}\PY{n}{ModeKeys}\PY{o}{.}\PY{n}{PREDICT}\PY{p}{:}
+                \PY{k}{return} \PY{n}{tf}\PY{o}{.}\PY{n}{estimator}\PY{o}{.}\PY{n}{EstimatorSpec}\PY{p}{(}\PY{n}{mode}\PY{p}{,} \PY{n}{predictions}\PY{o}{=}\PY{n}{pred\PYZus{}classes}\PY{p}{)} 
+                
+            \PY{c+c1}{\PYZsh{} Define loss and optimizer}
+            \PY{n}{loss\PYZus{}op} \PY{o}{=} \PY{n}{tf}\PY{o}{.}\PY{n}{reduce\PYZus{}mean}\PY{p}{(}\PY{n}{tf}\PY{o}{.}\PY{n}{nn}\PY{o}{.}\PY{n}{sparse\PYZus{}softmax\PYZus{}cross\PYZus{}entropy\PYZus{}with\PYZus{}logits}\PY{p}{(}
+                \PY{n}{logits}\PY{o}{=}\PY{n}{logits\PYZus{}train}\PY{p}{,} \PY{n}{labels}\PY{o}{=}\PY{n}{tf}\PY{o}{.}\PY{n}{cast}\PY{p}{(}\PY{n}{labels}\PY{p}{,} \PY{n}{dtype}\PY{o}{=}\PY{n}{tf}\PY{o}{.}\PY{n}{int32}\PY{p}{)}\PY{p}{)}\PY{p}{)}
+            \PY{n}{optimizer} \PY{o}{=} \PY{n}{tf}\PY{o}{.}\PY{n}{train}\PY{o}{.}\PY{n}{AdamOptimizer}\PY{p}{(}\PY{n}{learning\PYZus{}rate}\PY{o}{=}\PY{n}{learning\PYZus{}rate}\PY{p}{)}
+            \PY{n}{train\PYZus{}op} \PY{o}{=} \PY{n}{optimizer}\PY{o}{.}\PY{n}{minimize}\PY{p}{(}\PY{n}{loss\PYZus{}op}\PY{p}{,} \PY{n}{global\PYZus{}step}\PY{o}{=}\PY{n}{tf}\PY{o}{.}\PY{n}{train}\PY{o}{.}\PY{n}{get\PYZus{}global\PYZus{}step}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+            
+            \PY{c+c1}{\PYZsh{} Evaluate the accuracy of the model}
+            \PY{n}{acc\PYZus{}op} \PY{o}{=} \PY{n}{tf}\PY{o}{.}\PY{n}{metrics}\PY{o}{.}\PY{n}{accuracy}\PY{p}{(}\PY{n}{labels}\PY{o}{=}\PY{n}{labels}\PY{p}{,} \PY{n}{predictions}\PY{o}{=}\PY{n}{pred\PYZus{}classes}\PY{p}{)}
+            
+            \PY{c+c1}{\PYZsh{} TF Estimators requires to return a EstimatorSpec, that specify}
+            \PY{c+c1}{\PYZsh{} the different ops for training, evaluating, ...}
+            \PY{n}{estim\PYZus{}specs} \PY{o}{=} \PY{n}{tf}\PY{o}{.}\PY{n}{estimator}\PY{o}{.}\PY{n}{EstimatorSpec}\PY{p}{(}
+              \PY{n}{mode}\PY{o}{=}\PY{n}{mode}\PY{p}{,}
+              \PY{n}{predictions}\PY{o}{=}\PY{n}{pred\PYZus{}classes}\PY{p}{,}
+              \PY{n}{loss}\PY{o}{=}\PY{n}{loss\PYZus{}op}\PY{p}{,}
+              \PY{n}{train\PYZus{}op}\PY{o}{=}\PY{n}{train\PYZus{}op}\PY{p}{,}
+              \PY{n}{eval\PYZus{}metric\PYZus{}ops}\PY{o}{=}\PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{accuracy}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{acc\PYZus{}op}\PY{p}{\PYZcb{}}\PY{p}{)}
+        
+            \PY{k}{return} \PY{n}{estim\PYZus{}specs}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}5}]:} \PY{c+c1}{\PYZsh{} Build the Estimator}
+        \PY{n}{model} \PY{o}{=} \PY{n}{tf}\PY{o}{.}\PY{n}{estimator}\PY{o}{.}\PY{n}{Estimator}\PY{p}{(}\PY{n}{model\PYZus{}fn}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+INFO:tensorflow:Using default config.
+WARNING:tensorflow:Using temporary folder as model directory: C:\textbackslash{}Users\textbackslash{}tom13\textbackslash{}AppData\textbackslash{}Local\textbackslash{}Temp\textbackslash{}tmp97az0nju
+INFO:tensorflow:Using config: \{'\_keep\_checkpoint\_every\_n\_hours': 10000, '\_task\_type': 'worker', '\_num\_ps\_replicas': 0, '\_log\_step\_count\_steps': 100, '\_save\_checkpoints\_steps': None, '\_master': '', '\_tf\_random\_seed': None, '\_session\_config': None, '\_cluster\_spec': <tensorflow.python.training.server\_lib.ClusterSpec object at 0x00000226833DCF98>, '\_model\_dir': 'C:\textbackslash{}\textbackslash{}Users\textbackslash{}\textbackslash{}tom13\textbackslash{}\textbackslash{}AppData\textbackslash{}\textbackslash{}Local\textbackslash{}\textbackslash{}Temp\textbackslash{}\textbackslash{}tmp97az0nju', '\_keep\_checkpoint\_max': 5, '\_task\_id': 0, '\_num\_worker\_replicas': 1, '\_save\_checkpoints\_secs': 600, '\_is\_chief': True, '\_save\_summary\_steps': 100, '\_service': None\}
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}6}]:} \PY{c+c1}{\PYZsh{} Define the input function for training}
+        \PY{n}{input\PYZus{}fn} \PY{o}{=} \PY{n}{tf}\PY{o}{.}\PY{n}{estimator}\PY{o}{.}\PY{n}{inputs}\PY{o}{.}\PY{n}{numpy\PYZus{}input\PYZus{}fn}\PY{p}{(}
+            \PY{n}{x}\PY{o}{=}\PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{images}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{mnist}\PY{o}{.}\PY{n}{train}\PY{o}{.}\PY{n}{images}\PY{p}{\PYZcb{}}\PY{p}{,} \PY{n}{y}\PY{o}{=}\PY{n}{mnist}\PY{o}{.}\PY{n}{train}\PY{o}{.}\PY{n}{labels}\PY{p}{,}
+            \PY{n}{batch\PYZus{}size}\PY{o}{=}\PY{n}{batch\PYZus{}size}\PY{p}{,} \PY{n}{num\PYZus{}epochs}\PY{o}{=}\PY{k+kc}{None}\PY{p}{,} \PY{n}{shuffle}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
+        \PY{c+c1}{\PYZsh{} Train the Model}
+        \PY{n}{model}\PY{o}{.}\PY{n}{train}\PY{p}{(}\PY{n}{input\PYZus{}fn}\PY{p}{,} \PY{n}{steps}\PY{o}{=}\PY{n}{num\PYZus{}steps}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Saving checkpoints for 1 into C:\textbackslash{}Users\textbackslash{}tom13\textbackslash{}AppData\textbackslash{}Local\textbackslash{}Temp\textbackslash{}tmp97az0nju\textbackslash{}model.ckpt.
+INFO:tensorflow:step = 1, loss = 2.31252
+INFO:tensorflow:global\_step/sec: 62.4813
+INFO:tensorflow:step = 101, loss = 0.165548 (1.602 sec)
+INFO:tensorflow:global\_step/sec: 67.4517
+INFO:tensorflow:step = 201, loss = 0.149662 (1.485 sec)
+INFO:tensorflow:global\_step/sec: 67.1394
+INFO:tensorflow:step = 301, loss = 0.208731 (1.487 sec)
+INFO:tensorflow:global\_step/sec: 67.1479
+INFO:tensorflow:step = 401, loss = 0.0409326 (1.490 sec)
+INFO:tensorflow:global\_step/sec: 68.0719
+INFO:tensorflow:step = 501, loss = 0.0213496 (1.470 sec)
+INFO:tensorflow:global\_step/sec: 68.771
+INFO:tensorflow:step = 601, loss = 0.037192 (1.452 sec)
+INFO:tensorflow:global\_step/sec: 67.3723
+INFO:tensorflow:step = 701, loss = 0.0822325 (1.485 sec)
+INFO:tensorflow:global\_step/sec: 68.6787
+INFO:tensorflow:step = 801, loss = 0.0128403 (1.455 sec)
+INFO:tensorflow:global\_step/sec: 68.8452
+INFO:tensorflow:step = 901, loss = 0.0358137 (1.455 sec)
+INFO:tensorflow:global\_step/sec: 68.75
+INFO:tensorflow:step = 1001, loss = 0.0192664 (1.453 sec)
+INFO:tensorflow:global\_step/sec: 68.5087
+INFO:tensorflow:step = 1101, loss = 0.00774879 (1.459 sec)
+INFO:tensorflow:global\_step/sec: 67.7028
+INFO:tensorflow:step = 1201, loss = 0.0851327 (1.477 sec)
+INFO:tensorflow:global\_step/sec: 67.7039
+INFO:tensorflow:step = 1301, loss = 0.0553374 (1.479 sec)
+INFO:tensorflow:global\_step/sec: 64.6995
+INFO:tensorflow:step = 1401, loss = 0.0355084 (1.547 sec)
+INFO:tensorflow:global\_step/sec: 67.4277
+INFO:tensorflow:step = 1501, loss = 0.0163228 (1.481 sec)
+INFO:tensorflow:global\_step/sec: 65.4895
+INFO:tensorflow:step = 1601, loss = 0.00959715 (1.528 sec)
+INFO:tensorflow:global\_step/sec: 67.7365
+INFO:tensorflow:step = 1701, loss = 0.00657101 (1.477 sec)
+INFO:tensorflow:global\_step/sec: 68.2635
+INFO:tensorflow:step = 1801, loss = 0.00808421 (1.464 sec)
+INFO:tensorflow:global\_step/sec: 68.3004
+INFO:tensorflow:step = 1901, loss = 0.00447089 (1.465 sec)
+INFO:tensorflow:global\_step/sec: 66.2228
+INFO:tensorflow:step = 2001, loss = 0.00395705 (1.510 sec)
+INFO:tensorflow:global\_step/sec: 67.0613
+INFO:tensorflow:step = 2101, loss = 0.0143454 (1.492 sec)
+INFO:tensorflow:global\_step/sec: 66.8144
+INFO:tensorflow:step = 2201, loss = 0.00251255 (1.496 sec)
+INFO:tensorflow:global\_step/sec: 67.2051
+INFO:tensorflow:step = 2301, loss = 0.00249033 (1.487 sec)
+INFO:tensorflow:global\_step/sec: 67.9835
+INFO:tensorflow:step = 2401, loss = 0.0498065 (1.470 sec)
+INFO:tensorflow:global\_step/sec: 68.2512
+INFO:tensorflow:step = 2501, loss = 0.00226328 (1.467 sec)
+INFO:tensorflow:global\_step/sec: 67.8173
+INFO:tensorflow:step = 2601, loss = 0.000694454 (1.473 sec)
+INFO:tensorflow:global\_step/sec: 67.6461
+INFO:tensorflow:step = 2701, loss = 0.0344697 (1.480 sec)
+INFO:tensorflow:global\_step/sec: 67.8946
+INFO:tensorflow:step = 2801, loss = 0.00430426 (1.472 sec)
+INFO:tensorflow:global\_step/sec: 69.0382
+INFO:tensorflow:step = 2901, loss = 0.033511 (1.447 sec)
+INFO:tensorflow:global\_step/sec: 67.9999
+INFO:tensorflow:step = 3001, loss = 0.00375906 (1.470 sec)
+INFO:tensorflow:global\_step/sec: 68.4807
+INFO:tensorflow:step = 3101, loss = 0.00979484 (1.462 sec)
+INFO:tensorflow:global\_step/sec: 67.3055
+INFO:tensorflow:step = 3201, loss = 0.0192151 (1.488 sec)
+INFO:tensorflow:global\_step/sec: 68.755
+INFO:tensorflow:step = 3301, loss = 0.00091159 (1.452 sec)
+INFO:tensorflow:global\_step/sec: 68.2027
+INFO:tensorflow:step = 3401, loss = 0.00265687 (1.466 sec)
+INFO:tensorflow:global\_step/sec: 66.981
+INFO:tensorflow:step = 3501, loss = 0.00322506 (1.493 sec)
+INFO:tensorflow:global\_step/sec: 67.9271
+INFO:tensorflow:step = 3601, loss = 0.00257395 (1.475 sec)
+INFO:tensorflow:global\_step/sec: 68.4105
+INFO:tensorflow:step = 3701, loss = 0.0113146 (1.459 sec)
+INFO:tensorflow:global\_step/sec: 68.9221
+INFO:tensorflow:step = 3801, loss = 0.0119776 (1.453 sec)
+INFO:tensorflow:global\_step/sec: 68.3297
+INFO:tensorflow:step = 3901, loss = 0.000739706 (1.464 sec)
+INFO:tensorflow:global\_step/sec: 67.7096
+INFO:tensorflow:step = 4001, loss = 0.00202849 (1.474 sec)
+INFO:tensorflow:global\_step/sec: 68.4309
+INFO:tensorflow:step = 4101, loss = 0.00123262 (1.462 sec)
+INFO:tensorflow:global\_step/sec: 68.589
+INFO:tensorflow:step = 4201, loss = 0.0213804 (1.460 sec)
+INFO:tensorflow:global\_step/sec: 68.3938
+INFO:tensorflow:step = 4301, loss = 0.00818979 (1.463 sec)
+INFO:tensorflow:global\_step/sec: 68.1871
+INFO:tensorflow:step = 4401, loss = 0.0192472 (1.465 sec)
+INFO:tensorflow:global\_step/sec: 67.4095
+INFO:tensorflow:step = 4501, loss = 0.009068 (1.483 sec)
+INFO:tensorflow:global\_step/sec: 68.0209
+INFO:tensorflow:step = 4601, loss = 0.00785339 (1.470 sec)
+INFO:tensorflow:global\_step/sec: 68.466
+INFO:tensorflow:step = 4701, loss = 0.00145256 (1.461 sec)
+INFO:tensorflow:global\_step/sec: 68.8636
+INFO:tensorflow:step = 4801, loss = 0.0157578 (1.452 sec)
+INFO:tensorflow:global\_step/sec: 68.8196
+INFO:tensorflow:step = 4901, loss = 0.0353847 (1.454 sec)
+INFO:tensorflow:Saving checkpoints for 5000 into C:\textbackslash{}Users\textbackslash{}tom13\textbackslash{}AppData\textbackslash{}Local\textbackslash{}Temp\textbackslash{}tmp97az0nju\textbackslash{}model.ckpt.
+INFO:tensorflow:Loss for final step: 0.024679.
+
+    \end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}6}]:} <tensorflow.python.estimator.estimator.Estimator at 0x226833dcd30>
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}7}]:} \PY{c+c1}{\PYZsh{} Evaluate the Model}
+        \PY{c+c1}{\PYZsh{} Define the input function for evaluating}
+        \PY{n}{input\PYZus{}fn} \PY{o}{=} \PY{n}{tf}\PY{o}{.}\PY{n}{estimator}\PY{o}{.}\PY{n}{inputs}\PY{o}{.}\PY{n}{numpy\PYZus{}input\PYZus{}fn}\PY{p}{(}
+            \PY{n}{x}\PY{o}{=}\PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{images}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{mnist}\PY{o}{.}\PY{n}{test}\PY{o}{.}\PY{n}{images}\PY{p}{\PYZcb{}}\PY{p}{,} \PY{n}{y}\PY{o}{=}\PY{n}{mnist}\PY{o}{.}\PY{n}{test}\PY{o}{.}\PY{n}{labels}\PY{p}{,}
+            \PY{n}{batch\PYZus{}size}\PY{o}{=}\PY{n}{batch\PYZus{}size}\PY{p}{,} \PY{n}{shuffle}\PY{o}{=}\PY{k+kc}{False}\PY{p}{)}
+        \PY{c+c1}{\PYZsh{} Use the Estimator \PYZsq{}evaluate\PYZsq{} method}
+        \PY{n}{model}\PY{o}{.}\PY{n}{evaluate}\PY{p}{(}\PY{n}{input\PYZus{}fn}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+INFO:tensorflow:Starting evaluation at 2018-01-21-16:56:42
+INFO:tensorflow:Restoring parameters from C:\textbackslash{}Users\textbackslash{}tom13\textbackslash{}AppData\textbackslash{}Local\textbackslash{}Temp\textbackslash{}tmp97az0nju\textbackslash{}model.ckpt-5000
+INFO:tensorflow:Finished evaluation at 2018-01-21-16:56:43
+INFO:tensorflow:Saving dict for global step 5000: accuracy = 0.989, global\_step = 5000, loss = 0.0521909
+
+    \end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}7}]:} \{'accuracy': 0.98900002, 'global\_step': 5000, 'loss': 0.052190915\}
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}8}]:} \PY{c+c1}{\PYZsh{} Predict single images}
+        \PY{n}{n\PYZus{}images} \PY{o}{=} \PY{l+m+mi}{5}
+        \PY{c+c1}{\PYZsh{} Get images from test set}
+        \PY{n}{test\PYZus{}images} \PY{o}{=} \PY{n}{mnist}\PY{o}{.}\PY{n}{test}\PY{o}{.}\PY{n}{images}\PY{p}{[}\PY{p}{:}\PY{n}{n\PYZus{}images}\PY{p}{]}
+        \PY{c+c1}{\PYZsh{} Prepare the input data}
+        \PY{n}{input\PYZus{}fn} \PY{o}{=} \PY{n}{tf}\PY{o}{.}\PY{n}{estimator}\PY{o}{.}\PY{n}{inputs}\PY{o}{.}\PY{n}{numpy\PYZus{}input\PYZus{}fn}\PY{p}{(}
+            \PY{n}{x}\PY{o}{=}\PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{images}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{test\PYZus{}images}\PY{p}{\PYZcb{}}\PY{p}{,} \PY{n}{shuffle}\PY{o}{=}\PY{k+kc}{False}\PY{p}{)}
+        \PY{c+c1}{\PYZsh{} Use the model to predict the images class}
+        \PY{n}{preds} \PY{o}{=} \PY{n+nb}{list}\PY{p}{(}\PY{n}{model}\PY{o}{.}\PY{n}{predict}\PY{p}{(}\PY{n}{input\PYZus{}fn}\PY{p}{)}\PY{p}{)}
+        
+        \PY{c+c1}{\PYZsh{} Display}
+        \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n}{n\PYZus{}images}\PY{p}{)}\PY{p}{:}
+            \PY{n}{plt}\PY{o}{.}\PY{n}{imshow}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{reshape}\PY{p}{(}\PY{n}{test\PYZus{}images}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{,} \PY{p}{[}\PY{l+m+mi}{28}\PY{p}{,} \PY{l+m+mi}{28}\PY{p}{]}\PY{p}{)}\PY{p}{,} \PY{n}{cmap}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{gray}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+            \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Model prediction:}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{preds}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+INFO:tensorflow:Restoring parameters from C:\textbackslash{}Users\textbackslash{}tom13\textbackslash{}AppData\textbackslash{}Local\textbackslash{}Temp\textbackslash{}tmp97az0nju\textbackslash{}model.ckpt-5000
+
+    \end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{InteractiveCNNModel_files/InteractiveCNNModel_7_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+Model prediction: 7
+
+    \end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{InteractiveCNNModel_files/InteractiveCNNModel_7_3.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+Model prediction: 2
+
+    \end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{InteractiveCNNModel_files/InteractiveCNNModel_7_5.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+Model prediction: 1
+
+    \end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{InteractiveCNNModel_files/InteractiveCNNModel_7_7.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+Model prediction: 0
+
+    \end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{InteractiveCNNModel_files/InteractiveCNNModel_7_9.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+Model prediction: 4
+
+    \end{Verbatim}
+
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}
