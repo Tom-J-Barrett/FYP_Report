@@ -1,15 +1,190 @@
 \subsection*{Overview}
 In the preious experiments, I have looked at the one-shot approach to food image
-classification. That is, the model will give a prediction of the most liekly
+classification. That is, the model will give a prediction of the most likely
 food item in that image. This is a problem when there are multiple food in an
-image. There are a few options to combat this problem. Firstly, I could detect
+image, see \ref{fig:fruit}. There are a few options to combat this problem. Firstly, I could detect
 objects in the image, segment the image according to these objects and then run
 each segment through the model. A simple approach to this would be to segment
 the image into a number of sections and then run each section through the model.
+In order to follow the latter approach, I used a sliding window approach. This
+sliding window would move across the image and classify the segment of the image
+in the window. I had three options for window sliding shape as defined by a
+command line argument.
 
-\subsection*{Network Architecture}
-\subsection*{Dataset}
-\subsection*{API's}
+\begin{lstlisting}
+python sliding_window.py --image=~/image_dir --window_shape grid
+\end{lstlisting}
+
+There are three options for window shape:
+\begin{itemize}
+	\item{Grid based window as per \ref{fig:fruitGrid}}
+	\item{Row based window as per \ref{fig:fruitRow}}
+	\item{Column based window as per \ref{fig:fruitColumn}}
+\end{itemize}
+
+\begin{figure}
+    \includegraphics[scale=0.5]{fruit}
+    \caption{Bowl of fruit}
+    \label{fig:fruit}
+\end{figure}
+
+\begin{figure}
+    \includegraphics[scale=0.5]{fruitGrid}
+	\caption{Grid based window}
+    \label{fig:fruitGrid}
+\end{figure}
+
+\begin{figure}
+    \includegraphics[scale=0.5]{fruitRow}
+    \caption{Row based window}
+    \label{fig:fruitRow}
+\end{figure}
+
+\begin{figure}
+    \includegraphics[scale=0.5]{fruitColumn}
+    \caption{Column Based Window}
+    \label{fig:fruitColumn}
+\end{figure}
+
+\subsection*{Libraries}
+For this experiment Tensorflow provided the classification of each segment while
+also helping with resizing along with Numpy. OpenCv was used to implement the
+sliding window as per \textcite{slidingWindowTut}
+
 \subsection*{Script}
+There were three main elements to the script. Firstly, extracting a window to be
+classified. Secondly, resizing the image to be compatible with the Tensorflow
+model and lastly, running the window through the Tensorflow model.
+
+\subsubsection*{Extracting the window from the image}
+\begin{lstlisting}
+# loop over the image pyramid
+for resized in pyramid(image, scale=1.5):
+		# loop over the sliding window for each layer of the pyramid
+		for (x, y, window) in sliding_window(resized, stepSize=32, windowSize=(winW, winH)):
+			# if the window does not meet our desired window size, ignore it
+				if window.shape[0] != winH or window.shape[1] !=winW:
+					continue
+\end{lstlisting}
+
+
+\begin{lstlisting}
+def sliding_window(image, stepSize, windowSize):
+	# slide a window across the image
+	for y in xrange(0, image.shape[0], stepSize):
+		for x in xrange(0, image.shape[1], stepSize):
+			# yield the current window
+			yield (x, y, image[y:y + windowSize[1], x:x + windowSize[0]])
+\end{lstlisting}
+
+\subsubsection*{Resizing the window}
+\begin{lstlisting}
+window = cv2.resize(window, (299, 299))
+\end{lstlisting}
+
+\begin{lstlisting}
+resized_image = tf.reshape(image, [1, input_height, input_width, 3])
+resized = tf.image.resize_area(resized_image, [input_height, input_width])
+normalized = tf.divide(tf.subtract(resized, [input_mean]), [input_std])
+\end{lstlisting}
+
+\subsubsection*{Running the Tensorflow model}
+\begin{lstlisting}
+with tf.Session() as sess:
+	numpy_image = sess.run(normalized)
+
+with tf.Session(graph=graph) as sess:
+    results = sess.run(output_operation.outputs[0],
+                      {input_operation.outputs[0]: numpy_image})
+	probabilities = np.squeeze(results)
+\end{lstlisting}
+
 \subsection*{Results}
+\subsubsection*{Grid based window}
+The grid based window resulted in fifteen separate classification. As seen in
+\ref{fig:fruit}, there are multiple fruits in the image. Of these fruits, our
+model is trained on four, apple, banana, orange and grapes. This method
+classified all four to Top-1 accuracy at least once each. This method took 42.8
+seconds to run.
+
+\begin{table}[]
+	\centering
+	\caption{My caption}
+	\label{my-label}
+	\begin{tabular}{ll}
+		Food type & No. of Top-1 Classifications \\
+		Apple     & 5                      \\
+		Banana    & 1                      \\
+		Grape     & 4                      \\
+		Orange    & 5                     
+	\end{tabular}
+\end{table}
+
+\begin{table}[]
+	\centering
+	\caption{My caption}
+	\label{rowWindowTable}
+	\begin{tabular}{ll}
+		Food type & No. of Top-1 Classifications \\
+		Apple     & 1                      \\
+		Banana    & 0                      \\
+		Grape     & 0                      \\
+		Orange    & 0                      \\
+		Other     & 3                     
+	\end{tabular}
+\end{table}
+
+\begin{table}[]
+	\centering
+	\caption{My caption}
+	\label{colWindowTable}
+	\begin{tabular}{ll}
+		Food type & No. of Top-1 Classifications \\
+		Apple     & 3                      \\
+		Banana    & 1                      \\
+		Grape     & 0                      \\
+		Orange    & 0                      \\
+		Other     & 1                     
+	\end{tabular}
+\end{table}
+
+\subsubsection*{Row based window}
+The row based method resulted in four predictions as follows in
+\ref{rowWindowTable}. Out of these four predictions, only one classified a known
+fruit at Top-1 accuracy, an apple. An apple was also predicted to Top-5 accuracy
+in another instance. The runtime of this method was 16.1 seconds.
+
+\subsubsection*{Column based window}
+The column based window approach had five total predictions and ran for a total
+of 13 seconds. As seen in \ref{colWindowTable}, two out of four known fruits
+were classified to a Top-1 accuracy with all other fruits predicted to Top-5
+accuracy. Only one Top-1 prediction did not contain a correct fruit.
+
 \subsection*{Analysis}
+These results are very interesting because while a banana was only predicted to
+Top-1 accuracy once in grid based, once in column based and zero times in row
+based, if the whole image is ran through the model, a banana is at the Top-1 accuracy.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
