@@ -1,0 +1,106 @@
+\subsection*{Overview}
+In the preious experiments, I have looked at the one-shot approach to food image
+classification. That is, the model will give a prediction of the most likely
+food item in that image. This is a problem when there are multiple food in an
+image, see \ref{figure:fruit}. There are a few options to combat this problem. Firstly, I could detect
+objects in the image, segment the image according to these objects and then run
+each segment through the model. A simple approach to this would be to segment
+the image into a number of sections and then run each section through the model.
+In order to follow the latter approach, I used a sliding window approach. This
+sliding window would move across the image and classify the segment of the image
+in the window. I had three options for window sliding shape as defined by a
+command line argument.
+
+\begin{lstlisting}
+python sliding_window.py --image=~/image_dir --window_shape grid
+\end{lstlisting}
+
+\subsection*{Libraries}
+For this experiment Tensorflow provided the classification of each segment while
+also helping with resizing along with Numpy. OpenCv was used to implement the
+sliding window as per \textcite{slidingWindowTut}.
+
+\subsection*{Results}
+\subsubsection*{Grid based window}
+The grid based window resulted in fifteen separate classification. As seen in
+\ref{figure:fruit}, there are multiple fruits in the image. Of these fruits, our
+model is trained on four, apple, banana, orange and grapes. This method
+classified all four to Top-1 accuracy at least once each. This method took 42.8
+seconds to run.
+
+\begin{table}[]
+	\centering
+	\caption{My caption}
+	\label{my-label}
+	\begin{tabular}{ll}
+		Food type & No. of Top-1 Classifications \\
+		Apple     & 5                      \\
+		Banana    & 1                      \\
+		Grape     & 4                      \\
+		Orange    & 5                     
+	\end{tabular}
+\end{table}
+
+subsubsection*{Row based window}
+The row based method resulted in four predictions as follows. The runtime of
+this method was 16.1 seconds.
+
+\begin{table}[]
+	\centering
+	\caption{My caption}
+	\label{my-label}
+	\begin{tabular}{ll}
+		Food type & No. of Top-1 Classifications \\
+		Apple     & 1                      \\
+		Banana    & 0                      \\
+		Grape     & 0                      \\
+		Orange    & 0                      \\
+		Other     & 3                     
+	\end{tabular}
+\end{table}
+
+\subsubsection*{Column based window}
+The column based window approach had five total predictions and ran for a total
+of 13 seconds.
+
+\begin{table}[]
+	\centering
+	\caption{My caption}
+	\label{my-label}
+	\begin{tabular}{ll}
+		Food type & No. of Top-1 Classifications \\
+		Apple     & 3                      \\
+		Banana    & 1                      \\
+		Grape     & 0                      \\
+		Orange    & 0                      \\
+		Other     & 1                     
+	\end{tabular}
+\end{table}
+\subsection*{Analysis}
+These results are very interesting because while a banana was only predicted to
+Top-1 accuracy once in grid based, once in column based and zero times in row
+based, if the whole image is ran through the model, a banana is at the Top-1 accuracy.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

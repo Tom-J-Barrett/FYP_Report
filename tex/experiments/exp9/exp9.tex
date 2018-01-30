@@ -1,0 +1,37 @@
+\subsection*{Overview}
+Due to the fact that the end goal for this project is to have a smartphone
+application that a user can use to keep track of their calorie measurement,
+there are a couple of options in how to achieve this. Firstly, an image can be
+taken on the phone and sent to a server to run a classification algorithm.
+Secondly, a model can be stored on the phone for computation. I decided to train
+the model, using transfer learning as before, but on a different architecture,
+MobileNet.
+
+\subsection*{Network Architecture}
+The network architecture used for this experiment is MobileNet
+\textcite{retrainInception}. This architecture is designed to be smaller so that
+it can be used on smartphones which have less powerful resources available.
+
+\subsection*{Dataset}
+The Food 101 dataset \textcite{food101} with added classes was used for this experiment.
+
+\subsection*{Libraries}
+Tensorflow and numpy.
+
+\subsection*{Script}
+The retrain.py script \textcite{retrainInception} was used, with a different
+command paramater.
+
+\begin{lstlisting}
+python tensorflow/examples/image_retraining/retrain.py \ --image_dir
+~/dataset_directory \ --architecture mobilenet_1.0_224 \
+--how_many_training_steps 10000 \ --learning_rate 0.1
+\end{lstlisting}
+
+\subsection*{Results}
+The final test accuracy of this model came to 50.2\%.
+
+\subsection*{Analysis}
+There was a decrease of 16.1\% in this model to the highest accuracy from
+experiment 7. This is due to the smaller architecture which is aimed to be faster
+and smaller with the expected decrease in accuracy.
