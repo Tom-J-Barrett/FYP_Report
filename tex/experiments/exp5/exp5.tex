@@ -30,6 +30,10 @@ are split into three sub directories of training, testing and validation. By
 default, these images are split into percentages of 80\%, 10\% and 10\%
 respectively. The model is trained at a default of 4000 steps. 
 
+At the final stage of the script, the model is run on a batch of test images not
+yet seen and a final test accuracy is displayed. This can be seen in the Script
+section below.
+
 The command used for using this model once it is trained is:
 \begin{lstlisting}
 python tensorflow/examples/label_image.py --graph=/tmp/output_graph.pb
