@@ -44,6 +44,19 @@ Some further parameters could be set such as:
      \label{fig:model_train_val}
 \end{figure}
 
+\begin{figure}
+    \includegraphics[scale=0.5]{test_val_accuracy}
+     \caption{Comparison of accuracy}
+     \label{fig:test_val_accuracy}
+\end{figure}
+
+\begin{figure}
+    \includegraphics[scale=0.5]{test_val_accuracy_refined}
+     \caption{Comparison of accuracy}
+     \label{fig:test_val_accuracy_refined}
+\end{figure}
+
+
 \begin{table}[]
 	\centering
 	\caption{Comparison of parameters}
@@ -71,7 +84,10 @@ The results of each set of parameters can be seen in Table
 \ref{parameter_tuning_table}. The set of parameters that seem to be the most
 effective are 10000 steps with a 0.1 learning rate. Graphs of this model can be
 see in Figures \ref{fig:model_train_val} and \ref{fig:model_train_test}. These
-are based on the validation set and then the test set respectively.
+are based on the validation set and then the test set respectively. A side by
+side comparision can also be seen in Figures \ref{fig:test_val_accuracy} and
+\ref{fig:test_val_accuracy_refined} where orange is for during training and blue
+for the validation set.
 \subsection*{Analysis}
 There were two separate factors that each increased classification accuracy of
 about 5\% each. These were training steps and learning rate.
