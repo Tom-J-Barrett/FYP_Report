@@ -1,0 +1,76 @@
+\section{Convolutional Neural Networks Overview}
+Convolutional Neural Networks (CNN's) are essentially a Multi Layered Percetron with a
+special structure. CNN's have one major difference from a MLP, they have extra
+layer of convolution and pooling. The architecture of a convolution network can
+be seen in Figure \ref{fig:convNet}.
+
+\begin{figure}
+	\includegraphics[width=150mm, scale=0.5]{convNet}
+	\caption{CNN Architecture}
+	\label{fig:convNet}
+\end{figure}
+
+Figure \ref{fig:XtoRec} show an image that we want to compare against
+Figure \ref{fig:XtoComp}.
+For humans, it is quite easy to determine that these images are very similar but
+for a computer this task is surprisingly difficult.
+
+So what a CNN does, to combat this problem, is to take a small feature from
+Figure \ref{fig:XtoRec} and compare it to a subsection of Figure \ref{fig:XtoComp}.
+The CNN multiplies the feature and a section of Figure \ref{fig:XtoComp}, adds
+up the results and divides by 9. This then gives a decimal value of how likely
+it is that the feature is in the part of the image, as seen in Figure
+\ref{fig:convoluted}.
+This is called filtering. The Convolutional layer is composed of carrying out
+this filtering for every single possible location in Figure \ref{fig:XtoComp}.
+\begin{figure}
+	\caption{Image filtering}
+    \label{fig:filter}
+      \begin{subfigure}[b]{0.4\textwidth}
+          \includegraphics[width=\textwidth]{XtoRec}
+          \caption{Image to Classify}
+          \label{fig:XtoRec}
+      \end{subfigure}
+    %
+      \begin{subfigure}[b]{0.4\textwidth}
+      \includegraphics[width=\textwidth]{XtoComp}
+      \caption{Image to Compare}
+      \label{fig:XtoComp}
+      \end{subfigure}
+\end{figure}
+
+\begin{figure}
+    \caption{Image Convolution}  
+    \begin{subfigure}[b]{0.4\textwidth}
+          \includegraphics[width=\textwidth]{ImageFeature}
+          \caption{Image Feature to Search}
+          \label{fig:feature}
+      \end{subfigure}
+     %
+      \begin{subfigure}[b]{0.4\textwidth}
+           \includegraphics[width=\textwidth]{ConvImage}x
+           \caption{Convoluted Image}
+           \label{fig:convoluted}
+      \end{subfigure}
+\end{figure}
+\begin{figure}
+    \includegraphics[width=50mm,scale=0.5]{PooledImage}
+    \caption{Pooled Image}
+    \label{fig:pooled}
+\end{figure}
+Next is the Pooling Layer, what this layer does, is it takes the convoluted
+layer output, you can use Figure \ref{fig:convoluted} as reference, and from a
+user defined size ie. 2x2, gets either the highest decimal value (Max pooling)
+or the average value (Mean pooling) and records that as the new value for the
+section. This is then applied to the entire image. As we can see in Figure
+\ref{fig:pooled} we know have a much smaller image stack in which to classify,
+thus making the computation easier.
+
+In between the Convolution and Pooling layer, there is sometimes a Normalization
+layer. This Normalization layer creates Rectified Linear Units (RLU's). In other
+words, if we take Figure \ref{fig:convoluted}, it changes all minus values to
+zero.
+
+There are some problems with CNN's however. One of the main problems is that you
+need a very large dataset in order to produce am accurate model and the training
+can be very time consuming without a GPU.
