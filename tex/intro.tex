@@ -18,13 +18,20 @@ When looking into calorie measurement using an image, there are three questions 
 In this project, my main focus will be on the first question, 'Where are the
 Regions of Interest (ROI) in this food image?'. This is normally achieved
 through image segmentation. Image segmentation is the process in which you
-divide an image into multiple segments as per Figure \ref{fig:imageSeg}.
+divide an image into multiple segments as per Figure \ref{fig:imageSeg} and \ref{fig:preImageSeg}.
 
 \begin{figure}
-	\includegraphics{segment}
+	\includegraphics[scale=0.5]{orig}
+	\caption{Pre-segmented Image}
+	\label{fig:preImageSeg}
+\end{figure}
+
+\begin{figure}
+	\includegraphics[scale=0.5]{segment}
 	\caption{Segmented Image}
 	\label{fig:imageSeg}
 \end{figure}
+
 
 Many researchers in various machine vision labs have attempted to solve this
 problem using different methodologies.
@@ -50,14 +57,15 @@ I will focus on finding the objects for this application as I will not be able t
 
 \section{Objectives}
 \subsection*{Primary Objectives}
-\subsubsection*{Replicate results of previous work and possibly improve the
-result}
+\subsubsection*{Use Convolutional Nueral Networks for Food Image Classification}
+There has been a large paradigm shift in food image recognition in recent years to using convolutional nueral networks. I hope to use this paradigm to answer the problem statement.
+
+\subsubsection*{Tune the CNN, replicating previous work}
 There are many different approaches to food identification and classification,
 many of which we will see in Chapter 2. I hope to select an approach that has
-shown promising results in the past and replicate them. As a stretch goal, I may
-be able to improve the results that were originally found.
+shown promising results in the past and replicate them. In addition to this, there are many different network architectures and parameters that can be adjused when building CNNs and I hope to tune these in order to get the best outcome I can.
 
-\subsubsection*{Develop an application}
+\subsubsection*{Develop a mobile application to leverage the CNN}
 Another objective for this project is to develop an application that can be used
 for dietary assessment. This application would be able to take an image and then
 identify and classify the foods within the image. I will not focus on size
