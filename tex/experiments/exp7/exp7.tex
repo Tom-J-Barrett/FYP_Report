@@ -32,11 +32,35 @@ Some further parameters could be set such as:
 	\item{--random\_brightness}
 \end{itemize}
 
-\subsection*{Results}
+\begin{figure}
+    \includegraphics[scale=0.5]{model_test}
+     \caption{Graph of accuracy of the test dataset during training}
+     \label{fig:model_train_test}
+\end{figure}
+
+\begin{figure}
+    \includegraphics[scale=0.5]{model_val}
+     \caption{Graph of accuracy of the validation dataset during training}
+     \label{fig:model_train_val}
+\end{figure}
+
+\begin{figure}
+    \includegraphics[scale=0.5]{test_val_accuracy}
+     \caption{Comparison of accuracy}
+     \label{fig:test_val_accuracy}
+\end{figure}
+
+\begin{figure}
+    \includegraphics[scale=0.5]{test_val_accuracy_refined}
+     \caption{Comparison of accuracy}
+     \label{fig:test_val_accuracy_refined}
+\end{figure}
+
+
 \begin{table}[]
 	\centering
-	\caption{My caption}
-	\label{my-label}
+	\caption{Comparison of parameters}
+	\label{parameter_tuning_table}
 	\begin{tabular}{llllll}
 		Parameter Tuning & Steps & Learning Rate & Test \% & Validation \% &
 		Results \\
@@ -55,6 +79,15 @@ Some further parameters could be set such as:
 	\end{tabular}
 \end{table}
 
+\subsection*{Results}
+The results of each set of parameters can be seen in Table
+\ref{parameter_tuning_table}. The set of parameters that seem to be the most
+effective are 10000 steps with a 0.1 learning rate. Graphs of this model can be
+see in Figures \ref{fig:model_train_val} and \ref{fig:model_train_test}. These
+are based on the validation set and then the test set respectively. A side by
+side comparision can also be seen in Figures \ref{fig:test_val_accuracy} and
+\ref{fig:test_val_accuracy_refined} where orange is for during training and blue
+for the validation set.
 \subsection*{Analysis}
 There were two separate factors that each increased classification accuracy of
 about 5\% each. These were training steps and learning rate.

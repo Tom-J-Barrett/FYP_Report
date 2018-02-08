@@ -46,15 +46,22 @@ There are three options for window shape:
     \label{fig:fruitColumn}
 \end{figure}
 
+\begin{figure}
+    \includegraphics[scale=0.5]{fruitCO}
+    \caption{Fruit with Color Overlay}
+    \label{fig:fruitOverlay}
+\end{figure}
+
 \subsection*{Libraries}
 For this experiment Tensorflow provided the classification of each segment while
 also helping with resizing along with Numpy. OpenCv was used to implement the
 sliding window as per \textcite{slidingWindowTut}
 
 \subsection*{Script}
-There were three main elements to the script. Firstly, extracting a window to be
+There were four main elements to the script. Firstly, extracting a window to be
 classified. Secondly, resizing the image to be compatible with the Tensorflow
-model and lastly, running the window through the Tensorflow model.
+model. Thirdly, running the window through the Tensorflow model and finally
+saving a new image with a coloured overlay of classifications.
 
 \subsubsection*{Extracting the window from the image}
 \begin{lstlisting}
@@ -97,6 +104,17 @@ with tf.Session(graph=graph) as sess:
     results = sess.run(output_operation.outputs[0],
                       {input_operation.outputs[0]: numpy_image})
 	probabilities = np.squeeze(results)
+\end{lstlisting}
+
+\subsubsection*{Saving the image with colour overlay}
+As seen in Figure \ref{fig:fruitOverlay}, each square represents a window and
+each colour is for a different classification. Blue is for an apple, yellow for
+banana, green for grape, white for orange and black if an unexpected prediction
+is made.
+
+\begin{lstlisting}
+cv2.rectangle(display_image, (x, y), (x + winW, y + winH), colour_dict.get(top1,
+(0,0,0)), 4)
 \end{lstlisting}
 
 \subsection*{Results}
