@@ -15,10 +15,17 @@ fire an output. These inputs are either 1 or -1.
      \label{fig:perceptron}
 \end{figure}
 
-This Perceptron Learning Rule assumes that there are two sets of instances, a
-positive and negative set, and that they are linearly seperable.
+\begin{figure}
+    \includegraphics{LS}
+     \caption{Linearly Separable, adapted from \textcite{MLANN}}
+     \label{fig:ls}
+\end{figure}
 
-A perceptron is trained using supervised learning. When the perceptron
+The Perceptron Training Rule is the means by which weights are selected to produce the correct output during training. As in \textcite{MLANN}, a common way to train a perceptron is t start with random weights and change them during training as per
+This Perceptron Training Rule assumes that there are two sets of instances, a
+positive and negative set, and that they are linearly separable, as in Figure \ref{fig:ls}.
+
+A perception is trained using supervised learning. When the perceptron
 classifies a results, it is told if it is correct or not. If the result is
 incorrect, weights are changed in value so that this error can be reduced
 \textcite{AI}. 
@@ -57,3 +64,4 @@ solve this problem which we will discuss later.
      \caption{Multi Layer Perceptron}
      \label{fig:mlp}
 \end{figure}
+
