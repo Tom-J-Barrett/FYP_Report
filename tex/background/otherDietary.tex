@@ -26,9 +26,20 @@ In the prototype application, once the classification had been made, the user ca
 
 15 food types were trained using the SVM with 3000 images. The accuracy for the classifier averaged at 90.41\% using 10 fold cross-validation \textcite{pouladzadeh2014measuring}. There was also a calorie count accuracy of 86\%. The best classification results were on single foods followed by non mixed and finally mixed foods produced the worst results.
 
-% \subsubsection*{Segmentation Assisted Food Classification for Dietary Assessment}
-% \textcite{zhu2011segmentation}
+\subsubsection*{Segmentation Assisted Food Classification for Dietary Assessment}
+\textcite{zhu2011segmentation} had a strong focus on the segmentation aspect of a dietary assessment system.
+The segmentation of the food images was achieved "using Normalized Cuts based on intensity and colour" \textcite{zhu2011segmentation}.
+Normalized Cuts is a graph based segmentation method.
+To aid the segmentation aspect of this study, a common background colour was introduced to the images.
+Segmentation refinement was also an important module in the experiment.
+This is the process by which neighbouring segments with  the same classification label are merged together.
+This also helps calculate a more accurate size estimation.
 
+The classification of the segmented image was processed by using a SVM calculating colour and texture features.
+Gabor filters were used for the texture feature extraction \textcite{zhu2011segmentation}.
+
+In the experimental results for this study, it was found that segmentation was not always successful "when the region of interest is camouflaged by making its boundary faint" \textcite{zhu2011segmentation}. In their case, it was a can of coke that wasn't segmented correctly.
+The classification accuracy was of 56.2\% and 95.5\% with ground truth segmentation data \textcite{zhu2011segmentation}.
 % \subsubsection*{Large Scale Leaning for Food Image Classification}
 % \textcite{LSL_2015}
 
