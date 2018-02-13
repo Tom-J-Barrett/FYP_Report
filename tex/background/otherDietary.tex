@@ -40,36 +40,102 @@ Gabor filters were used for the texture feature extraction \textcite{zhu2011segm
 
 In the experimental results for this study, it was found that segmentation was not always successful "when the region of interest is camouflaged by making its boundary faint" \textcite{zhu2011segmentation}. In their case, it was a can of coke that wasn't segmented correctly.
 The classification accuracy was of 56.2\% and 95.5\% with ground truth segmentation data \textcite{zhu2011segmentation}.
-% \subsubsection*{Large Scale Leaning for Food Image Classification}
-% \textcite{LSL_2015}
 
-% \subsubsection*{Promising Approaches of Computer-supported Dietary Assessment and Management: Current Research Status and Available Applications}
-% \textcite{arens2015promising}
+\subsubsection*{Large Scale Leaning for Food Image Classification}
+\textcite{LSL_2015} proposed a food image recognition system using a Bag of Features model.
+This study used over 5000 images separated into 11 classes.
 
-% \subsubsection*{A Personal Assistive System for Nutrient Intake Monitoring}
-% \textcite{personalAssistive}
+A clustering algorithm was employed on this study before classification.
+For the classification step, experiments were carried out using different methods:
+\begin{itemize}
+	\item{SVM}
+	\item{ANN}
+	\item{Random Forests}
+\end{itemize}
 
-% \subsubsection*{Toward Dietary Assessment via Mobile Phone Video Camera}
-% \textcite{chen2010toward}
+The final accuracy of the system was 78\% \textcite{LSL_2015}.
+
+% % \subsubsection*{Promising Approaches of Computer-supported Dietary Assessment and Management: 
+% % Current Research Status and Available Applications}
+% % \textcite{arens2015promising}
+
+\subsubsection*{A Personal Assistive System for Nutrient Intake Monitoring}
+Similar to other approaches seen thus far, \textcite{personalAssistive} employs the use of the users thumb in the image for size estimation.
+
+Once a photo has been taken by the user with their thumb present, the system segments the food on the plate using shape, colour and texture detectors.
+The system then classifies the food type based on these features.
+
+In this paper, it was decided to allow the users to change the prediction by the system.
+The thumb of each user is calibrated upon use of the application so that size estimation can be as accurate a possible \textcite{personalAssistive}.
+
+\subsubsection*{Toward Dietary Assessment via Mobile Phone Video Camera}
+Another study into using computer vision for dietary assessment was carried out by \textcite{chen2010toward}. They had a unique medium for the topic by using a video of the dishes in question and extracting frames from these videos to get the food from different angles.
+
+\textcite{chen2010toward} then formed a region of interest in the image, where there were the most food items and extracted colour and image features.
+These image features were extracted using Maximally Stable Extremal Regions (MSER), Speeded Up Robust Features (SURF) and Star detector.
+
+This research team also uses k-means clustering to build a bag-of-words model \textcite{chen2010toward}.
+
+The system had results as seen below across 20 categories using five images out of each video taken of the food:
+\begin{itemize}
+	\item{MSER - 95\%}
+	\item{SURF - 90\%}
+	\item{STAR - 90\%}
+\end{itemize}
 
 % \subsubsection*{Novel Technologies for Assessing Dietary Intake: Evaluating the
 % Usability of a Mobile Telephone Food Record Among Adults and Adolescents}
 % \textcite{novelTech}
 
-% \subsubsection*{Vitamin D Intake Among Young Canadian Adults: Validation of a Mobile Vitamin D Calculator App}
-% \textcite{goodman2015vitamin}
+\subsubsection*{Automatic Chinese Food Identification and Quantity Estimation}
+There was a study carried out on food identification through a smart phone application \textcite{chen2012automatic}. This study resulted in an application that allows a user to send an image of there food to a server which can give them an automatic response in 12 seconds \textcite{chen2012automatic}. This back end service can have 34 threads working concurrently as stated at the time the paper was published \textcite{chen2012automatic}.
 
-% \subsubsection*{Automatic Chinese Food Identification and Quantity Estimation}
-% \textcite{chen2012automatic}
+A SVM is used to classify the image across 50 categories trained on around 100 images each.
+The SVM uses SIFT and Local Binary pattern feature extractors \textcite{chen2012automatic}.
+A separate SVM was trained for each of these extractors and was merged together using a "Multi-class AdaBoost algorithm" \textcite{chen2012automatic}.
 
-% \subsubsection*{An Overview of the Technology Assisted Dietary Assessment Project at Purdue University}
-% \textcite{khanna2010overview}
+The study produced a top-1 accuracy  of 68.3\%. Accuracy of 80.6\%, 84.8\% and 90.9\% were recorded using top-2, top-3 and top-5 accuracy respectively \textcite{chen2012automatic}. 
 
-% \subsubsection*{An Image Processing Approach for Calorie Intake Measurement}
-% \textcite{villalobos2012image}
+% % \subsubsection*{An Overview of the Technology Assisted Dietary Assessment Project at Purdue University}
+% % \textcite{khanna2010overview}
 
-% \subsubsection*{“Snap-n-Eat” Food Recognition and Nutrition Estimation on a Smartphone}
-% \textcite{snap}
+\subsubsection*{An Image Processing Approach for Calorie Intake Measurement}
+\textcite{villalobos2012image} researched the question of using a computer vision approach to this topic. They focus mostly on the segmentation and region of interest calculation of the system in their study.
 
-% \subsubsection*{Merging dietary assessment with the adolescent lifestyle}
-% \textcite{schap2014merging}
+The system in question requires two images of the food, one from above and one from the side. This helps with size estimation. The users thumb is required to be in the image for accurate size estimation. The application also requires an image after consumption as not too calculate calories for uneaten food.
+
+The system segments the image and then extracts colour, size and shape information from each segment. This data is then used by a SVM for classification along with a nutritional database for calorie information. 
+
+Multiple segmentation methods were tested such as:
+\begin{itemize}
+	\item{Semi automatic contour definition}
+	\item{Watershed transformation}
+	\item{Colour rasterization}
+	\item{Edge accentication}
+\end{itemize}
+The first two were dismissed due to poor results but the second two were used in conjunction for the segmentation aspect of the system.
+
+\subsubsection*{Food Recognition and Nutrition Estimation on a Smartphone}
+An application called "Snap-n-Eat" was proposed by \textcite{snap}.
+
+When an image is taken using this application, the first thing the system does is finds saliency regions to remove the background of the image.
+If the image has multiple food types present, hierarchical segmentation takes place before proceeding to a SVM. Similar segments are merged together.
+These are found by using colour, texture and size.
+
+SIFT and Histogram of Oriented Gradients (HOG) feature extractors are used on the image and these features are used by the SVM for classification.
+The SVM is trained using Scholastic Gradient Descent.
+\textcite{snap} as uses a Bog of Visual Words model along with k-means clustering.
+
+An accuracy of 85\% on 15 classes was recorded using this method \textcite{snap}.
+
+\subsubsection*{Merging dietary assessment with the adolescent lifestyle}
+\textcite{schap2014merging} proposed a system used by smart phones which sends an image of a users food to a back end system for computation.
+
+Once this has been completed, the image is segmented, features are extracted from each segment and these segments are classified.
+Colour and Texture are used for classification.
+The user has the ability to confirm or amend predictions of the food type.
+
+Size estimation is also an important aspect of this system.
+In contrast to previous studies, \textcite{snap} uses food type shape and then those shapes geometric properties to estimate size.
+
+This study produced results of 94\% out of 32 test cases.
