@@ -1,0 +1,31 @@
+\subsection*{Overview}
+In many of the papers that have been researched where food image classification was carried out, they attempted to classify a lot less than 108 food types as has been the case for experiments previously shown.
+\textcite{novelSVM} used 12 classes, \textcite{pouladzadeh2014measuring} had 15, \textcite{LSL_2015} attempted to classify 11 classes of food, 20 classes were used in \textcite{chen2010toward} and \textcite{snap} predicted 15 classes.
+Due to the lower number of classes in these papers, it was decided to retrain inception on a subset of the food-101 extended dataset to benchmark results.
+13 classes were selected from food-101 for training.
+
+\subsection*{Network Architecture}
+Retrained Inception model.
+
+\subsection*{Dataset}
+A subset of the Food 101 dataset was used for this experiment \textcite{food101}.
+
+\subsection*{Results}
+A Final test Accuracy of 92.6\% was recorded for this experiment which performs quite high in comparison to the data in Table \ref{classes_accuracy}
+
+\begin{table}[]
+\centering
+\caption{Accuracy of other studies}
+\label{classes_accuracy}
+\begin{tabular}{lll}
+Reference                       & Classes & Accuracy      \\
+Novel SVM                       & 12      & 92.6\%        \\
+Measuring Calorie and Nutrition & 15      & 90.41\%       \\
+Large Scale Learning            & 11      & 78\%          \\
+Toward Dietary Assessment       & 20      & $\sim$91.67\% \\
+Snap-n-eat                      & 15      & 85\%         
+\end{tabular}
+\end{table}
+
+\subsection*{Analysis}
+It would make sense the accuracy of our model would increase when the number of classes are reduced as the margin of error is decreased.
