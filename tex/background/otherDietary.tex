@@ -1,3 +1,6 @@
+While Covolutional Neural Networks have proven very successful in recent years, there are many of methods that have been employed by food image recognition researchers.
+A summary of the results of these methods can be seen in Table \ref{other_dietary_summary}.
+
 \subsubsection*{A Food Image Recognition System with Multiple Kernel Learning}
 In this paper, \textcite{kernelLearning}, a practical use for food image recognition in the form of a mobile phone application was proposed. In order to classify the images, multiple kernel learning(MKL) was used. MKL is similar to am SVM expect that instead of a single kernel during training, MKL "treats with a combined kernel which is a weighted linear combination of several single kernels" \textcite{kernelLearning}. The idea behind this is that different food types are distinguishable by different factors and using this method, the best of these factors can be used for classification of that food type. In the experiment carried out by \textcite{kernelLearning}, three different factors were used for learning:
 \begin{itemize}
@@ -139,3 +142,21 @@ Size estimation is also an important aspect of this system.
 In contrast to previous studies, \textcite{snap} uses food type shape and then those shapes geometric properties to estimate size.
 
 This study produced results of 94\% out of 32 test cases.
+
+
+\begin{table}[]
+\centering
+\caption{Summary of accuracy in dietary assessment methods}
+\label{other_dietary_summary}
+\begin{tabular}{lll}
+Title                                                         & No. of Classes & Accuracy   \\
+Food Image Recognition with Multiple Kernel Learning          & 50             & 61.34\%    \\
+A Novel SVM Based Food Recognition Method                     & 12             & 92.6\%     \\
+Measuring Calorie and Nutrition From Food Image               & 15             & 90.41\%    \\
+Segmentation Assisted Food Classification                     & N/A            & 77.4\%     \\
+Large Scale Leaning for Food Image Classification             & 11             & 78\%       \\
+Toward Dietary Assessment via Mobile Phone Video Camera       & 20             & $\sim$92\% \\
+Automatic Chinese Food Identification and Quantity Estimation & 50             & 68.3\%     \\
+Food Recognition and Nutrition Estimation on a Smartphone      & 15             & 85\%      
+\end{tabular}
+\end{table}

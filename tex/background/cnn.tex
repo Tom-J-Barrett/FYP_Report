@@ -1,6 +1,7 @@
 Many reserachers have used convolutional neural networks for image
-classification with various network architectures and many have used a food image dataset. I will be looking at
-some of these papers below.
+classification with various network architectures and many have used a food image dataset.
+I will be looking at some of these papers below.
+A summary of their results can be seen in Table \ref{cnn_summary}.
 
 \subsubsection*{Deep Learning Based Food Recognition}
 One paper focused on a deep learning approach to food image recognition based
@@ -61,12 +62,25 @@ They achieved the results shown in \ref{resultsDeepFood}.
 	\caption{DeepFood Results}
 	\label{resultsDeepFood}
 	\begin{tabular}{lll}
-		                          & Top-1  & Top-5  \\
-								  UEC-256                   & 54.7\% & 81.5\% \\
-								  UEC-100                   & 76.3\% & 94.6\% \\
-								  Food-101                  & 77.4\% & 93.7\% \\
-								  UEC-256 With Bounding Box & 63.8\% & 87.2\% \\
-								  UEC-100 With Bounding Box & 77.2\% & 94.8\%
+		& Top-1  & Top-5  \\
+		UEC-256                   & 54.7\% & 81.5\% \\
+		UEC-100                   & 76.3\% & 94.6\% \\
+		Food-101                  & 77.4\% & 93.7\% \\
+		UEC-256 With Bounding Box & 63.8\% & 87.2\% \\
+		  UEC-100 With Bounding Box & 77.2\% & 94.8\%
+	\end{tabular}
+\end{table}
+
+\begin{table}[]
+	\centering
+	\caption{Summary of results in CNN based methods}
+	\label{cnn_summary}
+	\begin{tabular}{lll}
+		Title                                & Dataset     & Accuracy \\
+		Deep Learning Based Food Recognition & Food 101    & 72.55\%  \\
+		Food Image Recognition               & Food 101    & 78.77\%  \\
+		Food Detection and Recognition       & Own dataset & 93.8\%   \\
+		DeepFood                             & Food 101    & 77.4\%  
 	\end{tabular}
 \end{table}
 

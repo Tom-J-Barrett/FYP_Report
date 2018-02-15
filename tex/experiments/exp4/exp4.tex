@@ -106,7 +106,7 @@ tf.logging.info('Final test accuracy = %.1f%% (N=%d)' %
 \subsection*{Results}
 The final test accuracy for this retrained model was 54.8\%.
 
-For example, an image of pizza, see \ref{fig:pizza} was fed into the model with the followng results:
+For example, an image of pizza Figure\ref{fig:pizza}, was fed into the model with the followng results:
 \begin{itemize}
     \item{pizza 0.925}
     \item{pancakes 0.008}
@@ -121,4 +121,17 @@ For example, an image of pizza, see \ref{fig:pizza} was fed into the model with 
      \label{fig:pizza}
 \end{figure}
 
+In contrast, Figure \ref{fig:pizza_unclassified} was not classified as a pizza.
+
+\begin{figure}
+     \includegraphics[scale=0.075]{pizza_unclassified}
+     \caption{Pizza not classified correctly by the model}
+     \label{fig:pizza_unclassified}
+\end{figure}
+
 \subsection*{Analysis}
+These poor results are not that surprising.
+This is because we have many classes to train for, 101, and no parameter tuning has been carried out on the running of this code.
+
+Figure \ref{fig:pizza_unclassified} was not classified correctly, this is most likely due to the fact that the pizza does not take up much of the image.
+
