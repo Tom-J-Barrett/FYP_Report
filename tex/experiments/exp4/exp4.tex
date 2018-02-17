@@ -45,6 +45,44 @@ python tensorflow/examples/label_image.py --graph=/tmp/output_graph.pb
 The Inception V3 model network architecture was used for this experiment. The
 Inception V3 architecture was created by building on the existing Inception
 model aimed at efficient image classification \textcite{rethinkingInception}.
+This research was carried out due to the popularity of convolutional neural networks.
+The main aim of this study was to produce a model that would "scale up networks in ways that aim at utilizing the added computation as efficiently as possible by suitable factorized convolutions and aggressive regularization" \textcite{rethinkingInception}.
+The team did not want to simply rely on larger models for better results.
+
+The are 4 main design principles that the research team followed in the paper \textcite{rethinkingInception}:
+\begin{itemize}
+    \item{Avoid representational bottlenecks}
+    \item{It is easier to process higher dimensional representations locally}
+    \item{Without much loss in power, spatial aggregation can be carried out over lower dimensional embeddings}
+    \item{The width and depth of the network should be balanced and when one is increased it can be beneficial to increase the other.}
+\end{itemize}
+
+\begin{figure}
+     \includegraphics[scale=0.25]{inception}
+     \caption{Inception module}
+     \label{fig:inception}
+\end{figure}
+
+The main idea behind the network is that different strands of the network are followed and the best result is used as seen in Figure \ref{fig:inception}.
+
+In order to combat the problem of low resolution input, three separate experiments were carried out based on the fact that "One simple way to ensure constant effort effort is to reduce the strides of the first two layer in the case of lower resolution input, or by simply removing the first pooling layer of the network" \textcite{rethinkingInception}.
+
+These experiments are as follows, with the first resulting in the most accurate:
+\begin{itemize}
+    \item{"299 x 299 receptive field with stride 2 and maximum pooling after the first layer." \textcite{rethinkingInception}}
+    \item{"151 x 151 receptive field with stride 1 and maximum pooling after the first layer." \textcite{rethinkingInception}}
+    \item{"79 x 79 receptive field with stride 1 and without pooling after the first layer." \textcite{rethinkingInception}}
+\end{itemize}
+
+\begin{figure}
+     \includegraphics[scale=0.25]{inception_model}
+     \caption{Inception V3 Architecture}
+     \label{fig:inception_model}
+\end{figure}
+
+The best results of the Inception-V3 model achieved 78.8\% top-1 accuracy and 94.4\% top accuracy of the ILSVR 2012 dataset \textcite{rethinkingInception}.
+This model also was the least computationally expensive of other published and successful models.
+The full models can be viewed in Figure \ref{fig:inception_model}.
 
 \subsection*{Dataset}
 The dataset used for this experiment is the Food-101 dataset \textcite{Food
