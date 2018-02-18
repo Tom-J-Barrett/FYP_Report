@@ -1,0 +1,17 @@
+OpenCV is an industry wide, open source library for computer vision and machine learning \textcite{opencv}.
+It has over 2500 algorithms that are available for use \textcite{opencv}.
+OpenCV is supported across multiple languages and platforms such as Python, C++, C, Java, Matlab, running on Windows, Android, Mac OS and Linux \textcite{opencv}.
+
+There is not much of the library utilised in this project due to the nature of Tensorflow but some algorithms for image reading, writing and resizing were used due to the ease of use.
+
+\begin{lstlisting}
+image = cv2.imread('image.jpg')
+\end{lstlisting}
+
+\begin{lstlisting}
+resized = cv2.resize(image, (299, 299))
+\end{lstlisting}
+
+\begin{lstlisting}
+cv2.imwrite('imageResized.jpg', resized)
+\end{lstlisting}
