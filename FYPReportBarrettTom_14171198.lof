@@ -2,88 +2,90 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Pre-segmented Image\relax }}{7}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Pre-segmented Image\relax }}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Segmented Image\relax }}{7}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Perceptron\relax }}{15}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Linearly Separable, adapted from \textcite {MLANN}\relax }}{16}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces The Perceptron Training Rule which changes weights, sourced from \textcite {MLANN}\relax }}{16}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces The Perceptron Training Rule condition, sourced from \textcite {MLANN}\relax }}{16}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Multi Layer Perceptron\relax }}{18}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Gradient Descent\relax }}{19}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces CNN Architecture\relax }}{20}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Image filtering\relax }}{21}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Image Convolution\relax }}{22}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Pooled Image\relax }}{22}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Support Vector Machine Applicability\relax }}{24}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Segmented Image\relax }}{8}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Inception module\relax }}{54}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Perceptron\relax }}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Inception V3 Architecture\relax }}{55}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Linearly Separable, adapted from \textcite {MLANN}\relax }}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Pizza\relax }}{57}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces The Perceptron Training Rule which changes weights, sourced from \textcite {MLANN}\relax }}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Pizza not classified correctly by the model\relax }}{58}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces The Perceptron Training Rule condition, sourced from \textcite {MLANN}\relax }}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Banana\relax }}{60}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Multi Layer Perceptron\relax }}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Graph of accuracy of the test dataset during training\relax }}{62}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Gradient Descent\relax }}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Graph of accuracy of the validation dataset during training\relax }}{62}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces CNN Architecture\relax }}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Comparison of accuracy\relax }}{63}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Image filtering\relax }}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Comparison of accuracy\relax }}{63}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Image Convolution\relax }}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Bowl of fruit\relax }}{65}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Pooled Image\relax }}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Grid based window\relax }}{66}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Row based window\relax }}{66}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Column Based Window\relax }}{66}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Fruit with Color Overlay\relax }}{67}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Recursive refinement 1\relax }}{73}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Recursive refinement 2\relax }}{74}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Recursive refinement 3\relax }}{74}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Bowl of fruit with background removed\relax }}{75}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Alternative Bowl of fruit\relax }}{77}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Support Vector Machine Applicability\relax }}{25}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Inception module\relax }}{57}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Inception V3 Architecture\relax }}{58}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Pizza\relax }}{61}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Pizza not classified correctly by the model\relax }}{61}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Banana\relax }}{64}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Graph of accuracy of the test dataset during training\relax }}{66}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Graph of accuracy of the validation dataset during training\relax }}{66}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Comparison of accuracy\relax }}{66}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Comparison of accuracy\relax }}{67}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Detection Average Precision \textcite {donahue}\relax }}{90}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Bowl of fruit\relax }}{73}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Mean Average Precision \textcite {donahue}\relax }}{90}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Grid based window\relax }}{74}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Distribution of top-ranked false positives \textcite {donahue}\relax }}{91}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Row based window\relax }}{74}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Segmentation Mean Accuracy \textcite {donahue}\relax }}{91}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Column Based Window\relax }}{74}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Per-category segmentation accuracy \textcite {donahue}\relax }}{91}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Fruit with Color Overlay\relax }}{75}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Per-class segmentation accuracy \textcite {donahue}\relax }}{92}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Recursive refinement 1\relax }}{80}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Recursive refinement 2\relax }}{80}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Recursive refinement 3\relax }}{81}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Bowl of fruit with background removed\relax }}{82}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Alternative Bowl of fruit\relax }}{84}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Detection Average Precision \textcite {donahue}\relax }}{95}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Mean Average Precision \textcite {donahue}\relax }}{95}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Distribution of top-ranked false positives \textcite {donahue}\relax }}{96}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Segmentation Mean Accuracy \textcite {donahue}\relax }}{96}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Per-category segmentation accuracy \textcite {donahue}\relax }}{96}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Per-class segmentation accuracy \textcite {donahue}\relax }}{97}
