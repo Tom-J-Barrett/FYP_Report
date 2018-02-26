@@ -1,8 +1,8 @@
 \subsection*{Overview}
 In the preious experiments, I have looked at the one-shot approach to food image
 classification. That is, the model will give a prediction of the most likely
-food item in that image. This is a problem when there are multiple food in an
-image, see \ref{fig:fruit}. There are a few options to combat this problem. Firstly, I could detect
+food item in that image. This is a problem when there is a composite image i.e are multiple foods in an
+image, see Figure\ref{fig:fruit}. There are a few options to combat this problem. Firstly, I could detect
 objects in the image, segment the image according to these objects and then run
 each segment through the model. A simple approach to this would be to segment
 the image into a number of sections and then run each section through the model.
@@ -65,13 +65,10 @@ saving a new image with a coloured overlay of classifications.
 
 \subsubsection*{Extracting the window from the image}
 \begin{lstlisting}
-# loop over the image pyramid
-for resized in pyramid(image, scale=1.5):
-		# loop over the sliding window for each layer of the pyramid
-		for (x, y, window) in sliding_window(resized, stepSize=32, windowSize=(winW, winH)):
-			# if the window does not meet our desired window size, ignore it
-				if window.shape[0] != winH or window.shape[1] !=winW:
-					continue
+for (x, y, window) in sliding_window(resized, stepSize=64, windowSize=(winW, winH)):
+	# if the window does not meet our desired window size, ignore it
+	if window.shape[0] != winH or window.shape[1] != winW:
+		continue
 \end{lstlisting}
 
 

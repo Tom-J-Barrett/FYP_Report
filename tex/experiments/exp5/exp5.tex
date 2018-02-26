@@ -14,7 +14,7 @@ dataset slightly be including some single foods such as:
 In order to collect these images, I used the ImageNet repository to search for
 these foods individually and then downloaded the subset of images to be included
 with Food 101 \textcite{imagenet}. I ran the retrain.py script on the extended dataset as in
-Experiment 5.
+\ref{inception}.
 
 \subsection*{Network Architecture}
 The Inception V3 Model was used for this experiment.
@@ -26,7 +26,7 @@ In this experiment I extended the Food-101 dataset.
 Tensorflow and numpy are used in the retrain.py script.
 
 \subsection*{Script}
-As seen in Experiment 5.
+As seen in \ref{extended}.
 
 \subsection*{Results}
 For this model, I achieved an accuracy of 55.3\%.
@@ -48,7 +48,7 @@ the followng results:
 \end{figure}
 
 \subsection*{Empirical Analysis}
-The slight increase in accuracy in Experiment 5, from 54.8\% to 55.3\%, makes
+The slight increase in accuracy in \ref{inception}, from 54.8\% to 55.3\%, makes
 sense. Since the model was pre-trained using the ImageNet dataset and all the
 new images I used were from ImageNet, we would expect a higher classification
 accuracy on the new additions to the dataset. This would overall increase the
