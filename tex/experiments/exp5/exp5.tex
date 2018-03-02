@@ -1,5 +1,5 @@
 \subsection*{Overview}
-As the Food-101 dataset mostly consisted of meals \textcite{food101}, I decided to extend the
+As the Food-101 dataset mostly consisted of meals \textcite{food101}, it was decided to extend the
 dataset slightly be including some single foods such as:
 \begin{itemize}
     \item{cheese}
@@ -11,16 +11,16 @@ dataset slightly be including some single foods such as:
     \item{roll}
 \end{itemize}
 
-In order to collect these images, I used the ImageNet repository to search for
-these foods individually and then downloaded the subset of images to be included
-with Food 101 \textcite{imagenet}. I ran the retrain.py script on the extended dataset as in
+In order to collect these images, the ImageNet repository was utilised to search for
+these foods individually and then download the subset of images to be included
+with the Food 101 dataset\textcite{imagenet}. The retrain.py script was run on the extended dataset as in
 \ref{inception}.
 
 \subsection*{Network Architecture}
 The Inception V3 Model was used for this experiment.
 
 \subsection*{Dataset}
-In this experiment I extended the Food-101 dataset.
+In this experiment the extended Food-101 dataset was used.
 
 \subsection*{Libraries}
 Tensorflow and numpy are used in the retrain.py script.
@@ -29,7 +29,7 @@ Tensorflow and numpy are used in the retrain.py script.
 As seen in \ref{extended}.
 
 \subsection*{Results}
-For this model, I achieved an accuracy of 55.3\%.
+For this model, an accuracy of 55.3\% was achieved.
 
 For example, an image of a banana, see \ref{fig:banana} was fed into the model with
 the followng results:
@@ -50,6 +50,6 @@ the followng results:
 \subsection*{Empirical Analysis}
 The slight increase in accuracy in \ref{inception}, from 54.8\% to 55.3\%, makes
 sense. Since the model was pre-trained using the ImageNet dataset and all the
-new images I used were from ImageNet, we would expect a higher classification
+new images used were from ImageNet, we would expect a higher classification
 accuracy on the new additions to the dataset. This would overall increase the
 average classification accuracy.

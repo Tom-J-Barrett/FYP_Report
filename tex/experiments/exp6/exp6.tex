@@ -1,7 +1,7 @@
 \subsection*{Overview}
 Within the retrain.py script \textcite{retrainInception}, as mentioned in
 previous experiments, there are various parameters that can be set and changed.
-I tested out a few combinations of the parameters to see if I could increase the
+Various combinations of these parameters were changed to see if it would increase the
 test accuracy of the model.
 
 \subsection*{Network Architecture}
@@ -97,7 +97,7 @@ steps were at 4000, not all of our training images were being used. As the steps
 twofold we saw a 3.8\% increase in accuracy.
 
 Another parameter that increased accuracy significantly was learning rate. The
-default learning rate is 0.01 which I increased to 0.1. This resulted in an
+default learning rate is 0.01 which was increased to 0.1. This resulted in an
 increase of 6.7\%. This is most likely due to the fact that since we are only
 looking at the last layer, we can afford to change the weights more
 significantly.

@@ -1,14 +1,14 @@
 \subsection*{Overview}
-In the preious experiments, I have looked at the one-shot approach to food image
-classification. That is, the model will give a prediction of the most likely
+In the preious experiments, the one-shot approach to food image
+classification has been looked at. That is, the model will give a prediction of the most likely
 food item in that image. This is a problem when there is a composite image i.e are multiple foods in an
-image, see Figure\ref{fig:fruit}. There are a few options to combat this problem. Firstly, I could detect
+image, see Figure\ref{fig:fruit}. There are a few options to combat this problem. Firstly, one could detect
 objects in the image, segment the image according to these objects and then run
 each segment through the model. A simple approach to this would be to segment
 the image into a number of sections and then run each section through the model.
-In order to follow the latter approach, I used a sliding window approach. This
+In order to follow the latter approach, a sliding window approach was used. This
 sliding window would move across the image and classify the segment of the image
-in the window. I had three options for window sliding shape as defined by a
+in the window. There are three options for window sliding shape as defined by a
 command line argument.
 
 \begin{lstlisting}
