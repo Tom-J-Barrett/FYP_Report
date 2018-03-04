@@ -18,9 +18,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Multi Layer Perceptron\relax }}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Gradient Descent\relax }}{22}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Gradient Descent\relax }}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces CNN Architecture\relax }}{23}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces CNN Architecture\relax }}{24}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Image filtering\relax }}{24}
 \defcounter {refsection}{0}\relax 
@@ -96,14 +96,14 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Detection Average Precision \textcite {donahue}\relax }}{110}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Detection Average Precision \textcite {donahue}\relax }}{111}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Mean Average Precision \textcite {donahue}\relax }}{110}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Mean Average Precision \textcite {donahue}\relax }}{111}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Distribution of top-ranked false positives \textcite {donahue}\relax }}{111}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Distribution of top-ranked false positives \textcite {donahue}\relax }}{112}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Segmentation Mean Accuracy \textcite {donahue}\relax }}{111}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Segmentation Mean Accuracy \textcite {donahue}\relax }}{112}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Per-category segmentation accuracy \textcite {donahue}\relax }}{111}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Per-category segmentation accuracy \textcite {donahue}\relax }}{112}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Per-class segmentation accuracy \textcite {donahue}\relax }}{112}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Per-class segmentation accuracy \textcite {donahue}\relax }}{113}
