@@ -28,82 +28,82 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Pooled Image\relax }}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Support Vector Machine Applicability\relax }}{27}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Support Vector Machine Applicability\relax }}{28}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Inception module\relax }}{58}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Inception module\relax }}{60}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Inception V3 Architecture\relax }}{59}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Inception V3 Architecture\relax }}{61}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Pizza\relax }}{62}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Pizza\relax }}{64}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Pizza not classified correctly by the model\relax }}{62}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Pizza not classified correctly by the model\relax }}{64}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Banana\relax }}{65}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Banana\relax }}{67}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Graph of accuracy of the test dataset during training\relax }}{69}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Graph of accuracy of the test dataset during training\relax }}{71}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Graph of accuracy of the validation dataset during training\relax }}{69}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Graph of accuracy of the validation dataset during training\relax }}{71}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Comparison of accuracy\relax }}{70}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Comparison of accuracy\relax }}{72}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Comparison of accuracy\relax }}{70}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Bowl of fruit\relax }}{77}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Grid based window\relax }}{78}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Row based window\relax }}{78}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Column Based Window\relax }}{78}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Fruit with Color Overlay\relax }}{79}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Recursive refinement 1\relax }}{83}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Recursive refinement 2\relax }}{84}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Recursive refinement 3\relax }}{84}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Fruit image taken on a mobile phone\relax }}{86}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Fruit image taken on a mobile phone\relax }}{87}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Fruit image taken on a mobile phone\relax }}{88}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Bowl of fruit with background removed\relax }}{91}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Alternative Bowl of fruit\relax }}{93}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Banana Image Pre-Resolution\relax }}{95}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Apple Pie Image Pre-Resolution\relax }}{95}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Pizza Image Pre-Resolution\relax }}{96}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Banana Image Greyscale\relax }}{98}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Apple Pie Image Greyscale\relax }}{98}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Pizza Image Greyscale\relax }}{99}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Comparison of accuracy\relax }}{72}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Bowl of fruit\relax }}{79}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Grid based window\relax }}{80}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Row based window\relax }}{80}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Column Based Window\relax }}{80}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Fruit with Color Overlay\relax }}{81}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Recursive refinement 1\relax }}{85}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Recursive refinement 2\relax }}{86}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Recursive refinement 3\relax }}{86}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Fruit image taken on a mobile phone\relax }}{88}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Fruit image taken on a mobile phone\relax }}{89}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Fruit image taken on a mobile phone\relax }}{90}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Bowl of fruit with background removed\relax }}{93}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Alternative Bowl of fruit\relax }}{95}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Banana Image Pre-Resolution\relax }}{97}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Apple Pie Image Pre-Resolution\relax }}{97}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Pizza Image Pre-Resolution\relax }}{98}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Banana Image Greyscale\relax }}{100}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Apple Pie Image Greyscale\relax }}{100}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Pizza Image Greyscale\relax }}{101}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Detection Average Precision \textcite {donahue}\relax }}{111}
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Mean Average Precision \textcite {donahue}\relax }}{111}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Detection Average Precision \textcite {donahue}\relax }}{113}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Distribution of top-ranked false positives \textcite {donahue}\relax }}{112}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Mean Average Precision \textcite {donahue}\relax }}{113}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Segmentation Mean Accuracy \textcite {donahue}\relax }}{112}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Distribution of top-ranked false positives \textcite {donahue}\relax }}{114}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Per-category segmentation accuracy \textcite {donahue}\relax }}{112}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Segmentation Mean Accuracy \textcite {donahue}\relax }}{114}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Per-class segmentation accuracy \textcite {donahue}\relax }}{113}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Per-category segmentation accuracy \textcite {donahue}\relax }}{114}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Per-class segmentation accuracy \textcite {donahue}\relax }}{115}
