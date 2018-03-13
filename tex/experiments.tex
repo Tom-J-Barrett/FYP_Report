@@ -1,42 +1,87 @@
-\chapter{Experiments}
-\label{exp}
+\chapter{Introduction to Using Tensorflow}
+\section{Template for Experiments}
+The template followed for all experiments in chapters three, four and five is outlined in Figure \ref{fig:expTemplate}.
 
-\section{Experiment 1}
+\begin{table}[]
+\centering
+\caption{Experiment Template}
+\label{fig:expTemplate}
+\begin{tabular}{|p{4cm}|p{11cm}|}
+Experiment Section   & Rationale                \\
+Overview             & An explanation of the purpose of the experiment along with how it is carried out. \\
+Network Architecture & An explanation of the network architecture used in the experiment. If the architecture has been explained in another experiment, the architecture will only be referenced by name.                       \\
+Dataset              & The dataset used for the experiment, with its source and an overview of its details. A brief mention will be made in following experiments.                       \\
+API's                & Reference to the technologies used as outlined in Chapter 2.                      \\
+Script               & Snippets of the script used for the experiment.                       \\
+Results              & The results acquired from the experiment, usually in the form of a percentage accuracy.                       \\
+Empirical Analysis   & States any information gained from the experiment and speculation for the reasoning of the results.                      
+\end{tabular}
+\end{table}
+
+\section{Udemy Tutorial}
+\label{udemy1}
 \input{tex/experiments/exp1/exp1.tex}
 
-\section{Experiment 2}
+\section{Udemy Tutorial 2}
+\label{udemy2}
 \input{tex/experiments/exp2/exp2.tex}
 
-\section{Experiment 3}
+\section{Using the Food 101 dataset}
+\label{food101}
 \input{tex/experiments/exp3/exp3.tex}
 
-\section{Experiment 4}
+\chapter{Training Using the Inception-V3 Model Architecture}
+
+\section{Retrain ImageNet Inception V3 Model}
+\label{inception}
 \input{tex/experiments/exp4/exp4.tex}
 
-\section{Experiment 5 - Retrain ImageNet Inception V3 Model}
+\section{Retrain with Extended Dataset}
+\label{extended}
 \input{tex/experiments/exp5/exp5.tex}
 
-\section{Experiment 6 - Retrain with Extended Dataset}
+\section{Retrain with Parameter Tuning}
+\label{parameterTuning}
 \input{tex/experiments/exp6/exp6.tex}
 
-\section{Experiment 7 - Retrain with Parameter Tuning}
-\input{tex/experiments/exp7/exp7.tex}
-
-\section{Experiment 8 - Sliding Window}
+\section{MobileNet}
+\label{mobilenet}
 \input{tex/experiments/exp8/exp8.tex}
 
-\section{Experiment 9 - MobileNet}
+\section{Food 101 subset}
+\label{subset}
+\input{tex/experiments/exp13/exp13}
+
+\chapter{Analysing the Trained Model}
+
+\section{Sliding Window}
+\label{slidingWindow}
+\input{tex/experiments/exp7/exp7.tex}
+
+\section{Recursive Refinement}
+\label{RR}
 \input{tex/experiments/exp9/exp9.tex}
 
-\section{Experiment 10 - Recursive Refinement}
+\section{Analysing Results of Recursive Refinement Further}
+\input{tex/experiments/exp16/exp16.tex}
+
+\section{Impact of Backround}
+\label{background}
 \input{tex/experiments/exp10/exp10.tex}
 
-\section{Experiment 11 - Impact of Backround}
+\section{Alternative Test Image}
+\label{alternative}
 \input{tex/experiments/exp11/exp11.tex}
 
-\section{Experiment 12 - Alternative Test Image}
+\section{Scaling Down Images}
+\label{scale}
 \input{tex/experiments/exp12/exp12.tex}
 
-\section{Experiment 13 - Scale?}
-\input{tex/experiments/exp13/exp13.tex}
+\section{Effect of Colour}
+\label{colour}
+\input{tex/experiments/exp14/exp14.tex}
+
+\section{Visualising Images Through the Network}
+\label{visualise}
+\input{tex/experiments/exp15/exp15.tex}
 

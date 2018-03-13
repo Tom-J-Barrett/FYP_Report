@@ -1,54 +1,61 @@
+\begin{figure}
+    \includegraphics{fruitFillBg}
+    \caption{Bowl of fruit with background removed}
+    \label{fig:filledFruit}
+\end{figure}
+
+\begin{table}[]
+    \centering
+    \caption{Comparison of fruit image sliding window results with and without
+    bakground}
+    \label{comparisionFruitTable}
+    \begin{tabular}{lllllll}
+        Food type & Grid & Row & Column & White Bg Grid & White Bg Row & White Bg Column \\
+        Apple     & 5    & 1   & 3      & 10          & 0          & 4
+        \\
+        Banana    & 1    & 0   & 1      & 0           & 0          & 0
+        \\
+        Grape     & 4    & 0   & 0      & 1           & 0          & 1
+        \\
+        Orange    & 5    & 0   & 0      & 3           & 0          & 0
+        \\
+        Other     & 0    & 3   & 1      & 1           & 4          & 0            
+    \end{tabular}
+\end{table}
+
 \subsection*{Overview}
-After the sliding window code was run on Figure \ref{fig:fruit} in experiment 8,
-it was observed that a sliding window was predicting grapes correctly in
-regions that contained a bunch of grapes. Since it would make sense that the
-model would be able detect an individual grape, it was decided that I would run
-recursive refinement on a window that contained a grape. Due to the model
-requiring a 299 x 299 image size, the window could only be refined once as
-very small segments could not be resized up to 299 x 299. I decided to use a
-window of 70 x 70.
-
-\subsection*{Script}
-As you would think with recursive refinement, a recursive function would used,
-but I found this unnecessary due to image size restrictions. Instead, a
-conditional for loop was added to the existing code.
-\begin{lstlisting}
-if top1 == "grape" and window_shape == "grid" and rr_grape:
-			for (x_grape, y_grape, grape_window) in sliding_window(window_resized, stepSize=64, windowSize=(70, 70)):
-				#reshape to square
-				grape_window_resized = cv2.resize(grape_window, (299, 299))
-				top1_grape = subSample.classify(grape_window_resized, window_shape)
-				if top1_grape == "grape":
-					cv2.rectangle(display_image, (x_grape + x, y_grape + y), (x_grape + x + 70, y_grape + y + 70), colour_dict.get(top1, (0,0,0)), 4)
-					#cv2.imshow("Window", grape_window_resized)
-					cv2.waitKey(1)
-time.sleep(0.025)
-\end{lstlisting}
-
-\begin{figure}
-    \includegraphics[scale=0.5]{fruit_rr}
-      \caption{Recursive refinement 1}
-      \label{fig:rr1}
-\end{figure}
-
-\begin{figure}
-    \includegraphics[scale=0.5]{newfruit_rr_grid}
-      \caption{Recursive refinement 2}
-      \label{fig:rr2}
-\end{figure}
-
-\begin{figure}
-    \includegraphics[scale=0.5]{processed_image}
-      \caption{Recursive refinement 3}
-      \label{fig:rr3}
-\end{figure}
-
+As we can see in \ref{slidingWindow}, using sliding windows to classify many sections
+of an image, there were some cases where some unexpected predictions were made.
+Due to this, the decision was made to analyse the effect the background of the
+image on its classification. The sliding window code was then ran on a new
+image. This new image was the same fruit bowl as used previously but the
+background was filled in as white as per Figure \ref{fig:filledFruit}.
 
 \subsection*{Results}
-Some very interesting results on three separate images. Two new images are seen
-here which we will explore in future experiments. In all three images, while we
-are getting some expected predictions, grapes are being classified in locations
-that have nothing resembling a grape. These can be viewed in Figures
-\ref{fig:rr1}, \ref{fig:rr2} and \ref{fig:rr3}.
+\subsubsection*{Grid}
+For grid based sliding window approach, the results turned out to be less
+successful than with the background. In this experiment, fourteen out of fifteen
+of top-1 classification were of an expected food type rather than fifteen out of
+fifteen with the background present. We expected the food types of apple,
+orange, grape and banana to appear in this image but while a banana was detected
+to a top-5 accuracy on a few occasions it was never predicted to a top-1
+accuracy. The contrast between the image results can be seen in Table
+\ref{comparisionFruitTable}.
 
-\subsection*{Analysis}
+\subsubsection*{Row}
+The row based sliding window again had worse result than its counterpart, with
+zero out of four correct classifications as opposed to one. In this case, an
+orange appeared at top-5 accuracy once. The most common prediction was ice-cream
+which appeared at top-1 accuracy in three out of four instances.
+
+\subsubsection*{Column}
+In contrast to our previous two methods of sliding window, this method
+outperformed its counterpart with correct predictions of all five windows while
+before we only had four out of five. In this experiment, a apple was predicted
+four times and a grape once, with all correct fruits appearing to top-5
+accuracy.
+
+\subsection*{Empirical Analysis}
+It is quite interesting that removing the background to the image reduced our
+accuracy overall. Many white foods were classified instead which makes sense due
+the impact of colour expected.

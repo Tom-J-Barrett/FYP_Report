@@ -1,48 +1,54 @@
+\subsection*{Overview}
+In this experiment, it was decided to look into how scaling down the size of the image would influence its classification. Three images were scaled down to 10\% of their size for this purpose, Figure \ref{fig:bananaPreRes}, Figure \ref{fig:apple_piePreRes} and Figure \ref{fig:pizzaPreRes}. Each of these images were run through the model before and after image resizing and the predictions were recorded.
+
 \begin{figure}
-    \includegraphics[scale=0.5]{fruitbowl2}
-    \caption{Alternative Bowl of fruit}
-    \label{fig:newFruit}
+    \includegraphics[scale=0.08]{banana1}
+    \caption{Banana Image Pre-Resolution}
+    \label{fig:bananaPreRes}
 \end{figure}
 
-\begin{table}[]
-    \centering
-    \caption{Comparison of fruit bowl images}
-    \label{newFruitTable}
-    \begin{tabular}{lllllll}
-        Food type & Grid & Row & Column & New Grid & New Row & New Column \\
-        Apple     & 5    & 1   & 3      & 4        & 1       & 0          \\
-        Banana    & 1    & 0   & 1      & 5        & 0       & 5          \\
-        Grape     & 4    & 0   & 0      & 2        & 1       & 0          \\
-        Orange    & 5    & 0   & 0      & 0        & 0       & 0          \\
-        Other     & 0    & 3   & 1      & 1        & 2       & 1         
-    \end{tabular}
-\end{table}
+\begin{figure}
+    \includegraphics{apple_pie}
+    \caption{Apple Pie Image Pre-Resolution}
+    \label{fig:apple_piePreRes}
+\end{figure}
 
-\subsection*{Overview}
-In our three previous sliding window oriented experiments, we had only used a
-single image. In order to see whether this image had biases unknown
-to us, I decided to use another fruit bowl image. This image was selected as
-fruit took up a larger portion of the image as seen in Figure \ref{fig:newFruit}
+\begin{figure}
+    \includegraphics[scale=0.08]{pizza1}
+    \caption{Pizza Image Pre-Resolution}
+    \label{fig:pizzaPreRes}
+\end{figure}
+
+\subsection*{Network Architecture}
+Inception V-3 architecture. Parameter tuned model was used for this.
+
+\subsection*{Dataset}
+Food-101 extended dataset.
 
 \subsection*{Results}
-\subsubsection*{Grid}
-The performance of this experiment was slightly worse than with the previously
-used image. When I ran the grid based sliding window on Figure
-\ref{fig:newFruit}, fourteen out of fifteen predictions had an expected value.
-Out of the fourteen predictions orange was not predicted to top-1 accuracy at
-all. This can be seen, in comparision to previously used image, in Table
-\ref{newFruitTable}.
+The results of the images before and after were somewhat contrasting as seen in Table \ref{scaledImages}.
+The 'Top 1' notation in the table suggests that the food was predicted as the number one prediction. The decimal value is the probability of that food type being the correct classification.
 
-\subsubsection*{Row}
-In the column based window for the new fruit image, the results were not very
-successful as has been the trend for most row based classification. Two out of
-four predictions had an expected value at top-1 accuracy.
+\begin{table}[]
+\centering
+\caption{Results of Down Scaled Images}
+\label{scaledImages}
+\begin{tabular}{lll}
+Food Image & Pre-Scaled Image & Scaled Image   \\
+Banana     & Top 1 : 0.9971   & Top 1 : 0.9995 \\
+Apple Pie  & Top 1 : 0.7986   & Top 5 : 0.0836 \\
+Pizza      & Top 1 : 0.9753   & Top 1 : 0.9705
+\end{tabular}
+\end{table}
 
-\subsubsection*{Column}
-The column based approach had a similar result to its counterpart in that only
-one of its predictions was unexpected. Although, due  to the size of the new
-image, another column was created and thus has a better overall accuracy.
+\subsection*{Empirical Analysis}
+As we can see in Table \ref{scaledImages}, the banana (Figure \ref{fig:bananaPreRes}) has a very similar prediction and probability.
+This would indicate that the classifier does not need clear quality images for bananas but maybe shape, texture and colour are important factors.
 
-\subsection*{Analysis}
-A possible reason that an orange was not classified in any of these images is
-because in Figure \ref{fig:newFruit}, a more mandarin food is displayed.
+The apple pie (Figure \ref{fig:apple_piePreRes}) has drastically different results in Table \ref{scaledImages}.
+Originally the apple pie was correctly predicted with a probability of 0.7986 but after downscaling, the apple pie was the fifth food predicted with a likelihood of 0.0836.
+
+The image of the pizza (Figure \ref{fig:pizzaPreRes}), had very similar results before and after resizing.
+This might indicate that pizza is determined more by shape, texture and colour that fine quality.
+
+

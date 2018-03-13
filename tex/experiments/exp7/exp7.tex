@@ -1,103 +1,205 @@
 \subsection*{Overview}
-Within the retrain.py script \textcite{retrainInception}, as mentioned in
-previous experiments, there are various parameters that can be set and changed.
-I tested out a few combinations of the parameters to see if I could increase the
-test accuracy of the model.
-
-\subsection*{Network Architecture}
-The Inception V3 architecture was used for this model.
-
-\subsection*{Dataset}
-The Food-101 dataset \textcite{food101} with additional classes, as per
-experiment 6, was used for this model.
-
-\subsection*{Libraries}
-The libraries in use for this experiment are tensorflow and numpy.
-
-\subsection*{Script}
-Script as seen in experiment 5 but with some additions to the command as seen
-below:
+In the preious experiments, the one-shot approach to food image
+classification has been looked at. That is, the model will give a prediction of the most likely
+food item in that image. This is a problem when there is a composite image i.e are multiple foods in an
+image, see Figure \ref{fig:fruit}. There are a few options to combat this problem. Firstly, one could detect
+objects in the image, segment the image according to these objects and then run
+each segment through the model. A simple approach to this would be to segment
+the image into a number of sections and then run each section through the model.
+In order to follow the latter approach, a sliding window approach was used. This
+sliding window would move across the image and classify the segment of the image
+in the window. There are three options for window sliding shape as defined by a
+command line argument.
 
 \begin{lstlisting}
-python tensorflow/examples/image_retraining/retrain.py \ --image_dir
-~/dataset_directory \ --how_many_training_steps 4000 \ --learning_rate 0.01 \
---testing_percentage 10 \ --validation_percentage 10
+python sliding_window.py --image=~/image_dir --window_shape grid
 \end{lstlisting}
 
-Some further parameters could be set such as:
+There are three options for window shape:
 \begin{itemize}
-	\item{--flip\_left\_right}
-	\item{--random\_crop}
-	\item{--random\_scale}
-	\item{--random\_brightness}
+	\item{Grid based window as per Figure \ref{fig:fruitGrid}}
+	\item{Row based window as per Figure \ref{fig:fruitRow}}
+	\item{Column based window as per Figure \ref{fig:fruitColumn}}
 \end{itemize}
 
 \begin{figure}
-    \includegraphics[scale=0.5]{model_test}
-     \caption{Graph of accuracy of the test dataset during training}
-     \label{fig:model_train_test}
+    \includegraphics[scale=0.5]{fruit}
+    \caption{Bowl of fruit}
+    \label{fig:fruit}
 \end{figure}
 
 \begin{figure}
-    \includegraphics[scale=0.5]{model_val}
-     \caption{Graph of accuracy of the validation dataset during training}
-     \label{fig:model_train_val}
+    \includegraphics[scale=0.5]{fruitGrid}
+	\caption{Grid based window}
+    \label{fig:fruitGrid}
 \end{figure}
 
 \begin{figure}
-    \includegraphics[scale=0.5]{test_val_accuracy}
-     \caption{Comparison of accuracy}
-     \label{fig:test_val_accuracy}
+    \includegraphics[scale=0.5]{fruitRow}
+    \caption{Row based window}
+    \label{fig:fruitRow}
 \end{figure}
 
 \begin{figure}
-    \includegraphics[scale=0.5]{test_val_accuracy_refined}
-     \caption{Comparison of accuracy}
-     \label{fig:test_val_accuracy_refined}
+    \includegraphics[scale=0.5]{fruitColumn}
+    \caption{Column Based Window}
+    \label{fig:fruitColumn}
 \end{figure}
 
+\begin{figure}
+    \includegraphics[scale=0.5]{fruitCO}
+    \caption{Fruit with Color Overlay}
+    \label{fig:fruitOverlay}
+\end{figure}
+
+\subsection*{Libraries}
+For this experiment Tensorflow provided the classification of each segment while
+also helping with resizing along with Numpy. OpenCv was used to implement the
+sliding window as per \textcite{slidingWindowTut}
+
+\subsection*{Script}
+There were four main elements to the script. Firstly, extracting a window to be
+classified. Secondly, resizing the image to be compatible with the Tensorflow
+model. Thirdly, running the window through the Tensorflow model and finally
+saving a new image with a coloured overlay of classifications.
+
+\subsubsection*{Extracting the window from the image}
+\begin{lstlisting}
+for (x, y, window) in sliding_window(resized, stepSize=64, windowSize=(winW, winH)):
+	# if the window does not meet our desired window size, ignore it
+	if window.shape[0] != winH or window.shape[1] != winW:
+		continue
+\end{lstlisting}
+
+
+\begin{lstlisting}
+def sliding_window(image, stepSize, windowSize):
+	# slide a window across the image
+	for y in xrange(0, image.shape[0], stepSize):
+		for x in xrange(0, image.shape[1], stepSize):
+			# yield the current window
+			yield (x, y, image[y:y + windowSize[1], x:x + windowSize[0]])
+\end{lstlisting}
+
+\subsubsection*{Resizing the window}
+\begin{lstlisting}
+window = cv2.resize(window, (299, 299))
+\end{lstlisting}
+
+\begin{lstlisting}
+resized_image = tf.reshape(image, [1, input_height, input_width, 3])
+resized = tf.image.resize_area(resized_image, [input_height, input_width])
+normalized = tf.divide(tf.subtract(resized, [input_mean]), [input_std])
+\end{lstlisting}
+
+\subsubsection*{Running the Tensorflow model}
+\begin{lstlisting}
+with tf.Session() as sess:
+	numpy_image = sess.run(normalized)
+
+with tf.Session(graph=graph) as sess:
+    results = sess.run(output_operation.outputs[0],
+                      {input_operation.outputs[0]: numpy_image})
+	probabilities = np.squeeze(results)
+\end{lstlisting}
+
+\subsubsection*{Saving the image with colour overlay}
+As seen in Figure \ref{fig:fruitOverlay}, each square represents a window and
+each colour is for a different classification. Blue is for an apple, yellow for
+banana, green for grape, white for orange and black if an unexpected prediction
+is made.
+
+\begin{lstlisting}
+cv2.rectangle(display_image, (x, y), (x + winW, y + winH), colour_dict.get(top1,
+(0,0,0)), 4)
+\end{lstlisting}
+
+\subsection*{Results}
+\subsubsection*{Grid based window}
+The grid based window resulted in fifteen separate classification. As seen in Figure
+\ref{fig:fruit}, there are multiple fruits in the image. Of these fruits, our
+model is trained on four, apple, banana, orange and grapes. This method
+classified all four to Top-1 accuracy at least once each. This method took 42.8
+seconds to run.
 
 \begin{table}[]
 	\centering
-	\caption{Comparison of parameters}
-	\label{parameter_tuning_table}
-	\begin{tabular}{llllll}
-		Parameter Tuning & Steps & Learning Rate & Test \% & Validation \% &
-		Results \\
-		Configuration 1  & 8000  & default       & default & default       &
-		59.1\%  \\
-		Configuration 2  & 8000  & 0.1           & default & default       &
-		65.8\%  \\
-		Configuration 3  & 10000 & 0.1           & default & default       &
-		66.3\%  \\
-		Configuration 4  & 12000 & 0.1           & default & default       &
-		66.6\%  \\
-		Configuration 5  & 10000 & 0.2           & default & default       &
-		66.0\%  \\
-		Configuration 6  & 10000 & 0.1           & 15      & 15            &
-		66.3\% 
+	\caption{Grid Based Sliding Window Results}
+	\label{my-label}
+	\begin{tabular}{ll}
+		Food type & No. of Top-1 Classifications \\
+		Apple     & 5                      \\
+		Banana    & 1                      \\
+		Grape     & 4                      \\
+		Orange    & 5                     
 	\end{tabular}
 \end{table}
 
-\subsection*{Results}
-The results of each set of parameters can be seen in Table
-\ref{parameter_tuning_table}. The set of parameters that seem to be the most
-effective are 10000 steps with a 0.1 learning rate. Graphs of this model can be
-see in Figures \ref{fig:model_train_val} and \ref{fig:model_train_test}. These
-are based on the validation set and then the test set respectively. A side by
-side comparision can also be seen in Figures \ref{fig:test_val_accuracy} and
-\ref{fig:test_val_accuracy_refined} where orange is for during training and blue
-for the validation set.
-\subsection*{Analysis}
-There were two separate factors that each increased classification accuracy of
-about 5\% each. These were training steps and learning rate.
+\begin{table}[]
+	\centering
+	\caption{Row Based Sliding Window Results}
+	\label{rowWindowTable}
+	\begin{tabular}{ll}
+		Food type & No. of Top-1 Classifications \\
+		Apple     & 1                      \\
+		Banana    & 0                      \\
+		Grape     & 0                      \\
+		Orange    & 0                      \\
+		Other     & 3                     
+	\end{tabular}
+\end{table}
 
-Training steps are related to the number of images so before, when the training
-steps were at 4000, not all of our training images were being used. As the steps were increased
-twofold we saw a 3.8\% increase in accuracy.
+\begin{table}[]
+	\centering
+	\caption{Column Based Sliding Window Results}
+	\label{colWindowTable}
+	\begin{tabular}{ll}
+		Food type & No. of Top-1 Classifications \\
+		Apple     & 3                      \\
+		Banana    & 1                      \\
+		Grape     & 0                      \\
+		Orange    & 0                      \\
+		Other     & 1                     
+	\end{tabular}
+\end{table}
 
-Another parameter that increased accuracy significantly was learning rate. The
-default learning rate is 0.01 which I increased to 0.1. This resulted in an
-increase of 6.7\%. This is most likely due to the fact that since we are only
-looking at the last layer, we can afford to change the weights more
-significantly.
+\subsubsection*{Row based window}
+The row based method resulted in four predictions as follows in Figure
+\ref{rowWindowTable}. Out of these four predictions, only one classified a known
+fruit at Top-1 accuracy, an apple. An apple was also predicted to Top-5 accuracy
+in another instance. The runtime of this method was 16.1 seconds.
+
+\subsubsection*{Column based window}
+The column based window approach had five total predictions and ran for a total
+of 13 seconds. As seen in \ref{colWindowTable}, two out of four known fruits
+were classified to a Top-1 accuracy with all other fruits predicted to Top-5
+accuracy. Only one Top-1 prediction did not contain a correct fruit.
+
+\subsection*{Empirical Analysis}
+These results are very interesting because while a banana was only predicted to
+Top-1 accuracy once in grid based, once in column based and zero times in row
+based, if the whole image is ran through the model, a banana is at the Top-1 accuracy.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

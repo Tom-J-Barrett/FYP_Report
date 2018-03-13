@@ -1,5 +1,37 @@
 \section{Convolution Neural Networks Extended}
+A basic overview of the operations of Convolutional Neural Networks has been explained in the previous section. Some further points are explored below.
+
+\subsection*{History}
+Convolutional Neural Networks are a bio-inspired approach to solving intensive tasks.
+They have been applied to image recognition, along with natural language processing and voice recognition, with image recognition being explored since the 1980's \textcite{handsOnML}.
+CNN's have become increasingly successful in recent years due to increased computational power in the hardware and availability in datasets. CNN's have been recently applied to many complex tasks with exceptional results such as self-driving cars, facial recognition and many more.
+
+\subsection*{Receptive Field and Kernel}
+In the previous section where an overview of CNN's was addressed, there was a discussion focused on filtering where features were searched for across the images.
+This filtering resulted in windows sliding across the image, looking for common features.
+This window is called the receptive field and this is the section of the image that is being looked at.
+
+As the image is convoluted and processed through the network, the changed image can be called the kernel.
+The kernel of the CNN represents what features are extracted from the image throughout the network.
+
+\subsection*{Activation Function}
+The activation function used in a neural network calculates the output for a neuron.
+The most commonly used activation function in CNN's is the ReLu activation function or the rectified linear unit \textcite{handsOnML}.
+The softmax activation function is sometimes used for the output layer \textcite{handsOnML}.
+
+\subsection*{Dropout}
+Dropout is a type of regularisation technique used to prevent overfitting in a network \textcite{handsOnML}.
+Overfitting in a network is when the network cannot generalise to new data after over learning the training data.
+In dropout, each neuron is given a probability (normally set to 0.5) and this is the likelihood that the neuron will be used for that training step.
+It has proven quite successful for increasing a networks accuracy \textcite{handsOnML}.
+
+\subsection*{Different Sizes of Convolutions}
+Zero padding can be added to an output so that it is same size as the previous layer by adding zeros around the feature \textcite{handsOnML}..
+Through training, it is "possible to connect a large input layer to a much smaller layer by spacing out the receptive fields" \textcite{handsOnML}.
+The stride between two different receptive fields is the spacing between them \textcite{handsOnML}.. 
 
 \subsection*{Fully Convolutional Networks}
 A Fully Convolutional Network is one that does not have a fully connected layer
 and in a fully connected layers place is another convolution layer.
+This can be achieved by making the size of the receptive field equal to the size of the input \textcite{digits}.
+They are proven to be very successful in object detection.

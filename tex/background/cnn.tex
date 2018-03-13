@@ -1,6 +1,7 @@
-Many reserachers have used convolutional neural networks for image
-classification with various network architectures and many have used a food image dataset. I will be looking at
-some of these papers below.
+Many researchers have used convolutional neural networks for image
+classification with various network architectures and many have used a food image dataset.
+Some of these papers will be looked at below.
+A summary of their results can be seen in Table \ref{cnn_summary}.
 
 \subsubsection*{Deep Learning Based Food Recognition}
 One paper focused on a deep learning approach to food image recognition based
@@ -20,7 +21,7 @@ With Pre-Training and Fine-Tuning}
 Another research team in Japan researched this topic. They were aware of how
 difficult the problem was and therefore employed many techniques to solve the
 problem such as "pre-training with the large-scale ImageNet data, fine-tuning
-and activateion features extracted from the pre-trained DCNN"
+and activation features extracted from the pre-trained DCNN"
 \textcite{yanaiFood}. 
 
 In conclusion, they found that the "fine-tuned DCNN which was pre-trained
@@ -43,15 +44,15 @@ essential to food image recognition" \textcite{kagayaFood}.
 
 \subsubsection*{DeepFood: Deep Learning-based Food Image Recognition for
 Computer-aided Dietary Assessment}
-The last paper that I will look at, oriented around using a convolutional neural
-network for food image recognition, focused on developing a dietary assessment
-application for use on a smartphone. They used the UEC-256 and Food-101 datset
+The last paper that will be analysed, oriented around using a Convolutional Neural
+Network for food image recognition, focuses on developing a dietary assessment
+application for use on a smart phone. They used the UEC-256 and Food-101 dataset
 for their experiments and achieved impressive results.
 
-They used a convolutional neural network but "with a few major optimizations,
+They used a Convolutional Neural Network but "with a few major optimizations,
 such as optimized model and an optimized convolution technique"
 \textcite{deepFood}. They used the Inception module for their CNN. After the
-inception module was complete, they made the GoogleNet by combining modules. In
+inception module was complete, they made the GoogleNet architecture by combining modules. In
 total, the network had 22 layers.
 
 They achieved the results shown in \ref{resultsDeepFood}.
@@ -61,12 +62,25 @@ They achieved the results shown in \ref{resultsDeepFood}.
 	\caption{DeepFood Results}
 	\label{resultsDeepFood}
 	\begin{tabular}{lll}
-		                          & Top-1  & Top-5  \\
-								  UEC-256                   & 54.7\% & 81.5\% \\
-								  UEC-100                   & 76.3\% & 94.6\% \\
-								  Food-101                  & 77.4\% & 93.7\% \\
-								  UEC-256 With Bounding Box & 63.8\% & 87.2\% \\
-								  UEC-100 With Bounding Box & 77.2\% & 94.8\%
+		& Top-1  & Top-5  \\
+		UEC-256                   & 54.7\% & 81.5\% \\
+		UEC-100                   & 76.3\% & 94.6\% \\
+		Food-101                  & 77.4\% & 93.7\% \\
+		UEC-256 With Bounding Box & 63.8\% & 87.2\% \\
+		  UEC-100 With Bounding Box & 77.2\% & 94.8\%
+	\end{tabular}
+\end{table}
+
+\begin{table}[]
+	\centering
+	\caption{Summary of results in CNN based methods}
+	\label{cnn_summary}
+	\begin{tabular}{lll}
+		Title                                & Dataset     & Accuracy \\
+		Deep Learning Based Food Recognition & Food 101    & 72.55\%  \\
+		Food Image Recognition               & Food 101    & 78.77\%  \\
+		Food Detection and Recognition       & Own dataset & 93.8\%   \\
+		DeepFood                             & Food 101    & 77.4\%  
 	\end{tabular}
 \end{table}
 
