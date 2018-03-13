@@ -70,25 +70,25 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Recursive refinement 3\relax }}{87}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Fruit image taken on a mobile phone\relax }}{89}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Bowl of fruit with background removed\relax }}{88}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Image after sliding window - 13 classes\relax }}{90}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Alternative Bowl of fruit\relax }}{91}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Image after sliding window - 108 classes\relax }}{91}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Fruit image taken on a mobile phone\relax }}{94}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Bowl of fruit with background removed\relax }}{94}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Image after sliding window - 13 classes\relax }}{95}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Alternative Bowl of fruit\relax }}{96}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Image after sliding window - 108 classes\relax }}{96}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.14}{\ignorespaces Banana Image Pre-Resolution\relax }}{98}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Apple Pie Image Pre-Resolution\relax }}{98}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Apple Pie Image Pre-Resolution\relax }}{99}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.16}{\ignorespaces Pizza Image Pre-Resolution\relax }}{99}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.17}{\ignorespaces Banana Image Greyscale\relax }}{101}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Apple Pie Image Greyscale\relax }}{101}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Apple Pie Image Greyscale\relax }}{102}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.19}{\ignorespaces Pizza Image Greyscale\relax }}{102}
 \defcounter {refsection}{0}\relax 
@@ -96,14 +96,14 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Detection Average Precision \textcite {donahue}\relax }}{114}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Detection Average Precision \textcite {donahue}\relax }}{115}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Mean Average Precision \textcite {donahue}\relax }}{114}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Mean Average Precision \textcite {donahue}\relax }}{115}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Distribution of top-ranked false positives \textcite {donahue}\relax }}{115}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Distribution of top-ranked false positives \textcite {donahue}\relax }}{116}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Segmentation Mean Accuracy \textcite {donahue}\relax }}{115}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Segmentation Mean Accuracy \textcite {donahue}\relax }}{116}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Per-category segmentation accuracy \textcite {donahue}\relax }}{115}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Per-category segmentation accuracy \textcite {donahue}\relax }}{116}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Per-class segmentation accuracy \textcite {donahue}\relax }}{116}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Per-class segmentation accuracy \textcite {donahue}\relax }}{117}
