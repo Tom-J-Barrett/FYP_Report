@@ -7,11 +7,11 @@ Secondly, a model can be stored on the phone for computation. Transfer learning 
 
 \subsection*{Network Architecture}
 The network architecture used for this experiment is MobileNet \textcite{mobilenet}.
-A a parameter can be set to retrain this model in the code, as mentioned in previous experiments, instead of inception V-3 \textcite{retrainInception}. 
+A parameter can be set to retrain this model in the code, as mentioned in previous experiments, instead of inception V-3 \textcite{retrainInception}. 
 This architecture is designed to be smaller and much more efficient so that
 it can be used on smartphones which have less powerful resources available.
 
-Mobilenet is designed for various different different use cases on mobile phones such as image classification, landmark recognition, object detection and face attributes.
+Mobilenet is designed for various different use cases on mobile phones such as image classification, landmark recognition, object detection and face attributes.
 It is based on "depthwise separable convolutions" whose purpose is the split a convolutional layer into a depthwise convolution and a pointwise convolution (1x1 convolution) \textcite{mobilenet}.
 The purpose of the former is to apply "a single filter to each input channel" \textcite{mobilenet} while the latter combines these outputs.
 This in turn reduces the computational time.
@@ -41,4 +41,4 @@ The final test accuracy of this model came to 50.2\%.
 \subsection*{Empirical Analysis}
 There was a decrease of 16.1\% in this model to the highest accuracy from
 \ref{mobilenet}. This is due to the smaller architecture which is aimed to be faster
-and smaller with the expected decrease in accuracy.
+and smaller with an expected decrease in accuracy.

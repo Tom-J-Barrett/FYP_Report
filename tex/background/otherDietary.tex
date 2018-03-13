@@ -1,4 +1,4 @@
-While Covolutional Neural Networks have proven very successful in recent years, there are many of methods that have been employed by food image recognition researchers.
+While Convolutional Neural Networks have proven very successful in recent years, there are many other methods of food image identification and classification that have been employed by food image recognition researchers.
 A summary of the results of these methods can be seen in Table \ref{other_dietary_summary}.
 
 \subsubsection*{A Food Image Recognition System with Multiple Kernel Learning}
@@ -12,7 +12,7 @@ In this paper, \textcite{kernelLearning}, a practical use for food image recogni
 50 different classifiers were created in a SVM using MKL with "one category as a positive set and other 49 categories as a negative set" \textcite{kernelLearning}. For each of these categories, a web scrape was carried out and then the best 100 images for each scrape was manually selected. Five-fold cross validation was utilised in the paper. MKL proceeded to yield results of 61.34\% on the 50 food types and a Top-3 accuracy of 80.05\% \textcite{kernelLearning}. The prototype mobile phone application resulted in a 37.55\% user accuracy.
 
 \subsubsection*{A Novel SVM Based Food Recognition Method for Calorie Measurement Applications}
-Another, quite successful, study was carried out using a SVM. \textcite{novelSVM} had established that both colour and texture are very important but they also decided that shape and size are vital features to analyse. The proposed system has two main parts, segmentation followed by classification. In order to create a 'robust' system, a 'Robust Handling of Different Lighting Conditions' module is added to the system \textcite{novelSVM}. This is so that various lighting conditions don't cause color data to be distorted. 
+Another quite successful study was carried out using a SVM. \textcite{novelSVM} had established that both colour and texture are very important but they also decided that shape and size are vital features to analyse. The proposed system has two main parts, segmentation followed by classification. In order to create a 'robust' system, a 'Robust Handling of Different Lighting Conditions' module is added to the system \textcite{novelSVM}. This is so that various lighting conditions don't cause color data to be distorted. 
 
 Since this paper calls for calorie estimation, the first step of the system calculates the size of the food portion. In order to do this, a coin or the users thumb is included in the image taken so that the pixel count of the thumb and the food can be compared to estimate the size. Following this the image is segmented into various portions. The following step classifies each segment of the image by extracting color, texture and shape features and inputing these into a SVM \textcite{novelSVM}.
 
@@ -25,7 +25,7 @@ In order to segment the image successfully, Gabor filters were applied to separa
 
 Calorie estimation was also a large part of this paper, and the users thumb was taken with the food in order to calculate food size.
 
-In the prototype application, once the classification had been made, the user can confirm or change the prediction. Another feature of the application was in regards to "Partially Eaten Food" \textcite{pouladzadeh2014measuring}. This was done by taking a picture before and after consumption and therefore only calculated the size of the food eaten and therefore more accurate calorie counts can be produced.
+In the prototype application, once the classification had been made, the user can confirm or change the prediction. Another feature of the application was in regards to "Partially Eaten Food" \textcite{pouladzadeh2014measuring}. This was accomplished by taking a picture before and after consumption and as a result only calculated the size of the food eaten and therefore more accurate calorie counts can be produced.
 
 15 food types were trained using the SVM with 3000 images. The accuracy for the classifier averaged at 90.41\% using 10 fold cross-validation \textcite{pouladzadeh2014measuring}. There was also a calorie count accuracy of 86\%. The best classification results were on single foods followed by non mixed and finally mixed foods produced the worst results.
 
@@ -69,7 +69,7 @@ Once a photo has been taken by the user with their thumb present, the system seg
 The system then classifies the food type based on these features.
 
 In this paper, it was decided to allow the users to change the prediction by the system.
-The thumb of each user is calibrated upon use of the application so that size estimation can be as accurate a possible \textcite{personalAssistive}.
+The thumb of each user is calibrated upon first use of the application so that size estimation can be as accurate a possible \textcite{personalAssistive}.
 
 \subsubsection*{Toward Dietary Assessment via Mobile Phone Video Camera}
 Another study into using computer vision for dietary assessment was carried out by \textcite{chen2010toward}. They had a unique medium for the topic by using a video of the dishes in question and extracting frames from these videos to get the food from different angles.
@@ -91,7 +91,7 @@ The system had results as seen below across 20 categories using five images out 
 % \textcite{novelTech}
 
 \subsubsection*{Automatic Chinese Food Identification and Quantity Estimation}
-There was a study carried out on food identification through a smart phone application \textcite{chen2012automatic}. This study resulted in an application that allows a user to send an image of there food to a server which can give them an automatic response in 12 seconds \textcite{chen2012automatic}. This back end service can have 34 threads working concurrently as stated at the time the paper was published \textcite{chen2012automatic}.
+There was a study carried out on food identification through a smart phone application \textcite{chen2012automatic}. This study resulted in an application that allows a user to send an image of their food to a server which can give them an automatic response in 12 seconds \textcite{chen2012automatic}. This back end service can have 34 threads working concurrently as stated at the time the paper was published \textcite{chen2012automatic}.
 
 A SVM is used to classify the image across 50 categories trained on around 100 images each.
 The SVM uses SIFT and Local Binary pattern feature extractors \textcite{chen2012automatic}.
@@ -105,7 +105,7 @@ The study produced a top-1 accuracy  of 68.3\%. Accuracy of 80.6\%, 84.8\% and 9
 \subsubsection*{An Image Processing Approach for Calorie Intake Measurement}
 \textcite{villalobos2012image} researched the question of using a computer vision approach to this topic. They focus mostly on the segmentation and region of interest calculation of the system in their study.
 
-The system in question requires two images of the food, one from above and one from the side. This helps with size estimation. The users thumb is required to be in the image for accurate size estimation. The application also requires an image after consumption as not too calculate calories for uneaten food.
+The system in question requires two images of the food, one from above and one from the side. This helps with size estimation. The users thumb is required to be in the image for accurate size estimation. The application also requires an image after consumption as to not calculate calories for uneaten food.
 
 The system segments the image and then extracts colour, size and shape information from each segment. This data is then used by a SVM for classification along with a nutritional database for calorie information. 
 
@@ -121,13 +121,13 @@ The first two were dismissed due to poor results but the second two were used in
 \subsubsection*{Food Recognition and Nutrition Estimation on a Smartphone}
 An application called "Snap-n-Eat" was proposed by \textcite{snap}.
 
-When an image is taken using this application, the first thing the system does is finds saliency regions to remove the background of the image.
+When an image is taken using this application,the system finds saliency regions to remove the background of the image.
 If the image has multiple food types present, hierarchical segmentation takes place before proceeding to a SVM. Similar segments are merged together.
 These are found by using colour, texture and size.
 
 SIFT and Histogram of Oriented Gradients (HOG) feature extractors are used on the image and these features are used by the SVM for classification.
 The SVM is trained using Scholastic Gradient Descent.
-\textcite{snap} as uses a Bog of Visual Words model along with k-means clustering.
+\textcite{snap} also uses a Bog of Visual Words model along with k-means clustering.
 
 An accuracy of 85\% on 15 classes was recorded using this method \textcite{snap}.
 
@@ -135,11 +135,11 @@ An accuracy of 85\% on 15 classes was recorded using this method \textcite{snap}
 \textcite{schap2014merging} proposed a system used by smart phones which sends an image of a users food to a back end system for computation.
 
 Once this has been completed, the image is segmented, features are extracted from each segment and these segments are classified.
-Colour and Texture are used for classification.
+Colour and texture features are used for classification.
 The user has the ability to confirm or amend predictions of the food type.
 
 Size estimation is also an important aspect of this system.
-In contrast to previous studies, \textcite{snap} uses food type shape and then those shapes geometric properties to estimate size.
+In contrast to previous studies, \textcite{snap} uses food type shape and then those shape's geometric properties to estimate size.
 
 This study produced results of 94\% out of 32 test cases.
 

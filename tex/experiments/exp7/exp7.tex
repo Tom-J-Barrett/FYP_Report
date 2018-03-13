@@ -2,7 +2,7 @@
 In the preious experiments, the one-shot approach to food image
 classification has been looked at. That is, the model will give a prediction of the most likely
 food item in that image. This is a problem when there is a composite image i.e are multiple foods in an
-image, see Figure\ref{fig:fruit}. There are a few options to combat this problem. Firstly, one could detect
+image, see Figure \ref{fig:fruit}. There are a few options to combat this problem. Firstly, one could detect
 objects in the image, segment the image according to these objects and then run
 each segment through the model. A simple approach to this would be to segment
 the image into a number of sections and then run each section through the model.
@@ -17,9 +17,9 @@ python sliding_window.py --image=~/image_dir --window_shape grid
 
 There are three options for window shape:
 \begin{itemize}
-	\item{Grid based window as per \ref{fig:fruitGrid}}
-	\item{Row based window as per \ref{fig:fruitRow}}
-	\item{Column based window as per \ref{fig:fruitColumn}}
+	\item{Grid based window as per Figure \ref{fig:fruitGrid}}
+	\item{Row based window as per Figure \ref{fig:fruitRow}}
+	\item{Column based window as per Figure \ref{fig:fruitColumn}}
 \end{itemize}
 
 \begin{figure}
@@ -116,7 +116,7 @@ cv2.rectangle(display_image, (x, y), (x + winW, y + winH), colour_dict.get(top1,
 
 \subsection*{Results}
 \subsubsection*{Grid based window}
-The grid based window resulted in fifteen separate classification. As seen in
+The grid based window resulted in fifteen separate classification. As seen in Figure
 \ref{fig:fruit}, there are multiple fruits in the image. Of these fruits, our
 model is trained on four, apple, banana, orange and grapes. This method
 classified all four to Top-1 accuracy at least once each. This method took 42.8
@@ -124,7 +124,7 @@ seconds to run.
 
 \begin{table}[]
 	\centering
-	\caption{My caption}
+	\caption{Grid Based Sliding Window Results}
 	\label{my-label}
 	\begin{tabular}{ll}
 		Food type & No. of Top-1 Classifications \\
@@ -137,7 +137,7 @@ seconds to run.
 
 \begin{table}[]
 	\centering
-	\caption{My caption}
+	\caption{Row Based Sliding Window Results}
 	\label{rowWindowTable}
 	\begin{tabular}{ll}
 		Food type & No. of Top-1 Classifications \\
@@ -151,7 +151,7 @@ seconds to run.
 
 \begin{table}[]
 	\centering
-	\caption{My caption}
+	\caption{Column Based Sliding Window Results}
 	\label{colWindowTable}
 	\begin{tabular}{ll}
 		Food type & No. of Top-1 Classifications \\
@@ -164,7 +164,7 @@ seconds to run.
 \end{table}
 
 \subsubsection*{Row based window}
-The row based method resulted in four predictions as follows in
+The row based method resulted in four predictions as follows in Figure
 \ref{rowWindowTable}. Out of these four predictions, only one classified a known
 fruit at Top-1 accuracy, an apple. An apple was also predicted to Top-5 accuracy
 in another instance. The runtime of this method was 16.1 seconds.

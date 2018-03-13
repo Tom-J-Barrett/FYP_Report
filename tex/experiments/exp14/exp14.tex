@@ -34,7 +34,7 @@ The 'Top 1' notation in the table suggests that the food was predicted as the nu
 \caption{Effect of Colour}
 \label{colour}
 \begin{tabular}{lll}
-Food Image & Pre-Scaled Image & Grayscale      \\
+Food Image & Pre-Scaled Image & Greyscale      \\
 Banana     & Top 1 : 0.9971   & Top 1 : 0.9986 \\
 Apple Pie  & Top 1 : 0.7986   & Top 1 : 0.3462   \\
 Pizza      & Top 1 : 0.9753   & Top 2 : 0.1299
@@ -45,14 +45,14 @@ Pizza      & Top 1 : 0.9753   & Top 2 : 0.1299
 \subsubsection*{Colour}
 In regards to the images of the banana (Figure \ref{fig:bananaPreRes} and Figure \ref{fig:bananaGrey}), there is very little difference in classification. They were both classified to a Top 1 accuracy and their probabilities differing by only 0.0015 with the grey scale image being of a higher probability interestingly enough. This would indicate that colour is not an important factor for classifying bananas and the coloured image may even have noise. This can be seen in Table \ref{colour}.
 
-The apple pie images (Figure \ref{fig:apple_piePreRes} and Figure \ref{fig:applePieGrey}) were also both classified correctly but with a large gap in the liklihood of that classification being correct. As per Table \ref{colour}, the coloured image had a probability of 0.7986 as opposed to one of 0.3462. This would indicate that while colour is important, there is enough unique data from the rest of the image to result in correct classification.
+The apple pie images (Figure \ref{fig:apple_piePreRes} and Figure \ref{fig:applePieGrey}) were also both classified correctly but with a large gap in the likelihood of that classification being correct. As per Table \ref{colour}, the coloured image had a probability of 0.7986 as opposed to one of 0.3462. This would indicate that while colour is important, there is enough unique data from the rest of the image to result in correct classification.
 
-Finally, the pizza images (Figure \ref{fig:pizzaPreRes} and Figure \ref{fig:pizzaGrey})were the most contrasting in their results. While the original image was classified to Top 1 accuracy with a liklihood of 0.9753, the coloured image was classified to Top 2 accuracy while a probability of 0.1299. From this we can deduce that colour is vital fro the classification of pizza.
+Finally, the pizza images (Figure \ref{fig:pizzaPreRes} and Figure \ref{fig:pizzaGrey})were the most contrasting in their results. While the original image was classified to Top 1 accuracy with a likelihood of 0.9753, the coloured image was classified to Top 2 accuracy while a probability of 0.1299. From this we can deduce that colour is vital fro the classification of pizza.
 
 Since this experiment only compared three images, we cannot say for sure if this analysis is biased or not.
 
 \subsubsection*{Colour vs Scale}
-In the last experiment, it was seen that the pizza and banana images (Figure \ref{fig:pizzaPreRes} and Figure \ref{fig:bananaPreRes}) were not really affected by image quality. While this semms to be true, the image of apple pie, Figure \ref{fig:apple_piePreRes}, was greatly influenced by only being classified to a Top 5 accuracy when down scaled.
+In the last experiment, it was seen that the pizza and banana images (Figure \ref{fig:pizzaPreRes} and Figure \ref{fig:bananaPreRes}) were not really affected by image quality. While this seems to be true, the image of apple pie, Figure \ref{fig:apple_piePreRes}, was greatly influenced by only being classified to a Top 5 accuracy when down scaled.
 
 For the greyscale images, bananas were not effected greatly and neither was an apple pie but a pizza was greatly influenced.
 

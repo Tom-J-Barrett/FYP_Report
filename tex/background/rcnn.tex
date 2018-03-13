@@ -3,12 +3,12 @@ of object detection using region based convolutional neural networks. There were
 four iterations of papers based on this work by Ross and groups in UC Berkley,
 Mircosoft and Facebook. A PHD student at the time of Ross's first paper also
 completed his dissertation on the subject. These papers, their
-results (\ref{rcnnResults}) and the changes made through each iteration will be analysed throughly in the proceeding sections.
+results (Table \ref{rcnnResults}) and the changes made through each iteration will be analysed throughly in the proceeding sections.
 
 \subsubsection*{RCNN}
 In the first paper written by Ross Girshik, while researching at UC Berkeley,
 focused on two main insights. These were that "one can apply high-capacity convolutional neural networks (CNNs) to bottom-up region proposals in order to localize and segment objects" and that
-"when training data is scarce, supervised pre-training for n auxilary task,
+"when training data is scarce, supervised pre-training for n auxiliary task,
 followed by domain-specific fine-tuning, yields a significant performance boost"
 \textcite{rcnn}.
 
@@ -28,7 +28,7 @@ team used the open source Caffe CNN library for this system. The system is quite
 efficient and scalable. It is scalable because of the fixed length vector of
 features which will remain constant regardless of inputs and additional outputs.
 
-The team evaluated their results on a few metrics and test sets as seen in
+The team evaluated their results on a few metrics and test sets as seen in Table
 \ref{rcnnResults}.
 
 \subsubsection*{Fast RCNN}
@@ -44,7 +44,7 @@ RCNN was classified to be slow because of three main factors:
 		be trained.}
 	\item{In training of the SVM, each region proposal must be written to disk
 		and is therefore expensive.}
-	\item{Object detection takes 47s per image \textcite{fastRcnn}.}
+	\item{Object detection takes 47 seconds per image \textcite{fastRcnn}.}
 \end{itemize}
 
 Due to these problems with RCNN, a new algorithm, titled Fast RCNN was proposed.
@@ -66,7 +66,7 @@ convolutional neural network for region proposals (RPN) which the feeds into a F
 RCNN detector. These combine to produce a single neural network for object
 detection.
 
-Instead of training these networks seperately, the team had to look at how to
+Instead of training these networks separately, the team had to look at how to
 share layers between the two networks. There were three option available:
 \begin{itemize}
     \item{Alternating training whereby RPN is trained, and then used to train
