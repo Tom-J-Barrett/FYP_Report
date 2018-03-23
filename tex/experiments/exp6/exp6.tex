@@ -25,7 +25,7 @@ python retrain_top5.py \ --image_dir
 \end{lstlisting}
 
 Top 5 accuracy of the model was als calcultaed using the code below.
-\begin{lstlisting}
+\begin{lstlisting}[style=Python]
 print('Top 5 Evaluation')
 #Variables used to store a list of all classes, the amount of images tested,
 # the amount of images with a top 5 accuracy and the sum of the highest probabilities
@@ -71,7 +71,7 @@ print("Average probability: " + str(average_probabilities))
 \end{lstlisting}
 
 Method from label\_image.py.
-\begin{lstlisting}
+\begin{lstlisting}[style=Python]
 def runModel(file_name):
   model_file = \
     "/tmp/output_graph.pb"

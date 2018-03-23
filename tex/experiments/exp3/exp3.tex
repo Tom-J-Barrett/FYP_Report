@@ -10,7 +10,7 @@ A similar network architecture to the previous two experiments (\ref{udemy1} and
 The Food-101 datset was used for this experiment \textcite{food101}.
 
 \subsection*{Script}
-\begin{lstlisting}
+\begin{lstlisting}[style=Python]
 # Reading the dataset
 # 2 modes: 'file' or 'folder'
 def read_images(dataset_path, mode, batch_size):
@@ -47,7 +47,7 @@ def read_images(dataset_path, mode, batch_size):
 raise Exception("Unknown mode.")
 \end{lstlisting}
 
-\begin{lstlisting}
+\begin{lstlisting}[style=Python]
 # Convert to Tensor
     imagepaths = tf.convert_to_tensor(imagepaths, dtype=tf.string)
     labels = tf.convert_to_tensor(labels, dtype=tf.int32)
@@ -74,7 +74,7 @@ raise Exception("Unknown mode.")
 
 \end{lstlisting}
 
-\begin{lstlisting}
+\begin{lstlisting}[style=Python]
 # Start training
 with tf.Session() as sess:
 

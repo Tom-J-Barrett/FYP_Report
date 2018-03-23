@@ -15,7 +15,7 @@ This dataset consists of 70000 handwritten digits \textcite{mnist}.
 This experiment was carried out in a jupyter notebook using tensorflow.
 
 \subsection*{Script}
-\begin{lstlisting}
+\begin{lstlisting}[style=Python]
 #Helper Functions
 
 #INIT WEIGHTS
@@ -47,7 +47,7 @@ def normal_full_layer(input_layer, size):
 return tf.matmul(input_layer, W) + b
 \end{lstlisting}
 
-\begin{lstlisting}
+\begin{lstlisting}[style=Python]
 #32 features for every 5 x 5 patch with 1(grayscale)
 convo_1 = convolutional_layer(x_image, shape = [5,5,1,32])
 convo_1_pooling = max_pool_2by2(convo_1)
@@ -59,7 +59,7 @@ convo_2_flat = tf.reshape(convo_2_pooling, [-1,7*7*64])
 full_layer_one = tf.nn.relu(normal_full_layer(convo_2_flat, 1024))
 \end{lstlisting}
 
-\begin{lstlisting}
+\begin{lstlisting}[style=Python]
 with tf.Session() as sess:
     sess.run(init)
     
