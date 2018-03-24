@@ -4,41 +4,41 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2.1}{\ignorespaces DeepFood Results\relax }}{33}
+\contentsline {table}{\numberline {2.1}{\ignorespaces DeepFood Results\relax }}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2.2}{\ignorespaces Summary of results in CNN based methods\relax }}{33}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Summary of results in CNN based methods\relax }}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2.3}{\ignorespaces Summary of accuracy in dietary assessment methods\relax }}{40}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Summary of accuracy in dietary assessment methods\relax }}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2.4}{\ignorespaces Results from Region Based CNN Research\relax }}{43}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.1}{\ignorespaces Experiment Template\relax }}{49}
+\contentsline {table}{\numberline {2.4}{\ignorespaces Results from Region Based CNN Research\relax }}{33}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.1}{\ignorespaces Comparison of parameters\relax }}{74}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.2}{\ignorespaces Accuracy of other studies\relax }}{78}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Experiment Template\relax }}{39}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.1}{\ignorespaces Grid Based Sliding Window Results\relax }}{85}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Comparison of parameters\relax }}{64}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.2}{\ignorespaces Row Based Sliding Window Results\relax }}{85}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Accuracy of other studies\relax }}{68}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.3}{\ignorespaces Column Based Sliding Window Results\relax }}{85}
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.4}{\ignorespaces Comparison of fruit image sliding window results with and without bakground\relax }}{89}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Grid Based Sliding Window Results\relax }}{75}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.5}{\ignorespaces Comparison of fruit bowl images\relax }}{92}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Row Based Sliding Window Results\relax }}{75}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.6}{\ignorespaces Results of recursive refinement segment classifications using two models\relax }}{98}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Column Based Sliding Window Results\relax }}{75}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.7}{\ignorespaces Results of Down Scaled Images\relax }}{101}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Comparison of fruit image sliding window results with and without bakground\relax }}{80}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.8}{\ignorespaces Effect of Colour\relax }}{104}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Comparison of fruit bowl images\relax }}{81}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.6}{\ignorespaces Results of recursive refinement segment classifications using two models\relax }}{88}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.7}{\ignorespaces Results of Down Scaled Images\relax }}{91}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.8}{\ignorespaces Effect of Colour\relax }}{94}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -46,8 +46,8 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.1}{\ignorespaces FCN Resulys \textcite {fcn}\relax }}{119}
+\contentsline {table}{\numberline {A.1}{\ignorespaces FCN Resulys \textcite {fcn}\relax }}{110}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.2}{\ignorespaces Results\relax }}{119}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Results\relax }}{110}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.3}{\ignorespaces Project Plan\relax }}{122}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Project Plan\relax }}{113}

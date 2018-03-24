@@ -1,13 +1,15 @@
+\pagenumbering{arabic}
 \chapter{Introduction}
 \label{intro}
+The chapter outlines an introduction to the subject area of this Final year Project (FYP), the objectives of this project, the methodology used to complete this project, an overview of the report and an explanation of the motivation behind this FYP.
 
 \section{Overview}
 This project explores identification and classification of food images for use in a calorie measurement android application.
 Food calorie consumption is a huge problem in the modern world.
 Over 25\% of the population in Ireland is obese and this figure is likely to rise over the coming years.
 A mobile application that could help keep track of a user's calorie intake by taking pictures of their meals would be a great help.
-The area of Machine Vision is a very difficult topic to address as it is a very hard task for computers to undertake.
-We, as humans, take vision for granted as we can soon see, from the study of Machine Vision, that there are many difficult steps that have to be made for full identification and classification of an image.
+The area of computer vision is a very difficult topic to address as it is a very hard task for computers to undertake.
+We, as humans, take vision for granted as we can soon see, from the study of computer vision, that there are many difficult steps that have to be made for full identification and classification of an image.
 
 When looking into calorie measurement using an image, there are three questions that have to be answered:
 \begin{itemize}
@@ -32,7 +34,7 @@ Regions of Interest (ROI) in this food image?' and 'What food types are in these
 \end{figure}
 
 
-Many researchers in various machine vision labs have attempted to solve this
+Many researchers in various computer vision labs have attempted to solve this
 problem using different methodologies.
 There has been promising results from some papers but these are mostly under highly constrained circumstances.
 When mixed foods are introduced to the problem, many of the methods fail.
@@ -66,7 +68,7 @@ for dietary assessment. This application would be able to take an image and then
 \subsubsection*{Understanding of Convolutional Neural Networks}
 In the project, Convolutional Neural Networks (CNN's) will be used for object identification in Food Images.
 A machine learning library will be used for this due to time constraints but it is a key
-objective to develop a deep understanding of CNN's as they are quite pivotal in the current Machine Vision Industry and bio-inspired systems are very interesting.
+objective to develop a deep understanding of CNN's as they are quite pivotal in the current computer vision industry and bio-inspired systems are very interesting.
 
 \subsubsection*{Learn about different image identification and classification techniques}
 Although, CNN's will be used for implementation, other methods of identification and classification will not be ignored.
@@ -107,32 +109,15 @@ Once a model had been successfully trained, comparison to previous work was carr
 
 \section{Overview of Report}
 
-This report is broken down into various main headings:
-
-\textbf{Introduction}
-
-This section is to give on overview of what this project is about, how the project will be approached and why it being carried out.
-
-\textbf{Background}
-
-Some information on the background of the subject that is focused on will be outlined here.
-
-\textbf{Introduction to Using Tensorflow}
-
-In this part of the report various experiments using Tensorflow will be carried out as an introduction to the library and to the datasets used.
-
-\textbf{Training Using the Inception-V3 Model Architecture}
-
-This section will focus on retraining the Inception-V3 pretrained model.
-
-\textbf{Analysing the Trained Model}
-
-Various experiments using the trained model.
-
-\textbf{Discussion and Conclusion}
-
-In this section, results from the empirical studies will be discussed and a conclusion will be outlined.
-
+This report is broken down into various chapters.
+The introduction chapter is to give on overview of what this project is about, how the project will be approached and why it is being carried out.
+Following this, some information on the background of the subject of this Final Year Project (FYP) will be outlined. Once the chapters of introduction and background have been completed, a chapter outlining the learning of Tensorflow will be explored. Tensorflow is a machine learning library that is used to develop CNNs. In this chapter, the goal is to demonstrate the activities undertaken to learn about the technologies used and show tutorials that have been completed to aid with this learning.
+In chapter titled 'Training Using the Inception-V3 Model Architecture' , the purpose is to outline experiments that have been carried out in relation to training Tensorflow models.
+A Tensorflow model is the term used to describe the neural network produced by Tensorflow. 
+The Inception-V3 architecture is proven to be a very successful architecture for classifying images and will be explained in detail in said chapter.
+Once the model has been trained, the following chapter 'Analysing the Trained Model' will consist of experiments that analyse and test the models trained.
+A prototype smart phone application was developed to demonstrate the efficacy of the system and an overview of the process will be explained in the chapter titled 'Prototype Application.'
+The final chapter's purpose is to provide a discussion on the results obtained and offer a conclusion to the findings.
 
 \section{Motivation}
 I find the topic of Computer Vision a very interesting one.
