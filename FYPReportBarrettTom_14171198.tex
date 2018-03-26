@@ -7,7 +7,7 @@
 \usepackage{appendix}
 \usepackage{import}
 \graphicspath{{images/}}
-\usepackage[backend=biber]{biblatex}
+\usepackage[backend=biber, style=authoryear-icomp, natbib=true]{biblatex}
 \usepackage{subcaption}
 \usepackage{afterpage}
 \addbibresource{references.bib}
@@ -95,7 +95,8 @@ tabsize=3}
         \newpage}
 
 %\usepackage{thesis}
-\pagestyle{empty}
+\thispagestyle{empty}
+\pagenumbering{gobble}
 
 \begin{document}
 
