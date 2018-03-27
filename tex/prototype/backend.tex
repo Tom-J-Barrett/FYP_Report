@@ -76,6 +76,16 @@ def runModel(file_name):
 \subsection*{Deployment}
 In order to deploy the Flask application to an AWS EC2 instance the following steps had to be followed:
 
+\begin{itemize}
+    \item{Upload the output\_graph.pb file (Tensorflow model), the output\_labels.txt file and the source code to the server using SFTP}
+    \item{SSH into the server}
+    \item{Create a folder called 'images' in the home directory to store uploads images}
+    \item{Place model and label files into folders called 'models' and 'labels' respectively}
+    \item{Ensure Tensorflow, NOHUP (Ignores the hangup signal in Linux) Python and Flask are installed on the server}
+    \item{Ensure no processes are running on port 5000 using the command 'lsof -i :5000'}
+    \item{Run the server.py code using the command 'nohup python server.py \&'}
+\end{itemize}
+
 % \begin{itemize}
 %     \item{Upload the output_graph.pb file (Tensorflow model), the output_labels.txt file and the source code to the server using SFTP}
 %     \item{SSH into the server}
