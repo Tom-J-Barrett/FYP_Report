@@ -3,28 +3,24 @@
 \label{intro}
 The chapter outlines an introduction to the subject area of this Final year Project (FYP), the objectives of this project, the methodology used to complete this project, an overview of the report and an explanation of the motivation behind this FYP.
 
-% % \subsubsection*{Promising Approaches of Computer-supported Dietary Assessment and Management: 
-% % Current Research Status and Available Applications}
-% % \textcite{arens2015promising}
-% \textcite{goodman2015vitamin}
-
 \section{Overview}
-This project explores identification and classification of food images for use in a calorie measurement android application.
+This project explores identification and classification of food images for use in a nutritional measurement android application.
 Food calorie consumption is a huge problem in the modern world.
 Over 25\% of the population in Ireland is obese and this figure is likely to rise over the coming years.
 There has been extensive research carried out into nutritional assessment.
-Many of these studies utilise smart phone applications to record their calories intake while physical food diaries have also been used in the past.
+Many of these studies utilise smart phone applications to record calories intake while physical food diaries have also been used in the past.
 A study was carried out by \textcite{goodman2015vitamin} whereby they used a mobile application to keep track of Vitamin D intake for young Canadians ranging from teenagers to early adulthood.
 \textcite{arens2015promising} also carried out a review of current computer supported nutritional assessment applications.
 The problem with many of these 'food diary' applications is that they can be very tedious and time intensive for users.
 Leveraging artificial intelligence to decrease the effort of the user or dietician would be very beneficial and many even encourage use of said nutritional assessment applications.
-Artificial intelligence could be utilised to classify food images and calculate the calorie count of an image so that a user would not have to input information themselves.
+Artificial intelligence could be utilised to classify food images and calculate the calorie count of an image so that a user would not have to input the information themselves.
 
 The classification of images is the process whereby an algorithm predicts what objects are in an image.
 As humans, we take vision for granted.
 Computers, which find what are complex task for us seemingly simple i.e mathematical computations, find it very difficult to interpret images.
 A black and white image is simply an array of numbers with values of 1 or 0 as seen in Figure \ref{fig:imageArray}. 
 For color images, there are multiple layers of arrays for each of three colour channels red, green and blue.
+It can be quite difficult to extract feature information from these arrays.
 
 \begin{figure}[h]
 	\centering
@@ -42,8 +38,10 @@ For example, the banana is clearly a very prominent object in Figure \ref{fig:ba
 	\label{fig:bananaClear}
 \end{figure}
 
-Alternatively when the object of the image is occluded or not the focus of the image (Figure \ref{fig:occludedBanana} and Figure \ref{fig:farBanana}), classification becomes very difficult while it can be clearly seen to humans that a banana is still present in the image.
-Illumnination is also a factor that influences classification greatly as color can play an important aspect in classifciation of food images in particular \textcite{novelSVM}.
+Alternatively when the object of the image is occluded or not the focus of the image (Figure \ref{fig:occludedBanana} and Figure \ref{fig:farBanana}), classification becomes very difficult.
+In contrast it can be clearly seen to humans that a banana is still present in the image.
+If we take a filled roll for example, it is difficult for the human eye to see the contents nevermind a computer so this is another issue that arises.
+Illumnination is also a factor that influences classification greatly as colour can play an important aspect in classifciation of food images in particular \textcite{novelSVM}.
 
 \begin{figure}[h] 
   \label{ fig7} 
@@ -64,20 +62,38 @@ Illumnination is also a factor that influences classification greatly as color c
 \end{figure}
 
 Traditionally, Support Vector Machines (SVMs) have been used to classify food images, many examples of which are covered in Chapter 2.
+The aim behind SVMs is to cast the information to a higher dimension, for example from a 2D to 3D space, so that the classes can be seperated. SVMs will be explored further in Chapter 2.
 The features used by SVMs for classification are normally colour, texture, shape and size.
-SVMs have their problems however and these problems of long training times and low accuracy with many classes have resulted in SVMs losing poularity in recent years.
+SVMs have their problems however and these problems of long training times and low accuracy with many classes have resulted in SVMs losing popularity in recent years.
 
 Another reason for the shift from the use of SVMs is due to the recent success of utilizing nueral networks for image classsification.
 Neural networks are bio-inspired algorithms based off the structure of the human brain.
 A special type of neural networks, Convolutional Neural Networks (CNNs), have proven to be very successful in image classification.
-CNN's have been around since the 1980's \textcite{handsOnML} but in 2012 CNNs became popular again due to the work carried out, for example by \textcite{krizhevsky2012imagenet}.
-CNNs have been proven to be very successful in facial recognition and have been applied to food images with promising results as outlined in Chapter 2.
+CNNs differ from other neural networks due to their extra layers of convolution and pooling.
+Convolutional layers filter the images for features while pooling refines the information in the arrays to reduce computational time and to make the features in the image clearer.
+CNN's have been around since the 1980's \textcite{handsOnML} but in 2012 CNNs became popular again due to the work carried out in that time, for example by \textcite{krizhevsky2012imagenet}.
+CNNs have been proven to be very successful in facial recognition and have been applied to food images with promising results as outlined in various studies in Chapter 2.
 
-For nutritional assessment applications aided by computer vision there are a few steps that are completed. Firstly, the food images are classifed with segmentation prior in some cases (Whats segmenetation). Secondly, size estimation of each food type is carried out. Once data on the food type and size has been collected, calorie count estimation can be undertaken. Size and calorie estimation is outside the scope of this FYP.
+For nutritional assessment applications aided by computer vision there are a few steps that must completed. Firstly, the food images are classifed with prior segmentation in some cases.
+Image segmentation is the process by which n image is segmented into multiple parts with usually a segment for each different object or as in the case of Figure \ref{fig:foodSegment} each different food item.
+Secondly, size estimation of each food type is carried out. Once data on the food type and size has been collected, calorie count estimation can be undertaken. Size and calorie estimation is outside the scope of this FYP.
 
-The system proposed to solve the problem statement would be able to integrate with an Android mobile phone application. The idea is, that when a user is about to eat their meal, they can simply take a picture of their meal for computation. From here, the application would take an image, and send it to a server to be analysed.
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.45]{foodSegmentation}
+  \caption{Segmented Food Image sourced from - http://www.chioka.in/meanshift-algorithm-for-the-rest-of-us-python/}
+  \label{fig:foodSegment}
+\end{figure}
+
+
+The full system proposed to solve the problem statement would be able to integrate with an Android mobile phone application.
+The concept is, that when a user is about to eat their meal, they can simply take a picture of their meal for computation.
+The application would take an image, and send it to a server to be analysed.
 On the server side the image would be classified using a Tensorflow model.
-Once this is done, the size of each food type would be measured and through this an overall calorie count would be displayed for the user. This could be logged for user metrics. The full system may not be possible to implement due to time constraints so therefore, classification will be the furthest step looked in to.
+Tensorflow is a machine learning library that will be used to create CNNs.
+Once this is done, the size of each food type would be measured and through this an overall calorie count would be displayed for the user.
+This could be logged for user metrics.
+The full system may not be possible to implement due to time constraints so therefore, classification will be the furthest step looked in to.
 
 \section{Objectives}
 \subsection*{Primary Objectives}
@@ -91,11 +107,11 @@ shown promising results in the past and replication of these results will be att
 
 \subsubsection*{Develop a mobile application to leverage the CNN}
 Another objective for this project is to develop an application that can be used
-for dietary assessment. This application would be able to take an image and then send the image to a server to identify and classify the foods within the image. Size estimation will not be explored for this project. Alternatively, a previously developed application will be used to demonstrate the CNN developed.
+for dietary assessment. This application would be able to take an image and then send the image to a server to identify and classify the foods within the image. Size estimation will not be explored for this project. Alternatively, due to time constraints, a previously developed application could be used to demonstrate the CNN developed.
 
 \subsection*{Secondary Objectives}
 \subsubsection*{Understanding of Convolutional Neural Networks}
-In the project, Convolutional Neural Networks (CNN's) will be used for object identification in Food Images.
+In the project, Convolutional Neural Networks (CNNs) will be used for object identification in Food Images.
 A machine learning library will be used for this due to time constraints but it is a key
 objective to develop a deep understanding of CNN's as they are quite pivotal in the current computer vision industry and bio-inspired systems are very interesting.
 
@@ -167,8 +183,9 @@ Identifying and recognising food is much more difficult than say recognising fac
 Therefore, this problem would also be very beneficial to developing skills in the computer vision area.
 
 I would like to develop these real world skills so that I can partake in
-Computer Vision projects in industry or to do further research in academia. This
-is because machine learning has really taken off in the last few years and is
+Computer Vision projects in industry or to do further research in academia.
+I have also been offered a graduate role in Jaguar Land Rover and these skills would be very relvant in the autonomous driving industry.
+This is because machine learning has really taken off in the last few years and is
 used by many in industry. While machine learning as a whole has become very
 popular, computer vision is probably the most prominent that has come out of it.
 Face detection, for one, is being researched extensively for use in personalised
