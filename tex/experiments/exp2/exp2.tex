@@ -9,7 +9,7 @@ The CIFAR-10 dataset is used here.
 This has 60000 images split into 10 classes and a test set of 1000 images \textcite{cifar}.
 
 \subsection*{Script}
-\begin{lstlisting}
+\begin{lstlisting}[style=Python]
 def unpickle(file):
     import pickle
     with open(file, 'rb') as fo:
@@ -32,7 +32,7 @@ data_batch5 = all_data[5]
 test_batch = all_data[6]
 \end{lstlisting}
 
-\begin{lstlisting}
+\begin{lstlisting}[style=Python]
 def set_up_images(self):
         
         print("Setting Up Training Images and Labels")
@@ -66,7 +66,7 @@ def set_up_images(self):
 return x, y
 \end{lstlisting}
 
-\begin{lstlisting}
+\begin{lstlisting}[style=Python]
 cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels = y_true, logits = y_pred))
 optimizer = tf.train.AdamOptimizer(learning_rate = 0.001)
 train = optimizer.minimize(cross_entropy)

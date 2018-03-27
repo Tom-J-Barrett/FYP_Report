@@ -7,7 +7,7 @@
 \usepackage{appendix}
 \usepackage{import}
 \graphicspath{{images/}}
-\usepackage[backend=biber]{biblatex}
+\usepackage[backend=biber, style=authoryear-icomp, natbib=true]{biblatex}
 \usepackage{subcaption}
 \usepackage{afterpage}
 \addbibresource{references.bib}
@@ -20,27 +20,69 @@
 \setlength{\headsep}{0in}
 \usepackage{listings}
 \usepackage{color}
+\usepackage{xcolor}
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 
-\lstset{frame=tb,
-  language=Python,
-  aboveskip=3mm,
-  belowskip=3mm,
-  showstringspaces=false,
-  columns=flexible,
-  basicstyle={\small\ttfamily},
-  numbers=none,
-  numberstyle=\tiny\color{gray},
-  keywordstyle=\color{blue},
-  commentstyle=\color{dkgreen},
-  stringstyle=\color{mauve},
-  breaklines=true,
-  breakatwhitespace=true,
-  tabsize=3
+\lstdefinestyle{numbers} {numbers=left, stepnumber=1, numberstyle=\tiny, numbersep=10pt}
+\lstdefinestyle{MyFrame}{frame=tb}
+
+\lstdefinestyle{Java} {
+language=Java,
+style=numbers,
+style=MyFrame,
+frame=lines,
+showspaces=false,
+showtabs=false,
+breaklines=true,
+showstringspaces=false,
+breakatwhitespace=true,
+commentstyle=\color{green},
+keywordstyle=\color{blue},
+stringstyle=\color{red},
+basicstyle=\ttfamily
 }
+
+\lstdefinestyle{Python} {
+language=Python,
+style=numbers,
+style=MyFrame,
+frame=none,
+backgroundcolor={},
+aboveskip=3mm,
+belowskip=3mm,
+showstringspaces=false,
+columns=flexible,
+numberstyle=\tiny\color{gray},
+keywordstyle=\color{blue},
+commentstyle=\color{dkgreen},
+stringstyle=\color{mauve},
+breaklines=true,
+breakatwhitespace=true,
+tabsize=3
+}
+
+\lstset{language=Python,frame=lines}
+\lstset{language=Java,frame=none}
+
+% \lstset{frame=tb,
+%   language=Python,
+%   aboveskip=3mm,
+%   belowskip=3mm,
+%   showstringspaces=false,
+%   columns=flexible,
+%   basicstyle={\small\ttfamily},
+%   numbers=none,
+%   numberstyle=\tiny\color{gray},
+%   keywordstyle=\color{blue},
+%   commentstyle=\color{dkgreen},
+%   stringstyle=\color{mauve},
+%   breaklines=true,
+%   breakatwhitespace=true,
+%   tabsize=3
+% }
 %\setlength{\parindent}{12mm}
 % paragraph indent
 \setlength{\parindent}{0pt}
@@ -55,7 +97,8 @@
         \newpage}
 
 %\usepackage{thesis}
-\pagestyle{plain}
+\thispagestyle{empty}
+\pagenumbering{gobble}
 
 \begin{document}
 
@@ -75,10 +118,10 @@
 \listoffigures
 \listoftables
 
-
 \include{tex/intro}
 \include{tex/background/background}
 \include{tex/experiments}
+\include{tex/prototype/prototype}
 \include{tex/conclusion}
 
 \printbibliography

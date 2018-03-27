@@ -1,0 +1,74 @@
+The design process for this prototype application consisted of user interface design, android application system design and the activity of choosing resources for a backend host.
+
+\subsection*{User Interface}
+The user interface mockups were created using (Fluid? insert reference).
+The aim of this design was to provide a simple, easy to use interface so that a user could use the application with minimal effort.
+The main benefit of using computer vision for this type of application is to reduce the effort of the user or dietition keeping track of food intake.
+Therefore, this application had to be very quick and easy to use.
+
+Three main activities were needed for this application.
+The first activity, as seen in Figure \ref{fig:page1}, would consist of options to either take an image of food or to view the food logs of the user.
+If the user decides to take an image of food, they will be brought to the second activity which can be seen in Figure\ref{fig:page2}.
+The user is required to take a picture before reaching the activity in Figure \ref{fig:page2}.
+Once the user presses the send button the image is classified and the content of the activity changes to display the classification and calorie count as in Figure \ref{fig:page3}.
+Alternatively, the user can cancel the process and return to the first activity.
+The user would then submit the food classification for logging and automatically return to the first activity.
+The final activity is displayed when a user views their food logs.
+This activity has the ability to view a list of the food logs taken by the user by day, week or month.
+The calorie count of the selected time frame is to be displayed on this activity also.
+
+\begin{figure}[h] 
+  \label{ fig7} 
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.75\linewidth]{Mockup1} 
+    \caption{Landing Activity} 
+  \label{fig:page1}
+    \vspace{4ex}
+  \end{minipage}%%
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.75\linewidth]{Mockup2} 
+    \caption{Image Submission Activity} 
+  \label{fig:page2}
+    \vspace{4ex}
+  \end{minipage} 
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.75\linewidth]{Mockup3} 
+    \caption{Classification Activity} 
+    \label{fig:page3}
+    \vspace{4ex}
+  \end{minipage}%% 
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.75\linewidth]{Mockup4} 
+    \caption{Food Logs Activity} 
+    \label{fig:page4}
+    \vspace{4ex}
+  \end{minipage} 
+\end{figure}
+\afterpage{\clearpage}
+\subsection*{System Architecture}
+
+\subsubsection*{Package Diagram}
+\begin{figure}[h]
+    \includegraphics[scale=0.65]{packageDiagram}
+    \caption{Package Diagram}
+    \label{fig:packageDiagram}
+\end{figure}
+
+\subsubsection*{Architectural Patterns}
+The Model-View-Presenter (MVP)(reference) architectural pattern was adapted for this application.
+This pattern is very similar to the Model-View-Controller (MVC) architecture which is quite popular in the software development industry.
+The main difference between MVC and MVP is that wheras in MVC the controller is responsible for which view is used, in MPV the presenter is called through the view.
+This is due to the architecture of Android applications in general, where the view takes primary control.
+
+(Talk more about MPV).
+
+As illustrated in Figure \ref{fig:packageDiagram}, the views in the application have a dependancy only on their corresponding presenter.
+The presenters contain the business logic of the  application and have a dependancy on all other packages.
+The packages of backgroundProcesses, calorieEstimation and storage have a dependancy on the presenters package for callback purposes and also database creation in Android requires context of the activity information.
+
+\subsubsection*{AWS Architecture}
+

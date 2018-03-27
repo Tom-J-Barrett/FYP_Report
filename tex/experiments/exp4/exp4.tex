@@ -8,7 +8,10 @@ for direction on this process \textcite{retrainInception}.
 
 Firstly, in order to retrain the final layer of a model, a dataset must be
 prepared in the correct way. The Food-101 dataset \textcite{food101}
-was used for this experiment, which will be analysed below. The dataset must be structured so that
+was used for this experiment, which will be analysed below.
+This dataset is in contrast to \textcite{yanaiFood} as they used the UECFOOD100 dataset.
+The food-101 dataset was chosen due to larger number of images per class, a difference between 100 and 1000.
+The dataset must be structured so that
 there is a separated directory for each class with the directory name as the class
 name. These directories should contain all the images for this class. 
 
@@ -94,7 +97,7 @@ Tensorflow and Numpy were used to run this scipt.
 \subsection*{Script}
 The following snippets of code are from the retrain.py script.
 
-\begin{lstlisting}
+\begin{lstlisting}[style=Python]
 # Add the new layer that we'll be training.
 (train_step, cross_entropy, bottleneck_input, ground_truth_input,
 final_tensor) = add_final_training_ops(
@@ -124,7 +127,7 @@ sess.run(init)
 
 
 
-\begin{lstlisting}
+\begin{lstlisting}[style=Python]
 # We've completed all our training, so run a final test evaluation on
 # some new images we haven't used before.
 test_bottlenecks, test_ground_truth, test_filenames = (

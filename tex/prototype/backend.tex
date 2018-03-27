@@ -1,0 +1,76 @@
+\subsection*{Python Flask}
+
+\subsection*{Implementation}
+\subsubsection*{Backend service code}
+\begin{lstlisting}[style=Python]
+import base64
+import label_image
+import time
+
+app = Flask(_name_)
+
+@app.route('/classifyImage/', methods=['POST'])
+def classify():
+    imgdata = base64.b64decode(request.form.get('image'))
+    filename = 'images/' + str(time.strftime("%Y%m%d-%H%M%S")) + '.jpg'
+    with open(filename, 'wb') as f:
+        f.write(imgdata)
+
+    results = label_image.runModel(filename)
+    predictions = results[0]
+
+    result_String = ""
+    for i in predictions :
+        result_String += str(i) + ","
+    return result_String
+
+if _name_ == '_main_':
+    app.run(host='0.0.0.0', threaded=True)
+\end{lstlisting}
+
+\subsubsection*{Method called from 'label\_image.py'}
+\begin{lstlisting}[style=Python]
+def runModel(file_name):
+  model_file = \
+    "models/output_graph13.pb"
+  label_file = "labels/output_labels13.txt"
+  input_height = 299
+  input_width = 299
+  input_mean = 128
+  input_std = 128
+  input_layer = "Mul"
+  output_layer = "final_result"
+
+  graph = load_graph(model_file)
+  t = read_tensor_from_image_file(file_name,
+                                  input_height=input_height,
+                                  input_width=input_width,
+                                  input_mean=input_mean,
+                                  input_std=input_std)
+
+  input_name = "import/" + input_layer
+  output_name = "import/" + output_layer
+  input_operation = graph.get_operation_by_name(input_name)
+  output_operation = graph.get_operation_by_name(output_name)
+
+  with tf.Session(graph=graph) as sess:
+    results = sess.run(output_operation.outputs[0],
+                      {input_operation.outputs[0]: t})
+  results = np.squeeze(results)
+
+  top_k = results.argsort()[-5:][::-1]
+  labels = load_labels(label_file)
+
+  setIndex = False
+
+  top5_results = [None] * 5
+  index = 0
+  for i in top_k:
+    top5_results[index] = labels[i]
+    index += 1
+
+  final_results = [top5_results, results]
+  return final_results
+\end{lstlisting}
+
+\subsection*{Deployment}

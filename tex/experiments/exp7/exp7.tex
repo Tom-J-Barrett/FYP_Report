@@ -64,7 +64,7 @@ model. Thirdly, running the window through the Tensorflow model and finally
 saving a new image with a coloured overlay of classifications.
 
 \subsubsection*{Extracting the window from the image}
-\begin{lstlisting}
+\begin{lstlisting}[style=Python]
 for (x, y, window) in sliding_window(resized, stepSize=64, windowSize=(winW, winH)):
 	# if the window does not meet our desired window size, ignore it
 	if window.shape[0] != winH or window.shape[1] != winW:
@@ -72,7 +72,7 @@ for (x, y, window) in sliding_window(resized, stepSize=64, windowSize=(winW, win
 \end{lstlisting}
 
 
-\begin{lstlisting}
+\begin{lstlisting}[style=Python]
 def sliding_window(image, stepSize, windowSize):
 	# slide a window across the image
 	for y in xrange(0, image.shape[0], stepSize):
@@ -82,18 +82,18 @@ def sliding_window(image, stepSize, windowSize):
 \end{lstlisting}
 
 \subsubsection*{Resizing the window}
-\begin{lstlisting}
+\begin{lstlisting}[style=Python]
 window = cv2.resize(window, (299, 299))
 \end{lstlisting}
 
-\begin{lstlisting}
+\begin{lstlisting}[style=Python]
 resized_image = tf.reshape(image, [1, input_height, input_width, 3])
 resized = tf.image.resize_area(resized_image, [input_height, input_width])
 normalized = tf.divide(tf.subtract(resized, [input_mean]), [input_std])
 \end{lstlisting}
 
 \subsubsection*{Running the Tensorflow model}
-\begin{lstlisting}
+\begin{lstlisting}[style=Python]
 with tf.Session() as sess:
 	numpy_image = sess.run(normalized)
 
@@ -109,7 +109,7 @@ each colour is for a different classification. Blue is for an apple, yellow for
 banana, green for grape, white for orange and black if an unexpected prediction
 is made.
 
-\begin{lstlisting}
+\begin{lstlisting}[style=Python]
 cv2.rectangle(display_image, (x, y), (x + winW, y + winH), colour_dict.get(top1,
 (0,0,0)), 4)
 \end{lstlisting}

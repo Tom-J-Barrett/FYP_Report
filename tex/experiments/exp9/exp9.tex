@@ -11,7 +11,7 @@ very small segments could not be resized up to 299 x 299. A window of 70 x 70 si
 As you would think with recursive refinement, a recursive function would used,
 but this was unnecessary due to image size restrictions. Instead, a
 conditional for loop was added to the existing code.
-\begin{lstlisting}
+\begin{lstlisting}[style=Python]
 if top1 == "grape" and window_shape == "grid" and rr_grape:
 			for (x_grape, y_grape, grape_window) in sliding_window(window_resized, stepSize=64, windowSize=(70, 70)):
 				#reshape to square
