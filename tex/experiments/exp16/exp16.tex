@@ -8,8 +8,9 @@ A new image of a fruit bowl (Figure \ref{fig:fruitFromPhone}), taken on a mobile
 The image was used to run the script as defined in \ref{RR} but on two separate models.
 The model with tuned parameters, trained on 108 classes, with a final test accuracy of 66.3\% and the model trained on 13 classes, with a final accuracy of 92.6\%.
 
-\begin{figure}
-    \includegraphics[scale=0.1]{fruitFromPhone}
+\begin{figure}[h]
+\centering
+    \includegraphics[scale=0.08]{fruitFromPhone}
       \caption{Fruit image taken on a mobile phone}
       \label{fig:fruitFromPhone}
 \end{figure}
@@ -17,14 +18,16 @@ The model with tuned parameters, trained on 108 classes, with a final test accur
 \subsection*{Results}
 The outputs of the script can be seen in Figure \ref{fig:fruitRR13} and Figure \ref{fig:fruitRR108}. The output using the model trained on 13 classes had less false positive predictions. As the script ran (on both models), the segments predicted as grapes were saved to disk and then were each classified using 'label\_image.py'. The probabilities of the predictions were recorded with results as seen in Table \ref{RR_result_table}.
 
-\begin{figure}
-    \includegraphics[scale=0.6]{fruitFromPhoneRR_13Classes}
+\begin{figure}[h]
+\centering
+    \includegraphics[scale=0.5]{fruitFromPhoneRR_13Classes}
       \caption{Image after sliding window - 13 classes}
       \label{fig:fruitRR13}
 \end{figure}
 
-\begin{figure}
-    \includegraphics[scale=0.6]{fruitFromPhoneRR_108Classes}
+\begin{figure}[h]
+	\centering
+    \includegraphics[scale=0.5]{fruitFromPhoneRR_108Classes}
       \caption{Image after sliding window - 108 classes}
       \label{fig:fruitRR108}
 \end{figure}

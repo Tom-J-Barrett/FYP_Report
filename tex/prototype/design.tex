@@ -1,9 +1,10 @@
 The design process for this prototype application consisted of user interface design, android application system design and the activity of choosing resources for a backend host.
 
 \subsection*{User Interface}
-The user interface mockups were created using (Fluid? insert reference).
+The user interface mock ups were created using \textcite{fluid}.
 The aim of this design was to provide a simple, easy to use interface so that a user could use the application with minimal effort.
-The main benefit of using computer vision for this type of application is to reduce the effort of the user or dietition keeping track of food intake.
+The main benefit of using computer vision for this type of application is to
+reduce the effort of the user or dietician keeping track of food intake.
 Therefore, this application had to be very quick and easy to use.
 
 Three main activities were needed for this application.
@@ -49,26 +50,47 @@ The calorie count of the selected time frame is to be displayed on this activity
   \end{minipage} 
 \end{figure}
 \afterpage{\clearpage}
+
 \subsection*{System Architecture}
 
-\subsubsection*{Package Diagram}
 \begin{figure}[h]
+    \centering
     \includegraphics[scale=0.65]{packageDiagram}
     \caption{Package Diagram}
     \label{fig:packageDiagram}
 \end{figure}
 
 \subsubsection*{Architectural Patterns}
-The Model-View-Presenter (MVP)(reference) architectural pattern was adapted for this application.
+The Model-View-Presenter (MVP) architectural pattern was adapted for this application \textcite{mvp}.
 This pattern is very similar to the Model-View-Controller (MVC) architecture which is quite popular in the software development industry.
-The main difference between MVC and MVP is that wheras in MVC the controller is responsible for which view is used, in MPV the presenter is called through the view.
+The main difference between MVC and MVP is that whereas in MVC the controller is responsible for which view is used, in MPV the presenter is called through the view.
 This is due to the architecture of Android applications in general, where the view takes primary control.
+In the view classes, there should be no logic whatsoever in an MVP architecture and all logic should be called in the presenters.
+There is also a one to one dependency between views and presenters.
 
-(Talk more about MPV).
-
-As illustrated in Figure \ref{fig:packageDiagram}, the views in the application have a dependancy only on their corresponding presenter.
-The presenters contain the business logic of the  application and have a dependancy on all other packages.
+As illustrated in Figure \ref{fig:packageDiagram}, the views in the application
+have a dependency only on their corresponding presenter.
+The presenters contain the business logic of the  application and have a dependency on all other packages.
 The packages of backgroundProcesses, calorieEstimation and storage have a dependancy on the presenters package for callback purposes and also database creation in Android requires context of the activity information.
 
 \subsubsection*{AWS Architecture}
+The application interfaces with an Amazon Web Services (AWS) server called an EC2 instance.
+In order to keep the application secure AWS was used to provide a secure architecture.
+A Virtual Private Cloud (VPC) was created to host the instances.
+In a production environment a load balancer could be used to evenly distribute traffic across a fleet of backend instances but for the purposes of this prototype application, a single instance as in Figure \ref{fig:aws} could be used. 
+\begin{figure}[h]
+    \centering
+    \includegraphics{aws}
+    \caption{AWS Network Diagram}
+    \label{fig:aws}
+\end{figure}
+
+Security groups were utilised to restrict the type of traffic that would be allowed to reach the instance, so that the instance would only receive http requests at port 5000 and receive ssh connections at port 22 as per Figure \ref{fig:awsSecGroup}.
+\begin{figure}[h]
+    \centering
+    \includegraphics{secGroups}
+    \caption{AWS Security Group}
+    \label{fig:awsSecGroup}
+\end{figure}
+
 
