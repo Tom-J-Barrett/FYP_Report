@@ -9,8 +9,8 @@ Food calorie consumption is a huge problem in the modern world.
 Over 25\% of the population in Ireland is obese and this figure is likely to rise over the coming years.
 There has been extensive research carried out into nutritional assessment.
 Many of these studies utilise smart phone applications to record calorie intake while physical food diaries have also been used in the past.
-A study was carried out by \textcite{goodman2015vitamin} whereby they used a mobile application to keep track of Vitamin D intake for young Canadians ranging from teenagers to early adulthood.
-\textcite{arens2015promising} also carried out a review of current computer supported nutritional assessment applications. They applications ranged from web based applications to smart phones.
+A study was carried out by \parencite{goodman2015vitamin} whereby they used a mobile application to keep track of Vitamin D intake for young Canadians ranging from teenagers to early adulthood.
+\parencite{arens2015promising} also carried out a review of current computer supported nutritional assessment applications. They applications ranged from web based applications to smart phones.
 The problem with many of these 'food diary' applications is that they can be very tedious and time intensive for users.
 Leveraging artificial intelligence to decrease the effort of the user or dietician would be very beneficial and many even encourage use of said nutritional assessment applications.
 Artificial intelligence could be utilised to classify food images and calculate the calorie count of an image so that a user would not have to input the information themselves.
@@ -41,7 +41,7 @@ For example, the banana is clearly a very prominent object in Figure \ref{fig:ba
 Alternatively when the object of the image is occluded or not the focus of the image (Figure \ref{fig:occludedBanana} and Figure \ref{fig:farBanana}), classification becomes very difficult.
 In contrast it can be clearly seen to humans that a banana is still present in both images.
 If we take a filled roll for example, it is difficult for the human eye to see the contents nevermind a computer so this is another issue that arises.
-Illumnination is also a factor that influences classification greatly as colour can play an important aspect in classifciation of food images as discovered by \textcite{novelSVM}.
+Illumnination is also a factor that influences classification greatly as colour can play an important aspect in classifciation of food images as discovered by \parencite{novelSVM}.
 
 \begin{figure}[h] 
   \label{ fig7} 
@@ -64,16 +64,16 @@ Illumnination is also a factor that influences classification greatly as colour 
 Traditionally, Support Vector Machines (SVMs) have been used to classify food images, many examples of which are covered in Chapter 2.
 The aim behind SVMs is to cast the information to a higher dimension, for
 example from a 2D to 3D space, so that the classes can be separated. SVMs will be explored further in Chapter 2.
-The features used by SVMs for food image classification are normally colour, texture, shape and size as in \textcite{pouladzadeh2014measuring} and \textcite{novelSVM}.
+The features used by SVMs for food image classification are normally colour, texture, shape and size as in \parencite{pouladzadeh2014measuring} and \parencite{novelSVM}.
 SVMs have their problems however and these problems of long training times and low accuracy with many classes have resulted in SVMs losing popularity in recent years.
 
 Another reason for the shift from the use of SVMs is due to the recent success of utilizing neural networks for image classification.
 Neural networks are bio-inspired algorithms based off the structure of the human brain.
-A special type of neural networks, Convolutional Neural Networks (CNNs), have proven to be very successful in image classification \textcite{krizhevsky2012imagenet}.
+A special type of neural networks, Convolutional Neural Networks (CNNs), have proven to be very successful in image classification \parencite{krizhevsky2012imagenet}.
 CNNs differ from other neural networks due to their extra layers of convolution and pooling.
 Convolutional layers filter the images for features while pooling refines the information in the arrays to reduce computational time and to make the features in the image clearer.
-CNN's have been around since the 1980's \textcite{handsOnML} but were not used by many until 2012 when CNNs became popular again due to the work carried out in that time, for example by \textcite{krizhevsky2012imagenet}.
-CNNs have been proven to be very successful in facial recognition and have been applied to food images with promising results as outlined in various studies in Chapter 2 such as \textcite{yanaiFood} and \textcite{deepLearning}.
+CNN's have been around since the 1980's \parencite{handsOnML} but were not used by many until 2012 when CNNs became popular again due to the work carried out in that time, for example by \parencite{krizhevsky2012imagenet}.
+CNNs have been proven to be very successful in facial recognition and have been applied to food images with promising results as outlined in various studies in Chapter 2 such as \parencite{yanaiFood} and \parencite{deepLearning}.
 
 For a nutritional assessment application, aided by computer vision, there are a
 few steps that must completed. Firstly, the food images are classified with prior segmentation in some cases.
@@ -83,7 +83,7 @@ Secondly, size estimation of each food type is carried out. Once data on the foo
 \begin{figure}[h]
   \centering
   \includegraphics[scale=0.45]{foodSegmentation}
-  \caption{Segmented Food Image sourced from - http://www.chioka.in/meanshift-algorithm-for-the-rest-of-us-python/}
+  \caption{Segmented Food Image \parencite{segmentFood}}
   \label{fig:foodSegment}
 \end{figure}
 
