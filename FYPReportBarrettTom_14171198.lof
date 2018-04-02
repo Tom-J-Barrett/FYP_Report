@@ -106,34 +106,38 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.7}{\ignorespaces AWS Security Group\relax }}{104}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Landing Activity\relax }}{112}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Landing Activity\relax }}{117}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Image Capture Activity\relax }}{112}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Image Capture Activity\relax }}{117}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Image Send Activity\relax }}{112}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Image Send Activity\relax }}{117}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Image Processing Activity\relax }}{112}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Image Submit Activity\relax }}{117}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Image Submit Activity\relax }}{113}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces FoodLog Month Activity\relax }}{118}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.13}{\ignorespaces FoodLog Day Activity\relax }}{113}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces FoodLog Day Activity\relax }}{118}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.14}{\ignorespaces FoodLog Week Activity\relax }}{113}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces FoodLog Week Activity\relax }}{118}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.15}{\ignorespaces FoodLog Month Activity\relax }}{113}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Food Log Deletion\relax }}{118}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Github Contributions to Master\relax }}{119}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Automated Unit Tests\relax }}{120}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Detection Average Precision \parencite {donahue}\relax }}{130}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Detection Average Precision \parencite {donahue}\relax }}{136}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Mean Average Precision \parencite {donahue}\relax }}{131}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Mean Average Precision \parencite {donahue}\relax }}{137}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Distribution of top-ranked false positives \parencite {donahue}\relax }}{131}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Distribution of top-ranked false positives \parencite {donahue}\relax }}{137}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Segmentation Mean Accuracy \parencite {donahue}\relax }}{132}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Segmentation Mean Accuracy \parencite {donahue}\relax }}{138}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Per-category segmentation accuracy \parencite {donahue}\relax }}{132}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Per-category segmentation accuracy \parencite {donahue}\relax }}{138}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Per-class segmentation accuracy \parencite {donahue}\relax }}{132}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Per-class segmentation accuracy \parencite {donahue}\relax }}{138}
