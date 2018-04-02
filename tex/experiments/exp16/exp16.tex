@@ -1,5 +1,5 @@
 \subsection*{Overview}
-In \ref{RR}, some interesting results were obtained when attempting to run recursive refinement on an image with grapes in it.
+In Section \ref{RR}, some interesting results were obtained when attempting to run recursive refinement on an image with grapes in it.
 Originally it was meant to see if individual grapes could be recognised.
 On evaluation of the images used for training, it was found that bunches of grapes were used for training, not individual grapes. Therefore the results expected where never feasibly going to be obtained.
 Even though this was the case, the script resulted in finding grapes in portions of the background, as seen in Figure \ref{fig:rr1}.
@@ -38,7 +38,7 @@ The outputs of the script can be seen in Figure \ref{fig:fruitRR13} and Figure \
 \label{RR_result_table}
 \begin{tabular}{|l|l|l|}
 \hline
-Fruitbowl Segment & 13 class model                                                                                                                                       & 108 class model                                                                                                                                   \\ \hline
+\textbf{Fruitbowl Segment} & \textbf{13 class model}                                                                                                                                       & \textbf{108 class model}                                                                                                                                   \\ \hline
 False Positive 1                 & \begin{tabular}[c]{@{}l@{}}grape 0.31476045\\ apple 0.25866747\\ orange 0.11228518\\ apple pie 0.10234257\\ chocolate cake 0.09062083\end{tabular}   & \begin{tabular}[c]{@{}l@{}}grape 0.31820437\\ panna cotta 0.091400646\\ macarons 0.08560496\\ roll 0.08188102\\ apple 0.03981942\end{tabular}     \\ \hline
 False Positive 2                 & \begin{tabular}[c]{@{}l@{}}grape 0.29391274\\ apple 0.2371384\\ orange 0.16196558\\ chocolate cake 0.10039616\\ apple pie 0.096121624\end{tabular}   & \begin{tabular}[c]{@{}l@{}}panna cotta 0.21783036\\ grape 0.105718106\\ apple 0.087030284\\ macarons 0.07753955\\ orange 0.037592527\end{tabular} \\ \hline
 False Positive 3                 & \begin{tabular}[c]{@{}l@{}}grape 0.22402291\\ chocolate cake 0.16412543\\ apple 0.14523567\\ orange 0.12525927\\ apple pie 0.099948086\end{tabular}  & \begin{tabular}[c]{@{}l@{}}grape 0.2835378\\ panna cotta 0.088551655\\ macarons 0.06166248\\ orange 0.041896477\\ roll 0.040348493\end{tabular}   \\ \hline

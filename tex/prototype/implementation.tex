@@ -24,10 +24,11 @@ public class HostFactory {
 
     public Host createHost() {
         Host host = new Host.HostBuilder("52.214.205.157")
-                    .withDns("ec2-52-214-205-157.eu-west-1.compute.amazonaws.com")
-                    .withPort(5000)
-                    .withRoute("/classifyImage/")
-                    .build();
+        .withDns(
+            "ec2-52-214-205-157.eu-west-1.compute.amazonaws.com")
+        .withPort(5000)
+        .withRoute("/classifyImage/")
+        .build();
         return host;
     }
 }
@@ -154,6 +155,8 @@ protected String doInBackground(Void... params) {
 An AsyncTask was used to call the Nutritionix API.
 This API can be used to retrieve nutritional information on query strings.
 In this case, the calorie count of the food image was returned.
+The calorie count was extracted from a JSON object.
+JSON is explored in detail in a following section.
 \begin{lstlisting}[style=Java]
 @Override
 protected String doInBackground(Void... params) {
@@ -266,11 +269,13 @@ private List<FoodLog> selectQuery(String query) {
         Cursor resultSet = database.rawQuery(query, null);
         while(resultSet.moveToNext()) {
             try {
-                foodLogs.add(new FoodLogImpl.FoodLogBuilder(resultSet.getString(1))
-                                                            .withId(resultSet.getInt(0))
-                                                            .withCalories(resultSet.getDouble(2))
-                                                            .withTimestamp(dateFormat.parse(resultSet.getString(3)))
-                                                            .build());
+                foodLogs.add(new FoodLogImpl
+                .FoodLogBuilder(resultSet.getString(1))
+                .withId(resultSet.getInt(0))
+                .withCalories(resultSet.getDouble(2))
+                .withTimestamp(dateFormat
+                    .parse(resultSet.getString(3)))
+                .build());
             } catch (ParseException e) {
                 e.printStackTrace();
             }
@@ -404,6 +409,8 @@ Commit hisory can be seen in Figure \ref{fig:git}
     \caption{Github Contributions to Master}
     \label{fig:git}
 \end{figure}
+
+\subsection*{JSON}
 
 
 
