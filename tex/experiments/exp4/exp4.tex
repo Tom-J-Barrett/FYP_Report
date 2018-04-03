@@ -10,7 +10,8 @@ Firstly, in order to retrain the final layer of a model, a dataset must be
 prepared in the correct way. The Food-101 dataset \parencite{food101}
 was used for this experiment, which will be analysed below.
 This dataset is in contrast to \parencite{yanaiFood} as they used the UECFOOD100 dataset.
-The food-101 dataset was chosen due to larger number of images per class, a difference between 100 and 1000.
+The food-101 dataset was chosen due to larger number of images per class.
+The UECFOOD100 dataset has 100 images per class while the food-101 dataset has 1000 images per class.
 The dataset must be structured so that
 there is a separated directory for each class with the directory name as the class
 name. These directories should contain all the images for this class. 
@@ -106,7 +107,7 @@ tf.logging.info('Final test accuracy = %.1f%% (N=%d)' %
 \subsection*{Results}
 The final test accuracy for this retrained model was 54.8\%.
 
-For example, an image of pizza Figure\ref{fig:pizza}, was fed into the model with the followng results:
+For example, an image of pizza Figure \ref{fig:pizza}, was fed into the model with the followng results:
 \begin{itemize}
     \item{pizza 0.925}
     \item{pancakes 0.008}

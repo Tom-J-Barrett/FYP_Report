@@ -36,6 +36,9 @@ Analysis   & States any information gained from the experiment and speculation f
 \label{food101}
 \input{tex/experiments/exp3/exp3.tex}
 
+\section{Conclusion}
+This chapter has outlined the work done in learning about using Tensorflow to create CNNs and working with datasets.
+
 \chapter{Empirical Studies Part 1}
 This chapter consists of experiments which train various Tensorflow models.
 There are parameters that can be changed in the code that creates a Tensorflow model based on the Inception-V3 model architecture.
@@ -62,6 +65,15 @@ In addition to this, change in dataset size was explored in relation to model ac
 \section{Food 101 subset}
 \label{subset}
 \input{tex/experiments/exp13/exp13}
+
+\section{Conclusion}
+The focus of this experiment has been to train Tensorflow models using the Inception-V3 architecture under various constraints.
+These models have been trained using transfer learning.
+The highest accuracy for a model trained using the Food101+ dataset yielded a Top-1 accuracy of 66.6\% and a Top-1 accuracy of 85.96\%.
+Alternatively a model was trained using a subset of the Food101+ dataset.
+13 classes from Food101+ were used to benchmark the efficay of using CNNs against other mthods found in the literature reveiew.
+This CNN reached a Top-1 accuracy of 92.6\% and a Top-5 accuracy of 100\%.
+This exceeded or was comparable to the other methods researched.
 
 \chapter{Empirical Studies Part 2}
 The purpose of this chapter is to analyse the models trained previously to gain understanding and applicability to the problem statement.
@@ -94,6 +106,13 @@ The purpose of this chapter is to analyse the models trained previously to gain 
 \label{colour}
 \input{tex/experiments/exp14/exp14.tex}
 
+\section{Conclusion}
+This chapter has analysed the model trained in Chapter 4.
+Emphasis was placed on dealing with composite images through a sliding window approach.
+Once this had been completed, analysis into the results of the sliding window aproach was carried out by using multiple test images and removing the background from the image.
+Recursive refinement on the sliding window approach for images containing grapes was carried out and the results were analysed.
+Finally the effect of colour and image size on the classifier was measured.
+It was found that different fod types required different levels of features for classification.
 % \section{Visualising Images Through the Network}
 % \label{visualise}
 % \input{tex/experiments/exp15/exp15.tex}
