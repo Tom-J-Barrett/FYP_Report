@@ -6,6 +6,7 @@ The aim of this design was to provide a simple, easy to use interface so that a 
 The main benefit of using computer vision for this type of application is to
 reduce the effort of the user or dietician keeping track of food intake.
 Therefore, this application had to be very quick and easy to use.
+The application is called NutriLog.
 
 Three main activities were needed for this application.
 The first activity, as seen in Figure \ref{fig:page1}, would consist of options to either take an image of food or to view the food logs of the user.
@@ -73,4 +74,21 @@ have a dependency only on their corresponding presenter.
 The presenters contain the business logic of the  application and have a dependency on all other packages.
 The packages of backgroundProcesses, calorieEstimation and storage have a dependancy on the presenters package for callback purposes and also database creation in Android requires context of the activity information.
 
+\subsubsection*{Marchitecture}
+In Figure \ref{fig:market}, a marchitecture diagram can be seen.
+This diagram represents the architecture of the system.
+NutriLog is an Android application that send an image to an AWS (Amazon Web Services) instance using the API OkHttp. The AWS instance is running a Python Flask application that classifies the image using a Tensorflow model and sends a response back to NutriLog. The Nutritionix API is used to collect nutritional information of this classification.
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.15]{market}
+    \caption{Marchitecture Diagram}
+    \label{fig:market}
+\end{figure}
+
+The technologies used for this appliction were used for the following reasons:
+\subsubsubsection*{AWS}
+\subsubsubsection*{OkHttp}
+\subsubsubsection*{Flask}
+\subsubsubsection*{Tensorflow}
+\subsubsubsection*{Nutritionix}

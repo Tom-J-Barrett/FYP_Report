@@ -57,7 +57,7 @@ The main idea behind the network is that different strands of the network are fo
 
 In order to combat the problem of low resolution input, three separate experiments were carried out based on the fact that "One simple way to ensure constant effort effort is to reduce the strides of the first two layer in the case of lower resolution input, or by simply removing the first pooling layer of the network" \parencite{rethinkingInception}.
 
-These experiments are as follows, with the first resulting in the most accurate:
+These experiments are as follows, with the first (299 x 299 receptive field) resulting in the most accurate:
 \begin{itemize}
     \item{"299 x 299 receptive field with stride 2 and maximum pooling after the first layer." \parencite{rethinkingInception}}
     \item{"151 x 151 receptive field with stride 1 and maximum pooling after the first layer." \parencite{rethinkingInception}}
@@ -70,7 +70,7 @@ These experiments are as follows, with the first resulting in the most accurate:
      \label{fig:inception_model}
 \end{figure}
 
-The best results of the Inception-V3 model achieved 78.8\% top-1 accuracy and 94.4\% top accuracy of the ILSVR 2012 dataset \parencite{rethinkingInception}.
+The best results of the Inception-V3 model on the ILSVR 2012 dataset achieved 78.8\% Top-1 accuracy and 94.4\% Top 5 accuracy \parencite{rethinkingInception}.
 This model also was the least computationally expensive of other published and successful models.
 The full model can be viewed in Figure \ref{fig:inception_model}.
 

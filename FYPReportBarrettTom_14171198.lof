@@ -102,29 +102,31 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.5}{\ignorespaces Package Diagram\relax }}{105}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Landing Activity\relax }}{119}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Marchitecture Diagram\relax }}{107}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Image Capture Activity\relax }}{119}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Landing Activity\relax }}{120}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Image Send Activity\relax }}{119}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Image Capture Activity\relax }}{120}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Image Submit Activity\relax }}{119}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Image Send Activity\relax }}{120}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.10}{\ignorespaces FoodLog Month Activity\relax }}{120}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Image Submit Activity\relax }}{120}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.11}{\ignorespaces FoodLog Day Activity\relax }}{120}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces FoodLog Month Activity\relax }}{121}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.12}{\ignorespaces FoodLog Week Activity\relax }}{120}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces FoodLog Day Activity\relax }}{121}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Food Log Deletion\relax }}{120}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces FoodLog Week Activity\relax }}{121}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Github Contributions to Master\relax }}{121}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Food Log Deletion\relax }}{121}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Automated Unit Tests\relax }}{122}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Github Contributions to Master\relax }}{122}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.16}{\ignorespaces AWS Network Diagram\relax }}{128}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Automated Unit Tests\relax }}{123}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.17}{\ignorespaces AWS Security Group\relax }}{128}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces AWS Network Diagram\relax }}{129}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.18}{\ignorespaces AWS Security Group\relax }}{129}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
