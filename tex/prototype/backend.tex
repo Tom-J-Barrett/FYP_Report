@@ -86,6 +86,28 @@ In order to deploy the Flask application to an AWS EC2 instance the following st
     \item{Run the server.py code using the command 'nohup python server.py \&'}
 \end{itemize}
 
+\subsubsection*{AWS Architecture}
+The application interfaces with an Amazon Web Services (AWS) server called an EC2 instance.
+In order to keep the application secure AWS was used to provide a secure architecture.
+A Virtual Private Cloud (VPC) was created to host the instances.
+In a production environment a load balancer could be used to evenly distribute traffic across a fleet of backend instances but for the purposes of this prototype application, a single instance as in Figure \ref{fig:aws} could be used.
+In Figure \ref{fig:aws} the instance is located inside a subnet which is in turn loocated in a VPC.
+The purpose of a VPC is to have a virtual network dedicated to a users individual account. 
+\begin{figure}[h]
+    \centering
+    \includegraphics{aws}
+    \caption{AWS Network Diagram}
+    \label{fig:aws}
+\end{figure}
+
+Security groups were utilised to restrict the type of traffic that would be allowed to reach the instance, so that the instance would only receive http requests at port 5000 and receive ssh connections at port 22 as per Figure \ref{fig:awsSecGroup}.
+\begin{figure}[h]
+    \centering
+    \includegraphics{secGroups}
+    \caption{AWS Security Group}
+    \label{fig:awsSecGroup}
+\end{figure}
+
 % \begin{itemize}
 %     \item{Upload the output_graph.pb file (Tensorflow model), the output_labels.txt file and the source code to the server using SFTP}
 %     \item{SSH into the server}

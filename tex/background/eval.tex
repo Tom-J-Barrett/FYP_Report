@@ -66,4 +66,25 @@ When a classifier is given an image it normally responds with a list of
 predictions along with a decimal representation of the likelihood that it is of
 that class. The Top-1 accuracy is the top valued prediction and Top-5 accuracy
 is the top 5 predictions.
-		
+
+\subsection*{Cross-Validation}
+When cross-validation is utilised, the test set is used for gradient descent while a separate validation set is used to measure error \parencite{MLANN}.
+K-fold cross-validation is where k separate validation sets are created.
+These k different validation sets are used to test the model and the results are averaged.
+
+\subsection*{Conufusion Matrix}
+A proven, very successful way to measure how well a classifier is performing is by using a confusion matrix \parencite{handsOnML}.
+A confusion matrix simply counts the number of times an object is classifier correctly or incorrectly as in Table \ref{cm}.
+
+\begin{table}[]
+\centering
+\caption{Confusion Matrix}
+\label{cm}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Actual (n=200)} & \textbf{Predicted: NO} & \textbf{Predicted: YES} \\ \hline
+NO                      & 55                     & 18                      \\ \hline
+YES                     & 7                      & 120                     \\ \hline
+\end{tabular}
+\end{table}
+

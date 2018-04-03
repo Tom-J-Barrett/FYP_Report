@@ -29,7 +29,7 @@ efficient and scalable. It is scalable because of the fixed length vector of
 features which will remain constant regardless of inputs and additional outputs.
 
 The team evaluated their results on a few metrics and test sets as seen in Table
-\ref{rcnnResults}.
+\ref{rcnnResults}. Explanation of the datasets used can be seen in Table \ref{datasets}.
 
 \subsubsection*{Fast RCNN}
 Ross Girshik's next iteration of work on region based convolution neural
@@ -76,18 +76,7 @@ share layers between the two networks. There were three option available:
     \item{Non- approximate joint training.}
 \end{itemize}
 
-\subsubsection*{Mask RCNN}
-The most recent paper on this topic was also written by Ross Girshik while
-working with Facebook AI Research \parencite{maskRcnn}. Mask RCNN "extends Faster
-RCNN by adding a branch for predicting an object mask in parallel with the
-existing branch for bounding box regression" \parencite{maskRcnn}.
-
-Mask RCNN has two modules, similar to Faster RCNN, where the first module is the
-Region Proposal Network. In the second module, in parallel to classification, a
-binary mask is outputted for each region. Bounding box regression and
-classification are done in parallel.
-
-\begin{table}[]
+\begin{table}[h]
     \centering
     \caption{Results from Region Based CNN Research}
     \label{rcnnResults}
@@ -105,3 +94,31 @@ classification are done in parallel.
                     & 63.1\%  \\ \hline
     \end{tabular}
 \end{table}
+
+\begin{table}[h]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{|p{4cm}|p{11cm}|}
+\hline
+\textbf{Table} & \textbf{Explanation}                                                                                                                                                                                               \\ \hline
+VOC07          & The PASCAL VOC dataset is used for the PASCAL (Pattern Analysis, Statistical Modelling and Computational Learning) Visual Object Classes Challenge. \parencite{pascal-voc-2007} was used for the 2007 challenge. \\ \hline
+VOC10          & The PASCAL VOC 2010 dataset was used for the 2010 challenge \parencite{pascal-voc-2010}.                                                                                                                         \\ \hline
+VOC11          & The PASCAL VOC 2011 dataset was used for the 2011 challenge \parencite{pascal-voc-2011}.                                                                                                                        \\ \hline
+VOC12          & The PASCAL VOC 2012 dataset was used for the 2012 challenge \parencite{pascal-voc-2012}.                                                                                                                        \\ \hline
+COCO15         & The COCO (Common Objects in Context) dataset created by Microsoft (\parencite{coco}) is used to measure the efficacy of object detection algorithms. The COCO 2015 dataset was released in 2015 for training.    \\ \hline
+COCO16         & An updated version of the COCO dataset was released in 2015.                                                                                                                                                       \\ \hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Mask RCNN}
+The most recent paper on this topic was also written by Ross Girshik while
+working with Facebook AI Research \parencite{maskRcnn}. Mask RCNN "extends Faster
+RCNN by adding a branch for predicting an object mask in parallel with the
+existing branch for bounding box regression" \parencite{maskRcnn}.
+
+Mask RCNN has two modules, similar to Faster RCNN, where the first module is the
+Region Proposal Network. In the second module, in parallel to classification, a
+binary mask is outputted for each region. Bounding box regression and
+classification are done in parallel.
+
