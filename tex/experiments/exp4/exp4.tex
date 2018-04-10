@@ -19,7 +19,7 @@ name. These directories should contain all the images for this class.
 Once this dataset has been set up correctly, a directory can be found on github
 which contains the necessary files for this tutorial. When the directory has
 been downloaded, the following command can be ran:
-\begin{lstlisting}
+\begin{lstlisting}[style=Command]
 python tensorflow/examples/image_retraining/retrain.py \ --image_dir
 ~/dataset_directory
 \end{lstlisting}
@@ -39,7 +39,7 @@ yet seen and a final test accuracy is displayed. This can be seen in the Script
 section below.
 
 The command used for using this model once it is trained is:
-\begin{lstlisting}
+\begin{lstlisting}[style=Command]
 python tensorflow/examples/label_image.py --graph=/tmp/output_graph.pb
 --labels=/tmp/output_labels.txt --input_layer=Mul --output_layer=final_result
 --input_mean=128 --input_std=128 --image=~/image_directory
