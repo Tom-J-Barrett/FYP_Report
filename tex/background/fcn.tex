@@ -5,7 +5,7 @@ do not have any fully connected layers. They are replaced with more filtering
 layers. Nvidia Digits have a semantic segmentation implementation based off the
 work of this paper.
 
-They took this approach because "feedforward computation and backpropogation are
+They took this approach because "feedforward computation and backpropagation are
 much more efficient when computer layer-by-layer over an entire image instead of
 independently patch-by-patch" \parencite{fcn}. This was also because they
 were focused on object detection. Normal classifiers do not work very well when
@@ -13,7 +13,7 @@ they are to classify more than one subject in an image and image segmentation
 was a way to solve this.
 
 There are a set of steps you can follow to turn a CNN into a FCN for semantic
-segmentation as follows ie. change to a convolutional layer from a fully
+segmentation as follows i.e. change to a convolutional layer from a fully
 connected one:
 \begin{itemize}
     \item{The size of the filters must be set to the size of the input layers.}

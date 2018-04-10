@@ -1,13 +1,13 @@
-Ross Girshik and other contributers had some very positive results in the area
+Ross Girshik and other contributors had some very positive results in the area
 of object detection using region based convolutional neural networks. There were
 four iterations of papers based on this work by Ross and groups in UC Berkley,
-Mircosoft and Facebook. A PHD student at the time of Ross's first paper also
+Microsoft and Facebook. A PHD student at the time of Ross's first paper also
 completed his dissertation on the subject. These papers, their
-results (Table \ref{rcnnResults}) and the changes made through each iteration will be analysed throughly in the proceeding sections.
+results (Table \ref{rcnnResults}) and the changes made through each iteration will be analysed thoroughly in the proceeding sections.
 
 \subsubsection*{RCNN}
 In the first paper written by Ross Girshik, while researching at UC Berkeley,
-focused on two main insights. These were that "one can apply high-capacity convolutional neural networks (CNNs) to bottom-up region proposals in order to localize and segment objects" and that
+focused on two main insights. These were that " one can apply high-capacity convolutional neural networks (CNNs) to bottom-up region proposals in order to localize and segment objects" and that
 "when training data is scarce, supervised pre-training for n auxiliary task,
 followed by domain-specific fine-tuning, yields a significant performance boost"
 \parencite{rcnn}.
@@ -22,7 +22,7 @@ The system that they developed followed these steps:
     \item{Bounding box regression for final region proposals}
 \end{itemize}
 
-This system utilised selective search to gather these region proposals but they
+This system utilised selective search to gather these region proposals, but they
 mention that a sliding-window detector is also an option. Ross Girshik and his
 team used the open source Caffe CNN library for this system. The system is quite
 efficient and scalable. It is scalable because of the fixed length vector of
@@ -34,7 +34,7 @@ The team evaluated their results on a few metrics and test sets as seen in Table
 \subsubsection*{Fast RCNN}
 Ross Girshik's next iteration of work on region based convolution neural
 networks took place in Microsoft Research. This paper was titled "Fast R-CNN" as
-it's aim was to decrease training and testing time "while also increasing
+its aim was to decrease training and testing time "while also increasing
 detection accuracy" \parencite{fastRcnn}.
 
 This paper analyses why RCNN \parencite{rcnn} was slow and therefore how it could be improved.
@@ -49,7 +49,7 @@ RCNN was classified to be slow because of three main factors:
 
 Due to these problems with RCNN, a new algorithm, titled Fast RCNN was proposed.
 The architecture is as follows. An image is taken as input along with a
-proposals for regions. The image is pushed through convolutional and pooling
+proposal for regions. The image is pushed through convolutional and pooling
 layers (using max pooling). A fixed-length vector of features is then extracted
 from each region proposal. These vectors are inputted to fully connected
 layers for bounding box location prediction \parencite{fastRcnn}.
@@ -67,7 +67,7 @@ RCNN detector. These combine to produce a single neural network for object
 detection.
 
 Instead of training these networks separately, the team had to look at how to
-share layers between the two networks. There were three option available:
+share layers between the two networks. There were three options available:
 \begin{itemize}
     \item{Alternating training whereby RPN is trained, and then used to train
         Fast RCNN. The Fast RCNN network is then used to initialise RPN and the
@@ -97,8 +97,8 @@ share layers between the two networks. There were three option available:
 
 \begin{table}[h]
 \centering
-\caption{My caption}
-\label{my-label}
+\caption{Datasets}
+\label{datasets}
 \begin{tabular}{|p{4cm}|p{11cm}|}
 \hline
 \textbf{Table} & \textbf{Explanation}                                                                                                                                                                                               \\ \hline
@@ -113,11 +113,11 @@ COCO16         & An updated version of the COCO dataset was released in 2015.   
 
 \subsubsection*{Mask RCNN}
 The most recent paper on this topic was also written by Ross Girshik while
-working with Facebook AI Research \parencite{maskRcnn}. Mask RCNN "extends Faster
+working with Facebook AI Research \parencite{maskRcnn}. Mask RCNN " extends Faster
 RCNN by adding a branch for predicting an object mask in parallel with the
 existing branch for bounding box regression" \parencite{maskRcnn}.
 
-Mask RCNN has two modules, similar to Faster RCNN, where the first module is the
+Mask RCNN has two modules, like Faster RCNN, where the first module is the
 Region Proposal Network. In the second module, in parallel to classification, a
 binary mask is outputted for each region. Bounding box regression and
 classification are done in parallel.
