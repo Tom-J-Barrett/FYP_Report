@@ -11,7 +11,7 @@ dataset slightly by including some single foods such as:
     \item{roll}
 \end{itemize}
 
-In order to collect these images, the ImageNet repository was utilised to search for
+To collect these images, the ImageNet repository was utilised to search for
 these foods individually and then download the subset of images to be included
 with the Food 101 dataset \parencite{imagenet}. The retrain.py script was run on the extended dataset as in
 \ref{inception}.
@@ -23,7 +23,7 @@ The Inception V3 Model was used for this experiment.
 In this experiment the extended Food-101 dataset was used.
 
 \subsection*{Libraries}
-Tensorflow and numpy are used in the retrain.py script.
+TensorFlow and NumPy are used in the retrain.py script.
 
 \subsection*{Script}
 As seen in \ref{extended}.
@@ -32,7 +32,7 @@ As seen in \ref{extended}.
 For this model, an accuracy of 55.3\% was achieved.
 
 For example, an image of a banana (Figure \ref{fig:banana}) was fed into the model with
-the followng results:
+the following results:
 \begin{itemize}
     \item{banana 0.9962}
     \item{orange 0.0009}

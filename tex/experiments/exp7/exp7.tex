@@ -1,12 +1,13 @@
 \subsection*{Objective}
-In the preious experiments, the one-shot approach to food image
+In the previous experiments, the one-shot approach to food image
 classification has been looked at. That is, the model will give a prediction of the most likely
 food item in that image. This is a problem when there is a composite image i.e are multiple foods in an
 image, see Figure \ref{fig:fruit}. There are a few options to combat this problem. Firstly, one could detect
 objects in the image, segment the image according to these objects and then run
-each segment through the model. A simple approach to this would be to segment
-the image into a number of sections and then run each section through the model.
-In order to follow the latter approach, a sliding window approach was used. This
+each segment through the model.
+A simple approach to this would be to segment
+the image into several sections and then run each section through the model.
+To follow the latter approach, a sliding window approach was used. This
 sliding window would move across the image and classify the segment of the image
 in the window. There are three options for window sliding shape as defined by a
 command line argument.
@@ -53,13 +54,13 @@ There are three options for window shape:
 \end{figure}
 
 \subsection*{Libraries}
-For this experiment Tensorflow provided the classification of each segment while
-also helping with resizing along with Numpy. OpenCv was used to implement the
-sliding window as per \parencite{slidingWindowTut}
+For this experiment TensorFlow provided the classification of each segment while
+also helping with resizing along with NumPy. OpenCV was used to implement the
+sliding window as per \parencite{slidingWindowTut}.
 
 \subsection*{Script}
 There were four main elements to the script. Firstly, extracting a window to be
-classified. Secondly, resizing the image to be compatible with the TensorFlowmodel. Thirdly, running the window through the Tensorflow model and finally
+classified. Secondly, resizing the image to be compatible with the TensorFlow model. Thirdly, running the window through the TensorFlow model and finally
 saving a new image with a coloured overlay of classifications.
 
 \subsubsection*{Extracting the window from the image}
@@ -115,7 +116,7 @@ cv2.rectangle(display_image, (x, y), (x + winW, y + winH), colour_dict.get(top1,
 
 \subsection*{Results}
 \subsubsection*{Grid based window}
-The grid based window resulted in fifteen separate classification. As seen in Figure
+The grid-based window resulted in fifteen separate classification. As seen in Figure
 \ref{fig:fruit}, there are multiple fruits in the image. Of these fruits, our
 model is trained on four, apple, banana, orange and grapes. This method
 classified all four to Top-1 accuracy at least once each. This method took 42.8
@@ -166,13 +167,13 @@ seconds to run.
 \end{table}
 
 \subsubsection*{Row based window}
-The row based method resulted in four predictions as follows in Figure
+The row-based method resulted in four predictions as follows in Figure
 \ref{rowWindowTable}. Out of these four predictions, only one classified a known
 fruit at Top-1 accuracy, an apple. An apple was also predicted to Top-5 accuracy
 in another instance. The runtime of this method was 16.1 seconds.
 
 \subsubsection*{Column based window}
-The column based window approach had five total predictions and ran for a total
+The column-based window approach had five total predictions and ran for a total
 of 13 seconds. As seen in \ref{colWindowTable}, two out of four known fruits
 were classified to a Top-1 accuracy with all other fruits predicted to Top-5
 accuracy. Only one Top-1 prediction did not contain a correct fruit.
@@ -180,7 +181,7 @@ accuracy. Only one Top-1 prediction did not contain a correct fruit.
 \subsection*{Analysis}
 These results are very interesting because while a banana was only predicted to
 Top-1 accuracy once in grid based, once in column based and zero times in row
-based, if the whole image is ran through the model, a banana is at the Top-1 accuracy.
+based, if the whole image is passed through the model, a banana is at the Top-1 accuracy.
 
 
 

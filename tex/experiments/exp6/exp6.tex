@@ -12,7 +12,7 @@ The Food-101 dataset \parencite{food101} with additional classes, as per
 \ref{inception}, was used for this model.
 
 \subsection*{Libraries}
-The libraries in use for this experiment are tensorflow and numpy.
+The libraries in use for this experiment are TensorFlow and NumPy.
 
 \subsection*{Script}
 Script as seen in \ref{inception} but with some additions to calculate Top 5 accuracy as seen
@@ -181,7 +181,7 @@ This figure was calculated from 1090 images in the test dataset and the average 
 \subsection*{Analysis}
 The set of parameters that seem to be the most
 effective are 10000 steps with a 0.1 learning rate. Graphs of this model can be
-see in Figures \ref{fig:model_train_val} and \ref{fig:model_train_test}. These
+seen in Figures \ref{fig:model_train_val} and \ref{fig:model_train_test}. These
 are based on the validation set and then the test set respectively. A side by
 side comparison can also be seen in Figures \ref{fig:test_val_accuracy} and
 \ref{fig:test_val_accuracy_refined} where orange is for during training and blue
@@ -191,13 +191,13 @@ There were two separate factors that each increased classification accuracy of
 about 5\% each. These were training steps and learning rate.
 
 Training steps are related to the number of images so before, when the training
-steps were at 4000, not all of our training images were being used. As the steps were increased
+steps were at 4000, not all of the training images were being used. As the steps were increased
 twofold we saw a 3.8\% increase in accuracy.
 
 Another parameter that increased accuracy significantly was learning rate. The
 default learning rate is 0.01 which was increased to 0.1. This resulted in an
-increase of 6.7\%. This is most likely due to the fact that since we are only
+increase of 6.7\%. This is most likely since we are only
 looking at the last layer, we can afford to change the weights more
 significantly.
 
-The Top 5 accuracy of the model was quite good but it was not run on the same number of images as the final test accuracy. This is due to the fact that tensorflow does not have an API for calculating Top 5 accuracy. As a result, it had to be calculated manually and this is very time intensive. The average probability of 0.62 is interestingly close to the overall Top 1 accuracy.
+The Top 5 accuracy of the model was quite good but it was not run on the same number of images as the final test accuracy. This is beacuse TensorFlow does not have an API for calculating Top 5 accuracy. As a result, it had to be calculated manually and this is very time intensive. The average probability of 0.62 is interestingly close to the overall Top 1 accuracy.

@@ -1,24 +1,26 @@
 \subsection*{Objective}
-For tthis experiment, it was decided to take inspiration from
+For this experiment, it was decided to take inspiration from
 \parencite{yanaiFood}, where pre-training was used training a model for food
 classification. In order to achieve this, the final layer of the
 Inception V3 model which was trained on the ImageNet dataset had to be retrained. This is called
-Transfer Learning. A tutorial, created by Google, on the tensorflow website was followed
+Transfer Learning.
+A tutorial, created by Google, on the TensorFlow website was followed
 for direction on this process \parencite{retrainInception}.
 
-Firstly, in order to retrain the final layer of a model, a dataset must be
+Firstly, to retrain the final layer of a model, a dataset must be
 prepared in the correct way. The Food-101 dataset \parencite{food101}
 was used for this experiment, which will be analysed below.
-This dataset is in contrast to \parencite{yanaiFood} as they used the UECFOOD100 dataset.
+
+This dataset contrasts with \parencite{yanaiFood} as they used the UECFOOD100 dataset.
 The food-101 dataset was chosen due to larger number of images per class.
 The UECFOOD100 dataset has 100 images per class while the food-101 dataset has 1000 images per class.
 The dataset must be structured so that
 there is a separated directory for each class with the directory name as the class
 name. These directories should contain all the images for this class. 
 
-Once this dataset has been set up correctly, a directory can be found on github
+Once this dataset has been set up correctly, a directory can be found on GitHub
 which contains the necessary files for this tutorial. When the directory has
-been downloaded, the following command can be ran:
+been downloaded, the following command can be executed:
 \begin{lstlisting}[style=Command]
 python tensorflow/examples/image_retraining/retrain.py \ --image_dir
 ~/dataset_directory
@@ -52,7 +54,7 @@ The dataset used for this experiment is the Food-101 dataset \parencite{food
 101}. This dataset has 101 classes with 1000 images for each class.
 
 \subsection*{Libraries}
-Tensorflow and Numpy were used to run this scipt.
+TensorFlow and NumPy were used to run this script.
 
 \subsection*{Script}
 The following snippets of code are from the retrain.py script.
@@ -84,9 +86,6 @@ sess.run(init)
 
 \end{lstlisting}
 
-
-
-
 \begin{lstlisting}[style=Python]
 # We've completed all our training, so run a final test evaluation on
 # some new images we haven't used before.
@@ -107,7 +106,7 @@ tf.logging.info('Final test accuracy = %.1f%% (N=%d)' %
 \subsection*{Results}
 The final test accuracy for this retrained model was 54.8\%.
 
-For example, an image of pizza Figure \ref{fig:pizza}, was fed into the model with the followng results:
+For example, an image of pizza Figure \ref{fig:pizza}, was fed into the model with the following results:
 \begin{itemize}
     \item{pizza 0.925}
     \item{pancakes 0.008}

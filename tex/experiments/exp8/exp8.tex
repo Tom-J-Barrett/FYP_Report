@@ -1,21 +1,22 @@
 \subsection*{Objective}
-Due to the fact that the end goal for this project is to have a smartphone
+Since the end goal for this project is to have a smartphone
 application that a user can use to keep track of their calorie measurement,
 there are a couple of options in how to achieve this. Firstly, an image can be
 taken on the phone and sent to a server to run a classification algorithm.
 Secondly, a model can be stored on the phone for computation. Transfer learning was once again used but on a different, smaller architecture called MobileNet \parencite{mobilenet}.
 
 \subsection*{Network Architecture}
+MobileNet architecture as explored in Chapter 2.
 
 \subsection*{Dataset}
 The Food 101 dataset \parencite{food101} with added classes was used for this experiment.
 
 \subsection*{Libraries}
-Tensorflow and numpy.
+TensorFlow and NumPy.
 
 \subsection*{Script}
 The retrain.py script \parencite{retrainInception} was used, with a different
-command paramater.
+command parameter.
 
 \begin{lstlisting}[style=Command]
 python tensorflow/examples/image_retraining/retrain.py \ --image_dir
