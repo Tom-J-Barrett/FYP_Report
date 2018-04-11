@@ -12,25 +12,29 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.5}{\ignorespaces Segmented Food Image \parencite {segmentFood}\relax }}{5}
 \defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Work Breakdown Structure\relax }}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Gantt Chart\relax }}{10}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Perceptron\relax }}{14}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Perceptron\relax }}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Linearly Separable, adapted from \parencite {MLANN}\relax }}{14}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Linearly Separable, adapted from \parencite {MLANN}\relax }}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Multi Layer Perceptron\relax }}{16}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Multi Layer Perceptron\relax }}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Gradient Descent\relax }}{18}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Gradient Descent\relax }}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces CNN Architecture\relax }}{19}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces CNN Architecture\relax }}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces CNN Overview\relax }}{20}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces CNN Overview\relax }}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Inception module \parencite {rethinkingInception}\relax }}{23}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Inception module \parencite {rethinkingInception}\relax }}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Inception V3 Architecture \parencite {rethinkingInception}\relax }}{24}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Inception V3 Architecture \parencite {rethinkingInception}\relax }}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Support Vector Machine Applicability sourced from https://stackoverflow.com/questions/9480605/what-is-the-relation-between-the-number-of-support-vectors-and-training-data-and\relax }}{27}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Support Vector Machine Applicability sourced from https://stackoverflow.com/questions/9480605/what-is-the-relation-between-the-number-of-support-vectors-and-training-data-and\relax }}{28}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -129,6 +133,8 @@
 \contentsline {figure}{\numberline {6.18}{\ignorespaces AWS Network Diagram\relax }}{134}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.19}{\ignorespaces AWS Security Group\relax }}{135}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
