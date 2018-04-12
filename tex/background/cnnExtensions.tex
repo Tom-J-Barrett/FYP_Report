@@ -21,6 +21,12 @@ In dropout, each neuron is given a probability (normally set to 0.5) and this is
 It has proven quite successful for increasing a networks accuracy \parencite{handsOnML}.
 
 \subsection*{Full Connected Layer}
+Once the layers of convolutional pooling have detected features in an image, a fully connected layer is added to the end of the CNN \parencite{fullyConnectedLayer}.
+This layer uses the output of the previous layer to determine a prediction for the network.
+The fully connected layer outputs a vector of n dimensions where n is the number of possible classes to predict.
+A probability is calculated for each class to determine how likely it is that the class is present in the image.
+This layer calculates the probabilities by looking for features in it's input that relate to the classes.
+For example, if the image was of a banana the fully connected layer would look for features such as curved shape or yellow colour to calcukate a high probability.
 
 \subsection*{Different Sizes of Convolutions}
 Zero padding can be added to an output so that it is same size as the previous layer by adding zeros around the feature \parencite{handsOnML}..

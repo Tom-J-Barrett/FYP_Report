@@ -44,7 +44,7 @@ RCNN was classified to be slow because of three main factors:
 		be trained.}
 	\item{In training of the SVM, each region proposal must be written to disk
 		and is therefore expensive.}
-	\item{Object detection takes 47 seconds per image \parencite{fastRcnn}.}
+	\item{Object detection takes 47 seconds per image}
 \end{itemize}
 
 Due to these problems with RCNN, a new algorithm, titled Fast RCNN was proposed.
@@ -52,8 +52,7 @@ The architecture is as follows. An image is taken as input along with a
 proposal for regions. The image is pushed through convolutional and pooling
 layers (using max pooling). A fixed-length vector of features is then extracted
 from each region proposal. These vectors are inputted to fully connected
-layers for bounding box location prediction \parencite{fastRcnn}.
-
+layers for bounding box location prediction.
 At detection time, a pass through of the net is all that is needed so this
 runtime is significantly less than RCNN.
 
