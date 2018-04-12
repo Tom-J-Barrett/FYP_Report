@@ -1,4 +1,13 @@
+\subsection*{Objective}
+As we can see in section \ref{slidingWindow}, using sliding windows to classify many sections
+of an image, there were some cases where some unexpected predictions were made.
+Due to this, the decision was made to analyse the effect the background of the
+image on its classification. The sliding window code was then ran on a new
+image. This new image was the same fruit bowl as used previously but the
+background was filled in as white as per Figure \ref{fig:filledFruit}.
+
 \begin{figure}
+\centering
     \includegraphics{fruitFillBg}
     \caption{Bowl of fruit with background removed}
     \label{fig:filledFruit}
@@ -9,7 +18,7 @@
     \caption{Comparison of fruit image sliding window results with and without
     background}
     \label{comparisionFruitTable}
-    \begin{tabular}{|l|l|l|l|l|l|l|}
+    \begin{tabular}{|l|l|l|l|p{1.25cm}|p{1.25cm}|p{2cm}|}
     \hline
         \textbf{Food type} & \textbf{Grid} & \textbf{Row} & \textbf{Column} & \textbf{White Grid} & \textbf{White Row} & \textbf{White Column} \\ \hline
         Apple     & 5    & 1   & 3      & 10          & 0          & 4
@@ -23,14 +32,6 @@
         Other     & 0    & 3   & 1      & 1           & 4          & 0  \\ \hline           
     \end{tabular}
 \end{table}
-
-\subsection*{Objective}
-As we can see in section \ref{slidingWindow}, using sliding windows to classify many sections
-of an image, there were some cases where some unexpected predictions were made.
-Due to this, the decision was made to analyse the effect the background of the
-image on its classification. The sliding window code was then ran on a new
-image. This new image was the same fruit bowl as used previously but the
-background was filled in as white as per Figure \ref{fig:filledFruit}.
 
 \subsection*{Results}
 \subsubsection*{Grid}
