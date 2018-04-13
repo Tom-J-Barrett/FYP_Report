@@ -5,14 +5,17 @@ there are a couple of options in how to achieve this. Firstly, an image can be
 taken on the phone and sent to a server to run a classification algorithm.
 Secondly, a model can be stored on the phone for computation. Transfer learning was once again used but on a different, smaller architecture called MobileNet \parencite{mobilenet}.
 
-\subsection*{Network Architecture}
-MobileNet architecture as explored in Chapter 2.
-
-\subsection*{Dataset}
-The Food-101+ dataset was used for this experiment.
-
-\subsection*{Libraries}
-TensorFlow and NumPy.
+\begin{table}[h]
+\centering
+\caption{MobileNet}
+\label{my-label}
+\begin{tabular}{|l|p{9cm}|}
+\hline
+\textbf{Network Architecture} & MobileNet           \\ \hline
+\textbf{Dataset}              & Food-101+ dataset \\ \hline
+\textbf{APIs and Libraries}   & TensorFlow and NumPy                                                       \\ \hline
+\end{tabular}
+\end{table}
 
 \subsection*{Script}
 The retrain.py script \parencite{retrainInception} was used, with a different

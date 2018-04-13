@@ -4,11 +4,17 @@ In many of the papers that have been researched where food image classification 
 Due to the lower number of classes in these papers, it was decided to retrain inception on a subset of the food-101 extended dataset to benchmark results.
 13 classes were selected from food-101 for training.
 
-\subsection*{Network Architecture}
-Retrained Inception model.
-
-\subsection*{Dataset}
-A subset of the Food101+ dataset was used for this experiment.
+\begin{table}[h]
+\centering
+\caption{Food-101+ subset}
+\label{my-label}
+\begin{tabular}{|l|p{9cm}|}
+\hline
+\textbf{Network Architecture} & Inception-V3          \\ \hline
+\textbf{Dataset}              & Food-101+ subset  \\ \hline
+\textbf{APIs and Libraries}   & TensorFlow and NumPy                                                       \\ \hline
+\end{tabular}
+\end{table}
 
 \subsection*{Results}
 A final test accuracy of 92.6\% was recorded for this experiment which performs quite high in comparison to the data in Table \ref{classes_accuracy}.

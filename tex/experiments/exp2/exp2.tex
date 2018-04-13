@@ -1,14 +1,20 @@
 \subsection*{Objective}
 Similar to the previous experiment \ref{udemy2}, this experiment is a Udemy course exercise \parencite{udemy}. In contrast, this does not use a dataset built into TensorFlow so therefore, there is extra configuration to be done on the dataset.
 
-\subsection*{Network Architecture}
-Same architecture as in \ref{udemy1}.
-
-\subsection*{Dataset}
-The CIFAR-10 dataset is used here. 
-This has 60000 images split into 10 classes and a test set of 1000 images \parencite{cifar}.
+\begin{table}[h]
+\centering
+\caption{Udemy Tutorial 2}
+\label{my-label}
+\begin{tabular}{|l|p{9cm}|}
+\hline
+\textbf{Network Architecture} & Same as \ref{udemy1}            \\ \hline
+\textbf{Dataset}              & CIFAR-10 with 60,000 images in 10 classes \parencite{cifar} \\ \hline
+\textbf{APIs and Libraries}   & TensorFlow                                                         \\ \hline
+\end{tabular}
+\end{table}
 
 \subsection*{Script}
+\subsubsection*{Unpickle Images}
 \begin{lstlisting}[style=Python]
 def unpickle(file):
     import pickle
@@ -17,7 +23,6 @@ def unpickle(file):
     return cifar_dict
 
 dirs = ['batches.meta','data_batch_1','data_batch_2','data_batch_3','data_batch_4','data_batch_5','test_batch']
-
 all_data = [0,1,2,3,4,5,6]
 
 for i,direc in zip(all_data,dirs):
@@ -32,40 +37,35 @@ data_batch5 = all_data[5]
 test_batch = all_data[6]
 \end{lstlisting}
 
+\subsubsection*{Set Up Images}
 \begin{lstlisting}[style=Python]
 def set_up_images(self):
-        
-        print("Setting Up Training Images and Labels")
-        
-        # Vertically stacks the training images
-        self.training_images = np.vstack([d[b"data"] for d in self.all_train_batches])
-        train_len = len(self.training_images)
-        
-        # Reshapes and normalizes training images
-        self.training_images = self.training_images.reshape(train_len,3,32,32).transpose(0,2,3,1)/255
-        # One hot Encodes the training labels (e.g. [0,0,0,1,0,0,0,0,0,0])
-        self.training_labels = one_hot_encode(np.hstack([d[b"labels"] for d in self.all_train_batches]), 10)
-        
-        print("Setting Up Test Images and Labels")
-        
-        # Vertically stacks the test images
-        self.test_images = np.vstack([d[b"data"] for d in self.test_batch])
-        test_len = len(self.test_images)
-        
-        # Reshapes and normalizes test images
-        self.test_images = self.test_images.reshape(test_len,3,32,32).transpose(0,2,3,1)/255
-        # One hot Encodes the test labels (e.g. [0,0,0,1,0,0,0,0,0,0])
-        self.test_labels = one_hot_encode(np.hstack([d[b"labels"] for d in self.test_batch]), 10)
+    # Vertically stacks the training images
+    self.training_images = np.vstack([d[b"data"] for d in self.all_train_batches])
+    train_len = len(self.training_images)
+    
+    # Reshapes and normalizes training images
+    self.training_images = self.training_images.reshape(train_len,3,32,32).transpose(0,2,3,1)/255
+    # One hot Encodes the training labels (e.g. [0,0,0,1,0,0,0,0,0,0])
+    self.training_labels = one_hot_encode(np.hstack([d[b"labels"] for d in self.all_train_batches]), 10)
 
-        
-    def next_batch(self, batch_size):
-        # Note that the 100 dimension in the reshape call is set by an assumed batch size of 100
-        x = self.training_images[self.i:self.i+batch_size].reshape(100,32,32,3)
-        y = self.training_labels[self.i:self.i+batch_size]
-        self.i = (self.i + batch_size) % len(self.training_images)
-return x, y
+    # Vertically stacks the test images
+    self.test_images = np.vstack([d[b"data"] for d in self.test_batch])
+    test_len = len(self.test_images)
+    
+    # Reshapes and normalizes test images
+    self.test_images = self.test_images.reshape(test_len,3,32,32).transpose(0,2,3,1)/255
+    self.test_labels = one_hot_encode(np.hstack([d[b"labels"] for d in self.test_batch]), 10)
+    
+#get the next batch
+def next_batch(self, batch_size):
+    x = self.training_images[self.i:self.i+batch_size].reshape(100,32,32,3)
+    y = self.training_labels[self.i:self.i+batch_size]
+    self.i = (self.i + batch_size) % len(self.training_images)
+    return x, y
 \end{lstlisting}
 
+\subsubsection*{Train the Model}
 \begin{lstlisting}[style=Python]
 cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels = y_true, logits = y_pred))
 optimizer = tf.train.AdamOptimizer(learning_rate = 0.001)
@@ -74,24 +74,19 @@ init = tf.global_variables_initializer()
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
+    #for each step, get the next batch and run through the model
     for i in range(10000):
         batch = ch.next_batch(100)
         sess.run(train, feed_dict={x: batch[0], y_true: batch[1], hold_prob: 0.5})
         
         # PRINT OUT A MESSAGE EVERY 100 STEPS
         if i%1000 == 0:
-            
-            # Test the Train Model
             matches = tf.equal(tf.argmax(y_pred,1),tf.argmax(y_true,1))
-
             acc = tf.reduce_mean(tf.cast(matches,tf.float32))
             testSet = ch.next_test_batch(100)
             print('Accuracy: ')
             print(sess.run(acc,feed_dict={x:testSet[0] ,y_true:testSet[1],hold_prob:1.0}))
-print('\n')
 \end{lstlisting}
 
 \subsection*{Results}
-A Final Accuracy of 71\% was reached.
-
-\subsection*{Analysis}
+A final Top-1 accuracy of 71\% was reached.

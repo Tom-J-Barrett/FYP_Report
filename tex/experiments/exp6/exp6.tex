@@ -4,15 +4,17 @@ previous experiments, there are various parameters that can be set and changed.
 Various combinations of these parameters were changed to see if it would increase the
 test accuracy of the model.
 
-\subsection*{Network Architecture}
-The Inception V3 architecture was used for this model.
-
-\subsection*{Dataset}
-The Food-101+ dataset (\parencite{food101} with additional classes, as per
-\ref{inception}), was used for this model.
-
-\subsection*{Libraries}
-The libraries in use for this experiment are TensorFlow and NumPy.
+\begin{table}[h]
+\centering
+\caption{Retrain with Parameter Tuning}
+\label{my-label}
+\begin{tabular}{|l|p{9cm}|}
+\hline
+\textbf{Network Architecture} & Inception-V3           \\ \hline
+\textbf{Dataset}              & Food-101+ dataset \\ \hline
+\textbf{APIs and Libraries}   & TensorFlow and NumPy                                                       \\ \hline
+\end{tabular}
+\end{table}
 
 \subsection*{Script}
 Script as seen in \ref{inception} but with some additions to calculate Top 5 accuracy as seen
