@@ -77,7 +77,7 @@ The packages of backgroundProcesses, calorieEstimation and storage have a depend
 \subsubsection*{Marchitecture}
 In Figure \ref{fig:market}, a marchitecture diagram can be seen.
 This diagram represents the architecture of the system.
-NutriLog is an Android application that send an image to an AWS (Amazon Web Services) instance using the API OkHttp. The AWS instance is running a Python Flask application that classifies the image using a Tensorflow model and sends a response back to NutriLog. The Nutritionix API is used to collect nutritional information of this classification.
+NutriLog is an Android application that send an image to an AWS (Amazon Web Services) instance using the API OkHttp. The AWS instance is running a Python FLASK application that classifies the image using a TensorFlow model and sends a response back to NutriLog. The Nutritionix API is used to collect nutritional information of this classification.
 
 \begin{figure}[h]
     \centering
@@ -89,11 +89,27 @@ NutriLog is an Android application that send an image to an AWS (Amazon Web Serv
 The technologies used for this appliction were used for the following reasons:
 
 \textbf{AWS}
+\linebreak
+Past experience was a large factor when it came to choosing a cloud provider to host the backend instance for this prototype application.
+AWS instances are very easy to set up once the process has been carried out a few times and this was a contributing factror to why AWS was chosen.
+AWS also has a free tier which provides all the necessary server space to host the backend service for this application.
 
 \textbf{OkHttp}
+\linebreak
+OkHttp seemed to be popular for Android applications as seen on websites such as Stack Overflow.
+OkHttp also has extensive documentation and is a very simple API to import into Android.
+The learning curve for OkHttp is quite small and it doesn't require much code to carry out a simple task like sending a HTTP POST request to a backend instance.
 
-\textbf{Flask}
+\textbf{FLASK}
+\linebreak
+Python FLASK was used for the backend service in this FYP due to past experience and its simplicity.
 
-\textbf{Tensorflow}
+\textbf{TensorFlow}
+\linebreak
+TensorFlow was chosen as the library to create neural networks for this FYP mostly because of its reputation.
+TensorFlow has been used by many researches in the computer vision industry.
+TensirFlow also has extensive documentation and a wide array or resources and tutorials.
 
 \textbf{Nutritionix}
+\linebreak
+Nutrionix was the best nutrional information API that was also free to use and this is why it was chosen.

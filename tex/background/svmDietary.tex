@@ -13,6 +13,7 @@ In the experiments carried out, three different factors were used for learning:
 	\item{Bag-of-Features using Scale Invariant Feature Transformation (SIFT)}
 \end{itemize}
 
+According to \parencite{sift}, "SIFT features are formed by computing the gradient at each pixel" in a window and then using the correct level of the Gaussian filters where the window was detected.
 50 different classifiers were created in a SVM using MKL with " one category as a positive set and other 49 categories as a negative set" \parencite{kernelLearning}.
 For each of these categories, a web scrape was carried out and then the best 100 images for each scrape was manually selected. Five-fold cross validation was utilised in the paper.
 

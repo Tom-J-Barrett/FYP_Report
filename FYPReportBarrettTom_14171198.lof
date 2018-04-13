@@ -34,105 +34,105 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Inception V3 Architecture \parencite {rethinkingInception}\relax }}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Support Vector Machine Applicability sourced from https://stackoverflow.com/questions/9480605/what-is-the-relation-between-the-number-of-support-vectors-and-training-data-and\relax }}{28}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Support Vector Machine Applicability}}{28}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Pizza - sourced from https://www.cicis.com/\relax }}{61}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Pizza - sourced from https://www.cicis.com/\relax }}{63}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Pizza not classified correctly by the model\relax }}{61}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Pizza not classified correctly by the model\relax }}{63}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Banana - sourced from http://www.ciaoimports.com/\relax }}{63}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Banana - sourced from http://www.ciaoimports.com/\relax }}{65}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Graph of accuracy of the test dataset during training\relax }}{67}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Graph of accuracy of the test dataset during training\relax }}{69}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Graph of accuracy of the validation dataset during training\relax }}{67}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Graph of accuracy of the validation dataset during training\relax }}{69}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Comparison of accuracy\relax }}{68}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Comparison of accuracy\relax }}{70}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparison of accuracy\relax }}{68}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Bowl of fruit - sourced from https://www.geo.de/natur/\relax }}{74}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Grid based window\relax }}{75}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Row based window\relax }}{75}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Column Based Window\relax }}{75}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Fruit with Color Overlay\relax }}{76}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Recursive refinement 1\relax }}{81}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Recursive refinement 2 - sourced from http://www.travispta.org/\relax }}{81}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Recursive refinement 3\relax }}{82}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Bowl of fruit with background removed\relax }}{83}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Alternative Bowl of fruit\relax }}{85}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Fruit image taken on a mobile phone\relax }}{88}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Image after sliding window - 13 classes\relax }}{89}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Image after sliding window - 108 classes\relax }}{90}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Banana Image Pre-Resolution\relax }}{91}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Apple Pie Image Pre-Resolution\relax }}{91}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Pizza Image Pre-Resolution\relax }}{91}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Banana Image Greyscale\relax }}{93}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Apple Pie Image Greyscale\relax }}{94}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Pizza Image Greyscale\relax }}{94}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparison of accuracy\relax }}{70}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Landing Activity\relax }}{102}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Bowl of fruit - sourced from https://www.geo.de/natur/\relax }}{76}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Image Submission Activity\relax }}{102}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Grid based window\relax }}{77}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Classification Activity\relax }}{102}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Row based window\relax }}{77}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Food Logs Activity\relax }}{102}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Column Based Window\relax }}{77}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Package Diagram\relax }}{103}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Fruit with Color Overlay\relax }}{78}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Marchitecture Diagram\relax }}{105}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Recursive refinement 1\relax }}{83}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Android Activity Lifecycle \parencite {android}\relax }}{106}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Recursive refinement 2 - sourced from http://www.travispta.org/\relax }}{83}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Landing Activity\relax }}{120}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Recursive refinement 3\relax }}{84}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Image Capture Activity\relax }}{120}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Bowl of fruit with background removed\relax }}{85}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Image Send Activity\relax }}{120}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Alternative Bowl of fruit\relax }}{87}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Image Submit Activity\relax }}{120}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Fruit image taken on a mobile phone\relax }}{90}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.12}{\ignorespaces FoodLog Month Activity\relax }}{121}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Image after sliding window - 13 classes\relax }}{91}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.13}{\ignorespaces FoodLog Day Activity\relax }}{121}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Image after sliding window - 108 classes\relax }}{92}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.14}{\ignorespaces FoodLog Week Activity\relax }}{121}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Banana Image Pre-Resolution\relax }}{93}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Food Log Deletion\relax }}{121}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Apple Pie Image Pre-Resolution\relax }}{93}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Github Contributions to Master\relax }}{122}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Pizza Image Pre-Resolution\relax }}{93}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Automated Unit Tests\relax }}{123}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Banana Image Greyscale\relax }}{95}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.18}{\ignorespaces AWS Network Diagram\relax }}{130}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Apple Pie Image Greyscale\relax }}{96}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.19}{\ignorespaces AWS Security Group\relax }}{130}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Pizza Image Greyscale\relax }}{96}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Landing Activity\relax }}{104}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Image Submission Activity\relax }}{104}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Classification Activity\relax }}{104}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Food Logs Activity\relax }}{104}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Package Diagram\relax }}{105}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Marchitecture Diagram\relax }}{107}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Android Activity Lifecycle \parencite {android}\relax }}{109}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Landing Activity\relax }}{122}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Image Capture Activity\relax }}{122}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Image Send Activity\relax }}{122}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Image Submit Activity\relax }}{122}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.12}{\ignorespaces FoodLog Month Activity\relax }}{123}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.13}{\ignorespaces FoodLog Day Activity\relax }}{123}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.14}{\ignorespaces FoodLog Week Activity\relax }}{123}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Food Log Deletion\relax }}{123}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Github Contributions to Master\relax }}{124}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Automated Unit Tests\relax }}{125}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.18}{\ignorespaces AWS Network Diagram\relax }}{132}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.19}{\ignorespaces AWS Security Group\relax }}{132}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

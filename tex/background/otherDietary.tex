@@ -37,6 +37,8 @@ Another study into using computer vision for dietary assessment was carried out 
 
 \parencite{chen2010toward} then formed a region of interest in the image, where there were the most food items and extracted colour and image features.
 These image features were extracted using Maximally Stable Extremal Regions (MSER), Speeded Up Robust Features (SURF) and Star detector.
+MSER is a region detector that is computed by thresholding an image in all areas that are gray and beacuse of this, MSER only works on grayscale images \parencite{sift}.
+The Star detector and SURF are both used for the detection of "interesting keypoints in images" \parencite{chen2010toward}.
 
 This research team also uses k-means clustering to build a bag-of-words model.
 Very little information on the implmentation for this clustering algorithm was documented.
