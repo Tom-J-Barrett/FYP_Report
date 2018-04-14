@@ -5,7 +5,7 @@ Various design patterns were used in the implementation of this application such
 
 \subsubsection*{DAOFactory class}
 The Factory design pattern was used to retrieve a DAO (Data Access Object).
-This was used so that if at a future time the storage type of the application is to be changed, the devloper would only have to change one instance of the codebase and return a new implementation of the DAO interface in the method getDAO().
+This was used so that if at a future time the storage type of the application is to be changed, the developer would only have to change one instance of the codebase and return a new implementation of the DAO interface in the method getDAO().
 \begin{lstlisting}[style=Java]
 public class DAOFactory {
 

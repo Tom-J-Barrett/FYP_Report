@@ -18,45 +18,57 @@ python sliding_window.py --image=~/image_dir --window_shape grid
 
 There are three options for window shape:
 \begin{itemize}
-	\item{Grid based window as per Figure \ref{fig:fruitGrid}}
-	\item{Row based window as per Figure \ref{fig:fruitRow}}
-	\item{Column based window as per Figure \ref{fig:fruitColumn}}
+	\item{Grid based window as per Figure \ref{fig:fruitGrid}}.
+	\item{Row based window as per Figure \ref{fig:fruitRow}}.
+	\item{Column based window as per Figure \ref{fig:fruitColumn}}.
 \end{itemize}
 
-\begin{figure}
-\centering
-    \includegraphics[scale=0.5]{fruit}
-    \caption{Bowl of fruit - sourced from https://www.geo.de/natur/}
+\begin{figure}[h] 
+  \label{fruitBowlManipulations} 
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.75\linewidth]{fruit}
+    \caption{Bowl of fruit \parencite{fruitBowl}}
     \label{fig:fruit}
-\end{figure}
-
-\begin{figure}
-\centering
-    \includegraphics[scale=0.5]{fruitGrid}
+    \vspace{4ex}
+  \end{minipage}%%
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.75\linewidth]{fruitGrid}
 	\caption{Grid based window}
     \label{fig:fruitGrid}
-\end{figure}
-
-\begin{figure}
-\centering
-    \includegraphics[scale=0.5]{fruitRow}
+    \vspace{4ex}
+  \end{minipage} 
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.75\linewidth]{fruitRow}
     \caption{Row based window}
     \label{fig:fruitRow}
-\end{figure}
-
-\begin{figure}
-\centering
-    \includegraphics[scale=0.5]{fruitColumn}
+    \vspace{4ex}
+  \end{minipage}%% 
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.75\linewidth]{fruitColumn}
     \caption{Column Based Window}
     \label{fig:fruitColumn}
-\end{figure}
-
-\begin{figure}
-\centering
-    \includegraphics[scale=0.5]{fruitCO}
+    \vspace{4ex}
+  \end{minipage}
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.75\linewidth]{fruitCO}
     \caption{Fruit with Color Overlay}
     \label{fig:fruitOverlay}
+    \vspace{4ex}
+  \end{minipage}%%
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.75\linewidth]{fruitApple}
+    \caption{Fruit with Apple Overlay}
+    \label{fig:fruitApple}
+    \vspace{4ex}
+  \end{minipage}
 \end{figure}
+\afterpage{\clearpage}
 
 \subsection*{Libraries}
 For this experiment TensorFlow provided the classification of each segment while
@@ -124,8 +136,13 @@ cv2.rectangle(display_image, (x, y), (x + winW, y + winH), colour_dict.get(top1,
 The grid-based window resulted in fifteen separate classification. As seen in Figure
 \ref{fig:fruit}, there are multiple fruits in the image. Of these fruits, our
 model is trained on four, apple, banana, orange and grapes. This method
-classified all four to Top-1 accuracy at least once each. This method took 42.8
-seconds to run.
+classified all four to Top-1 accuracy at least once each.
+Figure \ref{fig:fruitApple} represents this same result but only for the apples classified.
+It can be seen from this image that there is an apple present in every square that was classified as an apple.
+These windows that classified apples in Figure \ref{fig:fruitApple} also classified bananas, grapes and oranges to Top-5 accuracy in expected windows.
+For this window method, all classifications were correct in the sense that the Top-1 prediction was located somewhere in the window.
+This method took 42.8 seconds to run.
+
 
 \begin{table}[]
 	\centering
