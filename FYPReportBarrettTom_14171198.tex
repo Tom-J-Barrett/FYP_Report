@@ -23,6 +23,9 @@
 \usepackage{longtable}
 \usepackage{setspace}
 
+\newcommand{\nocontentsline}[3]{}
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
+
 \onehalfspacing
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
