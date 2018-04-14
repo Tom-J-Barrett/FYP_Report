@@ -10,10 +10,21 @@ An SVM casts the problem to a higher dimensional space and this can solve a prob
 This can be seen in Figure \ref{fig:svm}, where on the left there is no clear way to separate the classes but once the problem is cast to another dimensional, the separation is clear.
 
 \begin{figure}[h]
+	\centering
     \includegraphics[scale=0.35]{svm}
-    \caption{Support Vector Machine Applicability sourced from https://stackoverflow.com/questions/9480605/what-is-the-relation-between-the-number-of-support-vectors-and-training-data-and}
+    \caption[Support Vector Machine Applicability]{Support Vector Machine Applicability sourced from https://stackoverflow.com/questions/9480605/}
     \label{fig:svm}
 \end{figure}
+
+A kernel is used to implement a SVM.
+There are a few types of kernels that can be used in the SVM algorithm such as:
+\begin{itemize}
+	\item{Linear Kernel}
+	\item{Polynomial Kernel}
+	\item{Radial Kernel}
+\end{itemize}
+The kernel is a vector of how similar two vectors are.
+In terms of a linear kernel, the dot product of two vectors is the kernel.
 
 There are benefits and liabilities to using a SVM.
 They can be very accurate and can work efficiently with small datasets but unfortunately it can take a large amount of time to train. 

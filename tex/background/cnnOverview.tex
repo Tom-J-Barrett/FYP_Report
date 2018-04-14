@@ -1,6 +1,6 @@
 \section{Convolutional Neural Networks Overview}
 Convolutional Neural Networks (CNN's) are essentially a Multi Layered Perceptron with a
-special structure. CNN's have one major difference from a MLP, they have extra
+special structure \parencite{visualizing}. CNN's have one major difference from a MLP, they have extra
 layers of convolution and pooling. The architecture of a convolution network can
 be seen in Figure \ref{fig:convNet}.
 
@@ -19,7 +19,7 @@ Figure \ref{fig:cnnExplain} (b).
 For humans, it is quite easy to determine that these images are very similar but
 for a computer this task is surprisingly difficult.
 
-So what a CNN does, to combat this problem, is to take a small feature from
+So, what a CNN does, to combat this problem, is to take a small feature from
 Figure \ref{fig:cnnExplain} (a) and compare it to a subsection of Figure \ref{fig:cnnExplain} (b).
 The CNN multiplies the feature and a section of Figure \ref{fig:cnnExplain} (c), adds
 up the results and divides by 9 (The number of pixels in the feature). This then gives a decimal value of how likely
@@ -35,8 +35,7 @@ this filtering for every single possible location in Figure \ref{fig:cnnExplain}
 \end{figure}
 Next is the Pooling Layer that takes the convoluted
 layer output (you can use Figure \ref{fig:cnnExplain} (d) as reference) and from a
-user defined size ie. 2x2, gets either the highest decimal value (Max pooling)
-, the average value (Mean pooling) or the lowest decimal value (Min pooling) and records that as the new value for the
+user defined size i.e. 2x2, gets either the highest decimal value (Max pooling), the average value (Mean pooling) or the lowest decimal value (Min pooling) and records that as the new value for the
 section. This is then applied to the entire image. As we can see in Figure
 \ref{fig:cnnExplain} (e) we now have a much smaller image stack in which to classify,
 thus making the computation easier. Pooling also makes features of the image clearer which helps to result in more accurate classification.
@@ -49,4 +48,4 @@ zero.
 There are some problems with CNN's however. One of the main problems is that you
 need a very large dataset in order to produce am accurate model and the training
 can be very time consuming even with a GPU.
-This is because each training image (or batch) has to be ran through the network and go through backpropogation.
+This is because each training image (or batch) must be ran through the network and go through backpropagation.

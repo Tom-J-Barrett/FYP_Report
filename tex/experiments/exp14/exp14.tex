@@ -1,4 +1,4 @@
-\subsection*{Overview}
+\subsection*{Objective}
 As seen in the last experiment, it is possible that colour plays a significant part in the overall classification of some food types, along with shape and texture. Due to this, what would happen if colour was removed from the image? The three images, Figure \ref{fig:bananaPreRes}, Figure \ref{fig:apple_piePreRes} and Figure \ref{fig:pizzaPreRes}, were all converted to greyscale to test this and the resulting images can be seen in Figure \ref{fig:bananaGrey}, Figure \ref{fig:applePieGrey} and Figure \ref{fig:pizzaGrey}. Each of these images were ran through the model before and after converting to greyscale and the results recorded.
 
 \begin{figure}
@@ -33,15 +33,16 @@ The 'Top 1' notation in the table suggests that the food was predicted as the nu
 \centering
 \caption{Effect of Colour}
 \label{colour}
-\begin{tabular}{lll}
-Food Image & Pre-Scaled Image & Greyscale      \\
-Banana     & Top 1 : 0.9971   & Top 1 : 0.9986 \\
-Apple Pie  & Top 1 : 0.7986   & Top 1 : 0.3462   \\
-Pizza      & Top 1 : 0.9753   & Top 2 : 0.1299
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Food Image} & \textbf{Pre-Scaled Image} & \textbf{Greyscale}      \\ \hline
+Banana     & Top 1 : 0.9971   & Top 1 : 0.9986 \\ \hline
+Apple Pie  & Top 1 : 0.7986   & Top 1 : 0.3462   \\ \hline
+Pizza      & Top 1 : 0.9753   & Top 2 : 0.1299 \\ \hline
 \end{tabular}
 \end{table}
 
-\subsection*{Empirical Analysis}
+\subsection*{Analysis}
 \subsubsection*{Colour}
 In regards to the images of the banana (Figure \ref{fig:bananaPreRes} and Figure \ref{fig:bananaGrey}), there is very little difference in classification. They were both classified to a Top 1 accuracy and their probabilities differing by only 0.0015 with the grey scale image being of a higher probability interestingly enough. This would indicate that colour is not an important factor for classifying bananas and the coloured image may even have noise. This can be seen in Table \ref{colour}.
 

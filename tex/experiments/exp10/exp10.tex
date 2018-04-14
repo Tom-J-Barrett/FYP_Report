@@ -1,39 +1,41 @@
-\begin{figure}
-    \includegraphics{fruitFillBg}
-    \caption{Bowl of fruit with background removed}
-    \label{fig:filledFruit}
-\end{figure}
-
-\begin{table}[]
-    \centering
-    \caption{Comparison of fruit image sliding window results with and without
-    bakground}
-    \label{comparisionFruitTable}
-    \begin{tabular}{lllllll}
-        Food type & Grid & Row & Column & White Bg Grid & White Bg Row & White Bg Column \\
-        Apple     & 5    & 1   & 3      & 10          & 0          & 4
-        \\
-        Banana    & 1    & 0   & 1      & 0           & 0          & 0
-        \\
-        Grape     & 4    & 0   & 0      & 1           & 0          & 1
-        \\
-        Orange    & 5    & 0   & 0      & 3           & 0          & 0
-        \\
-        Other     & 0    & 3   & 1      & 1           & 4          & 0            
-    \end{tabular}
-\end{table}
-
-\subsection*{Overview}
-As we can see in \ref{slidingWindow}, using sliding windows to classify many sections
+\subsection*{Objective}
+As we can see in section \ref{slidingWindow}, using sliding windows to classify many sections
 of an image, there were some cases where some unexpected predictions were made.
 Due to this, the decision was made to analyse the effect the background of the
 image on its classification. The sliding window code was then ran on a new
 image. This new image was the same fruit bowl as used previously but the
 background was filled in as white as per Figure \ref{fig:filledFruit}.
 
+\begin{figure}
+\centering
+    \includegraphics{fruitFillBg}
+    \caption{Bowl of fruit with background removed}
+    \label{fig:filledFruit}
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \caption{Comparison of fruit image sliding window results with and without
+    background}
+    \label{comparisionFruitTable}
+    \begin{tabular}{|l|l|l|l|p{1.25cm}|p{1.25cm}|p{2cm}|}
+    \hline
+        \textbf{Food type} & \textbf{Grid} & \textbf{Row} & \textbf{Column} & \textbf{White Grid} & \textbf{White Row} & \textbf{White Column} \\ \hline
+        Apple     & 5    & 1   & 3      & 10          & 0          & 4
+        \\ \hline
+        Banana    & 1    & 0   & 1      & 0           & 0          & 0
+        \\ \hline
+        Grape     & 4    & 0   & 0      & 1           & 0          & 1
+        \\ \hline
+        Orange    & 5    & 0   & 0      & 3           & 0          & 0
+        \\ \hline
+        Other     & 0    & 3   & 1      & 1           & 4          & 0  \\ \hline           
+    \end{tabular}
+\end{table}
+
 \subsection*{Results}
 \subsubsection*{Grid}
-For grid based sliding window approach, the results turned out to be less
+For grid-based sliding window approach, the results turned out to be less
 successful than with the background. In this experiment, fourteen out of fifteen
 of top-1 classification were of an expected food type rather than fifteen out of
 fifteen with the background present. We expected the food types of apple,
@@ -43,7 +45,7 @@ accuracy. The contrast between the image results can be seen in Table
 \ref{comparisionFruitTable}.
 
 \subsubsection*{Row}
-The row based sliding window again had worse result than its counterpart, with
+The row-based sliding window again had worse result than its counterpart, with
 zero out of four correct classifications as opposed to one. In this case, an
 orange appeared at top-5 accuracy once. The most common prediction was ice-cream
 which appeared at top-1 accuracy in three out of four instances.
@@ -51,11 +53,11 @@ which appeared at top-1 accuracy in three out of four instances.
 \subsubsection*{Column}
 In contrast to our previous two methods of sliding window, this method
 outperformed its counterpart with correct predictions of all five windows while
-before we only had four out of five. In this experiment, a apple was predicted
+before we only had four out of five. In this experiment, an apple was predicted
 four times and a grape once, with all correct fruits appearing to top-5
 accuracy.
 
-\subsection*{Empirical Analysis}
+\subsection*{Analysis}
 It is quite interesting that removing the background to the image reduced our
 accuracy overall. Many white foods were classified instead which makes sense due
 the impact of colour expected.

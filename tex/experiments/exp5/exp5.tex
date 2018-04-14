@@ -1,4 +1,4 @@
-\subsection*{Overview}
+\subsection*{Objective}
 As the Food-101 dataset mostly consisted of meals \parencite{food101}, it was decided to extend the
 dataset slightly by including some single foods such as:
 \begin{itemize}
@@ -11,28 +11,32 @@ dataset slightly by including some single foods such as:
     \item{roll}
 \end{itemize}
 
-In order to collect these images, the ImageNet repository was utilised to search for
+To collect these images, the ImageNet repository was utilised to search for
 these foods individually and then download the subset of images to be included
-with the Food 101 dataset \parencite{imagenet}. The retrain.py script was run on the extended dataset as in
+with the Food 101 dataset \parencite{imagenet}.
+This new extended dataset was named Food-101+.
+The retrain.py script was run on the Food-101+ dataset as in
 \ref{inception}.
 
-\subsection*{Network Architecture}
-The Inception V3 Model was used for this experiment.
+\begin{table}[h]
+\centering
+\caption{Retrain with Extended Dataset}
+\label{my-label}
+\begin{tabular}{|l|p{9cm}|}
+\hline
+\textbf{Network Architecture} & Inception-V3           \\ \hline
+\textbf{Dataset}              & Food-101+ dataset \\ \hline
+\textbf{APIs and Libraries}   & TensorFlow and NumPy                                                       \\ \hline
+\textbf{Script}   & As seen in \ref{extended}                                                     \\ \hline
 
-\subsection*{Dataset}
-In this experiment the extended Food-101 dataset was used.
-
-\subsection*{Libraries}
-Tensorflow and numpy are used in the retrain.py script.
-
-\subsection*{Script}
-As seen in \ref{extended}.
+\end{tabular}
+\end{table}
 
 \subsection*{Results}
 For this model, an accuracy of 55.3\% was achieved.
 
 For example, an image of a banana (Figure \ref{fig:banana}) was fed into the model with
-the followng results:
+the following results:
 \begin{itemize}
     \item{banana 0.9962}
     \item{orange 0.0009}
@@ -42,12 +46,13 @@ the followng results:
 \end{itemize}
  
 \begin{figure}
+\centering
     \includegraphics{banana}
     \caption{Banana - sourced from http://www.ciaoimports.com/}
     \label{fig:banana}
 \end{figure}
 
-\subsection*{Empirical Analysis}
+\subsection*{Analysis}
 The slight increase in accuracy in \ref{inception}, from 54.8\% to 55.3\%, makes
 sense. Since the model was pre-trained using the ImageNet dataset and all the
 new images used were from ImageNet, we would expect a higher classification

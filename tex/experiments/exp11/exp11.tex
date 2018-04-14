@@ -1,4 +1,11 @@
+\subsection*{Objective}
+In our previous sliding window-oriented experiments, we had only used a
+single image. In order to see whether this image had biases unknown
+to us, another fruit bowl image had to be tested. This image was selected as
+fruit took up a larger portion of the image as seen in Figure \ref{fig:newFruit}.
+
 \begin{figure}
+\centering
     \includegraphics[scale=0.5]{fruitbowl2}
     \caption{Alternative Bowl of fruit}
     \label{fig:newFruit}
@@ -8,21 +15,16 @@
     \centering
     \caption{Comparison of fruit bowl images}
     \label{newFruitTable}
-    \begin{tabular}{lllllll}
-        Food type & Grid & Row & Column & New Grid & New Row & New Column \\
-        Apple     & 5    & 1   & 3      & 4        & 1       & 0          \\
-        Banana    & 1    & 0   & 1      & 5        & 0       & 5          \\
-        Grape     & 4    & 0   & 0      & 2        & 1       & 0          \\
-        Orange    & 5    & 0   & 0      & 0        & 0       & 0          \\
-        Other     & 0    & 3   & 1      & 1        & 2       & 1         
+    \begin{tabular}{|l|l|l|l|p{1.25cm}|p{1.25cm}|p{2cm}|}
+    \hline
+        \textbf{Food type} & \textbf{Grid} & \textbf{Row} & \textbf{Column} & \textbf{New Grid} & \textbf{New Row} & \textbf{New Column} \\ \hline
+        Apple     & 5    & 1   & 3      & 4        & 1       & 0          \\ \hline
+        Banana    & 1    & 0   & 1      & 5        & 0       & 5          \\ \hline
+        Grape     & 4    & 0   & 0      & 2        & 1       & 0          \\ \hline
+        Orange    & 5    & 0   & 0      & 0        & 0       & 0          \\ \hline
+        Other     & 0    & 3   & 1      & 1        & 2       & 1         \\ \hline
     \end{tabular}
 \end{table}
-
-\subsection*{Overview}
-In our previous sliding window oriented experiments, we had only used a
-single image. In order to see whether this image had biases unknown
-to us, another fruit bowl image had to be tested. This image was selected as
-fruit took up a larger portion of the image as seen in Figure \ref{fig:newFruit}.
 
 \subsection*{Results}
 \subsubsection*{Grid}
@@ -43,6 +45,6 @@ The column based approach had a similar result to its counterpart in that only
 one of its predictions was unexpected. Although, due  to the size of the new
 image, another column was created and thus has a better overall accuracy.
 
-\subsection*{Empirical Analysis}
+\subsection*{Analysis}
 A possible reason that an orange was not classified in any of these images is
 because in Figure \ref{fig:newFruit}, a more mandarin food is displayed.

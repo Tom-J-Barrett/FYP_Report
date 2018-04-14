@@ -1,24 +1,27 @@
-\subsection*{Overview}
-For the fourth experiment undertaken, it was decided to take inspiration from
+\subsection*{Objective}
+For this experiment, it was decided to take inspiration from
 \parencite{yanaiFood}, where pre-training was used training a model for food
 classification. In order to achieve this, the final layer of the
 Inception V3 model which was trained on the ImageNet dataset had to be retrained. This is called
-Transfer Learning. A tutorial, created by Google, on the tensorflow website was followed
+Transfer Learning.
+A tutorial, created by Google, on the TensorFlow website was followed
 for direction on this process \parencite{retrainInception}.
 
-Firstly, in order to retrain the final layer of a model, a dataset must be
+Firstly, to retrain the final layer of a model, a dataset must be
 prepared in the correct way. The Food-101 dataset \parencite{food101}
 was used for this experiment, which will be analysed below.
-This dataset is in contrast to \parencite{yanaiFood} as they used the UECFOOD100 dataset.
-The food-101 dataset was chosen due to larger number of images per class, a difference between 100 and 1000.
+
+This dataset contrasts with \parencite{yanaiFood} as they used the UECFOOD100 dataset.
+The food-101 dataset was chosen due to larger number of images per class.
+The UECFOOD100 dataset has 100 images per class while the food-101 dataset has 1000 images per class.
 The dataset must be structured so that
 there is a separated directory for each class with the directory name as the class
 name. These directories should contain all the images for this class. 
 
-Once this dataset has been set up correctly, a directory can be found on github
+Once this dataset has been set up correctly, a directory can be found on GitHub
 which contains the necessary files for this tutorial. When the directory has
-been downloaded, the following command can be ran:
-\begin{lstlisting}
+been downloaded, the following command can be executed:
+\begin{lstlisting}[style=Command]
 python tensorflow/examples/image_retraining/retrain.py \ --image_dir
 ~/dataset_directory
 \end{lstlisting}
@@ -38,26 +41,30 @@ yet seen and a final test accuracy is displayed. This can be seen in the Script
 section below.
 
 The command used for using this model once it is trained is:
-\begin{lstlisting}
+\begin{lstlisting}[style=Command]
 python tensorflow/examples/label_image.py --graph=/tmp/output_graph.pb
 --labels=/tmp/output_labels.txt --input_layer=Mul --output_layer=final_result
 --input_mean=128 --input_std=128 --image=~/image_directory
 \end{lstlisting}
 
-\subsection*{Network Architecture}
-
-\subsection*{Dataset}
-The dataset used for this experiment is the Food-101 dataset \parencite{food
-101}. This dataset has 101 classes with 1000 images for each class.
-
-\subsection*{Libraries}
-Tensorflow and Numpy were used to run this scipt.
+\begin{table}[h]
+\centering
+\caption{Retrain ImageNet Inception V3 Model}
+\label{my-label}
+\begin{tabular}{|l|p{9cm}|}
+\hline
+\textbf{Network Architecture} & Inception-V3 architecture \parencite{inception}            \\ \hline
+\textbf{Dataset}              & Food-101 dataset \\ \hline
+\textbf{APIs and Libraries}   & TensorFlow and NumPy                                                        \\ \hline
+\end{tabular}
+\end{table}
 
 \subsection*{Script}
 The following snippets of code are from the retrain.py script.
 
+\subsubsection*{Add New Layer}
 \begin{lstlisting}[style=Python]
-# Add the new layer that we'll be training.
+# Add new layer to the network
 (train_step, cross_entropy, bottleneck_input, ground_truth_input,
 final_tensor) = add_final_training_ops(
             len(image_lists.keys()), FLAGS.final_tensor_name,
@@ -65,30 +72,18 @@ final_tensor) = add_final_training_ops(
             model_info['bottleneck_tensor_size'],
             model_info['quantize_layer'])
  
-# Create the operations we need to evaluate the accuracy of our new layer.
+# Create operations to evaluate the accuracy of the model
 evaluation_step, prediction = add_evaluation_step(
 final_tensor, ground_truth_input)
  
-# Merge all the summaries and write them out to the summaries_dir
-merged = tf.summary.merge_all()
-train_writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/train',
-                                     sess.graph)
- 
-validation_writer = tf.summary.FileWriter(
-    FLAGS.summaries_dir + '/validation')
- 
-# Set up all our weights to their initial default values.
+# Set up weights to initial default values.
 init = tf.global_variables_initializer()
 sess.run(init)
-
 \end{lstlisting}
 
-
-
-
+\subsubsection*{Evaluate Model}
 \begin{lstlisting}[style=Python]
-# We've completed all our training, so run a final test evaluation on
-# some new images we haven't used before.
+# Run final test evaluation
 test_bottlenecks, test_ground_truth, test_filenames = (
     get_random_cached_bottlenecks(
         sess, image_lists, FLAGS.test_batch_size, 'testing',
@@ -104,9 +99,8 @@ tf.logging.info('Final test accuracy = %.1f%% (N=%d)' %
 \end{lstlisting}
 
 \subsection*{Results}
-The final test accuracy for this retrained model was 54.8\%.
-
-For example, an image of pizza Figure\ref{fig:pizza}, was fed into the model with the followng results:
+The final test Top-1 accuracy for this retrained model was 54.8\%.
+For example, an image of pizza Figure \ref{fig:pizza}, was fed into the model with the following results:
 \begin{itemize}
     \item{pizza 0.925}
     \item{pancakes 0.008}
@@ -114,24 +108,29 @@ For example, an image of pizza Figure\ref{fig:pizza}, was fed into the model wit
     \item{beef carpaccio 0.006}
     \item{tiramisu 0.004}
 \end{itemize}
-
-\begin{figure}
-     \includegraphics{pizza}
-     \caption{Pizza - sourced from https://www.cicis.com/menu/pizza/bbq-pork}
-     \label{fig:pizza}
-\end{figure}
-
 In contrast, Figure \ref{fig:pizza_unclassified} was not classified as a pizza.
 
-\begin{figure}
-     \includegraphics[scale=0.075]{pizza_unclassified}
-     \caption{Pizza not classified correctly by the model}
-     \label{fig:pizza_unclassified}
+\begin{figure}[h] 
+\centering
+  \label{pizzas} 
+  \begin{minipage}[h]{0.5\linewidth}
+    \centering
+    \includegraphics[scale=0.5]{pizza} 
+    \caption{Pizza - sourced from https://www.cicis.com/} 
+  \label{fig:pizza}
+    \vspace{4ex}
+  \end{minipage}%%
+  \begin{minipage}[h]{0.5\linewidth}
+    \centering
+    \includegraphics[scale=0.065]{pizza_unclassified} 
+    \caption{Pizza not classified correctly by the model} 
+  \label{fig:pizza_unclassified}
+    \vspace{4ex}
+  \end{minipage} 
 \end{figure}
 
-\subsection*{Empirical Analysis}
+\subsection*{Analysis}
 These poor results are not that surprising.
 This is because we have many classes to train for, 101, and no parameter tuning has been carried out on the running of this code.
-
 Figure \ref{fig:pizza_unclassified} was not classified correctly, this is most likely due to the fact that the pizza does not take up much of the image.
 

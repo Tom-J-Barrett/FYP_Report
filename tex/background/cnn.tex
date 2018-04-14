@@ -7,9 +7,9 @@ A summary of their results can be seen in Table \ref{cnn_summary}.
 their neural network architecture on Inception-ResNet and Inception V3.
 Deep learning is a term usually given to algorithms based on neural networks.
 They also used the Food-101 dataset. For this system, Google's
-Tensorflow was used for image preprocessing. Preprocessing was needed as the
+TensorFlow was used for image pre-processing. Pre-processing was needed as the
 environmental background is different in many food images. Because of these
-"Grey World method and Histogram equalization" \parencite{deepLearning} were
+" Grey World method and Histogram equalization" \parencite{deepLearning} were
 used.
 Amazon Web Services (AWS) Graphics Processing Units (GPU) instances were used for training.
 AWS instances are cloud servers.
@@ -18,25 +18,24 @@ The results on completion were quite impressive with a Top-1 Accuracy of 72.55\%
 Another research team in Japan, \parencite{yanaiFood} researched this topic. This was built off previous research they had carried out in the field \parencite{kawano2014food}.
 They were aware of how
 difficult the problem was and therefore employed many techniques to solve the
-problem such as "pre-training with the large-scale ImageNet data, fine-tuning
+problem such as " pre-training with the large-scale ImageNet data, fine-tuning
 and activation features extracted from the pre-trained DCNN". 
-In conclusion, they found that the "fine-tuned DCNN which was pre-trained
+In conclusion, they found that the " fine-tuned DCNN which was pre-trained
 with 2000 categories" from ImageNet was the best method. A
 DCNN is a Deep Convolution Neural Network. 
 A network can become a DCNN when the number of hidden layers is larger than three.
-While many of the CNNs discussed have been DCNN, most are just labeled as CNNs.
+While many of the CNNs discussed have been DCNN, most are just labelled as CNNs.
 The achieved results of 78.77\% for Top-1 Accuracy in the UECFOOD100 dataset.
 
-
 \parencite{kagayaFood} also employed the use of convolutional neural networks for
-image detection. They used a CNN for the "tasks of food detection and recognition
+image detection. They used a CNN for the " tasks of food detection and recognition
 through parameter optimization".
 They found that a CNN is much better suited to the task than a Support Vector
 Machine (SVM). They achieved an overall classification accuracy of 93.8\%
 against their baseline accuracy of 89.7\%. This accuracy
 was calculated using a dataset that they created specifically for this task.
 When they had completed the task they analysed the trained convolutional kernels
-and came to an interesting conclusion. They found that "color features are
+and came to an interesting conclusion. They found that " colour features are
 essential to food image recognition".
 
 
@@ -44,7 +43,7 @@ The last paper that will be analysed, \parencite{deepFood}, oriented around usin
 Network for food image recognition, focuses on developing a dietary assessment
 application for use on a smart phone. They used the UEC-256 and Food-101 dataset
 for their experiments and achieved impressive results.
-They used a Convolutional Neural Network but "with a few major optimizations,
+They used a Convolutional Neural Network but " with a few major optimizations,
 such as optimized model and an optimized convolution technique". 
 They used the Inception module for their CNN. After the
 inception module was complete, they made the GoogleNet architecture by combining modules. In
@@ -55,24 +54,25 @@ They achieved the results shown in Table \ref{resultsDeepFood}.
 	\centering
 	\caption{DeepFood Results}
 	\label{resultsDeepFood}
-	\begin{tabular}{lll}
-		& Top-1  & Top-5  \\
-		UEC-256                   & 54.7\% & 81.5\% \\
-		UEC-100                   & 76.3\% & 94.6\% \\
-		Food-101                  & 77.4\% & 93.7\% \\
-		UEC-256 With Bounding Box & 63.8\% & 87.2\% \\
-		  UEC-100 With Bounding Box & 77.2\% & 94.8\%
+	\begin{tabular}{|l|l|l|}
+	\hline
+		\textbf{Dataset} & \textbf{Top-1}  & \textbf{Top-5}  \\  \hline
+		UEC-256                   & 54.7\% & 81.5\% \\ \hline
+		UEC-100                   & 76.3\% & 94.6\% \\ \hline
+		Food-101                  & 77.4\% & 93.7\% \\ \hline
+		UEC-256 With Bounding Box & 63.8\% & 87.2\% \\ \hline
+		  UEC-100 With Bounding Box & 77.2\% & 94.8\% \\ \hline
 	\end{tabular}
 \end{table}
 
 \parencite{nutrinet} developed a new neural architecture specifically for detecting food and drink images using deep convolutional neural networks called NutriNet.
 The trained network was to be used to aid patients with Parkinson's disease in monitoring their diet.
-NutriNet was created based off of the AlexNet architecture.
+NutriNet was created based off the AlexNet architecture.
 The dataset used for this study consisted of approximately 500 images for each of over 500 classes.
 Through this dataset a Top-1 accuracy of 86.72\& and a Top-5 accuracy of 94.47\% was recorded.
 A smart phone application was used for real world testing which brought a Top-5 accuracy of 55\%.
-The application also saved these real world images from the smart phone to increase their dataset size.
-In conclusion, the team found that there were modifications that could be made to the NutriNet architecture as real world images didn't perform incredibly well due to occlusion and background noise in the images.
+The application also saved these real-world images from the smart phone to increase their dataset size.
+In conclusion, the team found that there were modifications that could be made to the NutriNet architecture as real-world images didn't perform incredibly well due to occlusion and background noise in the images.
 The detection and recognition steps were separated in this architecture.
 The team also acknowledges that joining these steps into a single DCNN may be successful and should be explored.
 
@@ -80,13 +80,14 @@ The team also acknowledges that joining these steps into a single DCNN may be su
 	\centering
 	\caption{Summary of results in CNN based methods}
 	\label{cnn_summary}
-	\begin{tabular}{lll}
-		Title                                & Dataset     & Top-1 Accuracy \\
-		\parencite{deepLearning} 			 & Food 101    & 72.55\%  \\
-		\parencite{yanaiFood}               	 & UECFood101  & 78.77\%  \\
-		\parencite{kagayaFood}       		 & Own dataset & 93.80\%   \\
-		\parencite{deepFood}                  & Food 101    & 77.40\%  	\\
-		\parencite{nutrinet}                  & Own dataset & 86.72\%
+	\begin{tabular}{|l|l|l|}
+	\hline
+		\textbf{Title}                                & \textbf{Dataset}     & \textbf{Top-1 Accuracy} \\ \hline
+		\parencite{deepLearning} 			 & Food 101    & 72.6\%  \\ \hline
+		\parencite{yanaiFood}               	 & UECFood101  & 78.8\%  \\ \hline
+		\parencite{kagayaFood}       		 & Own dataset & 93.8\%   \\ \hline
+		\parencite{deepFood}                  & Food 101    & 77.4\%  	\\ \hline
+		\parencite{nutrinet}                  & Own dataset & 86.7\% \\ \hline
 	\end{tabular}
 \end{table}
 

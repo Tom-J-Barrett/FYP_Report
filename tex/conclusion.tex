@@ -1,1 +1,60 @@
 \chapter{Discussion and Conclusion}
+\section{Summary}
+The purpose of this final year project was to explore the use of deep learning for nutritional assessment.
+This exploration was carried firstly by conducting a comprehensive literature review of research already undertaken in the are of food image recognition and also some research into the methods used for object detection with CNNs.
+Once this survey of literature was completed, a method from these papers was selected to be replicated.
+The work done by \parencite{yanaiFood} yielded promising results in retraining models using transfer learning and because of this, their work was to be replicated.
+
+Some deviations were made from \parencite{yanaiFood} in regards to the dataset used.
+The Food-101 dataset was used for this FYP, in conjunction with some additional classes from Imagenet \parencite{imagenet}.
+In contrast, \parencite{yanaiFood} used the UECFOOD100 dataset \parencite{uecFood}.
+The change in dataset was used due to the availability of a larger dataset in Food-101 which has 1000 images per class.
+
+The Food-101+ dataset was created by adding seven additional classes to the Food-101 dataset.
+This Food-101+ dataset was used to train a model with the final Top-1 accuracy of 66.6\% and a Top-5 accuracy of  85.96\%.
+This model was created by retraining the final layer of the Inception-V3 \parencite{rethinkingInception} model using transfer learning and Tensorflow.
+A subset of the Food-101+ dataset was also trained using 13 classes in the same way.
+This model achieved a Top-1 accuracy of 92.6\% and a Top-5 accuracy of 100\%.
+
+Once the models were trained, they were analysed under various topics such as
+dealing with composite images using a sliding window approach, the effect of colour on classification of food types and also the effect of image quality on the classification of food types.
+
+After the above empirical studies had been carried out, a lightweight prototype application was created to demonstrate the use of the Tensorflow model for food image classification.
+This prototype application was created for a smart phone running on Android.
+This application is called NutriLog.
+NutriLog is able to send an image of food (acquired either from the camera or gallery of the users phone) to a server to be analysed.
+The server that the image is send to is running a Python Flask application that runs the image through a Tensorflow model and returns a prediction to NutriLog.
+NutriLog then collects nutritional information on the prediction using the Nutritionix API and logs information for user metrics.
+The user can then view their daily, weekly or monthly calorie intake.
+NutriLog could be very useful for those who wish to keep track of their calorie intake.
+
+\input{tex/reflections}
+
+\section{Future Work}
+While retraining the Inception-V3 model yielded promising results for food image classification there are some problems associated.
+The model trained, does not deal well with composite image and while a sliding window could be used to classify different portions of the image, it is not a viable method as it is very time intensive.
+Another issue is that there is a clear correlation between the amount of classes and the accuracy of the model.
+This is clearly seen in the 108 class model yielding a Top-1 accuracy of 66.6\% while the 13 class model yielded a Top-1 accuracy of 92.6\%.
+Possible solutions to these issues are outlined below.
+
+\subsection*{Resolving Issues with Composite Images}
+The model trained for this project relies on the one shot approach where an image is passed straight to the model preferable containing only one food item.
+A possible solution to this problem is to segment the image before using the classifier.
+There has been extensive research into the segmentation of food images carried out but it was out of scope for this FYP.
+Colour and texture are the most common features to segment food images by.
+If it was possible to separate each food item in a food image and feed each of these individual items through the classifier then the problem of composite image would be resolved.
+
+Another option would be to take an object detection approach to food image classification.
+In Chapter 2 there was a survey of literature carried out on the subject of
+using CNNs for object detection as in \parencite{maskRcnn}.
+If the objects (food items) could be detected in this way and then passed through the classifier then dealing with composite images would not be such a challenge.
+
+While both of these methods are promising to solve this issue, the object detection seems to be the most interesting due to the success of \parencite{maskRcnn} and the fact that the approach has not been used for food images before.
+
+\subsection*{Resolving Issues with Class Size}
+As stated above, the accuracy of Inception-V3 model declines the more classes are in the training set.
+In order to solve this problem changes to the architecture of the model or
+changes to the dataset may have to be introduced.
+There are many CNN model architectures that could be viable options for food image recognition.
+\parencite{nutrinet} created a model architecture aimed specifically towards food image recognition called Nutrinet and experiments on this architecture could be carried out.
+The dataset used for training could also be extended with more images per class to increase the accuracy.

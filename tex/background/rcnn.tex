@@ -1,13 +1,13 @@
-Ross Girshik and other contributers had some very positive results in the area
+Ross Girshik and other contributors had some very positive results in the area
 of object detection using region based convolutional neural networks. There were
 four iterations of papers based on this work by Ross and groups in UC Berkley,
-Mircosoft and Facebook. A PHD student at the time of Ross's first paper also
+Microsoft and Facebook. A PHD student at the time of Ross's first paper also
 completed his dissertation on the subject. These papers, their
-results (Table \ref{rcnnResults}) and the changes made through each iteration will be analysed throughly in the proceeding sections.
+results (Table \ref{rcnnResults}) and the changes made through each iteration will be analysed thoroughly in the proceeding sections.
 
 \subsubsection*{RCNN}
 In the first paper written by Ross Girshik, while researching at UC Berkeley,
-focused on two main insights. These were that "one can apply high-capacity convolutional neural networks (CNNs) to bottom-up region proposals in order to localize and segment objects" and that
+focused on two main insights. These were that " one can apply high-capacity convolutional neural networks (CNNs) to bottom-up region proposals in order to localize and segment objects" and that
 "when training data is scarce, supervised pre-training for n auxiliary task,
 followed by domain-specific fine-tuning, yields a significant performance boost"
 \parencite{rcnn}.
@@ -22,19 +22,19 @@ The system that they developed followed these steps:
     \item{Bounding box regression for final region proposals}
 \end{itemize}
 
-This system utilised selective search to gather these region proposals but they
+This system utilised selective search to gather these region proposals, but they
 mention that a sliding-window detector is also an option. Ross Girshik and his
 team used the open source Caffe CNN library for this system. The system is quite
 efficient and scalable. It is scalable because of the fixed length vector of
 features which will remain constant regardless of inputs and additional outputs.
 
 The team evaluated their results on a few metrics and test sets as seen in Table
-\ref{rcnnResults}.
+\ref{rcnnResults}. Explanation of the datasets used can be seen in Table \ref{datasets}.
 
 \subsubsection*{Fast RCNN}
 Ross Girshik's next iteration of work on region based convolution neural
 networks took place in Microsoft Research. This paper was titled "Fast R-CNN" as
-it's aim was to decrease training and testing time "while also increasing
+its aim was to decrease training and testing time "while also increasing
 detection accuracy" \parencite{fastRcnn}.
 
 This paper analyses why RCNN \parencite{rcnn} was slow and therefore how it could be improved.
@@ -44,16 +44,15 @@ RCNN was classified to be slow because of three main factors:
 		be trained.}
 	\item{In training of the SVM, each region proposal must be written to disk
 		and is therefore expensive.}
-	\item{Object detection takes 47 seconds per image \parencite{fastRcnn}.}
+	\item{Object detection takes 47 seconds per image}
 \end{itemize}
 
 Due to these problems with RCNN, a new algorithm, titled Fast RCNN was proposed.
 The architecture is as follows. An image is taken as input along with a
-proposals for regions. The image is pushed through convolutional and pooling
+proposal for regions. The image is pushed through convolutional and pooling
 layers (using max pooling). A fixed-length vector of features is then extracted
 from each region proposal. These vectors are inputted to fully connected
-layers for bounding box location prediction \parencite{fastRcnn}.
-
+layers for bounding box location prediction.
 At detection time, a pass through of the net is all that is needed so this
 runtime is significantly less than RCNN.
 
@@ -67,7 +66,7 @@ RCNN detector. These combine to produce a single neural network for object
 detection.
 
 Instead of training these networks separately, the team had to look at how to
-share layers between the two networks. There were three option available:
+share layers between the two networks. There were three options available:
 \begin{itemize}
     \item{Alternating training whereby RPN is trained, and then used to train
         Fast RCNN. The Fast RCNN network is then used to initialise RPN and the
@@ -76,31 +75,49 @@ share layers between the two networks. There were three option available:
     \item{Non- approximate joint training.}
 \end{itemize}
 
+\begin{table}[h]
+    \centering
+    \caption{Results from Region Based CNN Research}
+    \label{rcnnResults}
+    \begin{tabular}{|l|l|l|l|l|l|l|}
+    \hline
+                    & \textbf{VOC07} & \textbf{VOC10} & \textbf{VOC11} & \textbf{VOC12} & \textbf{COCO15} &
+                    \textbf{COCO16} \\ \hline
+                    RCNN        & 58.5\%  & 53.7\%  & 47.9\%  & N/A     & N/A
+                    & N/A      \\ \hline
+                    Fast RCNN   & 70.0\%  & 68.8\%  & N/A     & 68.4\%  & N/A
+                    & N/A      \\ \hline
+                    Faster RCNN & 78.8\%  & N/A     & N/A     & 75.9\%  & 42.7\%
+                    & N/A      \\ \hline
+                    Mask RCNN   & N/A     & N/A     & N/A     & N/A     & N/A
+                    & 63.1\%  \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Datasets}
+\label{datasets}
+\begin{tabular}{|p{2cm}|p{12cm}|}
+\hline
+\textbf{Table} & \textbf{Explanation}                                                                                                                                                                                               \\ \hline
+VOC07          & The PASCAL VOC dataset is used for the PASCAL (Pattern Analysis, Statistical Modelling and Computational Learning) Visual Object Classes Challenge. \parencite{pascal-voc-2007} was used for the 2007 challenge. \\ \hline
+VOC10          & The PASCAL VOC 2010 dataset was used for the 2010 challenge \parencite{pascal-voc-2010}.                                                                                                                         \\ \hline
+VOC11          & The PASCAL VOC 2011 dataset was used for the 2011 challenge \parencite{pascal-voc-2011}.                                                                                                                        \\ \hline
+VOC12          & The PASCAL VOC 2012 dataset was used for the 2012 challenge \parencite{pascal-voc-2012}.                                                                                                                        \\ \hline
+COCO15         & The COCO (Common Objects in Context) dataset created by Microsoft (\parencite{coco}) is used to measure the efficacy of object detection algorithms. The COCO 2015 dataset was released in 2015 for training.    \\ \hline
+COCO16         & An updated version of the COCO dataset was released in 2015.                                                                                                                                                       \\ \hline
+\end{tabular}
+\end{table}
+
 \subsubsection*{Mask RCNN}
 The most recent paper on this topic was also written by Ross Girshik while
-working with Facebook AI Research \parencite{maskRcnn}. Mask RCNN "extends Faster
+working with Facebook AI Research \parencite{maskRcnn}. Mask RCNN " extends Faster
 RCNN by adding a branch for predicting an object mask in parallel with the
 existing branch for bounding box regression" \parencite{maskRcnn}.
 
-Mask RCNN has two modules, similar to Faster RCNN, where the first module is the
+Mask RCNN has two modules, like Faster RCNN, where the first module is the
 Region Proposal Network. In the second module, in parallel to classification, a
 binary mask is outputted for each region. Bounding box regression and
 classification are done in parallel.
 
-\begin{table}[]
-    \centering
-    \caption{Results from Region Based CNN Research}
-    \label{rcnnResults}
-    \begin{tabular}{lllllll}
-                    & VOC07 & VOC10 & VOC11 & VOC12 & COCO15 &
-                    COCO16 \\
-                    RCNN        & 58.5\%  & 53.7\%  & 47.9\%  & N/A     & N/A
-                    & N/A      \\
-                    Fast RCNN   & 70.0\%  & 68.8\%  & N/A     & 68.4\%  & N/A
-                    & N/A      \\
-                    Faster RCNN & 78.8\%  & N/A     & N/A     & 75.9\%  & 42.7\%
-                    & N/A      \\
-                    Mask RCNN   & N/A     & N/A     & N/A     & N/A     & N/A
-                    & 63.1\%  
-    \end{tabular}
-\end{table}

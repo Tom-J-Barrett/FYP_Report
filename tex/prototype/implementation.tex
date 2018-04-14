@@ -1,7 +1,11 @@
 Outlined below are some coding fragments categorised under: Design Patterns, Asynchronous Tasks, Presenters, Views and Interesting Coding Fragments.
 
 \subsection*{Design Patterns}
+Various design patterns were used in the implementation of this application such as the Factoy, the Builder and the Singleton which are outlined below.
+
 \subsubsection*{DAOFactory class}
+The Factory design pattern was used to retrieve a DAO (Data Access Object).
+This was used so that if at a future time the storage type of the application is to be changed, the developer would only have to change one instance of the codebase and return a new implementation of the DAO interface in the method getDAO().
 \begin{lstlisting}[style=Java]
 public class DAOFactory {
 
@@ -11,34 +15,28 @@ public class DAOFactory {
 }
 \end{lstlisting}
 
-\subsubsection*{DAO interface}
-\begin{lstlisting}[style=Java]
-public interface DAO {
-    void addFoodLog(FoodLog foodLog);
-    List<FoodLog> getLogsByDay(Date date);
-    List<FoodLog> getLogsByWeek(Date date);
-    List<FoodLog> getLogsByMonth(Date date);
-    void deleteFoodLogs(List<FoodLog> foodLogs);
-    void deleteDb();
-}
-\end{lstlisting}
-
 \subsubsection*{HostFactory class}
+The Factory design pattern was used to retrieve a Host object that acts as an endpoint for the backend server.
+As this application is a lightweight proof of concept prototype only one backend server was used.
+In a future iteration, it may be decided to use a more complex method of Host selection and this factory class allows for simple modification to the codebase in this instance.
 \begin{lstlisting}[style=Java]
 public class HostFactory {
 
     public Host createHost() {
         Host host = new Host.HostBuilder("52.214.205.157")
-                    .withDns("ec2-52-214-205-157.eu-west-1.compute.amazonaws.com")
-                    .withPort(5000)
-                    .withRoute("/classifyImage/")
-                    .build();
+        .withDns(
+            "ec2-52-214-205-157.eu-west-1.compute.amazonaws.com")
+        .withPort(5000)
+        .withRoute("/classifyImage/")
+        .build();
         return host;
     }
 }
 \end{lstlisting}
 
 \subsubsection*{HostBuilder}
+A Host builder was used to create a Host object.
+This builder is a static inner class in the Host class file.
 \begin{lstlisting}[style=Java]
 public static class HostBuilder {
     private final String ipv4;
@@ -72,7 +70,45 @@ public static class HostBuilder {
 }
 \end{lstlisting}
 
+\subsubsection*{FoodLogBuilder}
+A FoodLog builder was used to create a FoodLog object.
+This builder is a static inner class in the FoodLogImpl class file.
+\begin{lstlisting}[style=Java]
+public static class FoodLogBuilder {
+        private int id = 0;
+        private String food;
+        private double calories;
+        private Date timestamp;
+
+        public FoodLogBuilder(String food) {
+            this.food = food;
+        }
+
+        public FoodLogBuilder withId(int id) {
+            this.id = id;
+            return this;
+        }
+
+        public FoodLogBuilder withCalories(double calories) {
+            this.calories = calories;
+            return this;
+        }
+
+        public FoodLogBuilder withTimestamp(Date timestamp) {
+            this.timestamp = timestamp;
+            return this;
+        }
+
+        public FoodLog build() {
+            return new FoodLogImpl(this);
+        }
+
+}
+\end{lstlisting}
+
 \subsubsection*{Singleton DAO Object}
+A Singleton instance of the DAO implementation was used in this application.
+This was mainly due to the best practice of keeping database access objects as singleton instances.
 \begin{lstlisting}[style=Java]
 public static DAO getInstance(Context context) {
     if(instance == null) {
@@ -83,7 +119,11 @@ public static DAO getInstance(Context context) {
 \end{lstlisting}
 
 \subsection*{Asynchronous Tasks}
-\subsubsection*{Send image to server - AsyncTask}
+Asynchronous Tasks in Android are used to run tasks in the background or are sometimes used to simply distribute processess off the main thread.
+The AsyncTask class must be extended on creation of the background processes.
+
+\subsubsection*{UploadImage}
+An AsyncTask was used to send the food image to the backend host.
 \begin{lstlisting}[style=Java]
 @Override
 protected String doInBackground(Void... params) {
@@ -111,7 +151,12 @@ protected String doInBackground(Void... params) {
 }
 \end{lstlisting}
 
-\subsubsection*{Get Calories from API - AsyncTask}
+\subsubsection*{CalorieEstimation}
+An AsyncTask was used to call the Nutritionix API.
+This API can be used to retrieve nutritional information on query strings.
+In this case, the calorie count of the food image was returned.
+The calorie count was extracted from a JSON object.
+JSON is explored in detail in a following section.
 \begin{lstlisting}[style=Java]
 @Override
 protected String doInBackground(Void... params) {
@@ -130,7 +175,7 @@ protected String doInBackground(Void... params) {
         e.printStackTrace();
     }
     try {
-        JSONObject jsonObject = new JSONObject(result);;
+        JSONObject jsonObject = new JSONObject(result);
         JSONArray jsonArray = jsonObject.getJSONArray("hits");
         JSONObject hits = jsonArray.getJSONObject(0);
         JSONObject fields = hits.getJSONObject("fields");
@@ -144,7 +189,10 @@ protected String doInBackground(Void... params) {
 \end{lstlisting}
 
 \subsection*{Presenters}
+In the MPV architecture as described earlier, the presenter for each activity contains all the logic for that view.
+
 \subsubsection*{Presenter for Main Activity}
+This presenter was task with creating intents to new activities (views).
 \begin{lstlisting}[style=Java]
 public class MainPresenter {
 
@@ -169,7 +217,10 @@ public class MainPresenter {
 \end{lstlisting}
 
 \subsection*{Views}
+In the MPV archtecture that this application uses, the views are responsible for interacting directly with the user interface.
+
 \subsubsection*{Main Activity}
+This view responds to button clicks and calls to its presenter to carry out the logic of the required task.
 \begin{lstlisting}[style=Java]
 public class MainActivity extends AppCompatActivity {
 
@@ -193,9 +244,66 @@ public class MainActivity extends AppCompatActivity {
 }
 \end{lstlisting}
 
+\subsection*{Storage}
+SqlLite was used for storing data in this application and the class that handled creation, input and output to this database implemented the DAO interface.
+
+\subsubsection*{DAO interface}
+An interface for storage devices so that each implementation would have the ability to add food logs, retrieve food logs, delete food logs and remove the data store completely.
+\begin{lstlisting}[style=Java]
+public interface DAO {
+    void addFoodLog(FoodLog foodLog);
+    List<FoodLog> getLogsByDay(Date date);
+    List<FoodLog> getLogsByWeek(Date date);
+    List<FoodLog> getLogsByMonth(Date date);
+    void deleteFoodLogs(List<FoodLog> foodLogs);
+    void deleteDb();
+}
+\end{lstlisting}
+
+\subsubsection*{Get Food Logs per Date}
+This method was used to execute a query and return a List of FoodLog objects.
+\begin{lstlisting}[style=Java]
+@Override
+private List<FoodLog> selectQuery(String query) {
+        foodLogs = new ArrayList<>();
+        Cursor resultSet = database.rawQuery(query, null);
+        while(resultSet.moveToNext()) {
+            try {
+                foodLogs.add(new FoodLogImpl
+                .FoodLogBuilder(resultSet.getString(1))
+                .withId(resultSet.getInt(0))
+                .withCalories(resultSet.getDouble(2))
+                .withTimestamp(dateFormat
+                    .parse(resultSet.getString(3)))
+                .build());
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+        }
+    return foodLogs;
+}
+\end{lstlisting}
+
+\subsubsection*{Delete Food Logs}
+This method was used to delete food logs from the database that were in the List passed to the method.
+\begin{lstlisting}[style=Java]
+@Override
+public void deleteFoodLogs(List<FoodLog> foodLogs) {
+    SQLiteStatement stmt = database.compileStatement("DELETE FROM FoodLog WHERE rowid = ?");
+    for(FoodLog foodLog: foodLogs) {
+        stmt.bindString(1, String.valueOf(foodLog.getId()));
+        stmt.execute();
+    }
+}
+\end{lstlisting}
+
 \subsection*{Interesting Coding Fragments}
+Some interesting coding fragments are outlined below which merit inclusion in this report.
 
 \subsubsection*{Encode Bitmap to base64 String}
+This method was used to encode the image taken on the phone to a string.
+This was used to send the image to the backend with minimal latency.
+The bitmap size was also reduced as in line 8 to decrease response time also.
 \begin{lstlisting}[style=Java]
 public String toBase64() {
     BitmapFactory.Options options = new BitmapFactory.Options();
@@ -214,16 +322,26 @@ public String toBase64() {
 }
 \end{lstlisting}
 
-\subsection*{User Interface}
-User interface implementation as in Figures \ref{fig:ui1}, \ref{fig:ui2}, \ref{fig:ui3}, \ref{fig:ui4}, \ref{fig:ui5}, \ref{fig:ui6}, \ref{fig:ui7} and \ref{fig:ui8}.
+\subsubsection*{Map of Runnables}
+A map of strings to runnables was used to query the database for food logs.
+This was used as the select query for the database had to dynamically change depending on how the food logs were being viewed, by day, week, or month.
+\begin{lstlisting}[style=Java]
+listViewOptions = new HashMap<>();
+listViewOptions.put("Day", () -> getLogsByDay());
+listViewOptions.put("Week",() -> getLogsByWeek());
+listViewOptions.put("Month", () -> getLogsByMonth());
+\end{lstlisting}
 
-\begin{figure}[h] 
+\subsection*{User Interface}
+User interface implementation as in Figures \ref{fig:gallery}, \ref{fig:ui2}, \ref{fig:ui3}, \ref{fig:ui5}, \ref{fig:ui8}, \ref{fig:ui6}, \ref{fig:ui7} and \ref{fig:delete}.
+
+\begin{figure} 
   \label{uiDesign1} 
   \begin{minipage}[b]{0.5\linewidth}
     \centering
-    \includegraphics[width=.75\linewidth]{ui1} 
+    \includegraphics[width=.75\linewidth]{gallery} 
     \caption{Landing Activity} 
-  \label{fig:ui1}
+  \label{fig:gallery}
     \vspace{4ex}
   \end{minipage}%%
   \begin{minipage}[b]{0.5\linewidth}
@@ -242,23 +360,22 @@ User interface implementation as in Figures \ref{fig:ui1}, \ref{fig:ui2}, \ref{f
   \end{minipage}%% 
   \begin{minipage}[b]{0.5\linewidth}
     \centering
-    \includegraphics[width=.75\linewidth]{ui4} 
-    \caption{Image Processing Activity} 
-    \label{fig:ui4}
+    \includegraphics[width=.75\linewidth]{ui5} 
+    \caption{Image Submit Activity} 
+    \label{fig:ui5}
     \vspace{4ex}
   \end{minipage} 
 \end{figure}
-\afterpage{\clearpage}
 
-\begin{figure}[h] 
+\begin{figure}
   \label{uiDesign2} 
   \begin{minipage}[b]{0.5\linewidth}
     \centering
-    \includegraphics[width=.75\linewidth]{ui5} 
-    \caption{Image Submit Activity} 
-  \label{fig:ui5}
+    \includegraphics[width=.75\linewidth]{ui8} 
+    \caption{FoodLog Month Activity} 
+    \label{fig:ui8}
     \vspace{4ex}
-  \end{minipage}%%
+  \end{minipage}
   \begin{minipage}[b]{0.5\linewidth}
     \centering
     \includegraphics[width=.75\linewidth]{ui6} 
@@ -275,15 +392,46 @@ User interface implementation as in Figures \ref{fig:ui1}, \ref{fig:ui2}, \ref{f
   \end{minipage}%% 
   \begin{minipage}[b]{0.5\linewidth}
     \centering
-    \includegraphics[width=.75\linewidth]{ui8} 
-    \caption{FoodLog Month Activity} 
-    \label{fig:ui8}
-    \vspace{4ex}
-  \end{minipage} 
+    \includegraphics[width=.75\linewidth]{delete} 
+    \caption{Food Log Deletion} 
+  \label{fig:delete}
+    \vspace{4ex} 
+    \end{minipage}%% 
 \end{figure}
-\afterpage{\clearpage}
+\clearpage
 
+\subsection*{Technologies}
 
+\subsubsection*{Github}
+Github was used as the version control backup system for this project.
+Commit history can be seen in Figure \ref{fig:git}
+
+\begin{figure}[h]
+    \includegraphics[scale=0.5]{git}
+    \caption{Github Contributions to Master}
+    \label{fig:git}
+\end{figure}
+
+\subsubsection*{JSON}
+JSON (JavaScript Object Notation) is a text format used to store data \parencite{json}.
+It is both easy for machines to parse and for humans to read and write.
+It is a data-interchange format as it is language independent.
+JSON data structures as built on key pairs values and are normally parsed into arrays, lists or vectors.
+
+\subsubsection*{OkHttp}
+OkHttp is a HTTP client created specifically for Java and Android applications \parencite{okhttp}.
+It is a very efficient HTTP client with in built defense against troublesome networks (recovers from common problems silently).
+Some of the efficiency components are as follows:
+\begin{itemize}
+    \item{HTTP/2 support}
+    \item{Reduced request latency due to connection pooling}
+    \item{Caching of responses}
+\end{itemize}
+
+\subsubsection*{Nutritionix API}
+The Nutritionix API is an API used to collect nutritional information \parencite{nutritionix}.
+This project used this API to collect calorie information on a food item.
+The free 'Hacker' account can support up to 10 active users.
 
 
 

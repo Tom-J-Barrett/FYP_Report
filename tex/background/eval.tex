@@ -1,11 +1,11 @@
-There are various different metrics that can be used for evaluating the output
+There are various metrics that can be used for evaluating the output
 of a classifier or segmentation algorithm, many of which we have seen in previous
 sections. These metrics will be examined below.
 
 \subsection*{Research into Diagnosing Errors in Object Detectors}
 There has been some research into the question of how to evaluate object
 detectors, one of which be discussed in detail \parencite{diagnosingErrors}.
-This paper in question "analyzes the influences of object characteristics on
+This paper in question " analyzes the influences of object characteristics on
 detection performance and the frequency and impact of different types of false
 positives" \parencite{diagnosingErrors}. They found that there were many effects
 that had influence on detectors as follows:
@@ -17,19 +17,19 @@ that had influence on detectors as follows:
     \item{viewpoint}
     \item{localization error}
     \item{confusion with semantically similar objects}
-    \item{confusion with other labeled objects}
+    \item{confusion with other labelled objects}
     \item{confusion with background}
 \end{itemize}
 
 The research team goes on to analyse false positives in object detectors.
-Localization errors were a large factor. This is were bounding boxes overlap to
+Localization errors were a large factor. This is where bounding boxes overlap to
 other objects in the image. Confusion with similar objects had a large influence
 on false positives also by which, for example, a dog detector had a high score
 for a cat \parencite{diagnosingErrors}. Confusion with dissimilar objects and
 confusion with background are the categories of the rest of the false positives
 they measured.
 
-In conclusion the team would that "Most false positives are due to misaligned
+In conclusion the team would that " Most false positives are due to misaligned
 detection windows or confusion with similar objects"
 \parencite{diagnosingErrors}. They had some recommendations towards improves
 detectors as follows:
@@ -41,29 +41,50 @@ detectors as follows:
 	\item{More detailed analysis}
 \end{itemize}
 
-\subsection*{Detection Average Precision}
-The average detection accuracy of a system. See \ref{fig:dap}.
+% \subsection*{Detection Average Precision}
+% The average detection accuracy of a system. See \ref{fig:dap}.
 
-\subsection*{Mean Average Precision}
-The mean accuracy of a system across all results. See \ref{fig:MAP}.
+% \subsection*{Mean Average Precision}
+% The mean accuracy of a system across all results. See \ref{fig:MAP}.
 		
-\subsection*{Distribution of top-ranked false positives}
-This metric is used to tell where most errors occur when false positives are
-evident. These errors are broken down into four categories of localization,
-similar objects, background confusion and others. See \ref{fig:DFP}.
+% \subsection*{Distribution of top-ranked false positives}
+% This metric is used to tell where most errors occur when false positives are
+% evident. These errors are broken down into four categories of localization,
+% similar objects, background confusion and others. See \ref{fig:DFP}.
 
-\subsection*{Segmentation Mean Accuracy}
-This is the mean accuracy of segmentation. See \ref{fig:SMP}.
+% \subsection*{Segmentation Mean Accuracy}
+% This is the mean accuracy of segmentation. See \ref{fig:SMP}.
 
-\subsection*{Per-category segmentation accuracy}
-This metric measures the accuracy of segmentation at a category level. See \ref{fig:PCATSA}.	
+% \subsection*{Per-category segmentation accuracy}
+% This metric measures the accuracy of segmentation at a category level. See \ref{fig:PCATSA}.	
 
-\subsection*{Per-class segmentation accuracy}
-The accuracy of segmentation at a class level is analysed. See \ref{fig:PCLASSA}.
+% \subsection*{Per-class segmentation accuracy}
+% The accuracy of segmentation at a class level is analysed. See \ref{fig:PCLASSA}.
 
 \subsection*{Top-1 and Top-5 Accuracy}
 When a classifier is given an image it normally responds with a list of
 predictions along with a decimal representation of the likelihood that it is of
 that class. The Top-1 accuracy is the top valued prediction and Top-5 accuracy
 is the top 5 predictions.
-		
+
+\subsection*{Cross-Validation}
+When cross-validation is utilised, the test set is used for gradient descent while a separate validation set is used to measure error \parencite{MLANN}.
+K-fold cross-validation is where k separate validation sets are created.
+These k different validation sets are used to test the model and the results are averaged.
+
+\subsection*{Confusion Matrix}
+A proven, very successful way to measure how well a classifier is performing is by using a confusion matrix \parencite{handsOnML}.
+A confusion matrix simply counts the number of times an object is classifier correctly or incorrectly as in Table \ref{cm}.
+
+\begin{table}[]
+\centering
+\caption{Confusion Matrix}
+\label{cm}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Actual (n=200)} & \textbf{Predicted: NO} & \textbf{Predicted: YES} \\ \hline
+NO                      & 55                     & 18                      \\ \hline
+YES                     & 7                      & 120                     \\ \hline
+\end{tabular}
+\end{table}
+
