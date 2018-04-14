@@ -1,4 +1,4 @@
-\subsection*{Objective}
+\tocless\subsection{Objective}
 For the next experiment, it was decided to use the Food-101 dataset.
 An on line tutorial was used to create a dataset in TensorFlow using image directories on disk \parencite{file_dir_code}.
 Tutorials used previously were also utilized for this experiment \parencite{udemy} and \parencite{cifar}.
@@ -7,7 +7,7 @@ Tutorials used previously were also utilized for this experiment \parencite{udem
 \centering
 \caption{Using the Food-101 Dataset}
 \label{my-label}
-\begin{tabular}{|l|p{9cm}|}
+\begin{tabular}{|l|p{8cm}|}
 \hline
 \textbf{Network Architecture} & Similar to \ref{udemy1}            \\ \hline
 \textbf{Dataset}              & Food-101 dataset \\ \hline
@@ -15,8 +15,8 @@ Tutorials used previously were also utilized for this experiment \parencite{udem
 \end{tabular}
 \end{table}
 
-\subsection*{Script}
-\subsubsection*{Read in the dataset}
+\tocless\subsection{Script}
+\tocless\subsubsection{Read in the dataset}
 \begin{lstlisting}[style=Python]
 # Reading the dataset
 def read_images(dataset_path, mode, batch_size):
@@ -36,7 +36,7 @@ def read_images(dataset_path, mode, batch_size):
         label += 1
 \end{lstlisting}
 
-\subsubsection*{Create Batches}
+\tocless\subsubsection{Create Batches}
 \begin{lstlisting}[style=Python]
 # Convert to Tensor data strcuture
 imagepaths = tf.convert_to_tensor(imagepaths, dtype=tf.string)
@@ -63,7 +63,7 @@ X, Y = tf.train.batch([image, label], batch_size=batch_size,
 return X, Y
 \end{lstlisting}
 
-\subsubsection*{Train the Model}
+\tocless\subsubsection{Train the Model}
 \begin{lstlisting}[style=Python]
 with tf.Session() as sess:
     sess.run(init)
@@ -81,8 +81,8 @@ with tf.Session() as sess:
             sess.run(train_op)
 \end{lstlisting}
 
-\subsection*{Results}
+\tocless\subsection{Results}
 The final accuracy for this model was 18.8\% after 5000 steps.
 
-\subsection*{Analysis}
+\tocless\subsection{Analysis}
 The poor accuracy of this model is to be expected due to the simple architecture of the network.

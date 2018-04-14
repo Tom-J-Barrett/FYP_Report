@@ -1,4 +1,4 @@
-\subsection*{Objective}
+\tocless\subsection{Objective}
 In the previous experiments, the one-shot approach to food image
 classification has been looked at. That is, the model will give a prediction of the most likely
 food item in that image. This is a problem when there is a composite image i.e are multiple foods in an
@@ -70,17 +70,17 @@ There are three options for window shape:
 \end{figure}
 \afterpage{\clearpage}
 
-\subsection*{Libraries}
+\tocless\subsection{Libraries}
 For this experiment TensorFlow provided the classification of each segment while
 also helping with resizing along with NumPy. OpenCV was used to implement the
 sliding window as per \parencite{slidingWindowTut}.
 
-\subsection*{Script}
+\tocless\subsection{Script}
 There were four main elements to the script. Firstly, extracting a window to be
 classified. Secondly, resizing the image to be compatible with the TensorFlow model. Thirdly, running the window through the TensorFlow model and finally
 saving a new image with a coloured overlay of classifications.
 
-\subsubsection*{Extracting the window from the image}
+\tocless\subsubsection{Extracting the window from the image}
 \begin{lstlisting}[style=Python]
 for (x, y, window) in sliding_window(resized, stepSize=64, windowSize=(winW, winH)):
 	# if the window does not meet our desired window size, ignore it
@@ -98,7 +98,7 @@ def sliding_window(image, stepSize, windowSize):
 			yield (x, y, image[y:y + windowSize[1], x:x + windowSize[0]])
 \end{lstlisting}
 
-\subsubsection*{Resizing the window}
+\tocless\subsubsection{Resizing the window}
 \begin{lstlisting}[style=Python]
 window = cv2.resize(window, (299, 299))
 \end{lstlisting}
@@ -109,7 +109,7 @@ resized = tf.image.resize_area(resized_image, [input_height, input_width])
 normalized = tf.divide(tf.subtract(resized, [input_mean]), [input_std])
 \end{lstlisting}
 
-\subsubsection*{Running the Tensorflow model}
+\tocless\subsubsection{Running the Tensorflow model}
 \begin{lstlisting}[style=Python]
 with tf.Session() as sess:
 	numpy_image = sess.run(normalized)
@@ -120,7 +120,7 @@ with tf.Session(graph=graph) as sess:
 	probabilities = np.squeeze(results)
 \end{lstlisting}
 
-\subsubsection*{Saving the image with colour overlay}
+\tocless\subsubsection{Saving the image with colour overlay}
 As seen in Figure \ref{fig:fruitOverlay}, each square represents a window and
 each colour is for a different classification. Blue is for an apple, yellow for
 banana, green for grape, white for orange and black if an unexpected prediction
@@ -131,8 +131,8 @@ cv2.rectangle(display_image, (x, y), (x + winW, y + winH), colour_dict.get(top1,
 (0,0,0)), 4)
 \end{lstlisting}
 
-\subsection*{Results}
-\subsubsection*{Grid based window}
+\tocless\subsection{Results}
+\tocless\subsubsection{Grid based window}
 The grid-based window resulted in fifteen separate classification. As seen in Figure
 \ref{fig:fruit}, there are multiple fruits in the image. Of these fruits, our
 model is trained on four, apple, banana, orange and grapes. This method
@@ -188,22 +188,23 @@ This method took 42.8 seconds to run.
 	\end{tabular}
 \end{table}
 
-\subsubsection*{Row based window}
+\tocless\subsubsection{Row based window}
 The row-based method resulted in four predictions as follows in Figure
 \ref{rowWindowTable}. Out of these four predictions, only one classified a known
 fruit at Top-1 accuracy, an apple. An apple was also predicted to Top-5 accuracy
 in another instance. The runtime of this method was 16.1 seconds.
 
-\subsubsection*{Column based window}
+\tocless\subsubsection{Column based window}
 The column-based window approach had five total predictions and ran for a total
 of 13 seconds. As seen in \ref{colWindowTable}, two out of four known fruits
 were classified to a Top-1 accuracy with all other fruits predicted to Top-5
 accuracy. Only one Top-1 prediction did not contain a correct fruit.
 
-\subsection*{Analysis}
-These results are very interesting because while a banana was only predicted to
+\tocless\subsection{Analysis}
+These results raise some questions because while a banana was only predicted to
 Top-1 accuracy once in grid based, once in column based and zero times in row
-based, if the whole image is passed through the model, a banana is at the Top-1 accuracy.
+based approach, if the whole image is passed through the model, a banana is at the Top-1 accuracy.
+A possible reason for this could be that the overall shape of a banana is very distinctive but when sliding windows are used, the whole banana is no present in the window.
 
 
 

@@ -1,9 +1,9 @@
 Outlined below are some coding fragments categorised under: Design Patterns, Asynchronous Tasks, Presenters, Views and Interesting Coding Fragments.
 
-\subsection*{Design Patterns}
+\tocless\subsection{Design Patterns}
 Various design patterns were used in the implementation of this application such as the Factoy, the Builder and the Singleton which are outlined below.
 
-\subsubsection*{DAOFactory class}
+\tocless\subsubsection{DAOFactory class}
 The Factory design pattern was used to retrieve a DAO (Data Access Object).
 This was used so that if at a future time the storage type of the application is to be changed, the developer would only have to change one instance of the codebase and return a new implementation of the DAO interface in the method getDAO().
 \begin{lstlisting}[style=Java]
@@ -15,7 +15,7 @@ public class DAOFactory {
 }
 \end{lstlisting}
 
-\subsubsection*{HostFactory class}
+\tocless\subsubsection{HostFactory class}
 The Factory design pattern was used to retrieve a Host object that acts as an endpoint for the backend server.
 As this application is a lightweight proof of concept prototype only one backend server was used.
 In a future iteration, it may be decided to use a more complex method of Host selection and this factory class allows for simple modification to the codebase in this instance.
@@ -34,7 +34,7 @@ public class HostFactory {
 }
 \end{lstlisting}
 
-\subsubsection*{HostBuilder}
+\tocless\subsubsection{HostBuilder}
 A Host builder was used to create a Host object.
 This builder is a static inner class in the Host class file.
 \begin{lstlisting}[style=Java]
@@ -70,7 +70,7 @@ public static class HostBuilder {
 }
 \end{lstlisting}
 
-\subsubsection*{FoodLogBuilder}
+\tocless\subsubsection{FoodLogBuilder}
 A FoodLog builder was used to create a FoodLog object.
 This builder is a static inner class in the FoodLogImpl class file.
 \begin{lstlisting}[style=Java]
@@ -106,7 +106,7 @@ public static class FoodLogBuilder {
 }
 \end{lstlisting}
 
-\subsubsection*{Singleton DAO Object}
+\tocless\subsubsection{Singleton DAO Object}
 A Singleton instance of the DAO implementation was used in this application.
 This was mainly due to the best practice of keeping database access objects as singleton instances.
 \begin{lstlisting}[style=Java]
@@ -118,11 +118,11 @@ public static DAO getInstance(Context context) {
 }
 \end{lstlisting}
 
-\subsection*{Asynchronous Tasks}
+\tocless\subsection{Asynchronous Tasks}
 Asynchronous Tasks in Android are used to run tasks in the background or are sometimes used to simply distribute processess off the main thread.
 The AsyncTask class must be extended on creation of the background processes.
 
-\subsubsection*{UploadImage}
+\tocless\subsubsection{UploadImage}
 An AsyncTask was used to send the food image to the backend host.
 \begin{lstlisting}[style=Java]
 @Override
@@ -151,7 +151,7 @@ protected String doInBackground(Void... params) {
 }
 \end{lstlisting}
 
-\subsubsection*{CalorieEstimation}
+\tocless\subsubsection{CalorieEstimation}
 An AsyncTask was used to call the Nutritionix API.
 This API can be used to retrieve nutritional information on query strings.
 In this case, the calorie count of the food image was returned.
@@ -188,10 +188,10 @@ protected String doInBackground(Void... params) {
 }
 \end{lstlisting}
 
-\subsection*{Presenters}
+\tocless\subsection{Presenters}
 In the MPV architecture as described earlier, the presenter for each activity contains all the logic for that view.
 
-\subsubsection*{Presenter for Main Activity}
+\tocless\subsubsection{Presenter for Main Activity}
 This presenter was task with creating intents to new activities (views).
 \begin{lstlisting}[style=Java]
 public class MainPresenter {
@@ -216,10 +216,10 @@ public class MainPresenter {
 }
 \end{lstlisting}
 
-\subsection*{Views}
+\tocless\subsection{Views}
 In the MPV archtecture that this application uses, the views are responsible for interacting directly with the user interface.
 
-\subsubsection*{Main Activity}
+\tocless\subsubsection{Main Activity}
 This view responds to button clicks and calls to its presenter to carry out the logic of the required task.
 \begin{lstlisting}[style=Java]
 public class MainActivity extends AppCompatActivity {
@@ -244,10 +244,10 @@ public class MainActivity extends AppCompatActivity {
 }
 \end{lstlisting}
 
-\subsection*{Storage}
+\tocless\subsection{Storage}
 SqlLite was used for storing data in this application and the class that handled creation, input and output to this database implemented the DAO interface.
 
-\subsubsection*{DAO interface}
+\tocless\subsubsection{DAO interface}
 An interface for storage devices so that each implementation would have the ability to add food logs, retrieve food logs, delete food logs and remove the data store completely.
 \begin{lstlisting}[style=Java]
 public interface DAO {
@@ -260,7 +260,7 @@ public interface DAO {
 }
 \end{lstlisting}
 
-\subsubsection*{Get Food Logs per Date}
+\tocless\subsubsection{Get Food Logs per Date}
 This method was used to execute a query and return a List of FoodLog objects.
 \begin{lstlisting}[style=Java]
 @Override
@@ -284,7 +284,7 @@ private List<FoodLog> selectQuery(String query) {
 }
 \end{lstlisting}
 
-\subsubsection*{Delete Food Logs}
+\tocless\subsubsection{Delete Food Logs}
 This method was used to delete food logs from the database that were in the List passed to the method.
 \begin{lstlisting}[style=Java]
 @Override
@@ -297,10 +297,10 @@ public void deleteFoodLogs(List<FoodLog> foodLogs) {
 }
 \end{lstlisting}
 
-\subsection*{Interesting Coding Fragments}
+\tocless\subsection{Interesting Coding Fragments}
 Some interesting coding fragments are outlined below which merit inclusion in this report.
 
-\subsubsection*{Encode Bitmap to base64 String}
+\tocless\subsubsection{Encode Bitmap to base64 String}
 This method was used to encode the image taken on the phone to a string.
 This was used to send the image to the backend with minimal latency.
 The bitmap size was also reduced as in line 8 to decrease response time also.
@@ -322,7 +322,7 @@ public String toBase64() {
 }
 \end{lstlisting}
 
-\subsubsection*{Map of Runnables}
+\tocless\subsubsection{Map of Runnables}
 A map of strings to runnables was used to query the database for food logs.
 This was used as the select query for the database had to dynamically change depending on how the food logs were being viewed, by day, week, or month.
 \begin{lstlisting}[style=Java]
@@ -332,7 +332,7 @@ listViewOptions.put("Week",() -> getLogsByWeek());
 listViewOptions.put("Month", () -> getLogsByMonth());
 \end{lstlisting}
 
-\subsection*{User Interface}
+\tocless\subsection{User Interface}
 User interface implementation as in Figures \ref{fig:gallery}, \ref{fig:ui2}, \ref{fig:ui3}, \ref{fig:ui5}, \ref{fig:ui8}, \ref{fig:ui6}, \ref{fig:ui7} and \ref{fig:delete}.
 
 \begin{figure} 
@@ -400,9 +400,9 @@ User interface implementation as in Figures \ref{fig:gallery}, \ref{fig:ui2}, \r
 \end{figure}
 \clearpage
 
-\subsection*{Technologies}
+\tocless\subsection{Technologies}
 
-\subsubsection*{Github}
+\tocless\subsubsection{Github}
 Github was used as the version control backup system for this project.
 Commit history can be seen in Figure \ref{fig:git}
 
@@ -412,13 +412,13 @@ Commit history can be seen in Figure \ref{fig:git}
     \label{fig:git}
 \end{figure}
 
-\subsubsection*{JSON}
+\tocless\subsubsection{JSON}
 JSON (JavaScript Object Notation) is a text format used to store data \parencite{json}.
 It is both easy for machines to parse and for humans to read and write.
 It is a data-interchange format as it is language independent.
 JSON data structures as built on key pairs values and are normally parsed into arrays, lists or vectors.
 
-\subsubsection*{OkHttp}
+\tocless\subsubsection{OkHttp}
 OkHttp is a HTTP client created specifically for Java and Android applications \parencite{okhttp}.
 It is a very efficient HTTP client with in built defense against troublesome networks (recovers from common problems silently).
 Some of the efficiency components are as follows:
@@ -428,7 +428,7 @@ Some of the efficiency components are as follows:
     \item{Caching of responses}
 \end{itemize}
 
-\subsubsection*{Nutritionix API}
+\tocless\subsubsection{Nutritionix API}
 The Nutritionix API is an API used to collect nutritional information \parencite{nutritionix}.
 This project used this API to collect calorie information on a food item.
 The free 'Hacker' account can support up to 10 active users.

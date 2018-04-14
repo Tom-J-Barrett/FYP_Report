@@ -1,11 +1,11 @@
-\subsection*{Objective}
+\tocless\subsection{Objective}
 Similar to the previous experiment \ref{udemy2}, this experiment is a Udemy course exercise \parencite{udemy}. In contrast, this does not use a dataset built into TensorFlow so therefore, there is extra configuration to be done on the dataset.
 
 \begin{table}[h]
 \centering
 \caption{Udemy Tutorial 2}
 \label{my-label}
-\begin{tabular}{|l|p{9cm}|}
+\begin{tabular}{|l|p{8cm}|}
 \hline
 \textbf{Network Architecture} & Same as \ref{udemy1}            \\ \hline
 \textbf{Dataset}              & CIFAR-10 dataset \\ \hline
@@ -13,8 +13,8 @@ Similar to the previous experiment \ref{udemy2}, this experiment is a Udemy cour
 \end{tabular}
 \end{table}
 
-\subsection*{Script}
-\subsubsection*{Unpickle Images}
+\tocless\subsection{Script}
+\tocless\subsubsection{Unpickle Images}
 \begin{lstlisting}[style=Python]
 def unpickle(file):
     import pickle
@@ -37,7 +37,7 @@ data_batch5 = all_data[5]
 test_batch = all_data[6]
 \end{lstlisting}
 
-\subsubsection*{Set Up Images}
+\tocless\subsubsection{Set Up Images}
 \begin{lstlisting}[style=Python]
 def set_up_images(self):
     # Vertically stacks the training images
@@ -65,9 +65,11 @@ def next_batch(self, batch_size):
     return x, y
 \end{lstlisting}
 
-\subsubsection*{Train the Model}
+\tocless\subsubsection{Train the Model}
 \begin{lstlisting}[style=Python]
+#loss function
 cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels = y_true, logits = y_pred))
+#activation function
 optimizer = tf.train.AdamOptimizer(learning_rate = 0.001)
 train = optimizer.minimize(cross_entropy)
 init = tf.global_variables_initializer()
@@ -88,5 +90,5 @@ with tf.Session() as sess:
             print(sess.run(acc,feed_dict={x:testSet[0] ,y_true:testSet[1],hold_prob:1.0}))
 \end{lstlisting}
 
-\subsection*{Results}
+\tocless\subsection{Results}
 A final Top-1 accuracy of 71\% was reached.

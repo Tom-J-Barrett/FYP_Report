@@ -1,3 +1,5 @@
+Due to the issues with composite images (images with multiple items) in food image recognition, an object detection approach may prove to be successful.
+If the objects (different food items) in an image could be classified seperately then the overall effiency of a nutrional assessment system, aided by deep learning, could be improved.
 Ross Girshik and other contributors had some very positive results in the area
 of object detection using region based convolutional neural networks. There were
 four iterations of papers based on this work by Ross and groups in UC Berkley,
@@ -5,7 +7,6 @@ Microsoft and Facebook. A PHD student at the time of Ross's first paper also
 completed his dissertation on the subject. These papers, their
 results (Table \ref{rcnnResults}) and the changes made through each iteration will be analysed thoroughly in the proceeding sections.
 
-\subsubsection*{RCNN}
 In the first paper written by Ross Girshik, while researching at UC Berkeley,
 focused on two main insights. These were that " one can apply high-capacity convolutional neural networks (CNNs) to bottom-up region proposals in order to localize and segment objects" and that
 "when training data is scarce, supervised pre-training for n auxiliary task,
@@ -27,11 +28,9 @@ mention that a sliding-window detector is also an option. Ross Girshik and his
 team used the open source Caffe CNN library for this system. The system is quite
 efficient and scalable. It is scalable because of the fixed length vector of
 features which will remain constant regardless of inputs and additional outputs.
-
 The team evaluated their results on a few metrics and test sets as seen in Table
 \ref{rcnnResults}. Explanation of the datasets used can be seen in Table \ref{datasets}.
 
-\subsubsection*{Fast RCNN}
 Ross Girshik's next iteration of work on region based convolution neural
 networks took place in Microsoft Research. This paper was titled "Fast R-CNN" as
 its aim was to decrease training and testing time "while also increasing
@@ -56,10 +55,8 @@ layers for bounding box location prediction.
 At detection time, a pass through of the net is all that is needed so this
 runtime is significantly less than RCNN.
 
-\subsubsection*{Faster RCNN}
 Due to the success of RCNN and Fast RCNN, Faster RCNN was introduced to combat
 the problem of region proposal computation \parencite{fasterRcnn}.
-
 The architecture for this system comprises of two modules. These consist of a
 convolutional neural network for region proposals (RPN) which the feeds into a Fast
 RCNN detector. These combine to produce a single neural network for object
@@ -79,7 +76,7 @@ share layers between the two networks. There were three options available:
     \centering
     \caption{Results from Region Based CNN Research}
     \label{rcnnResults}
-    \begin{tabular}{|l|l|l|l|l|l|l|}
+    \begin{tabular}{|p{1.5cm}|l|l|l|l|l|l|}
     \hline
                     & \textbf{VOC07} & \textbf{VOC10} & \textbf{VOC11} & \textbf{VOC12} & \textbf{COCO15} &
                     \textbf{COCO16} \\ \hline
@@ -98,7 +95,7 @@ share layers between the two networks. There were three options available:
 \centering
 \caption{Datasets}
 \label{datasets}
-\begin{tabular}{|p{2cm}|p{12cm}|}
+\begin{tabular}{|p{1.65cm}|p{10.5cm}|}
 \hline
 \textbf{Table} & \textbf{Explanation}                                                                                                                                                                                               \\ \hline
 VOC07          & The PASCAL VOC dataset is used for the PASCAL (Pattern Analysis, Statistical Modelling and Computational Learning) Visual Object Classes Challenge. \parencite{pascal-voc-2007} was used for the 2007 challenge. \\ \hline
@@ -110,12 +107,10 @@ COCO16         & An updated version of the COCO dataset was released in 2015.   
 \end{tabular}
 \end{table}
 
-\subsubsection*{Mask RCNN}
 The most recent paper on this topic was also written by Ross Girshik while
 working with Facebook AI Research \parencite{maskRcnn}. Mask RCNN " extends Faster
 RCNN by adding a branch for predicting an object mask in parallel with the
 existing branch for bounding box regression" \parencite{maskRcnn}.
-
 Mask RCNN has two modules, like Faster RCNN, where the first module is the
 Region Proposal Network. In the second module, in parallel to classification, a
 binary mask is outputted for each region. Bounding box regression and

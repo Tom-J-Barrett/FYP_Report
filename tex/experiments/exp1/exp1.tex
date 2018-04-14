@@ -1,15 +1,15 @@
-\subsection*{Objective}
+\tocless\subsection{Objective}
 There are many on line resources that are geared towards helping deep learning novices.
 One of these resources is a course on Udemy titled 'Complete Guide to Tensorflow for Deep Learning with Python' \parencite{udemy}.
 This course has a section on Convolutional Neural Networks which has been followed and completed.
-The CNN used in this section is very  as it is an introductory CNN.
+The CNN used in this section is very simple as it is an introductory CNN.
 It consists of two convolutional layers, two max pooling layers and a fully connected layer.
 
 \begin{table}[h]
 \centering
 \caption{Udemy Tutorial}
 \label{my-label}
-\begin{tabular}{|l|p{9cm}|}
+\begin{tabular}{|l|p{8cm}|}
 \hline
 \textbf{Network Architecture} & A simple architecture was used for prototyping purposes            \\ \hline
 \textbf{Dataset}              & MNIST dataset \\ \hline
@@ -17,8 +17,8 @@ It consists of two convolutional layers, two max pooling layers and a fully conn
 \end{tabular}
 \end{table}
 
-\subsection*{Script}
-\subsubsection*{Helper Functions}
+\tocless\subsection{Script}
+\tocless\subsubsection{Helper Functions}
 \begin{lstlisting}[style=Python]
 #INIT WEIGHTS
 def init_weights(shape):
@@ -49,7 +49,7 @@ def normal_full_layer(input_layer, size):
     return tf.matmul(input_layer, W) + b
 \end{lstlisting}
 
-\subsubsection*{Layer Creation}
+\tocless\subsubsection{Layer Creation}
 \begin{lstlisting}[style=Python]
 #32 features for every 5 x 5 kernel with 1(grayscale)
 convo_1 = convolutional_layer(x_image, shape = [5,5,1,32])
@@ -62,7 +62,7 @@ convo_2_flat = tf.reshape(convo_2_pooling, [-1,7*7*64])
 full_layer_one = tf.nn.relu(normal_full_layer(convo_2_flat, 1024))
 \end{lstlisting}
 
-\subsubsection*{Training the Model}
+\tocless\subsubsection{Training the Model}
 \begin{lstlisting}[style=Python]
 with tf.Session() as sess:
     sess.run(init)
@@ -81,5 +81,5 @@ with tf.Session() as sess:
     sess.run(acc, feed_dict = {x:mnist.test.images} )
 \end{lstlisting}
 
-\subsection*{Results}
-The final Top-1 accuracy for this experiment was of 97.3\%.
+\tocless\subsection{Results}
+The final Top-1 accuracy for this experiment was of 97.3\%, calculated from a batch of unseen test images.

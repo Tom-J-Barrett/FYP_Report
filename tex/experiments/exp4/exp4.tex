@@ -1,4 +1,4 @@
-\subsection*{Objective}
+\tocless\subsection{Objective}
 For this experiment, it was decided to take inspiration from
 \parencite{yanaiFood}, where pre-training was used training a model for food
 classification. In order to achieve this, the final layer of the
@@ -51,7 +51,7 @@ python tensorflow/examples/label_image.py --graph=/tmp/output_graph.pb
 \centering
 \caption{Retrain ImageNet Inception V3 Model}
 \label{my-label}
-\begin{tabular}{|l|p{9cm}|}
+\begin{tabular}{|l|p{8cm}|}
 \hline
 \textbf{Network Architecture} & Inception-V3 architecture \parencite{inception}            \\ \hline
 \textbf{Dataset}              & Food-101 dataset \\ \hline
@@ -59,10 +59,10 @@ python tensorflow/examples/label_image.py --graph=/tmp/output_graph.pb
 \end{tabular}
 \end{table}
 
-\subsection*{Script}
+\tocless\subsection{Script}
 The following snippets of code are from the retrain.py script.
 
-\subsubsection*{Add New Layer}
+\tocless\subsubsection{Add New Layer}
 \begin{lstlisting}[style=Python]
 # Add new layer to the network
 (train_step, cross_entropy, bottleneck_input, ground_truth_input,
@@ -81,7 +81,7 @@ init = tf.global_variables_initializer()
 sess.run(init)
 \end{lstlisting}
 
-\subsubsection*{Evaluate Model}
+\tocless\subsubsection{Evaluate Model}
 \begin{lstlisting}[style=Python]
 # Run final test evaluation
 test_bottlenecks, test_ground_truth, test_filenames = (
@@ -98,7 +98,7 @@ tf.logging.info('Final test accuracy = %.1f%% (N=%d)' %
                 (test_accuracy * 100, len(test_bottlenecks)))
 \end{lstlisting}
 
-\subsection*{Results}
+\tocless\subsection{Results}
 The final test Top-1 accuracy for this retrained model was 54.8\%.
 For example, an image of pizza Figure \ref{fig:pizza}, was fed into the model with the following results:
 \begin{itemize}
@@ -129,7 +129,7 @@ In contrast, Figure \ref{fig:pizza_unclassified} was not classified as a pizza.
   \end{minipage} 
 \end{figure}
 
-\subsection*{Analysis}
+\tocless\subsection{Analysis}
 These poor results are not that surprising.
 This is because we have many classes to train for, 101, and no parameter tuning has been carried out on the running of this code.
 Figure \ref{fig:pizza_unclassified} was not classified correctly, this is most likely due to the fact that the pizza does not take up much of the image.

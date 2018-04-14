@@ -14,17 +14,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.6}{\ignorespaces Work Breakdown Structure\relax }}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Gantt Chart\relax }}{9}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Gantt Chart\relax }}{10}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Perceptron\relax }}{14}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Perceptron\relax }}{15}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Linearly Separable, adapted from \parencite {MLANN}\relax }}{15}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Multi Layer Perceptron\relax }}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Gradient Descent\relax }}{18}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Gradient Descent\relax }}{19}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.5}{\ignorespaces CNN Architecture\relax }}{20}
 \defcounter {refsection}{0}\relax 
@@ -32,9 +32,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Inception module \parencite {rethinkingInception}\relax }}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Inception V3 Architecture \parencite {rethinkingInception}\relax }}{25}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Inception V3 Architecture \parencite {rethinkingInception}\relax }}{26}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Support Vector Machine Applicability}}{28}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Support Vector Machine Applicability}}{29}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Hotdog\relax }}{47}
 \defcounter {refsection}{0}\relax 
@@ -80,85 +80,85 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Bowl of fruit \parencite {fruitBowl}\relax }}{76}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Bowl of fruit \parencite {fruitBowl}\relax }}{77}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Grid based window\relax }}{76}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Grid based window\relax }}{77}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Row based window\relax }}{76}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Row based window\relax }}{77}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Column Based Window\relax }}{76}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Column Based Window\relax }}{77}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Fruit with Color Overlay\relax }}{76}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Fruit with Color Overlay\relax }}{77}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Fruit with Apple Overlay\relax }}{76}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Fruit with Apple Overlay\relax }}{77}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Recursive refinement 1\relax }}{81}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Recursive refinement 1\relax }}{82}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Recursive refinement 2 - sourced from http://www.travispta.org/\relax }}{82}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Recursive refinement 2 - sourced from http://www.travispta.org/\relax }}{83}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Recursive refinement 3\relax }}{82}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Recursive refinement 3\relax }}{83}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Bowl of fruit with background removed\relax }}{84}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Bowl of fruit with background removed\relax }}{85}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Alternative Bowl of fruit\relax }}{86}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Alternative Bowl of fruit\relax }}{87}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.12}{\ignorespaces Fruit image taken on a mobile phone\relax }}{89}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.13}{\ignorespaces Image after sliding window - 13 classes\relax }}{90}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Image after sliding window - 108 classes\relax }}{91}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Image after sliding window - 108 classes\relax }}{92}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Banana Image Pre-Resolution\relax }}{92}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Banana Image Pre-Resolution\relax }}{93}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Apple Pie Image Pre-Resolution\relax }}{92}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Apple Pie Image Pre-Resolution - sourced from https://www.bettycrocker.com/recipes/scrumptious-apple-pie\relax }}{94}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Pizza Image Pre-Resolution\relax }}{92}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Pizza Image Pre-Resolution\relax }}{94}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Banana Image Greyscale\relax }}{94}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Banana Image Greyscale\relax }}{96}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Apple Pie Image Greyscale\relax }}{95}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Apple Pie Image Greyscale\relax }}{97}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Pizza Image Greyscale\relax }}{95}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Pizza Image Greyscale\relax }}{97}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Landing Activity\relax }}{103}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Landing Activity\relax }}{105}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Image Submission Activity\relax }}{103}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Image Submission Activity\relax }}{105}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Classification Activity\relax }}{103}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Classification Activity\relax }}{105}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Food Logs Activity\relax }}{103}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Food Logs Activity\relax }}{105}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Package Diagram\relax }}{104}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Package Diagram\relax }}{106}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Marchitecture Diagram\relax }}{106}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Marchitecture Diagram\relax }}{108}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Android Activity Lifecycle \parencite {android}\relax }}{108}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Android Activity Lifecycle \parencite {android}\relax }}{110}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Landing Activity\relax }}{121}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Landing Activity\relax }}{123}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Image Capture Activity\relax }}{121}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Image Capture Activity\relax }}{123}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Image Send Activity\relax }}{121}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Image Send Activity\relax }}{123}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Image Submit Activity\relax }}{121}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Image Submit Activity\relax }}{123}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.12}{\ignorespaces FoodLog Month Activity\relax }}{122}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces FoodLog Month Activity\relax }}{124}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.13}{\ignorespaces FoodLog Day Activity\relax }}{122}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces FoodLog Day Activity\relax }}{124}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.14}{\ignorespaces FoodLog Week Activity\relax }}{122}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces FoodLog Week Activity\relax }}{124}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Food Log Deletion\relax }}{122}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Food Log Deletion\relax }}{124}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Github Contributions to Master\relax }}{123}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Github Contributions to Master\relax }}{125}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Automated Unit Tests\relax }}{124}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Automated Unit Tests\relax }}{126}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.18}{\ignorespaces AWS Network Diagram\relax }}{131}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces AWS Network Diagram\relax }}{133}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.19}{\ignorespaces AWS Security Group\relax }}{131}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces AWS Security Group\relax }}{134}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

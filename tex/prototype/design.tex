@@ -1,6 +1,6 @@
 The design process for this prototype application consisted of user interface design, android application system design and the activity of choosing resources for a backend host.
 
-\subsection*{User Interface}
+\tocless\subsection{User Interface}
 The user interface mock ups were created using \parencite{fluid}.
 The aim of this design was to provide a simple, easy to use interface so that a user could use the application with minimal effort.
 The main benefit of using computer vision for this type of application is to
@@ -52,7 +52,7 @@ The calorie count of the selected time frame is to be displayed on this activity
 \end{figure}
 \afterpage{\clearpage}
 
-\subsection*{System Architecture}
+\tocless\subsection{System Architecture}
 
 \begin{figure}[h]
     \centering
@@ -61,7 +61,7 @@ The calorie count of the selected time frame is to be displayed on this activity
     \label{fig:packageDiagram}
 \end{figure}
 
-\subsubsection*{Architectural Patterns}
+\tocless\subsubsection{Architectural Patterns}
 The Model-View-Presenter (MVP) architectural pattern was adapted for this application \parencite{mvp}.
 This pattern is very similar to the Model-View-Controller (MVC) architecture which is quite popular in the software development industry.
 The main difference between MVC and MVP is that whereas in MVC the controller is responsible for which view is used, in MPV the presenter is called through the view.
@@ -74,7 +74,7 @@ have a dependency only on their corresponding presenter.
 The presenters contain the business logic of the  application and have a dependency on all other packages.
 The packages of backgroundProcesses, calorieEstimation and storage have a dependancy on the presenters package for callback purposes and also database creation in Android requires context of the activity information.
 
-\subsubsection*{Marchitecture}
+\tocless\subsubsection{Marchitecture}
 In Figure \ref{fig:market}, a marchitecture diagram can be seen.
 This diagram represents the architecture of the system.
 NutriLog is an Android application that send an image to an AWS (Amazon Web Services) instance using the API OkHttp. The AWS instance is running a Python FLASK application that classifies the image using a TensorFlow model and sends a response back to NutriLog. The Nutritionix API is used to collect nutritional information of this classification.
