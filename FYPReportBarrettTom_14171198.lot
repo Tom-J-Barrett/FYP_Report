@@ -24,54 +24,54 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {3.3}{\ignorespaces Udemy Tutorial 2\relax }}{53}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.4}{\ignorespaces Using the Food-101 Dataset\relax }}{56}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Using the Food-101 Dataset\relax }}{57}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.1}{\ignorespaces Retrain ImageNet Inception V3 Model\relax }}{61}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Retrain ImageNet Inception V3 Model\relax }}{62}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.2}{\ignorespaces Retrain with Extended Dataset\relax }}{64}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Retrain with Extended Dataset\relax }}{65}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.3}{\ignorespaces Retrain with Parameter Tuning\relax }}{65}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Retrain with Parameter Tuning\relax }}{67}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.4}{\ignorespaces Comparison of parameters\relax }}{70}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Comparison of parameters\relax }}{71}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.5}{\ignorespaces MobileNet\relax }}{72}
+\contentsline {table}{\numberline {4.5}{\ignorespaces MobileNet\relax }}{73}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.6}{\ignorespaces Food-101+ subset\relax }}{73}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Food-101+ subset\relax }}{74}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.7}{\ignorespaces Accuracy of other studies\relax }}{74}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Accuracy of other studies\relax }}{75}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.8}{\ignorespaces My caption\relax }}{74}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.1}{\ignorespaces Grid Based Sliding Window Results\relax }}{80}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.2}{\ignorespaces Row Based Sliding Window Results\relax }}{80}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.3}{\ignorespaces Column Based Sliding Window Results\relax }}{80}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.4}{\ignorespaces Comparison of fruit image sliding window results with and without background\relax }}{86}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.5}{\ignorespaces Comparison of fruit bowl images\relax }}{87}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.6}{\ignorespaces Results of recursive refinement segment classifications using two models\relax }}{91}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.7}{\ignorespaces Results of Down Scaled Images\relax }}{95}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.8}{\ignorespaces Effect of Colour\relax }}{98}
+\contentsline {table}{\numberline {4.8}{\ignorespaces My caption\relax }}{75}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.1}{\ignorespaces Functional Requirements\relax }}{103}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Grid Based Sliding Window Results\relax }}{81}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.2}{\ignorespaces Row Based Sliding Window Results\relax }}{81}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.3}{\ignorespaces Column Based Sliding Window Results\relax }}{81}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.4}{\ignorespaces Comparison of fruit image sliding window results with and without background\relax }}{87}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.5}{\ignorespaces Comparison of fruit bowl images\relax }}{88}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.6}{\ignorespaces Results of recursive refinement segment classifications using two models\relax }}{92}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.7}{\ignorespaces Results of Down Scaled Images\relax }}{96}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.8}{\ignorespaces Effect of Colour\relax }}{99}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.1}{\ignorespaces Functional Requirements\relax }}{104}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.1}{\ignorespaces FCN Resulys \parencite {fcn}\relax }}{150}
+\contentsline {table}{\numberline {A.1}{\ignorespaces FCN Resulys \parencite {fcn}\relax }}{152}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.2}{\ignorespaces Results\relax }}{151}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Results\relax }}{153}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

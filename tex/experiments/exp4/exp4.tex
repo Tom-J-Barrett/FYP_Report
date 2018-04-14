@@ -13,7 +13,7 @@ was used for this experiment, which will be analysed below.
 
 This dataset contrasts with \parencite{yanaiFood} as they used the UECFOOD100 dataset.
 The food-101 dataset was chosen due to larger number of images per class.
-The UECFOOD100 dataset has 100 images per class while the food-101 dataset has 1000 images per class.
+The UECFOOD100 dataset has 100 images per class while the food-101 dataset has 1,000 images per class.
 The dataset must be structured so that
 there is a separated directory for each class with the directory name as the class
 name. These directories should contain all the images for this class. 
@@ -34,7 +34,7 @@ entire network during training \parencite{retrainInception}.
 After, the bottlenecks are created, the training can be completed. The images
 are split into three sub directories of training, testing and validation. By
 default, these images are split into percentages of 80\%, 10\% and 10\%
-respectively. The model is trained at a default of 4000 steps. 
+respectively. The model is trained at a default of 4,000 steps. 
 
 At the final stage of the script, the model is run on a batch of test images not
 yet seen and a final test accuracy is displayed. This can be seen in the Script
@@ -100,7 +100,15 @@ tf.logging.info('Final test accuracy = %.1f%% (N=%d)' %
 
 \tocless\subsection{Results}
 The final test Top-1 accuracy for this retrained model was 54.8\%.
-For example, an image of pizza Figure \ref{fig:pizza}, was fed into the model with the following results:
+These results are calculated by passing an unseen batch of test images through the model.
+The 95\% confidence interval of the Top-1 accuracy of this model is between 45.1\% and 64.5\%.
+This confidence interval was calculated by Equation \ref{eqn:ci}.
+
+\begin{equation}\label{eqn:ci}
+    e \pm 1.96\sqrt{e(1-e) \over n}
+\end{equation}
+
+An image of pizza Figure \ref{fig:pizza}, was fed into the model with the following results:
 \begin{itemize}
     \item{pizza 0.925}
     \item{pancakes 0.008}

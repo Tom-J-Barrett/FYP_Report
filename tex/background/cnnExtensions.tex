@@ -5,14 +5,16 @@
 In the previous section where an overview of CNN's was addressed, there was a discussion focused on filtering where features were searched for across the images.
 This filtering resulted in windows sliding across the image, looking for common features.
 This window is called the receptive field, and this is the section of the image that is being looked at.
-
 As the image is convoluted and processed through the network, the changed image can be called the kernel.
 The kernel of the CNN represents what features are extracted from the image throughout the network.
 
-\tocless\subsection{Activation Function}
+\tocless\subsection{Activation and Loss Function}
 The activation function used in a neural network calculates the output for a neuron.
 The most commonly used activation function in CNN's is the ReLu activation function or the rectified linear unit \parencite{handsOnML}.
-The SoftMax activation function is sometimes used for the output layer \parencite{handsOnML}.
+The SoftMax activation function is sometimes used for the output layer.
+
+The loss function in a neural network simply calculates the magnitude the of the error.
+It represents how different the result obtained and the result calculated are.
 
 \tocless\subsection{Dropout}
 Dropout is a type of regularisation technique used to prevent overfitting in a network \parencite{handsOnML}.

@@ -27,7 +27,7 @@ response to the application in the form of a prediction.
 \section{Issues}
 Some minor issues were overcame during the development of this prototype application such as:
 \begin{enumerate}
-	\item{Delay in image transfer: The time taken for an image to be sent to the server, be classified and return a response to the Android application was at around 12 seconds on a 4G network. This time delay was too long. In order to solve this issue, the size of the image was reduced from approimately 3000x4000 pixels to an image size of 300x400 pixels. This resulted in the time delay reducing to 3 or 4 seconds.}
+	\item{Delay in image transfer: The time taken for an image to be sent to the server, be classified and return a response to the Android application was at around 12 seconds on a 4G network. This time delay was too long. In order to solve this issue, the size of the image was reduced from approimately 3,000x4,000 pixels to an image size of 300x400 pixels. This resulted in the time delay reducing to 3 or 4 seconds.}
 	\item{Service failure on backend: The backend instance service was stopping in a seemlingly random fashion. This was due to an incomoatibility with Python FLASK and the nohup (ignores the hangup signal in Linux) command used to deploy the FLASK application. To resolve this issue screen was used to run the app using a simple command 'python server.py'.}
 	\item{Perfomance issues: The Android application was facing some performance issues when displaying the food logs. The UI would temporarily freeze. This was because too much work was being carried out on the main thread. To combat this, another thread was created to complete the task.}
 \begin{enumerate}

@@ -433,6 +433,20 @@ The Nutritionix API is an API used to collect nutritional information \parencite
 This project used this API to collect calorie information on a food item.
 The free 'Hacker' account can support up to 10 active users.
 
+\tocless\subsection{Software Quality Attributes}
+Two main software quality attributed were focused on during the implementation of this prototype application. These were extensibility and maintainability.
+
+Extensibility defines how easy it is to extend the functionality of the system.
+There were certain places where the system developed is highly extensible.
+A factory class was used to get the data access object that was used to store information in the application.
+This factory class has a factory method that returns a DAO object which is an interface.
+If the developer of the system needs to create an alternative way to store data in the application, they can create an object that implements the DAO interface and replace one line of code in the factory class.
+A factpry class was also used to create a Host object with the same rationale.
+
+Manitainability defines how easy it is to maintain a system.
+The system is maintainable for many reasons.
+These reasons include low coupling, high cohesion and readability.
+
 
 
 
