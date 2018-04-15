@@ -11,7 +11,7 @@ The template followed for all experiments in chapters three, four and five is ou
 \centering
 \caption{Experiment Template}
 \label{expTemplate}
-\begin{tabular}{|p{3cm}|p{11cm}|}
+\begin{tabular}{|p{2cm}|p{10.5cm}|}
 \hline
 \textbf{Section}   & \textbf{Rationale}                \\ \hline
 Objective             & An explanation of the purpose of the experiment along with how it is carried out. \\ \hline
@@ -45,25 +45,40 @@ There are parameters that can be changed in the code that creates a TensorFlow m
 These parameters were changed to see how the model accuracy would be affected.
 In addition to this, change in dataset size was explored in relation to model accuracy.
 
-\section{Retrain ImageNet Inception V3 Model}
+\section{Experiment 1: Retrain ImageNet Inception V3 Model}
 \label{inception}
 \input{tex/experiments/exp4/exp4.tex}
 
-\section{Retrain with Extended Dataset}
+\section{Experiment 2: Retrain with Extended Dataset}
 \label{extended}
 \input{tex/experiments/exp5/exp5.tex}
 
-\section{Retrain with Parameter Tuning}
+\section{Experiment 3: Retrain with Parameter Tuning}
 \label{parameterTuning}
 \input{tex/experiments/exp6/exp6.tex}
 
-\section{MobileNet}
+\section{Experiment 4: MobileNet}
 \label{mobilenet}
 \input{tex/experiments/exp8/exp8.tex}
 
-\section{Food-101+ subset}
+\section{Experiment 5: Food-101+ subset}
 \label{subset}
 \input{tex/experiments/exp13/exp13}
+
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{|p{3.5cm}|p{9cm}|}
+\hline
+\textbf{Experiment}                               & \textbf{Key Findings}                                                                                                                                \\ \hline
+Experiment 1 & A model was trained on the Food-101 dataset using the Inception-V3 architecture with a Top-1 accuracy of 54.8\%.                                     \\ \hline
+Experiment 2       & A model was trained on the Food-101+ dataset using the Inception-V3 architecture with a Top-1 accuracy of 54.8\%.                                    \\ \hline
+Experiment 3       & A model was trained on the Food-101+ dataset using the Inception-V3 architecture with a Top-1 accuracy of 66.3\% and a Top-5 accuracy of 85.96\%.    \\ \hline
+Experiment 4                          & A model was trained on the Food-101+ dataset using the MobileNet architecture with a Top-1 accuracy of 50.2\%                                        \\ \hline
+Experiment 5              & A model was trained on a subset Food-101+ dataset using the Inception-V3 architecture with a Top-1 accuracy of 92.6\% and a Top-5 accuracy of 100\%. \\ \hline
+\end{tabular}
+\end{table}
 
 \section{Conclusion}
 The focus of this experiment has been to train TensorFlow models using the Inception-V3 architecture under various constraints.
@@ -77,31 +92,31 @@ This exceeded or was comparable to the other methods researched.
 \chapter{Empirical Studies Part 2}
 The purpose of this chapter is to analyse the models trained previously to gain understanding and applicability to the problem statement.
 
-\section{Sliding Window}
+\section{Experiment 6: Sliding Window}
 \label{slidingWindow}
 \input{tex/experiments/exp7/exp7.tex}
 
-\section{Recursive Refinement}
+\section{Experiment 7: Recursive Refinement}
 \label{RR}
 \input{tex/experiments/exp9/exp9.tex}
 
-\section{Impact of Background}
+\section{Experiment 8: Impact of Background}
 \label{background}
 \input{tex/experiments/exp10/exp10.tex}
 
-\section{Alternative Test Image}
+\section{Experiment 9: Alternative Test Image}
 \label{alternative}
 \input{tex/experiments/exp11/exp11.tex}
 
-\section{Analysing Results of Recursive Refinement Further}
+\section{Experiment 10: Analysing Results of Recursive Refinement Further}
 \label{rrAnalyse}
 \input{tex/experiments/exp16/exp16.tex}
 
-\section{Scaling Down Images}
+\section{Experiment 11: Scaling Down Images}
 \label{scale}
 \input{tex/experiments/exp12/exp12.tex}
 
-\section{Effect of Colour}
+\section{Experiment 12: Effect of Colour}
 \label{colour}
 \input{tex/experiments/exp14/exp14.tex}
 

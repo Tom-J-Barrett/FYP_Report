@@ -1,4 +1,4 @@
-\subsection*{Objective}
+\tocless\subsection{Objective}
 As the Food-101 dataset mostly consisted of meals \parencite{food101}, it was decided to extend the
 dataset slightly by including some single foods such as:
 \begin{itemize}
@@ -22,7 +22,7 @@ The retrain.py script was run on the Food-101+ dataset as in
 \centering
 \caption{Retrain with Extended Dataset}
 \label{my-label}
-\begin{tabular}{|l|p{9cm}|}
+\begin{tabular}{|l|p{8cm}|}
 \hline
 \textbf{Network Architecture} & Inception-V3           \\ \hline
 \textbf{Dataset}              & Food-101+ dataset \\ \hline
@@ -32,10 +32,10 @@ The retrain.py script was run on the Food-101+ dataset as in
 \end{tabular}
 \end{table}
 
-\subsection*{Results}
-For this model, an accuracy of 55.3\% was achieved.
-
-For example, an image of a banana (Figure \ref{fig:banana}) was fed into the model with
+\tocless\subsection{Results}
+For this model, a Top-1 accuracy of 55.3\% was achieved.
+The 95\% confidence interval of the Top-1 accuracy of this model is between 45.9\% and 64.7\%.
+A image of a banana (Figure \ref{fig:banana}) was fed into the model with
 the following results:
 \begin{itemize}
     \item{banana 0.9962}
@@ -52,7 +52,7 @@ the following results:
     \label{fig:banana}
 \end{figure}
 
-\subsection*{Analysis}
+\tocless\subsection{Analysis}
 The slight increase in accuracy in \ref{inception}, from 54.8\% to 55.3\%, makes
 sense. Since the model was pre-trained using the ImageNet dataset and all the
 new images used were from ImageNet, we would expect a higher classification

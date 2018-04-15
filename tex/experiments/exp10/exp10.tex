@@ -1,4 +1,4 @@
-\subsection*{Objective}
+\tocless\subsection{Objective}
 As we can see in section \ref{slidingWindow}, using sliding windows to classify many sections
 of an image, there were some cases where some unexpected predictions were made.
 Due to this, the decision was made to analyse the effect the background of the
@@ -6,9 +6,9 @@ image on its classification. The sliding window code was then ran on a new
 image. This new image was the same fruit bowl as used previously but the
 background was filled in as white as per Figure \ref{fig:filledFruit}.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
-    \includegraphics{fruitFillBg}
+    \includegraphics[scale=0.75]{fruitFillBg}
     \caption{Bowl of fruit with background removed}
     \label{fig:filledFruit}
 \end{figure}
@@ -33,8 +33,8 @@ background was filled in as white as per Figure \ref{fig:filledFruit}.
     \end{tabular}
 \end{table}
 
-\subsection*{Results}
-\subsubsection*{Grid}
+\tocless\subsection{Results}
+\tocless\subsubsection{Grid}
 For grid-based sliding window approach, the results turned out to be less
 successful than with the background. In this experiment, fourteen out of fifteen
 of top-1 classification were of an expected food type rather than fifteen out of
@@ -44,20 +44,21 @@ to a top-5 accuracy on a few occasions it was never predicted to a top-1
 accuracy. The contrast between the image results can be seen in Table
 \ref{comparisionFruitTable}.
 
-\subsubsection*{Row}
+\tocless\subsubsection{Row}
 The row-based sliding window again had worse result than its counterpart, with
 zero out of four correct classifications as opposed to one. In this case, an
 orange appeared at top-5 accuracy once. The most common prediction was ice-cream
 which appeared at top-1 accuracy in three out of four instances.
 
-\subsubsection*{Column}
+\tocless\subsubsection{Column}
 In contrast to our previous two methods of sliding window, this method
 outperformed its counterpart with correct predictions of all five windows while
 before we only had four out of five. In this experiment, an apple was predicted
 four times and a grape once, with all correct fruits appearing to top-5
 accuracy.
 
-\subsection*{Analysis}
-It is quite interesting that removing the background to the image reduced our
-accuracy overall. Many white foods were classified instead which makes sense due
+\tocless\subsection{Analysis}
+Surprisingly, removing the background of the image reduced the prediction
+accuracy.
+Many white foods were classified instead which makes sense due
 the impact of colour expected.

@@ -4,14 +4,19 @@ Mockito is a framework for JUnit that was also utilised.
 Mockito makes mocks of objects for testing.
 This is very useful to test database instances as you can mock an SqlLite Database object.
 
-\subsection*{Unit Tests}
+\tocless\subsection{Unit Tests}
+Evidence of some unit tests written for this prototype application can be seen in Figures \ref{lst:test1}, \ref{lst:test2} and \ref{lst:test3}.
+Figure \ref{fig:unitTests} also displays the automated tests that were run from Android Studio.
+
 \begin{figure}[h]
     \includegraphics[scale=0.5]{UnitTests}
     \caption{Automated Unit Tests}
     \label{fig:unitTests}
 \end{figure}
 
-\subsubsection*{Test to ensure FoodLog object stores information correctly}
+\begin{figure}[h]
+\caption{Test to ensure FoodLog object stores information correctly}
+\label{lst:test1}
 \begin{lstlisting}[style=Java]
 @Before
 public void setUp() {
@@ -26,8 +31,11 @@ public void shouldAssertCorrectValues() {
     assert id == foodLog.getId();
 }
 \end{lstlisting}
+\end{figure}
 
-\subsubsection*{Test to ensure Host object stores information correctly}
+\begin{figure}[h]
+\caption{Test to ensure Host object stores information correctly}
+\label{lst:test2}
 \begin{lstlisting}[style=Java]
 @Before
     public void setUp() {
@@ -47,8 +55,11 @@ public void shouldAssertCorrectValues() {
     assert this.urlString.equals(host.getUrl());
 }
 \end{lstlisting}
+\end{figure}
 
-\subsubsection*{Test to ensure DAO object stores and removes data correctly}
+\begin{figure}[h]
+\caption{Test to ensure DAO object stores and removes data correctly}
+\label{lst:test3}
 \begin{lstlisting}[style=Java]
 @Before
 public void setup() {
@@ -89,3 +100,4 @@ private void setTestLog() {
     });
 }
 \end{lstlisting}
+\end{figure}

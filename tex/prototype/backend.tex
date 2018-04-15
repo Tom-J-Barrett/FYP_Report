@@ -1,7 +1,11 @@
-\subsection*{Python Flask}
+\tocless\subsection{Python Flask}
 
-\subsection*{Implementation}
-\subsubsection*{Backend service code}
+\tocless\subsection{Implementation}
+Figures \ref{lst:backendCode} and \ref{lst:labelBackend} document the code used to implement the backend service.
+
+\begin{figure}[h]
+\caption{Backend service code}
+\label{lst:backendCode}
 \begin{lstlisting}[style=Python]
 import base64
 import label_image
@@ -32,8 +36,11 @@ def classify():
 if _name_ == '_main_':
     app.run(host='0.0.0.0', threaded=True)
 \end{lstlisting}
+\end{figure}
 
-\subsubsection*{Method called from 'label\_image.py'}
+\begin{figure}[h]
+\caption{Method called from 'label\_image.py' - adapted from \parencite{retrainInception}}
+\label{lst:labelBackend}
 \begin{lstlisting}[style=Python]
 def runModel(file_name):
   #hardcoded values of image size and model path
@@ -83,21 +90,24 @@ def runModel(file_name):
   final_results = [top5_results, results]
   return final_results
 \end{lstlisting}
+\end{figure}
 
-\subsection*{Deployment}
+\tocless\subsection{Deployment}
 In order to deploy the Flask application to an AWS EC2 instance the following steps had to be followed:
 
 \begin{itemize}
-    \item{Upload the output\_graph.pb file (Tensorflow model), the output\_labels.txt file and the source code to the server using SFTP}
-    \item{SSH into the server}
-    \item{Create a folder called 'images' in the home directory to store uploads images}
-    \item{Place model and label files into folders called 'models' and 'labels' respectively}
-    \item{Ensure Tensorflow, NOHUP (Ignores the hangup signal in Linux) Python and Flask are installed on the server}
-    \item{Ensure no processes are running on port 5000 using the command 'lsof -i :5000'}
-    \item{Run the server.py code using the command 'nohup python server.py \&'}
+    \item{Upload the output\_graph.pb file (Tensorflow model), the output\_labels.txt file and the source code to the server using SFTP.}
+    \item{SSH into the server.}
+    \item{Create a folder called 'images' in the home directory to store uploads images.}
+    \item{Place model and label files into folders called 'models' and 'labels' respectively.}
+    \item{Ensure Tensorflow, Python and Flask are installed on the server.}
+    \item{Ensure no processes are running on port 5000 using the command 'lsof -i :5000'.}
+    \item{Use the command 'screen'.}
+    \item{Run the server.py code using the command 'python server.py'.}
+    \item{Use the commands CTRL+A and CRTL+D to exit screen.}
 \end{itemize}
 
-\subsubsection*{AWS Architecture}
+\tocless\subsubsection{AWS Architecture}
 The application interfaces with an Amazon Web Services (AWS) server called an EC2 instance.
 In order to keep the application secure AWS was used to provide a secure architecture.
 A Virtual Private Cloud (VPC) was created to host the instances.

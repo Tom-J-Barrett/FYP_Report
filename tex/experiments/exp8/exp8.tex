@@ -1,4 +1,4 @@
-\subsection*{Objective}
+\tocless\subsection{Objective}
 Since the end goal for this project is to have a smartphone
 application that a user can use to keep track of their calorie measurement,
 there are a couple of options in how to achieve this. Firstly, an image can be
@@ -9,7 +9,7 @@ Secondly, a model can be stored on the phone for computation. Transfer learning 
 \centering
 \caption{MobileNet}
 \label{my-label}
-\begin{tabular}{|l|p{9cm}|}
+\begin{tabular}{|l|p{8cm}|}
 \hline
 \textbf{Network Architecture} & MobileNet           \\ \hline
 \textbf{Dataset}              & Food-101+ dataset \\ \hline
@@ -17,20 +17,25 @@ Secondly, a model can be stored on the phone for computation. Transfer learning 
 \end{tabular}
 \end{table}
 
-\subsection*{Script}
-The retrain.py script \parencite{retrainInception} was used, with a different
-command parameter.
+\tocless\subsection{Script}
+The retrain.py script \parencite{retrainInception} was used with a different
+command parameter as in Figure \ref{lst:mobilenetCommand}.
 
+\begin{figure}[h]
+\caption{Train Model using MobileNet Architecture Command}
+\label{lst:mobilenetCommand}
 \begin{lstlisting}[style=Command]
 python tensorflow/examples/image_retraining/retrain.py \ --image_dir
 ~/dataset_directory \ --architecture mobilenet_1.0_224 \
 --how_many_training_steps 10000 \ --learning_rate 0.1
 \end{lstlisting}
+\end{figure}
 
-\subsection*{Results}
-The final test accuracy of this model came to 50.2\%.
+\tocless\subsection{Results}
+The final Top-1 accuracy of this model came to 50.2\%.
+The 95\% confidence interval of the Top-1 accuracy of this model is between 40.8\% and 59.6\%.
 
-\subsection*{Analysis}
+\tocless\subsection{Analysis}
 There was a decrease of 16.1\% in this model to the highest accuracy from
 \ref{mobilenet}. This is due to the smaller architecture which is aimed to be faster
 and smaller with an expected decrease in accuracy.

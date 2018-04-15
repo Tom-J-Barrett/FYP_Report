@@ -1,4 +1,4 @@
-\subsubsection*{Gradient Descent and backpropagation}
+\tocless\subsubsection{Gradient Descent and backpropagation}
 Gradient Descent is an algorithm used to find the optimal weights to produce the
 smallest prediction error. It is used to overcome problems of non linearly
 separable classes. Gradient descent search selects a random weight value and
@@ -36,10 +36,34 @@ Backpropagation works by starting at the output layer of the network and going
 back through previous hidden layers, updating weights as it goes i.e. it propagates back through the network, updating the weights to try and reduce the error.
 
 \parencite{MLANN} defined a walk through of the backpropagation algorithm.
-For every value of \[\vec{x}, \vec{t}\], in the training set where x is a vector of inputs and t is a vector of output values to act a target:
+For every value of Equation \ref{eqn:bp1}, in the training set where x is a vector of inputs and t is a vector of output values to act a target:
 \begin{itemize}
-	\item{Run x through the network and output \[o_{u}\]}
-	\item{For each output k, calculate the error by: \[\delta_{k} \leftarrow o_{k}(1 - o_{k})(t_{k} - o_{k}) \]}
-	\item{For every hidden unit, calculate the error by: \[\delta_{h} \leftarrow o_{h}(1 - o_{h}) \sum_{k \in outputs}   w_{kh}\delta_{k}\]}
-	\item{Updates weights by: \[w_{ji} \leftarrow w_{ji} + \Delta w_{ji}\] where \[\Delta w_{ji} = \n \delta_{j} x_{ji}\]}
+	\item{Run x through the network and output Equation \ref{eqn:bp2}.}
+	\item{For each output k, calculate the error by Equation \ref{eqn:bp3}.}
+	\item{For every hidden unit, calculate the error by Equation \ref{eqn:bp4}.}
+	\item{Updates weights by Equation \ref{eqn:bp5} where Equation \ref{eqn:bp5} is true.}
 \end{itemize}
+
+\begin{equation}\label{eqn:bp1}
+    \vec{x}, \vec{t}
+\end{equation}
+
+\begin{equation}\label{eqn:bp2}
+    o_{u}
+\end{equation}
+
+\begin{equation}\label{eqn:bp3}
+    \delta_{k} \leftarrow o_{k}(1 - o_{k})(t_{k} - o_{k}) 
+\end{equation}
+
+\begin{equation}\label{eqn:bp4}
+    \delta_{h} \leftarrow o_{h}(1 - o_{h}) \sum_{k \in outputs}   w_{kh}\delta_{k}
+\end{equation}
+
+\begin{equation}\label{eqn:bp5}
+    w_{ji} \leftarrow w_{ji} + \Delta w_{ji}
+\end{equation}
+
+\begin{equation}\label{eqn:bp6}
+    \Delta w_{ji} = \delta_{j} x_{ji}
+\end{equation}

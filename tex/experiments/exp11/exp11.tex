@@ -1,12 +1,12 @@
-\subsection*{Objective}
+\tocless\subsection{Objective}
 In our previous sliding window-oriented experiments, we had only used a
 single image. In order to see whether this image had biases unknown
 to us, another fruit bowl image had to be tested. This image was selected as
 fruit took up a larger portion of the image as seen in Figure \ref{fig:newFruit}.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
-    \includegraphics[scale=0.5]{fruitbowl2}
+    \includegraphics[scale=0.4]{fruitbowl2}
     \caption{Alternative Bowl of fruit}
     \label{fig:newFruit}
 \end{figure}
@@ -26,8 +26,8 @@ fruit took up a larger portion of the image as seen in Figure \ref{fig:newFruit}
     \end{tabular}
 \end{table}
 
-\subsection*{Results}
-\subsubsection*{Grid}
+\tocless\subsection{Results}
+\tocless\subsubsection{Grid}
 The performance of this experiment was slightly worse than with the previously
 used image. When the grid based sliding window was executed on Figure
 \ref{fig:newFruit}, fourteen out of fifteen predictions had an expected value.
@@ -35,16 +35,16 @@ Out of the fourteen predictions orange was not predicted to top-1 accuracy at
 all. This can be seen, in comparison to previously used image, in Table
 \ref{newFruitTable}.
 
-\subsubsection*{Row}
+\tocless\subsubsection{Row}
 In the column based window for the new fruit image, the results were not very
 successful as has been the trend for most row based classification. Two out of
 four predictions had an expected value at top-1 accuracy.
 
-\subsubsection*{Column}
+\tocless\subsubsection{Column}
 The column based approach had a similar result to its counterpart in that only
 one of its predictions was unexpected. Although, due  to the size of the new
 image, another column was created and thus has a better overall accuracy.
 
-\subsection*{Analysis}
+\tocless\subsection{Analysis}
 A possible reason that an orange was not classified in any of these images is
 because in Figure \ref{fig:newFruit}, a more mandarin food is displayed.

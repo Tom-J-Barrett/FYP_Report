@@ -1,4 +1,4 @@
-\subsection*{Overview}
+\tocless\subsection{Overview}
 In the preious experiments, I have looked at the one-shot approach to food image
 classification. That is, the model will give a prediction of the most likely
 food item in that image. This is a problem when there are multiple food in an
@@ -11,17 +11,21 @@ sliding window would move across the image and classify the segment of the image
 in the window. I had three options for window sliding shape as defined by a
 command line argument.
 
+\begin{figure}
+\caption{Helper Functions}
+\label{lst:helperFunctions}
 \begin{lstlisting}
 python sliding_window.py --image=~/image_dir --window_shape grid
 \end{lstlisting}
+\end{figure}
 
-\subsection*{Libraries}
+\tocless\subsection{Libraries}
 For this experiment Tensorflow provided the classification of each segment while
 also helping with resizing along with Numpy. OpenCv was used to implement the
 sliding window as per \parencite{slidingWindowTut}.
 
-\subsection*{Results}
-\subsubsection*{Grid based window}
+\tocless\subsection{Results}
+\tocless\subsubsection{Grid based window}
 The grid based window resulted in fifteen separate classification. As seen in
 \ref{figure:fruit}, there are multiple fruits in the image. Of these fruits, our
 model is trained on four, apple, banana, orange and grapes. This method
@@ -59,7 +63,7 @@ this method was 16.1 seconds.
 	\end{tabular}
 \end{table}
 
-\subsubsection*{Column based window}
+\tocless\subsubsection{Column based window}
 The column based window approach had five total predictions and ran for a total
 of 13 seconds.
 
@@ -76,7 +80,7 @@ of 13 seconds.
 		Other     & 1                     
 	\end{tabular}
 \end{table}
-\subsection*{Analysis}
+\tocless\subsection{Analysis}
 These results are very interesting because while a banana was only predicted to
 Top-1 accuracy once in grid based, once in column based and zero times in row
 based, if the whole image is ran through the model, a banana is at the Top-1 accuracy.

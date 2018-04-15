@@ -1,34 +1,34 @@
-\subsection*{Objective}
+\tocless\subsection{Objective}
 In this experiment, it was decided to look into how scaling down the size of the image would influence its classification. Three images were scaled down to 10\% of their size for this purpose, Figure \ref{fig:bananaPreRes}, Figure \ref{fig:apple_piePreRes} and Figure \ref{fig:pizzaPreRes}. Each of these images were run through the model before and after image resizing and the predictions were recorded.
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
-    \includegraphics[scale=0.08]{banana1}
+    \includegraphics[scale=0.05]{banana1}
     \caption{Banana Image Pre-Resolution}
     \label{fig:bananaPreRes}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
-    \includegraphics[scale=2]{apple_pie - sourced from https://www.bettycrocker.com/recipes/scrumptious-apple-pie}
-    \caption{Apple Pie Image Pre-Resolution}
+    \includegraphics{apple_pie}
+    \caption{Apple Pie Image Pre-Resolution - sourced from https://www.bettycrocker.com/recipes/scrumptious-apple-pie}
     \label{fig:apple_piePreRes}
 \end{figure}
 
-\begin{figure}	
+\begin{figure}[h]
 	\centering
-    \includegraphics[scale=0.08]{pizza1}
+    \includegraphics[scale=0.05]{pizza1}
     \caption{Pizza Image Pre-Resolution}
     \label{fig:pizzaPreRes}
 \end{figure}
 
-\subsection*{Network Architecture}
+\tocless\subsection{Network Architecture}
 Inception V-3 architecture. Parameter tuned model was used for this.
 
-\subsection*{Dataset}
+\tocless\subsection{Dataset}
 Food-101 extended dataset.
 
-\subsection*{Results}
+\tocless\subsection{Results}
 The results of the images before and after were somewhat contrasting as seen in Table \ref{scaledImages}.
 The 'Top 1' notation in the table suggests that the food was predicted as the number one prediction. The decimal value is the probability of that food type being the correct classification.
 
@@ -45,7 +45,7 @@ Pizza      & Top 1 : 0.9753   & Top 1 : 0.9705 \\ \hline
 \end{tabular}
 \end{table}
 
-\subsection*{Analysis}
+\tocless\subsection{Analysis}
 As we can see in Table \ref{scaledImages}, the banana (Figure \ref{fig:bananaPreRes}) has a very similar prediction and probability.
 This would indicate that the classifier does not need clear quality images for bananas but maybe shape, texture and colour are important factors.
 

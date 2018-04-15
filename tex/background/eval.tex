@@ -2,7 +2,6 @@ There are various metrics that can be used for evaluating the output
 of a classifier or segmentation algorithm, many of which we have seen in previous
 sections. These metrics will be examined below.
 
-\subsection*{Research into Diagnosing Errors in Object Detectors}
 There has been some research into the question of how to evaluate object
 detectors, one of which be discussed in detail \parencite{diagnosingErrors}.
 This paper in question " analyzes the influences of object characteristics on
@@ -41,38 +40,38 @@ detectors as follows:
 	\item{More detailed analysis}
 \end{itemize}
 
-% \subsection*{Detection Average Precision}
+% \tocless\subsection{Detection Average Precision}
 % The average detection accuracy of a system. See \ref{fig:dap}.
 
-% \subsection*{Mean Average Precision}
+% \tocless\subsection{Mean Average Precision}
 % The mean accuracy of a system across all results. See \ref{fig:MAP}.
 		
-% \subsection*{Distribution of top-ranked false positives}
+% \tocless\subsection{Distribution of top-ranked false positives}
 % This metric is used to tell where most errors occur when false positives are
 % evident. These errors are broken down into four categories of localization,
 % similar objects, background confusion and others. See \ref{fig:DFP}.
 
-% \subsection*{Segmentation Mean Accuracy}
+% \tocless\subsection{Segmentation Mean Accuracy}
 % This is the mean accuracy of segmentation. See \ref{fig:SMP}.
 
-% \subsection*{Per-category segmentation accuracy}
+% \tocless\subsection{Per-category segmentation accuracy}
 % This metric measures the accuracy of segmentation at a category level. See \ref{fig:PCATSA}.	
 
-% \subsection*{Per-class segmentation accuracy}
+% \tocless\subsection{Per-class segmentation accuracy}
 % The accuracy of segmentation at a class level is analysed. See \ref{fig:PCLASSA}.
 
-\subsection*{Top-1 and Top-5 Accuracy}
+\tocless\subsection{Top-1 and Top-5 Accuracy}
 When a classifier is given an image it normally responds with a list of
 predictions along with a decimal representation of the likelihood that it is of
 that class. The Top-1 accuracy is the top valued prediction and Top-5 accuracy
 is the top 5 predictions.
 
-\subsection*{Cross-Validation}
+\tocless\subsection{Cross-Validation}
 When cross-validation is utilised, the test set is used for gradient descent while a separate validation set is used to measure error \parencite{MLANN}.
 K-fold cross-validation is where k separate validation sets are created.
 These k different validation sets are used to test the model and the results are averaged.
 
-\subsection*{Confusion Matrix}
+\tocless\subsection{Confusion Matrix}
 A proven, very successful way to measure how well a classifier is performing is by using a confusion matrix \parencite{handsOnML}.
 A confusion matrix simply counts the number of times an object is classifier correctly or incorrectly as in Table \ref{cm}.
 

@@ -1,10 +1,8 @@
 Methods outside of CNNs and SVMs are outlined below.
 A summary of the results can be seen in Table \ref{other_dietary_summary} along with SVM method results.
 
-\subsubsection*{Large Scale Learning for Food Image Classification}
 \parencite{LSL_2015} proposed a food image recognition system using a Bag of Features model.
-This study used over 5000 images separated into 11 classes.
-
+This study used over 5,000 images separated into 11 classes.
 A clustering algorithm was employed on this study before classification.
 For the classification step, experiments were carried out using different methods:
 \begin{itemize}
@@ -18,13 +16,11 @@ An accuracy of 78\% isn't very promising for such a small number of classes.
 Approximately 500 images were used per class for each of the 11 classes.
 \parencite{LSL_2015} also utilised a k-means clustering algorithm but very little information on the reasoning and results of using this was documented.
 
-% % \subsubsection*{Promising Approaches of Computer-supported Dietary Assessment and Management: 
+% % \tocless\subsubsection{Promising Approaches of Computer-supported Dietary Assessment and Management: 
 % % Current Research Status and Available Applications}
 % % \parencite{arens2015promising}
 
-\subsubsection*{A Personal Assistive System for Nutrient Intake Monitoring}
 Similar to other approaches seen thus far, \parencite{personalAssistive} employs the use of the users thumb in the image for size estimation.
-
 Once a photo has been taken by the user with their thumb present, the system segments the food on the plate using shape, colour and texture detectors.
 The system then classifies the food type based on these features.
 
@@ -32,7 +28,6 @@ In this paper, it was decided to allow the users to change the prediction by the
 The thumb of each user is calibrated upon first use of the application so that size estimation can be as accurate a possible \parencite{personalAssistive}.
 Very little information on the classification aspect of this paper was documented which would make the study very difficult to replicate. 
 
-\subsubsection*{Toward Dietary Assessment via Mobile Phone Video Camera}
 Another study into using computer vision for dietary assessment was carried out by \parencite{chen2010toward}. They had a unique medium for the topic by using a video of the dishes in question and extracting frames from these videos to get the food from different angles.
 
 \parencite{chen2010toward} then formed a region of interest in the image, where there were the most food items and extracted colour and image features.
@@ -42,7 +37,6 @@ The Star detector and SURF are both used for the detection of "interesting keypo
 
 This research team also uses k-means clustering to build a bag-of-words model.
 Very little information on the implmentation for this clustering algorithm was documented.
-
 The system had results as seen below across 20 categories using five images out of each video taken of the food:
 \begin{itemize}
 	\item{MSER - 95\%}
@@ -51,17 +45,15 @@ The system had results as seen below across 20 categories using five images out 
 \end{itemize}
 While the results seem quite impressive for this classifier, it was not documented in great detail and it could be speculated that this system would be time consuming due to classifying five images and collating the results.
 
-% \subsubsection*{Novel Technologies for Assessing Dietary Intake: Evaluating the
+% \tocless\subsubsection{Novel Technologies for Assessing Dietary Intake: Evaluating the
 % Usability of a Mobile Telephone Food Record Among Adults and Adolescents}
 % \parencite{novelTech}
 
 
-% % \subsubsection*{An Overview of the Technology Assisted Dietary Assessment Project at Purdue University}
+% % \tocless\subsubsection{An Overview of the Technology Assisted Dietary Assessment Project at Purdue University}
 % % \parencite{khanna2010overview}
 
-\subsubsection*{Merging dietary assessment with the adolescent lifestyle}
 \parencite{schap2014merging} proposed a system used by smart phones which sends an image of a user's food to a back end system for computation.
-
 Once this has been completed, the image is segmented, features are extracted from each segment and these segments are classified.
 Colour and texture features are used for classification.
 The user can confirm or amend predictions of the food type.
@@ -69,5 +61,5 @@ The user can confirm or amend predictions of the food type.
 Size estimation is also an important aspect of this system.
 In contrast to previous studies, \parencite{snap} uses food type shape and then those shape's geometric properties to estimate size.
 
-This study produced results of 94\% out of 32 test cases.
+\parencite{schap2014merging} produced results of 94\% out of 32 test cases.
 Documentation of the classification module is very sparse in this paper.
