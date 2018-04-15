@@ -1,7 +1,7 @@
 \tocless\subsection{Objective}
 In the previous experiments, the one-shot approach to food image
 classification has been looked at. That is, the model will give a prediction of the most likely
-food item in that image. This is a problem when there is a composite image i.e are multiple foods in an
+food item in that image. This is a problem when there is a composite image i.e. are multiple foods in an
 image, see Figure \ref{fig:fruit}. There are a few options to combat this problem. Firstly, one could detect
 objects in the image, segment the image according to these objects and then run
 each segment through the model.
@@ -60,7 +60,7 @@ There are three options for window shape:
   \begin{minipage}[b]{0.5\linewidth}
     \centering
     \includegraphics[width=.75\linewidth]{fruitCO}
-    \caption{Fruit with Color Overlay}
+    \caption{Fruit with Colour Overlay}
     \label{fig:fruitOverlay}
     \vspace{4ex}
   \end{minipage}%%
@@ -83,7 +83,7 @@ sliding window as per \parencite{slidingWindowTut}.
 There were four main elements to the script. Firstly, extracting a window to be
 classified (Figure \ref{lst:extractWindow}). Secondly, resizing the image to be compatible with the TensorFlow model (Figures \ref{lst:resizeWindow}} and \ref{lst:resizeImage}). Thirdly, running the window through the TensorFlow model (Figure \ref{lst:runModel}) and finally
 saving a new image with a coloured overlay of classifications (Figure \ref{lst:colourOverlay}).
-In regards to Figure \ref{lst:colourOverlay}, as seen in Figure \ref{fig:fruitOverlay}, each square represents a window and
+In regard to Figure \ref{lst:colourOverlay}, as seen in Figure \ref{fig:fruitOverlay}, each square represents a window and
 each colour is for a different classification. Blue is for an apple, yellow for
 banana, green for grape, white for orange and black if an unexpected prediction
 is made.
@@ -224,8 +224,7 @@ accuracy. Only one Top-1 prediction did not contain a correct fruit.
 
 \tocless\subsection{Analysis}
 These results raise some questions because while a banana was only predicted to
-Top-1 accuracy once in grid based, once in column based and zero times in row
-based approach, if the whole image is passed through the model, a banana is at the Top-1 accuracy.
+Top-1 accuracy once in grid based, once in column based and zero times in row-based approach, if the whole image is passed through the model, a banana is at the Top-1 accuracy.
 A possible reason for this could be that the overall shape of a banana is very distinctive but when sliding windows are used, the whole banana is no present in the window.
 
 \afterpage{\clearpage}

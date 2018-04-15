@@ -284,10 +284,10 @@
 {\color{incolor}In [{\color{incolor}1}]:} \PY{k+kn}{from} \PY{n+nn}{\PYZus{}\PYZus{}future\PYZus{}\PYZus{}} \PY{k}{import} \PY{n}{division}\PY{p}{,} \PY{n}{print\PYZus{}function}\PY{p}{,} \PY{n}{absolute\PYZus{}import}
         
         \PY{c+c1}{\PYZsh{} Import MNIST data}
-        \PY{k+kn}{from} \PY{n+nn}{tensorflow}\PY{n+nn}{.}\PY{n+nn}{examples}\PY{n+nn}{.}\PY{n+nn}{tutorials}\PY{n+nn}{.}\PY{n+nn}{mnist} \PY{k}{import} \PY{n}{input\PYZus{}data}
+        \PY{k+kn}{from} \PY{n+nn}{TensorFlow}\PY{n+nn}{.}\PY{n+nn}{examples}\PY{n+nn}{.}\PY{n+nn}{tutorials}\PY{n+nn}{.}\PY{n+nn}{mnist} \PY{k}{import} \PY{n}{input\PYZus{}data}
         \PY{n}{mnist} \PY{o}{=} \PY{n}{input\PYZus{}data}\PY{o}{.}\PY{n}{read\PYZus{}data\PYZus{}sets}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{/tmp/data/}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{one\PYZus{}hot}\PY{o}{=}\PY{k+kc}{False}\PY{p}{)}
         
-        \PY{k+kn}{import} \PY{n+nn}{tensorflow} \PY{k}{as} \PY{n+nn}{tf}
+        \PY{k+kn}{import} \PY{n+nn}{TensorFlow} \PY{k}{as} \PY{n+nn}{tf}
         \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
         \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{image} \PY{k}{as} \PY{n+nn}{mpimg}
         \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
@@ -402,9 +402,9 @@ Extracting /tmp/data/t10k-labels-idx1-ubyte.gz
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-INFO:tensorflow:Using default config.
-WARNING:tensorflow:Using temporary folder as model directory: C:\textbackslash{}Users\textbackslash{}tom13\textbackslash{}AppData\textbackslash{}Local\textbackslash{}Temp\textbackslash{}tmp97az0nju
-INFO:tensorflow:Using config: \{'\_keep\_checkpoint\_every\_n\_hours': 10000, '\_task\_type': 'worker', '\_num\_ps\_replicas': 0, '\_log\_step\_count\_steps': 100, '\_save\_checkpoints\_steps': None, '\_master': '', '\_tf\_random\_seed': None, '\_session\_config': None, '\_cluster\_spec': <tensorflow.python.training.server\_lib.ClusterSpec object at 0x00000226833DCF98>, '\_model\_dir': 'C:\textbackslash{}\textbackslash{}Users\textbackslash{}\textbackslash{}tom13\textbackslash{}\textbackslash{}AppData\textbackslash{}\textbackslash{}Local\textbackslash{}\textbackslash{}Temp\textbackslash{}\textbackslash{}tmp97az0nju', '\_keep\_checkpoint\_max': 5, '\_task\_id': 0, '\_num\_worker\_replicas': 1, '\_save\_checkpoints\_secs': 600, '\_is\_chief': True, '\_save\_summary\_steps': 100, '\_service': None\}
+INFO:TensorFlow:Using default config.
+WARNING:TensorFlow:Using temporary folder as model directory: C:\textbackslash{}Users\textbackslash{}tom13\textbackslash{}AppData\textbackslash{}Local\textbackslash{}Temp\textbackslash{}tmp97az0nju
+INFO:TensorFlow:Using config: \{'\_keep\_checkpoint\_every\_n\_hours': 10000, '\_task\_type': 'worker', '\_num\_ps\_replicas': 0, '\_log\_step\_count\_steps': 100, '\_save\_checkpoints\_steps': None, '\_master': '', '\_tf\_random\_seed': None, '\_session\_config': None, '\_cluster\_spec': <TensorFlow.python.training.server\_lib.ClusterSpec object at 0x00000226833DCF98>, '\_model\_dir': 'C:\textbackslash{}\textbackslash{}Users\textbackslash{}\textbackslash{}tom13\textbackslash{}\textbackslash{}AppData\textbackslash{}\textbackslash{}Local\textbackslash{}\textbackslash{}Temp\textbackslash{}\textbackslash{}tmp97az0nju', '\_keep\_checkpoint\_max': 5, '\_task\_id': 0, '\_num\_worker\_replicas': 1, '\_save\_checkpoints\_secs': 600, '\_is\_chief': True, '\_save\_summary\_steps': 100, '\_service': None\}
 
     \end{Verbatim}
 
@@ -419,114 +419,114 @@ INFO:tensorflow:Using config: \{'\_keep\_checkpoint\_every\_n\_hours': 10000, '\
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-INFO:tensorflow:Create CheckpointSaverHook.
-INFO:tensorflow:Saving checkpoints for 1 into C:\textbackslash{}Users\textbackslash{}tom13\textbackslash{}AppData\textbackslash{}Local\textbackslash{}Temp\textbackslash{}tmp97az0nju\textbackslash{}model.ckpt.
-INFO:tensorflow:step = 1, loss = 2.31252
-INFO:tensorflow:global\_step/sec: 62.4813
-INFO:tensorflow:step = 101, loss = 0.165548 (1.602 sec)
-INFO:tensorflow:global\_step/sec: 67.4517
-INFO:tensorflow:step = 201, loss = 0.149662 (1.485 sec)
-INFO:tensorflow:global\_step/sec: 67.1394
-INFO:tensorflow:step = 301, loss = 0.208731 (1.487 sec)
-INFO:tensorflow:global\_step/sec: 67.1479
-INFO:tensorflow:step = 401, loss = 0.0409326 (1.490 sec)
-INFO:tensorflow:global\_step/sec: 68.0719
-INFO:tensorflow:step = 501, loss = 0.0213496 (1.470 sec)
-INFO:tensorflow:global\_step/sec: 68.771
-INFO:tensorflow:step = 601, loss = 0.037192 (1.452 sec)
-INFO:tensorflow:global\_step/sec: 67.3723
-INFO:tensorflow:step = 701, loss = 0.0822325 (1.485 sec)
-INFO:tensorflow:global\_step/sec: 68.6787
-INFO:tensorflow:step = 801, loss = 0.0128403 (1.455 sec)
-INFO:tensorflow:global\_step/sec: 68.8452
-INFO:tensorflow:step = 901, loss = 0.0358137 (1.455 sec)
-INFO:tensorflow:global\_step/sec: 68.75
-INFO:tensorflow:step = 1001, loss = 0.0192664 (1.453 sec)
-INFO:tensorflow:global\_step/sec: 68.5087
-INFO:tensorflow:step = 1101, loss = 0.00774879 (1.459 sec)
-INFO:tensorflow:global\_step/sec: 67.7028
-INFO:tensorflow:step = 1201, loss = 0.0851327 (1.477 sec)
-INFO:tensorflow:global\_step/sec: 67.7039
-INFO:tensorflow:step = 1301, loss = 0.0553374 (1.479 sec)
-INFO:tensorflow:global\_step/sec: 64.6995
-INFO:tensorflow:step = 1401, loss = 0.0355084 (1.547 sec)
-INFO:tensorflow:global\_step/sec: 67.4277
-INFO:tensorflow:step = 1501, loss = 0.0163228 (1.481 sec)
-INFO:tensorflow:global\_step/sec: 65.4895
-INFO:tensorflow:step = 1601, loss = 0.00959715 (1.528 sec)
-INFO:tensorflow:global\_step/sec: 67.7365
-INFO:tensorflow:step = 1701, loss = 0.00657101 (1.477 sec)
-INFO:tensorflow:global\_step/sec: 68.2635
-INFO:tensorflow:step = 1801, loss = 0.00808421 (1.464 sec)
-INFO:tensorflow:global\_step/sec: 68.3004
-INFO:tensorflow:step = 1901, loss = 0.00447089 (1.465 sec)
-INFO:tensorflow:global\_step/sec: 66.2228
-INFO:tensorflow:step = 2001, loss = 0.00395705 (1.510 sec)
-INFO:tensorflow:global\_step/sec: 67.0613
-INFO:tensorflow:step = 2101, loss = 0.0143454 (1.492 sec)
-INFO:tensorflow:global\_step/sec: 66.8144
-INFO:tensorflow:step = 2201, loss = 0.00251255 (1.496 sec)
-INFO:tensorflow:global\_step/sec: 67.2051
-INFO:tensorflow:step = 2301, loss = 0.00249033 (1.487 sec)
-INFO:tensorflow:global\_step/sec: 67.9835
-INFO:tensorflow:step = 2401, loss = 0.0498065 (1.470 sec)
-INFO:tensorflow:global\_step/sec: 68.2512
-INFO:tensorflow:step = 2501, loss = 0.00226328 (1.467 sec)
-INFO:tensorflow:global\_step/sec: 67.8173
-INFO:tensorflow:step = 2601, loss = 0.000694454 (1.473 sec)
-INFO:tensorflow:global\_step/sec: 67.6461
-INFO:tensorflow:step = 2701, loss = 0.0344697 (1.480 sec)
-INFO:tensorflow:global\_step/sec: 67.8946
-INFO:tensorflow:step = 2801, loss = 0.00430426 (1.472 sec)
-INFO:tensorflow:global\_step/sec: 69.0382
-INFO:tensorflow:step = 2901, loss = 0.033511 (1.447 sec)
-INFO:tensorflow:global\_step/sec: 67.9999
-INFO:tensorflow:step = 3001, loss = 0.00375906 (1.470 sec)
-INFO:tensorflow:global\_step/sec: 68.4807
-INFO:tensorflow:step = 3101, loss = 0.00979484 (1.462 sec)
-INFO:tensorflow:global\_step/sec: 67.3055
-INFO:tensorflow:step = 3201, loss = 0.0192151 (1.488 sec)
-INFO:tensorflow:global\_step/sec: 68.755
-INFO:tensorflow:step = 3301, loss = 0.00091159 (1.452 sec)
-INFO:tensorflow:global\_step/sec: 68.2027
-INFO:tensorflow:step = 3401, loss = 0.00265687 (1.466 sec)
-INFO:tensorflow:global\_step/sec: 66.981
-INFO:tensorflow:step = 3501, loss = 0.00322506 (1.493 sec)
-INFO:tensorflow:global\_step/sec: 67.9271
-INFO:tensorflow:step = 3601, loss = 0.00257395 (1.475 sec)
-INFO:tensorflow:global\_step/sec: 68.4105
-INFO:tensorflow:step = 3701, loss = 0.0113146 (1.459 sec)
-INFO:tensorflow:global\_step/sec: 68.9221
-INFO:tensorflow:step = 3801, loss = 0.0119776 (1.453 sec)
-INFO:tensorflow:global\_step/sec: 68.3297
-INFO:tensorflow:step = 3901, loss = 0.000739706 (1.464 sec)
-INFO:tensorflow:global\_step/sec: 67.7096
-INFO:tensorflow:step = 4001, loss = 0.00202849 (1.474 sec)
-INFO:tensorflow:global\_step/sec: 68.4309
-INFO:tensorflow:step = 4101, loss = 0.00123262 (1.462 sec)
-INFO:tensorflow:global\_step/sec: 68.589
-INFO:tensorflow:step = 4201, loss = 0.0213804 (1.460 sec)
-INFO:tensorflow:global\_step/sec: 68.3938
-INFO:tensorflow:step = 4301, loss = 0.00818979 (1.463 sec)
-INFO:tensorflow:global\_step/sec: 68.1871
-INFO:tensorflow:step = 4401, loss = 0.0192472 (1.465 sec)
-INFO:tensorflow:global\_step/sec: 67.4095
-INFO:tensorflow:step = 4501, loss = 0.009068 (1.483 sec)
-INFO:tensorflow:global\_step/sec: 68.0209
-INFO:tensorflow:step = 4601, loss = 0.00785339 (1.470 sec)
-INFO:tensorflow:global\_step/sec: 68.466
-INFO:tensorflow:step = 4701, loss = 0.00145256 (1.461 sec)
-INFO:tensorflow:global\_step/sec: 68.8636
-INFO:tensorflow:step = 4801, loss = 0.0157578 (1.452 sec)
-INFO:tensorflow:global\_step/sec: 68.8196
-INFO:tensorflow:step = 4901, loss = 0.0353847 (1.454 sec)
-INFO:tensorflow:Saving checkpoints for 5000 into C:\textbackslash{}Users\textbackslash{}tom13\textbackslash{}AppData\textbackslash{}Local\textbackslash{}Temp\textbackslash{}tmp97az0nju\textbackslash{}model.ckpt.
-INFO:tensorflow:Loss for final step: 0.024679.
+INFO:TensorFlow:Create CheckpointSaverHook.
+INFO:TensorFlow:Saving checkpoints for 1 into C:\textbackslash{}Users\textbackslash{}tom13\textbackslash{}AppData\textbackslash{}Local\textbackslash{}Temp\textbackslash{}tmp97az0nju\textbackslash{}model.ckpt.
+INFO:TensorFlow:step = 1, loss = 2.31252
+INFO:TensorFlow:global\_step/sec: 62.4813
+INFO:TensorFlow:step = 101, loss = 0.165548 (1.602 sec)
+INFO:TensorFlow:global\_step/sec: 67.4517
+INFO:TensorFlow:step = 201, loss = 0.149662 (1.485 sec)
+INFO:TensorFlow:global\_step/sec: 67.1394
+INFO:TensorFlow:step = 301, loss = 0.208731 (1.487 sec)
+INFO:TensorFlow:global\_step/sec: 67.1479
+INFO:TensorFlow:step = 401, loss = 0.0409326 (1.490 sec)
+INFO:TensorFlow:global\_step/sec: 68.0719
+INFO:TensorFlow:step = 501, loss = 0.0213496 (1.470 sec)
+INFO:TensorFlow:global\_step/sec: 68.771
+INFO:TensorFlow:step = 601, loss = 0.037192 (1.452 sec)
+INFO:TensorFlow:global\_step/sec: 67.3723
+INFO:TensorFlow:step = 701, loss = 0.0822325 (1.485 sec)
+INFO:TensorFlow:global\_step/sec: 68.6787
+INFO:TensorFlow:step = 801, loss = 0.0128403 (1.455 sec)
+INFO:TensorFlow:global\_step/sec: 68.8452
+INFO:TensorFlow:step = 901, loss = 0.0358137 (1.455 sec)
+INFO:TensorFlow:global\_step/sec: 68.75
+INFO:TensorFlow:step = 1001, loss = 0.0192664 (1.453 sec)
+INFO:TensorFlow:global\_step/sec: 68.5087
+INFO:TensorFlow:step = 1101, loss = 0.00774879 (1.459 sec)
+INFO:TensorFlow:global\_step/sec: 67.7028
+INFO:TensorFlow:step = 1201, loss = 0.0851327 (1.477 sec)
+INFO:TensorFlow:global\_step/sec: 67.7039
+INFO:TensorFlow:step = 1301, loss = 0.0553374 (1.479 sec)
+INFO:TensorFlow:global\_step/sec: 64.6995
+INFO:TensorFlow:step = 1401, loss = 0.0355084 (1.547 sec)
+INFO:TensorFlow:global\_step/sec: 67.4277
+INFO:TensorFlow:step = 1501, loss = 0.0163228 (1.481 sec)
+INFO:TensorFlow:global\_step/sec: 65.4895
+INFO:TensorFlow:step = 1601, loss = 0.00959715 (1.528 sec)
+INFO:TensorFlow:global\_step/sec: 67.7365
+INFO:TensorFlow:step = 1701, loss = 0.00657101 (1.477 sec)
+INFO:TensorFlow:global\_step/sec: 68.2635
+INFO:TensorFlow:step = 1801, loss = 0.00808421 (1.464 sec)
+INFO:TensorFlow:global\_step/sec: 68.3004
+INFO:TensorFlow:step = 1901, loss = 0.00447089 (1.465 sec)
+INFO:TensorFlow:global\_step/sec: 66.2228
+INFO:TensorFlow:step = 2001, loss = 0.00395705 (1.510 sec)
+INFO:TensorFlow:global\_step/sec: 67.0613
+INFO:TensorFlow:step = 2101, loss = 0.0143454 (1.492 sec)
+INFO:TensorFlow:global\_step/sec: 66.8144
+INFO:TensorFlow:step = 2201, loss = 0.00251255 (1.496 sec)
+INFO:TensorFlow:global\_step/sec: 67.2051
+INFO:TensorFlow:step = 2301, loss = 0.00249033 (1.487 sec)
+INFO:TensorFlow:global\_step/sec: 67.9835
+INFO:TensorFlow:step = 2401, loss = 0.0498065 (1.470 sec)
+INFO:TensorFlow:global\_step/sec: 68.2512
+INFO:TensorFlow:step = 2501, loss = 0.00226328 (1.467 sec)
+INFO:TensorFlow:global\_step/sec: 67.8173
+INFO:TensorFlow:step = 2601, loss = 0.000694454 (1.473 sec)
+INFO:TensorFlow:global\_step/sec: 67.6461
+INFO:TensorFlow:step = 2701, loss = 0.0344697 (1.480 sec)
+INFO:TensorFlow:global\_step/sec: 67.8946
+INFO:TensorFlow:step = 2801, loss = 0.00430426 (1.472 sec)
+INFO:TensorFlow:global\_step/sec: 69.0382
+INFO:TensorFlow:step = 2901, loss = 0.033511 (1.447 sec)
+INFO:TensorFlow:global\_step/sec: 67.9999
+INFO:TensorFlow:step = 3001, loss = 0.00375906 (1.470 sec)
+INFO:TensorFlow:global\_step/sec: 68.4807
+INFO:TensorFlow:step = 3101, loss = 0.00979484 (1.462 sec)
+INFO:TensorFlow:global\_step/sec: 67.3055
+INFO:TensorFlow:step = 3201, loss = 0.0192151 (1.488 sec)
+INFO:TensorFlow:global\_step/sec: 68.755
+INFO:TensorFlow:step = 3301, loss = 0.00091159 (1.452 sec)
+INFO:TensorFlow:global\_step/sec: 68.2027
+INFO:TensorFlow:step = 3401, loss = 0.00265687 (1.466 sec)
+INFO:TensorFlow:global\_step/sec: 66.981
+INFO:TensorFlow:step = 3501, loss = 0.00322506 (1.493 sec)
+INFO:TensorFlow:global\_step/sec: 67.9271
+INFO:TensorFlow:step = 3601, loss = 0.00257395 (1.475 sec)
+INFO:TensorFlow:global\_step/sec: 68.4105
+INFO:TensorFlow:step = 3701, loss = 0.0113146 (1.459 sec)
+INFO:TensorFlow:global\_step/sec: 68.9221
+INFO:TensorFlow:step = 3801, loss = 0.0119776 (1.453 sec)
+INFO:TensorFlow:global\_step/sec: 68.3297
+INFO:TensorFlow:step = 3901, loss = 0.000739706 (1.464 sec)
+INFO:TensorFlow:global\_step/sec: 67.7096
+INFO:TensorFlow:step = 4001, loss = 0.00202849 (1.474 sec)
+INFO:TensorFlow:global\_step/sec: 68.4309
+INFO:TensorFlow:step = 4101, loss = 0.00123262 (1.462 sec)
+INFO:TensorFlow:global\_step/sec: 68.589
+INFO:TensorFlow:step = 4201, loss = 0.0213804 (1.460 sec)
+INFO:TensorFlow:global\_step/sec: 68.3938
+INFO:TensorFlow:step = 4301, loss = 0.00818979 (1.463 sec)
+INFO:TensorFlow:global\_step/sec: 68.1871
+INFO:TensorFlow:step = 4401, loss = 0.0192472 (1.465 sec)
+INFO:TensorFlow:global\_step/sec: 67.4095
+INFO:TensorFlow:step = 4501, loss = 0.009068 (1.483 sec)
+INFO:TensorFlow:global\_step/sec: 68.0209
+INFO:TensorFlow:step = 4601, loss = 0.00785339 (1.470 sec)
+INFO:TensorFlow:global\_step/sec: 68.466
+INFO:TensorFlow:step = 4701, loss = 0.00145256 (1.461 sec)
+INFO:TensorFlow:global\_step/sec: 68.8636
+INFO:TensorFlow:step = 4801, loss = 0.0157578 (1.452 sec)
+INFO:TensorFlow:global\_step/sec: 68.8196
+INFO:TensorFlow:step = 4901, loss = 0.0353847 (1.454 sec)
+INFO:TensorFlow:Saving checkpoints for 5000 into C:\textbackslash{}Users\textbackslash{}tom13\textbackslash{}AppData\textbackslash{}Local\textbackslash{}Temp\textbackslash{}tmp97az0nju\textbackslash{}model.ckpt.
+INFO:TensorFlow:Loss for final step: 0.024679.
 
     \end{Verbatim}
 
 \begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}6}]:} <tensorflow.python.estimator.estimator.Estimator at 0x226833dcd30>
+{\color{outcolor}Out[{\color{outcolor}6}]:} <TensorFlow.python.estimator.estimator.Estimator at 0x226833dcd30>
 \end{Verbatim}
             
     \begin{Verbatim}[commandchars=\\\{\}]
@@ -541,10 +541,10 @@ INFO:tensorflow:Loss for final step: 0.024679.
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-INFO:tensorflow:Starting evaluation at 2018-01-21-16:56:42
-INFO:tensorflow:Restoring parameters from C:\textbackslash{}Users\textbackslash{}tom13\textbackslash{}AppData\textbackslash{}Local\textbackslash{}Temp\textbackslash{}tmp97az0nju\textbackslash{}model.ckpt-5000
-INFO:tensorflow:Finished evaluation at 2018-01-21-16:56:43
-INFO:tensorflow:Saving dict for global step 5000: accuracy = 0.989, global\_step = 5000, loss = 0.0521909
+INFO:TensorFlow:Starting evaluation at 2018-01-21-16:56:42
+INFO:TensorFlow:Restoring parameters from C:\textbackslash{}Users\textbackslash{}tom13\textbackslash{}AppData\textbackslash{}Local\textbackslash{}Temp\textbackslash{}tmp97az0nju\textbackslash{}model.ckpt-5000
+INFO:TensorFlow:Finished evaluation at 2018-01-21-16:56:43
+INFO:TensorFlow:Saving dict for global step 5000: accuracy = 0.989, global\_step = 5000, loss = 0.0521909
 
     \end{Verbatim}
 
@@ -572,7 +572,7 @@ INFO:tensorflow:Saving dict for global step 5000: accuracy = 0.989, global\_step
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-INFO:tensorflow:Restoring parameters from C:\textbackslash{}Users\textbackslash{}tom13\textbackslash{}AppData\textbackslash{}Local\textbackslash{}Temp\textbackslash{}tmp97az0nju\textbackslash{}model.ckpt-5000
+INFO:TensorFlow:Restoring parameters from C:\textbackslash{}Users\textbackslash{}tom13\textbackslash{}AppData\textbackslash{}Local\textbackslash{}Temp\textbackslash{}tmp97az0nju\textbackslash{}model.ckpt-5000
 
     \end{Verbatim}
 

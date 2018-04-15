@@ -284,7 +284,7 @@
     \begin{Verbatim}[commandchars=\\\{\}]
 {\color{incolor}In [{\color{incolor}1}]:} \PY{k+kn}{from} \PY{n+nn}{\PYZus{}\PYZus{}future\PYZus{}\PYZus{}} \PY{k}{import} \PY{n}{print\PYZus{}function}
         
-        \PY{k+kn}{import} \PY{n+nn}{tensorflow} \PY{k}{as} \PY{n+nn}{tf}
+        \PY{k+kn}{import} \PY{n+nn}{TensorFlow} \PY{k}{as} \PY{n+nn}{tf}
         \PY{k+kn}{import} \PY{n+nn}{os}
 \end{Verbatim}
 
@@ -507,14 +507,14 @@ Step 4500, Minibatch Loss= 4.3245, Training Accuracy= 0.062
 Step
 Step 5000, Minibatch Loss= 3.8302, Training Accuracy= 0.188
 Optimization Finished!
-ERROR:tensorflow:Exception in QueueRunner: Run call was cancelled
-ERROR:tensorflow:Exception in QueueRunner: Enqueue operation was cancelled
+ERROR:TensorFlow:Exception in QueueRunner: Run call was cancelled
+ERROR:TensorFlow:Exception in QueueRunner: Enqueue operation was cancelled
 	 [[Node: batch/fifo\_queue\_enqueue = QueueEnqueueV2[Tcomponents=[DT\_FLOAT, DT\_INT32], timeout\_ms=-1, \_device="/job:localhost/replica:0/task:0/device:CPU:0"](batch/fifo\_queue, sub/\_9, input\_producer/Gather\_1)]]
-ERROR:tensorflow:Exception in QueueRunner: Enqueue operation was cancelled
+ERROR:TensorFlow:Exception in QueueRunner: Enqueue operation was cancelled
 	 [[Node: batch/fifo\_queue\_enqueue = QueueEnqueueV2[Tcomponents=[DT\_FLOAT, DT\_INT32], timeout\_ms=-1, \_device="/job:localhost/replica:0/task:0/device:CPU:0"](batch/fifo\_queue, sub/\_9, input\_producer/Gather\_1)]]
-ERROR:tensorflow:Exception in QueueRunner: Enqueue operation was cancelled
+ERROR:TensorFlow:Exception in QueueRunner: Enqueue operation was cancelled
 	 [[Node: input\_producer/input\_producer/input\_producer\_EnqueueMany = QueueEnqueueManyV2[Tcomponents=[DT\_INT32], timeout\_ms=-1, \_device="/job:localhost/replica:0/task:0/device:CPU:0"](input\_producer/input\_producer, input\_producer/input\_producer/RandomShuffle)]]
-ERROR:tensorflow:Exception in QueueRunner: Enqueue operation was cancelled
+ERROR:TensorFlow:Exception in QueueRunner: Enqueue operation was cancelled
 	 [[Node: batch/fifo\_queue\_enqueue = QueueEnqueueV2[Tcomponents=[DT\_FLOAT, DT\_INT32], timeout\_ms=-1, \_device="/job:localhost/replica:0/task:0/device:CPU:0"](batch/fifo\_queue, sub/\_9, input\_producer/Gather\_1)]]
 
     \end{Verbatim}
@@ -522,76 +522,76 @@ ERROR:tensorflow:Exception in QueueRunner: Enqueue operation was cancelled
     \begin{Verbatim}[commandchars=\\\{\}]
 Exception in thread QueueRunnerThread-batch/fifo\_queue-batch/fifo\_queue\_enqueue:
 Traceback (most recent call last):
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}threading.py", line 914, in \_bootstrap\_inner
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}threading.py", line 914, in \_bootstrap\_inner
     self.run()
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}threading.py", line 862, in run
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}threading.py", line 862, in run
     self.\_target(*self.\_args, **self.\_kwargs)
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}tensorflow\textbackslash{}python\textbackslash{}training\textbackslash{}queue\_runner\_impl.py", line 238, in \_run
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}TensorFlow\textbackslash{}python\textbackslash{}training\textbackslash{}queue\_runner\_impl.py", line 238, in \_run
     enqueue\_callable()
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}tensorflow\textbackslash{}python\textbackslash{}client\textbackslash{}session.py", line 1231, in \_single\_operation\_run
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}TensorFlow\textbackslash{}python\textbackslash{}client\textbackslash{}session.py", line 1231, in \_single\_operation\_run
     target\_list\_as\_strings, status, None)
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}tensorflow\textbackslash{}python\textbackslash{}framework\textbackslash{}errors\_impl.py", line 473, in \_\_exit\_\_
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}TensorFlow\textbackslash{}python\textbackslash{}framework\textbackslash{}errors\_impl.py", line 473, in \_\_exit\_\_
     c\_api.TF\_GetCode(self.status.status))
-tensorflow.python.framework.errors\_impl.CancelledError: Enqueue operation was cancelled
+TensorFlow.python.framework.errors\_impl.CancelledError: Enqueue operation was cancelled
 	 [[Node: batch/fifo\_queue\_enqueue = QueueEnqueueV2[Tcomponents=[DT\_FLOAT, DT\_INT32], timeout\_ms=-1, \_device="/job:localhost/replica:0/task:0/device:CPU:0"](batch/fifo\_queue, sub/\_9, input\_producer/Gather\_1)]]
 
 Exception in thread QueueRunnerThread-batch/fifo\_queue-batch/fifo\_queue\_enqueue:
 Traceback (most recent call last):
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}threading.py", line 914, in \_bootstrap\_inner
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}threading.py", line 914, in \_bootstrap\_inner
     self.run()
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}threading.py", line 862, in run
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}threading.py", line 862, in run
     self.\_target(*self.\_args, **self.\_kwargs)
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}tensorflow\textbackslash{}python\textbackslash{}training\textbackslash{}queue\_runner\_impl.py", line 238, in \_run
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}TensorFlow\textbackslash{}python\textbackslash{}training\textbackslash{}queue\_runner\_impl.py", line 238, in \_run
     enqueue\_callable()
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}tensorflow\textbackslash{}python\textbackslash{}client\textbackslash{}session.py", line 1231, in \_single\_operation\_run
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}TensorFlow\textbackslash{}python\textbackslash{}client\textbackslash{}session.py", line 1231, in \_single\_operation\_run
     target\_list\_as\_strings, status, None)
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}tensorflow\textbackslash{}python\textbackslash{}framework\textbackslash{}errors\_impl.py", line 473, in \_\_exit\_\_
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}TensorFlow\textbackslash{}python\textbackslash{}framework\textbackslash{}errors\_impl.py", line 473, in \_\_exit\_\_
     c\_api.TF\_GetCode(self.status.status))
-tensorflow.python.framework.errors\_impl.CancelledError: Enqueue operation was cancelled
+TensorFlow.python.framework.errors\_impl.CancelledError: Enqueue operation was cancelled
 	 [[Node: batch/fifo\_queue\_enqueue = QueueEnqueueV2[Tcomponents=[DT\_FLOAT, DT\_INT32], timeout\_ms=-1, \_device="/job:localhost/replica:0/task:0/device:CPU:0"](batch/fifo\_queue, sub/\_9, input\_producer/Gather\_1)]]
 
 Exception in thread QueueRunnerThread-batch/fifo\_queue-batch/fifo\_queue\_enqueue:
 Traceback (most recent call last):
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}threading.py", line 914, in \_bootstrap\_inner
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}threading.py", line 914, in \_bootstrap\_inner
     self.run()
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}threading.py", line 862, in run
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}threading.py", line 862, in run
     self.\_target(*self.\_args, **self.\_kwargs)
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}tensorflow\textbackslash{}python\textbackslash{}training\textbackslash{}queue\_runner\_impl.py", line 238, in \_run
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}TensorFlow\textbackslash{}python\textbackslash{}training\textbackslash{}queue\_runner\_impl.py", line 238, in \_run
     enqueue\_callable()
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}tensorflow\textbackslash{}python\textbackslash{}client\textbackslash{}session.py", line 1231, in \_single\_operation\_run
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}TensorFlow\textbackslash{}python\textbackslash{}client\textbackslash{}session.py", line 1231, in \_single\_operation\_run
     target\_list\_as\_strings, status, None)
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}tensorflow\textbackslash{}python\textbackslash{}framework\textbackslash{}errors\_impl.py", line 473, in \_\_exit\_\_
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}TensorFlow\textbackslash{}python\textbackslash{}framework\textbackslash{}errors\_impl.py", line 473, in \_\_exit\_\_
     c\_api.TF\_GetCode(self.status.status))
-tensorflow.python.framework.errors\_impl.CancelledError: Run call was cancelled
+TensorFlow.python.framework.errors\_impl.CancelledError: Run call was cancelled
 
 Exception in thread QueueRunnerThread-input\_producer/input\_producer-input\_producer/input\_producer/input\_producer\_EnqueueMany:
 Traceback (most recent call last):
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}threading.py", line 914, in \_bootstrap\_inner
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}threading.py", line 914, in \_bootstrap\_inner
     self.run()
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}threading.py", line 862, in run
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}threading.py", line 862, in run
     self.\_target(*self.\_args, **self.\_kwargs)
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}tensorflow\textbackslash{}python\textbackslash{}training\textbackslash{}queue\_runner\_impl.py", line 238, in \_run
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}TensorFlow\textbackslash{}python\textbackslash{}training\textbackslash{}queue\_runner\_impl.py", line 238, in \_run
     enqueue\_callable()
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}tensorflow\textbackslash{}python\textbackslash{}client\textbackslash{}session.py", line 1231, in \_single\_operation\_run
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}TensorFlow\textbackslash{}python\textbackslash{}client\textbackslash{}session.py", line 1231, in \_single\_operation\_run
     target\_list\_as\_strings, status, None)
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}tensorflow\textbackslash{}python\textbackslash{}framework\textbackslash{}errors\_impl.py", line 473, in \_\_exit\_\_
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}TensorFlow\textbackslash{}python\textbackslash{}framework\textbackslash{}errors\_impl.py", line 473, in \_\_exit\_\_
     c\_api.TF\_GetCode(self.status.status))
-tensorflow.python.framework.errors\_impl.CancelledError: Enqueue operation was cancelled
+TensorFlow.python.framework.errors\_impl.CancelledError: Enqueue operation was cancelled
 	 [[Node: input\_producer/input\_producer/input\_producer\_EnqueueMany = QueueEnqueueManyV2[Tcomponents=[DT\_INT32], timeout\_ms=-1, \_device="/job:localhost/replica:0/task:0/device:CPU:0"](input\_producer/input\_producer, input\_producer/input\_producer/RandomShuffle)]]
 
 Exception in thread QueueRunnerThread-batch/fifo\_queue-batch/fifo\_queue\_enqueue:
 Traceback (most recent call last):
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}threading.py", line 914, in \_bootstrap\_inner
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}threading.py", line 914, in \_bootstrap\_inner
     self.run()
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}threading.py", line 862, in run
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}threading.py", line 862, in run
     self.\_target(*self.\_args, **self.\_kwargs)
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}tensorflow\textbackslash{}python\textbackslash{}training\textbackslash{}queue\_runner\_impl.py", line 238, in \_run
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}TensorFlow\textbackslash{}python\textbackslash{}training\textbackslash{}queue\_runner\_impl.py", line 238, in \_run
     enqueue\_callable()
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}tensorflow\textbackslash{}python\textbackslash{}client\textbackslash{}session.py", line 1231, in \_single\_operation\_run
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}TensorFlow\textbackslash{}python\textbackslash{}client\textbackslash{}session.py", line 1231, in \_single\_operation\_run
     target\_list\_as\_strings, status, None)
-  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}tensorflow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}tensorflow\textbackslash{}python\textbackslash{}framework\textbackslash{}errors\_impl.py", line 473, in \_\_exit\_\_
+  File "c:\textbackslash{}users\textbackslash{}tom13\textbackslash{}appdata\textbackslash{}local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}TensorFlow-gpu\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}TensorFlow\textbackslash{}python\textbackslash{}framework\textbackslash{}errors\_impl.py", line 473, in \_\_exit\_\_
     c\_api.TF\_GetCode(self.status.status))
-tensorflow.python.framework.errors\_impl.CancelledError: Enqueue operation was cancelled
+TensorFlow.python.framework.errors\_impl.CancelledError: Enqueue operation was cancelled
 	 [[Node: batch/fifo\_queue\_enqueue = QueueEnqueueV2[Tcomponents=[DT\_FLOAT, DT\_INT32], timeout\_ms=-1, \_device="/job:localhost/replica:0/task:0/device:CPU:0"](batch/fifo\_queue, sub/\_9, input\_producer/Gather\_1)]]
 
 

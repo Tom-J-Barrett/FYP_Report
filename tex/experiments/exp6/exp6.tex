@@ -28,7 +28,7 @@ To calculate the Top-5 accuracy, the number of correct top-5 predictions is divi
 
 
 \begin{figure}[h]
-\caption{Retrain Inception With Parameter Tuning Command}
+\caption{Retrain Inception with Parameter Tuning Command}
 \label{lst:retrainParameterCommand}
 \begin{lstlisting}
 python retrain_top5.py \ --image_dir
@@ -37,7 +37,7 @@ python retrain_top5.py \ --image_dir
 \end{lstlisting}
 \end{figure}
 
-Top 5 accuracy of the model was also calcultaed using the code below.
+Top 5 accuracy of the model was also calculated using the code below.
 \begin{figure}[h]
 \caption{Top-5 Accuracy Calculation}
 \label{lst:top5}
@@ -194,7 +194,7 @@ Some further parameters could be set such as:
 The results of each set of parameters can be seen in Table
 \ref{parameter_tuning_table}.
 Using the parameters of 10,000 steps, and a learning rate of 0.1 and therefore a final test accuracy of 66.3\%, the model achieved a Top 5 accuracy of 85.96\%.
-This Top-5 accuracy was calculated from 1090 images in the test dataset and the average probability of the predictions were at 0.62.
+This Top-5 accuracy was calculated from 1090 images in the test dataset and the average probability of the predictions was 0.62.
 The 95\% confidence interval of the Top-1 accuracy of this model is between 57.4\% and 75.2\%.
 
 
@@ -221,8 +221,8 @@ looking at the last layer, we can afford to change the weights more
 significantly.
 
 The Top 5 accuracy of the model was quite good but it was not run on the same number of images as the final test accuracy.
-This is beacuse TensorFlow does not have an API for calculating Top 5 accuracy.
+This is because TensorFlow does not have an API for calculating Top 5 accuracy.
 As a result, it had to be calculated manually and this is very time intensive.
-The average probability of 0.62 is also quite close to the overall Top 1 accuracy which may imply some correlation between the two but this is merely speculation.
+The average probability of 0.62 is also quite close to the overall Top 1 accuracy which may imply some correlation between the two, but this is merely speculation.
 
 \afterpage{\clearpage}

@@ -1,6 +1,6 @@
 \tocless\subsubsection{Gradient Descent and backpropagation}
 Gradient Descent is an algorithm used to find the optimal weights to produce the
-smallest prediction error. It is used to overcome problems of non linearly
+smallest prediction error. It is used to overcome problems of non-linearly
 separable classes. Gradient descent search selects a random weight value and
 then modifies it gradually to minimize the error. "At each step, the weight
 vector is altered in the direction that produces the steepest descent along the
@@ -18,7 +18,7 @@ without too many problems but when the weights change we will get too high a
 slope of error and therefore will never reach point B.
 
 Another variation of Gradient Descent is Stochastic Gradient Descent (SGD). SGD
-is different because it updates " weights incrementally, following the
+is different because it updates "weights incrementally, following the
 calculation of the error of each individual example" \parencite{MLANN}. 
 
 \begin{figure}[h]
@@ -35,7 +35,7 @@ output and the output of a network.
 Backpropagation works by starting at the output layer of the network and going
 back through previous hidden layers, updating weights as it goes i.e. it propagates back through the network, updating the weights to try and reduce the error.
 
-\parencite{MLANN} defined a walk through of the backpropagation algorithm.
+\parencite{MLANN} defined a walkthrough of the backpropagation algorithm.
 For every value of Equation \ref{eqn:bp1}, in the training set where x is a vector of inputs and t is a vector of output values to act a target:
 \begin{itemize}
 	\item{Run x through the network and output Equation \ref{eqn:bp2}.}

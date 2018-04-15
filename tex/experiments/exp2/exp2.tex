@@ -17,7 +17,7 @@ Similar to the previous experiment \ref{udemy2}, this experiment is a Udemy cour
 Key features of the script used to create the CNN for this tutorial are outlined in Figures \ref{lst:unpickle}, \ref{lst:setUpImages} and \ref{lst:trainModel2}.
 Figure \ref{lst:unpickle} unpickles the dataset from the files that it is stored in.
 A pickled file is a Python object that has been serialised.
-Once the data has been unpickled, the data has to be set up to be the correct size and shape and it must also be accessible by batches.
+Once the data has been unpickled, the data must be set up to be the correct size and shape and it must also be accessible by batches.
 This is defined in Figure \ref{lst:setUpImages}.
 Finally, Figure \ref{lst:trainModel2} documents the code required to train the model.
 
@@ -110,12 +110,12 @@ with tf.Session() as sess:
 A final Top-1 accuracy of 71\% was reached.
 
 \tocless\subsection{Analysis}
-Two tutorials have been carried out training models, using similar architecures, on two different datasets.
+Two tutorials have been carried out training models, using similar architectures, on two different datasets.
 The first model was trained on the MNIST dataset and resulted in a Top-1 accuracy of 97.3\% while the second model was trained on the CIFAR-10 dataset with a Top-1 accuracy of 71\%.
 Both datasets had 10 classes associated.
 There are three main reasons why the Top-1 accuracy of these two models has a difference of 26.3\% which are:
 \begin{enumerate}
-    \item{Dataset size: In MNIST, there are 6,000 images used for training as opposed to 5,000 in CIFAR-10. The difference here would be miniscule but it would have some impact.}
+    \item{Dataset size: In MNIST, there are 6,000 images used for training as opposed to 5,000 in CIFAR-10. The difference here would be minuscule, but it would have some impact.}
     \item{Colour channels: The images in MNIST are in black and white while the CIFAR-10 images have three colour channels associated.}
     \item{Object complexity: The objects in the the MNIST dataset are simpler shapes with a plain background. The CIFAR-10 images are more complex such as a horse and the background is noisy.}
 \end{enumerate}
