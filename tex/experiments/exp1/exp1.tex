@@ -18,7 +18,15 @@ It consists of two convolutional layers, two max pooling layers and a fully conn
 \end{table}
 
 \tocless\subsection{Script}
-\tocless\subsubsection{Helper Functions}
+The following Figures \ref{lst:helperFunctions}, \ref{lst:layerCreation}, and \ref{lst:trainingModel1} convey key aspects of the script needed to create and train this model.
+Figure \ref{lst:helperFunctions} defines helper functions taht are used to initialise weights and biases, create convolutional layers, create pooling layers, and create fully connected connected layers.
+Figure \ref{lst:layerCreation} uses these helper functions to create the layers for this network.
+Finally the code required to train the model is outlined in Figure \ref{lst:trainingModel1}.
+
+
+\begin{figure}[h]
+\caption{Helper Functions \parencite{udemy}}
+\label{lst:helperFunctions}
 \begin{lstlisting}[style=Python]
 #INIT WEIGHTS
 def init_weights(shape):
@@ -48,8 +56,11 @@ def normal_full_layer(input_layer, size):
     b = init_bias([size])
     return tf.matmul(input_layer, W) + b
 \end{lstlisting}
+\end{figure}
 
-\tocless\subsubsection{Layer Creation}
+\begin{figure}[h]
+\caption{Layer Creation \parencite{udemy}}
+\label{lst:layerCreation}
 \begin{lstlisting}[style=Python]
 #32 features for every 5 x 5 kernel with 1(grayscale)
 convo_1 = convolutional_layer(x_image, shape = [5,5,1,32])
@@ -61,8 +72,11 @@ convo_2_pooling = max_pool_2by2(convo_2)
 convo_2_flat = tf.reshape(convo_2_pooling, [-1,7*7*64])
 full_layer_one = tf.nn.relu(normal_full_layer(convo_2_flat, 1024))
 \end{lstlisting}
+\end{figure}
 
-\tocless\subsubsection{Training the Model}
+\begin{figure}[h]
+\caption{Training the Model \parencite{udemy}}
+\label{lst:trainingModel1}
 \begin{lstlisting}[style=Python]
 with tf.Session() as sess:
     sess.run(init)
@@ -80,6 +94,9 @@ with tf.Session() as sess:
             print('\n')     
     sess.run(acc, feed_dict = {x:mnist.test.images} )
 \end{lstlisting}
+\end{figure}
 
 \tocless\subsection{Results}
 The final Top-1 accuracy for this experiment was of 97.3\%, calculated from a batch of unseen test images.
+
+\clearpage

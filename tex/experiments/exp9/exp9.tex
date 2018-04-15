@@ -8,9 +8,14 @@ requiring a 299 x 299 image size, the window could only be refined once as
 very small segments could not be resized up to 299 x 299. A window of 70 x 70 size was used.
 
 \tocless\subsection{Script}
-As you would think with recursive refinement, a recursive function would used,
+As you would think with recursive refinement, a recursive function would be used,
 but this was unnecessary due to image size restrictions. Instead, a
-conditional for loop was added to the existing code.
+conditional for loop was added to the existing code to break a window down further i.e. perform a sliding window approach on a window.
+This can be seen in Figure \ref{lst:rrCode}.
+
+\begin{figure}[h]
+\caption{Recursive Refinement Code}
+\label{lst:rrCode}
 \begin{lstlisting}[style=Python]
 if top1 == "grape" and window_shape == "grid" and rr_grape:
 			for (x_grape, y_grape, grape_window) in sliding_window(window_resized, stepSize=64, windowSize=(70, 70)):
@@ -23,28 +28,14 @@ if top1 == "grape" and window_shape == "grid" and rr_grape:
 					cv2.waitKey(1)
 time.sleep(0.025)
 \end{lstlisting}
+\end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
-    \includegraphics[scale=0.5]{fruit_rr}
+    \includegraphics[scale=0.4]{fruit_rr}
       \caption{Recursive refinement 1}
       \label{fig:rr1}
 \end{figure}
-
-\begin{figure}
-\centering
-    \includegraphics[scale=0.5]{newfruit_rr_grid}
-      \caption{Recursive refinement 2 - sourced from http://www.travispta.org/}
-      \label{fig:rr2}
-\end{figure}
-
-\begin{figure}
-\centering
-    \includegraphics[scale=0.5]{processed_image}
-      \caption{Recursive refinement 3}
-      \label{fig:rr3}
-\end{figure}
-
 
 \tocless\subsection{Results}
 Some very similar results were recorded on three separate images. Two new images are seen
@@ -56,3 +47,18 @@ that have nothing resembling a grape. These can be viewed in Figures
 \tocless\subsection{Analysis}
 The instances where false positives were recorded may indicate issues with the recursive refinement approach as every window must be classified and it is possible that this just happens to be a grape in some instances.
 Further analysis to why this may be occurring is outlined in the section \ref{rrAnalyse}.
+
+\begin{figure}
+\centering
+    \includegraphics[scale=0.2]{newfruit_rr_grid}
+      \caption{Recursive refinement 2 - sourced from http://www.travispta.org/}
+      \label{fig:rr2}
+\end{figure}
+
+\begin{figure}
+\centering
+    \includegraphics[scale=0.3]{processed_image}
+      \caption{Recursive refinement 3}
+      \label{fig:rr3}
+\end{figure}
+

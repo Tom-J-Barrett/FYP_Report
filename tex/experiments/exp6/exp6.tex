@@ -18,17 +18,30 @@ test accuracy of the model.
 
 \tocless\subsection{Script}
 Script as seen in \ref{inception} but with some additions to calculate Top 5 accuracy as seen
-below:
+in Figure \ref{lst:top5}.
+Also documented is the code used to label a new image using the model (Figure \ref{lst:labelImage2}).
 
+Figure \ref{lst:top5} takes 10 images for each class and runs each through the model.
+The script then checks if the expected value is within the top 5 predictions returned from Figure \ref{lst:labelImage2}.
+If it is the amount of correct top 5 predictions is incremented by one.
+To calculate the Top-5 accuracy, the number of correct top-5 predictions is divided by the total number of images tested (10 images per class x number of classes) and multiplied by 100 for obtain a percentage value.
+
+
+\begin{figure}[h]
+\caption{Retrain Inception With Parameter Tuning Command}
+\label{lst:retrainParameterCommand}
 \begin{lstlisting}
 python retrain_top5.py \ --image_dir
 ~/dataset_directory \ --how_many_training_steps 4000 \ --learning_rate 0.01 \
 --testing_percentage 10 \ --validation_percentage 10
 \end{lstlisting}
+\end{figure}
 
-Top 5 accuracy of the model was als calcultaed using the code below.
+Top 5 accuracy of the model was also calcultaed using the code below.
+\begin{figure}[h]
+\caption{Top-5 Accuracy Calculation}
+\label{lst:top5}
 \begin{lstlisting}[style=Python]
-print('Top 5 Evaluation')
 #Variables used to store a list of all classes, the amount of images tested,
 # the amount of images with a top 5 accuracy and the sum of the highest probabilities
 classes = list(image_lists.keys())
@@ -71,8 +84,11 @@ print("Amount of test images: " + str(image_count))
 print("Top 5 Accuracy: " + str((top_5_count/image_count)*100))
 print("Average probability: " + str(average_probabilities))
 \end{lstlisting}
+\end{figure}
 
-Method from label\_image.py.
+\begin{figure}[h]
+\caption{Label Image - adapted from \parencite{retrainInception}}
+\label{lst:labelImage2}
 \begin{lstlisting}[style=Python]
 def runModel(file_name):
   model_file = \
@@ -116,6 +132,7 @@ def runModel(file_name):
   final_results = [top5_results, results]
   return final_results
 \end{lstlisting}
+\end{figure}
 
 Some further parameters could be set such as:
 \begin{itemize}
@@ -125,25 +142,25 @@ Some further parameters could be set such as:
 	\item{--random\_brightness}
 \end{itemize}
 
-\begin{figure}
-    \includegraphics[scale=0.5]{model_test}
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{model_test}
      \caption{Graph of accuracy of the test dataset during training}
      \label{fig:model_train_test}
 \end{figure}
 
-\begin{figure}
-    \includegraphics[scale=0.5]{model_val}
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{model_val}
      \caption{Graph of accuracy of the validation dataset during training}
      \label{fig:model_train_val}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
     \includegraphics[scale=0.4]{test_val_accuracy}
      \caption{Comparison of accuracy}
      \label{fig:test_val_accuracy}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
     \includegraphics[scale=0.4]{test_val_accuracy_refined}
      \caption{Comparison of accuracy}
      \label{fig:test_val_accuracy_refined}
@@ -207,3 +224,5 @@ The Top 5 accuracy of the model was quite good but it was not run on the same nu
 This is beacuse TensorFlow does not have an API for calculating Top 5 accuracy.
 As a result, it had to be calculated manually and this is very time intensive.
 The average probability of 0.62 is also quite close to the overall Top 1 accuracy which may imply some correlation between the two but this is merely speculation.
+
+\afterpage{\clearpage}

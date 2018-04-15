@@ -18,14 +18,18 @@ Secondly, a model can be stored on the phone for computation. Transfer learning 
 \end{table}
 
 \tocless\subsection{Script}
-The retrain.py script \parencite{retrainInception} was used, with a different
-command parameter.
+The retrain.py script \parencite{retrainInception} was used with a different
+command parameter as in Figure \ref{lst:mobilenetCommand}.
 
+\begin{figure}[h]
+\caption{Train Model using MobileNet Architecture Command}
+\label{lst:mobilenetCommand}
 \begin{lstlisting}[style=Command]
 python tensorflow/examples/image_retraining/retrain.py \ --image_dir
 ~/dataset_directory \ --architecture mobilenet_1.0_224 \
 --how_many_training_steps 10000 \ --learning_rate 0.1
 \end{lstlisting}
+\end{figure}
 
 \tocless\subsection{Results}
 The final Top-1 accuracy of this model came to 50.2\%.

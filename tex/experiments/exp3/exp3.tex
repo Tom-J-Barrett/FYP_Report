@@ -16,7 +16,12 @@ Tutorials used previously were also utilized for this experiment \parencite{udem
 \end{table}
 
 \tocless\subsection{Script}
-\tocless\subsubsection{Read in the dataset}
+Figures \ref{lst:readDataset}, \ref{lst:createBatches} and \ref{lst:trainModel3} document the key aspects of the script used in this experiment.
+The activities documented include reading in the dataset (Figure \ref{lst:readDataset}), create batches from the dataset (Figure \ref{lst:createBatches}) and training the model (Figure \ref{lst:trainModel3}).
+
+\begin{figure}[h] 
+\caption{Read in the Dataset \parencite{file_dir_code}}
+\label{lst:readDataset}
 \begin{lstlisting}[style=Python]
 # Reading the dataset
 def read_images(dataset_path, mode, batch_size):
@@ -35,8 +40,11 @@ def read_images(dataset_path, mode, batch_size):
                 labels.append(label)
         label += 1
 \end{lstlisting}
+\end{figure}
 
-\tocless\subsubsection{Create Batches}
+\begin{figure}[h]
+\caption{Create Batches \parencite{file_dir_code}}
+\label{lst:createBatches}
 \begin{lstlisting}[style=Python]
 # Convert to Tensor data strcuture
 imagepaths = tf.convert_to_tensor(imagepaths, dtype=tf.string)
@@ -62,8 +70,11 @@ X, Y = tf.train.batch([image, label], batch_size=batch_size,
                       num_threads=4)
 return X, Y
 \end{lstlisting}
+\end{figure}
 
-\tocless\subsubsection{Train the Model}
+\begin{figure}[h]
+\caption{Train the Model \parencite{file_dir_code}}
+\label{lst:trainModel3}
 \begin{lstlisting}[style=Python]
 with tf.Session() as sess:
     sess.run(init)
@@ -80,9 +91,12 @@ with tf.Session() as sess:
         else:
             sess.run(train_op)
 \end{lstlisting}
+\end{figure}
 
 \tocless\subsection{Results}
 The final accuracy for this model was 18.8\% after 5,000 steps.
 
 \tocless\subsection{Analysis}
 The poor accuracy of this model is to be expected due to the simple architecture of the network.
+
+\clearpage

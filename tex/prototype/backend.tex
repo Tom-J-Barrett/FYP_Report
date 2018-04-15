@@ -1,7 +1,11 @@
 \tocless\subsection{Python Flask}
 
 \tocless\subsection{Implementation}
-\tocless\subsubsection{Backend service code}
+Figures \ref{lst:backendCode} and \ref{lst:labelBackend} document the code used to implement the backend service.
+
+\begin{figure}[h]
+\caption{Backend service code}
+\label{lst:backendCode}
 \begin{lstlisting}[style=Python]
 import base64
 import label_image
@@ -32,8 +36,11 @@ def classify():
 if _name_ == '_main_':
     app.run(host='0.0.0.0', threaded=True)
 \end{lstlisting}
+\end{figure}
 
-\tocless\subsubsection{Method called from 'label\_image.py'}
+\begin{figure}[h]
+\caption{Method called from 'label\_image.py' - adapted from \parencite{retrainInception}}
+\label{lst:labelBackend}
 \begin{lstlisting}[style=Python]
 def runModel(file_name):
   #hardcoded values of image size and model path
@@ -83,6 +90,7 @@ def runModel(file_name):
   final_results = [top5_results, results]
   return final_results
 \end{lstlisting}
+\end{figure}
 
 \tocless\subsection{Deployment}
 In order to deploy the Flask application to an AWS EC2 instance the following steps had to be followed:

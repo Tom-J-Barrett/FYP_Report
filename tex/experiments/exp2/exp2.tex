@@ -14,7 +14,16 @@ Similar to the previous experiment \ref{udemy2}, this experiment is a Udemy cour
 \end{table}
 
 \tocless\subsection{Script}
-\tocless\subsubsection{Unpickle Images}
+Key features of the script used to create the CNN for this tutorial are outlined in Figures \ref{lst:unpickle}, \ref{lst:setUpImages} and \ref{lst:trainModel2}.
+Figure \ref{lst:unpickle} unpickles the dataset from the files that it is stored in.
+A pickled file is a Python object that has been serialised.
+Once the data has been unpickled, the data has to be set up to be the correct size and shape and it must also be accessible by batches.
+This is defined in Figure \ref{lst:setUpImages}.
+Finally, Figure \ref{lst:trainModel2} documents the code required to train the model.
+
+\begin{figure}[h]
+\caption{Unpickle Images \ref{udemy2}}
+\label{lst:unpickle}
 \begin{lstlisting}[style=Python]
 def unpickle(file):
     import pickle
@@ -36,8 +45,11 @@ data_batch4 = all_data[4]
 data_batch5 = all_data[5]
 test_batch = all_data[6]
 \end{lstlisting}
+\end{figure}
 
-\tocless\subsubsection{Set Up Images}
+\begin{figure}[h]
+\caption{Set Up Images for Training \ref{udemy2}}
+\label{lst:setUpImages}
 \begin{lstlisting}[style=Python]
 def set_up_images(self):
     # Vertically stacks the training images
@@ -64,8 +76,11 @@ def next_batch(self, batch_size):
     self.i = (self.i + batch_size) % len(self.training_images)
     return x, y
 \end{lstlisting}
+\end{figure}
 
-\tocless\subsubsection{Train the Model}
+\begin{figure}[h]
+\caption{Train the Model \ref{udemy2}}
+\label{lst:trainModel2}
 \begin{lstlisting}[style=Python]
 #loss function
 cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels = y_true, logits = y_pred))
@@ -89,6 +104,7 @@ with tf.Session() as sess:
             print('Accuracy: ')
             print(sess.run(acc,feed_dict={x:testSet[0] ,y_true:testSet[1],hold_prob:1.0}))
 \end{lstlisting}
+\end{figure}
 
 \tocless\subsection{Results}
 A final Top-1 accuracy of 71\% was reached.
@@ -103,3 +119,5 @@ There are three main reasons why the Top-1 accuracy of these two models has a di
     \item{Colour channels: The images in MNIST are in black and white while the CIFAR-10 images have three colour channels associated.}
     \item{Object complexity: The objects in the the MNIST dataset are simpler shapes with a plain background. The CIFAR-10 images are more complex such as a horse and the background is noisy.}
 \end{enumerate}
+
+\clearpage

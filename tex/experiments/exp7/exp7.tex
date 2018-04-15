@@ -12,9 +12,13 @@ sliding window would move across the image and classify the segment of the image
 in the window. There are three options for window sliding shape as defined by a
 command line argument.
 
+\begin{figure}
+\caption{Sliding Window Command}
+\label{lst:slidingWindowCommand}
 \begin{lstlisting}[style=Command]
 python sliding_window.py --image=~/image_dir --window_shape grid
 \end{lstlisting}
+\end{figure}
 
 There are three options for window shape:
 \begin{itemize}
@@ -77,39 +81,58 @@ sliding window as per \parencite{slidingWindowTut}.
 
 \tocless\subsection{Script}
 There were four main elements to the script. Firstly, extracting a window to be
-classified. Secondly, resizing the image to be compatible with the TensorFlow model. Thirdly, running the window through the TensorFlow model and finally
-saving a new image with a coloured overlay of classifications.
+classified (Figure \ref{lst:extractWindow}). Secondly, resizing the image to be compatible with the TensorFlow model (Figures \ref{lst:resizeWindow}} and \ref{lst:resizeImage}). Thirdly, running the window through the TensorFlow model (Figure \ref{lst:runModel}) and finally
+saving a new image with a coloured overlay of classifications (Figure \ref{lst:colourOverlay}).
+In regards to Figure \ref{lst:colourOverlay}, as seen in Figure \ref{fig:fruitOverlay}, each square represents a window and
+each colour is for a different classification. Blue is for an apple, yellow for
+banana, green for grape, white for orange and black if an unexpected prediction
+is made.
 
-\tocless\subsubsection{Extracting the window from the image}
+\begin{figure}[h]
+\caption{Extracting Window from the Image}
+\label{lst:extractWindow}
 \begin{lstlisting}[style=Python]
 for (x, y, window) in sliding_window(resized, stepSize=64, windowSize=(winW, winH)):
-	# if the window does not meet our desired window size, ignore it
+	# ignore the window if it is not the correct size
 	if window.shape[0] != winH or window.shape[1] != winW:
 		continue
 \end{lstlisting}
+\end{figure}
 
-
+\begin{figure}[h]
+\caption{Moving the Window Across the Image}
+\label{lst:movingWindow}
 \begin{lstlisting}[style=Python]
 def sliding_window(image, stepSize, windowSize):
 	# slide a window across the image
 	for y in xrange(0, image.shape[0], stepSize):
 		for x in xrange(0, image.shape[1], stepSize):
-			# yield the current window
+			# yield the window
 			yield (x, y, image[y:y + windowSize[1], x:x + windowSize[0]])
 \end{lstlisting}
+\end{figure}
 
-\tocless\subsubsection{Resizing the window}
+\begin{figure}[h]
+\caption{Resizing the Window}
+\label{lst:resizeWindow}
 \begin{lstlisting}[style=Python]
 window = cv2.resize(window, (299, 299))
 \end{lstlisting}
+\end{figure}
 
+\begin{figure}[h]
+\caption{Resizing the Image - adapted from \parencite{retrainInception}}
+\label{lst:resizeImage}
 \begin{lstlisting}[style=Python]
 resized_image = tf.reshape(image, [1, input_height, input_width, 3])
 resized = tf.image.resize_area(resized_image, [input_height, input_width])
 normalized = tf.divide(tf.subtract(resized, [input_mean]), [input_std])
 \end{lstlisting}
+\end{figure}
 
-\tocless\subsubsection{Running the Tensorflow model}
+\begin{figure}[h]
+\caption{Running the TensorFlow Model - adapted from \parencite{retrainInception}}
+\label{lst:runModel}
 \begin{lstlisting}[style=Python]
 with tf.Session() as sess:
 	numpy_image = sess.run(normalized)
@@ -119,17 +142,16 @@ with tf.Session(graph=graph) as sess:
                       {input_operation.outputs[0]: numpy_image})
 	probabilities = np.squeeze(results)
 \end{lstlisting}
+\end{figure}
 
-\tocless\subsubsection{Saving the image with colour overlay}
-As seen in Figure \ref{fig:fruitOverlay}, each square represents a window and
-each colour is for a different classification. Blue is for an apple, yellow for
-banana, green for grape, white for orange and black if an unexpected prediction
-is made.
-
+\begin{figure}[h]
+\caption{Save Image with Colour Overlay}
+\label{lst:colourOverlay}
 \begin{lstlisting}[style=Python]
 cv2.rectangle(display_image, (x, y), (x + winW, y + winH), colour_dict.get(top1,
 (0,0,0)), 4)
 \end{lstlisting}
+\end{figure}
 
 \tocless\subsection{Results}
 \tocless\subsubsection{Grid based window}
@@ -144,7 +166,7 @@ For this window method, all classifications were correct in the sense that the T
 This method took 42.8 seconds to run.
 
 
-\begin{table}[]
+\begin{table}[h]
 	\centering
 	\caption{Grid Based Sliding Window Results}
 	\label{my-label}
@@ -206,7 +228,7 @@ Top-1 accuracy once in grid based, once in column based and zero times in row
 based approach, if the whole image is passed through the model, a banana is at the Top-1 accuracy.
 A possible reason for this could be that the overall shape of a banana is very distinctive but when sliding windows are used, the whole banana is no present in the window.
 
-
+\afterpage{\clearpage}
 
 
 

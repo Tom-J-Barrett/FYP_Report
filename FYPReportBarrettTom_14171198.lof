@@ -18,31 +18,31 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Perceptron\relax }}{15}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Perceptron\relax }}{14}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Linearly Separable, adapted from \parencite {MLANN}\relax }}{15}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Multi Layer Perceptron\relax }}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Gradient Descent\relax }}{19}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Gradient Descent\relax }}{18}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.5}{\ignorespaces CNN Architecture\relax }}{20}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.6}{\ignorespaces CNN Overview\relax }}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Inception module \parencite {rethinkingInception}\relax }}{25}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Inception module \parencite {rethinkingInception}\relax }}{24}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Inception V3 Architecture \parencite {rethinkingInception}\relax }}{26}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Support Vector Machine Applicability}}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Hotdog\relax }}{47}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Hotdog\relax }}{46}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Chocolate Cake\relax }}{47}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Chocolate Cake\relax }}{46}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Apple Pie\relax }}{47}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Apple Pie\relax }}{46}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Pizza\relax }}{47}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Pizza\relax }}{46}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.14}{\ignorespaces MNIST 0\relax }}{47}
 \defcounter {refsection}{0}\relax 
@@ -52,113 +52,193 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.17}{\ignorespaces MNIST 5\relax }}{47}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.18}{\ignorespaces CIFAR-10 Truck\relax }}{48}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces CIFAR-10 Truck\relax }}{47}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.19}{\ignorespaces CIFAR-10 Horse\relax }}{48}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces CIFAR-10 Horse\relax }}{47}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.20}{\ignorespaces CIFAR-10 Boat\relax }}{48}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces CIFAR-10 Boat\relax }}{47}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.21}{\ignorespaces CIFAR-10 Frog\relax }}{48}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.21}{\ignorespaces CIFAR-10 Frog\relax }}{47}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Pizza - sourced from https://www.cicis.com/\relax }}{64}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Helper Functions \parencite {udemy}\relax }}{51}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Pizza not classified correctly by the model\relax }}{64}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Layer Creation \parencite {udemy}\relax }}{52}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Banana - sourced from http://www.ciaoimports.com/\relax }}{66}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Training the Model \parencite {udemy}\relax }}{52}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Graph of accuracy of the test dataset during training\relax }}{70}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Unpickle Images 3.3\hbox {}\relax }}{54}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Graph of accuracy of the validation dataset during training\relax }}{70}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Set Up Images for Training 3.3\hbox {}\relax }}{55}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Comparison of accuracy\relax }}{71}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Train the Model 3.3\hbox {}\relax }}{56}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparison of accuracy\relax }}{71}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Read in the Dataset \parencite {file_dir_code}\relax }}{58}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Create Batches \parencite {file_dir_code}\relax }}{59}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Bowl of fruit \parencite {fruitBowl}\relax }}{78}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Grid based window\relax }}{78}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Row based window\relax }}{78}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Column Based Window\relax }}{78}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Fruit with Color Overlay\relax }}{78}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Fruit with Apple Overlay\relax }}{78}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Recursive refinement 1\relax }}{83}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Recursive refinement 2 - sourced from http://www.travispta.org/\relax }}{84}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Recursive refinement 3\relax }}{84}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Bowl of fruit with background removed\relax }}{86}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Alternative Bowl of fruit\relax }}{88}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Fruit image taken on a mobile phone\relax }}{90}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Image after sliding window - 13 classes\relax }}{91}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Image after sliding window - 108 classes\relax }}{93}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Banana Image Pre-Resolution\relax }}{94}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Apple Pie Image Pre-Resolution - sourced from https://www.bettycrocker.com/recipes/scrumptious-apple-pie\relax }}{95}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Pizza Image Pre-Resolution\relax }}{95}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Banana Image Greyscale\relax }}{97}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Apple Pie Image Greyscale\relax }}{98}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Pizza Image Greyscale\relax }}{98}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Train the Model \parencite {file_dir_code}\relax }}{60}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Landing Activity\relax }}{106}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Retrain Inception Command\relax }}{63}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Image Submission Activity\relax }}{106}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Label Image Command\relax }}{64}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Classification Activity\relax }}{106}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Add New Layer \parencite {retrainInception}\relax }}{65}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Food Logs Activity\relax }}{106}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Evaluate Model \parencite {retrainInception}\relax }}{65}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Package Diagram\relax }}{107}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Pizza - sourced from https://www.cicis.com/\relax }}{66}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Marchitecture Diagram\relax }}{109}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Pizza not classified correctly by the model\relax }}{66}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Android Activity Lifecycle \parencite {android}\relax }}{111}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Banana - sourced from http://www.ciaoimports.com/\relax }}{68}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Landing Activity\relax }}{124}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Retrain Inception With Parameter Tuning Command\relax }}{69}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Image Capture Activity\relax }}{124}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Top-5 Accuracy Calculation\relax }}{71}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Image Send Activity\relax }}{124}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Label Image - adapted from \parencite {retrainInception}\relax }}{72}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Image Submit Activity\relax }}{124}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Graph of accuracy of the test dataset during training\relax }}{73}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.12}{\ignorespaces FoodLog Month Activity\relax }}{125}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Graph of accuracy of the validation dataset during training\relax }}{73}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.13}{\ignorespaces FoodLog Day Activity\relax }}{125}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Comparison of accuracy\relax }}{73}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.14}{\ignorespaces FoodLog Week Activity\relax }}{125}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Comparison of accuracy\relax }}{73}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Food Log Deletion\relax }}{125}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Train Model using MobileNet Architecture Command\relax }}{74}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Github Contributions to Master\relax }}{126}
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Automated Unit Tests\relax }}{128}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Sliding Window Command\relax }}{79}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.18}{\ignorespaces AWS Network Diagram\relax }}{135}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Bowl of fruit \parencite {fruitBowl}\relax }}{80}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.19}{\ignorespaces AWS Security Group\relax }}{136}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Grid based window\relax }}{80}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Row based window\relax }}{80}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Column Based Window\relax }}{80}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Fruit with Color Overlay\relax }}{80}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Fruit with Apple Overlay\relax }}{80}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Extracting Window from the Image\relax }}{80}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Moving the Window Across the Image\relax }}{81}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Resizing the Window\relax }}{81}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Resizing the Image - adapted from \parencite {retrainInception}\relax }}{81}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Running the TensorFlow Model - adapted from \parencite {retrainInception}\relax }}{81}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Save Image with Colour Overlay\relax }}{81}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Recursive Refinement Code\relax }}{84}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Recursive refinement 1\relax }}{84}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Recursive refinement 2 - sourced from http://www.travispta.org/\relax }}{85}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Recursive refinement 3\relax }}{85}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Bowl of fruit with background removed\relax }}{86}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Alternative Bowl of fruit\relax }}{88}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Fruit image taken on a mobile phone\relax }}{90}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Image after sliding window - 13 classes\relax }}{92}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Image after sliding window - 108 classes\relax }}{93}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Banana Image Pre-Resolution\relax }}{93}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Apple Pie Image Pre-Resolution - sourced from https://www.bettycrocker.com/recipes/scrumptious-apple-pie\relax }}{94}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Pizza Image Pre-Resolution\relax }}{94}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Banana Image Greyscale\relax }}{96}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Apple Pie Image Greyscale\relax }}{96}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Pizza Image Greyscale\relax }}{97}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Landing Activity\relax }}{104}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Image Submission Activity\relax }}{104}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Classification Activity\relax }}{104}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Food Logs Activity\relax }}{104}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Package Diagram\relax }}{105}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Marchitecture Diagram\relax }}{107}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Android Activity Lifecycle \parencite {android}\relax }}{108}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.8}{\ignorespaces DAO Factory Class\relax }}{110}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.9}{\ignorespaces HostBuilder Class\relax }}{113}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Singleton DAO Object\relax }}{113}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.11}{\ignorespaces UploadImage Class\relax }}{114}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.12}{\ignorespaces MainPresenter Class\relax }}{115}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.13}{\ignorespaces MainActivity Class\relax }}{116}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.14}{\ignorespaces DAO Interface\relax }}{116}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Get Food Logs Per Date\relax }}{117}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Encode Bitmap to base64 String\relax }}{118}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Map of Runnables\relax }}{118}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Landing Activity\relax }}{119}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Image Capture Activity\relax }}{119}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Image Send Activity\relax }}{119}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Image Submit Activity\relax }}{119}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.22}{\ignorespaces FoodLog Month Activity\relax }}{120}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.23}{\ignorespaces FoodLog Day Activity\relax }}{120}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.24}{\ignorespaces FoodLog Week Activity\relax }}{120}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.25}{\ignorespaces Food Log Deletion\relax }}{120}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.26}{\ignorespaces Github Contributions to Master\relax }}{121}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.27}{\ignorespaces Automated Unit Tests\relax }}{123}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.28}{\ignorespaces Test to ensure FoodLog object stores information correctly\relax }}{123}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.29}{\ignorespaces Test to ensure Host object stores information correctly\relax }}{124}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.30}{\ignorespaces Test to ensure DAO object stores and removes data correctly\relax }}{127}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.31}{\ignorespaces Backend service code\relax }}{128}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.32}{\ignorespaces Method called from 'label\_image.py' - adapted from \parencite {retrainInception}\relax }}{129}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.33}{\ignorespaces AWS Network Diagram\relax }}{130}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.34}{\ignorespaces AWS Security Group\relax }}{130}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

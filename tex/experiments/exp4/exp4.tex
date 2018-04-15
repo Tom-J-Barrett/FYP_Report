@@ -21,10 +21,14 @@ name. These directories should contain all the images for this class.
 Once this dataset has been set up correctly, a directory can be found on GitHub
 which contains the necessary files for this tutorial. When the directory has
 been downloaded, the following command can be executed:
+\begin{figure}
+\caption{Retrain Inception Command}
+\label{lst:retrainCommand}
 \begin{lstlisting}[style=Command]
 python tensorflow/examples/image_retraining/retrain.py \ --image_dir
 ~/dataset_directory
 \end{lstlisting}
+\end{figure}
 
 The first thing that the script will do is create bottleneck files for the
 images. A bottleneck is a term used to define the final layer before the output
@@ -41,11 +45,15 @@ yet seen and a final test accuracy is displayed. This can be seen in the Script
 section below.
 
 The command used for using this model once it is trained is:
+\begin{figure}
+\caption{Label Image Command}
+\label{lst:labelImage}
 \begin{lstlisting}[style=Command]
 python tensorflow/examples/label_image.py --graph=/tmp/output_graph.pb
 --labels=/tmp/output_labels.txt --input_layer=Mul --output_layer=final_result
 --input_mean=128 --input_std=128 --image=~/image_directory
 \end{lstlisting}
+\end{figure}
 
 \begin{table}[h]
 \centering
@@ -60,9 +68,12 @@ python tensorflow/examples/label_image.py --graph=/tmp/output_graph.pb
 \end{table}
 
 \tocless\subsection{Script}
-The following snippets of code are from the retrain.py script.
+The following snippets of code in Figure \ref{lst:addNewLayer} and Figure \ref{lst:evalModel} are from the retrain.py script.
+Figure \ref{lst:addNewLayer} defines howto add a new layer to the top of the network while Figure \ref{lst:evalModel} defines how to evaluate the accuracy of the new layer. 
 
-\tocless\subsubsection{Add New Layer}
+\begin{figure}
+\caption{Add New Layer \parencite{retrainInception}}
+\label{lst:addNewLayer}
 \begin{lstlisting}[style=Python]
 # Add new layer to the network
 (train_step, cross_entropy, bottleneck_input, ground_truth_input,
@@ -80,8 +91,11 @@ final_tensor, ground_truth_input)
 init = tf.global_variables_initializer()
 sess.run(init)
 \end{lstlisting}
+\end{figure}
 
-\tocless\subsubsection{Evaluate Model}
+\begin{figure}
+\caption{Evaluate Model \parencite{retrainInception}}
+\label{lst:evalModel}
 \begin{lstlisting}[style=Python]
 # Run final test evaluation
 test_bottlenecks, test_ground_truth, test_filenames = (
@@ -97,6 +111,7 @@ test_accuracy, predictions = sess.run(
 tf.logging.info('Final test accuracy = %.1f%% (N=%d)' %
                 (test_accuracy * 100, len(test_bottlenecks)))
 \end{lstlisting}
+\end{figure}
 
 \tocless\subsection{Results}
 The final test Top-1 accuracy for this retrained model was 54.8\%.
@@ -142,3 +157,4 @@ These poor results are not that surprising.
 This is because we have many classes to train for, 101, and no parameter tuning has been carried out on the running of this code.
 Figure \ref{fig:pizza_unclassified} was not classified correctly, this is most likely due to the fact that the pizza does not take up much of the image.
 
+\afterpage{\clearpage}
