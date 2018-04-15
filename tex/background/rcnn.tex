@@ -15,12 +15,12 @@ followed by domain-specific fine-tuning, yields a significant performance boost"
 
 The system that they developed followed these steps:
 \begin{itemize}
-    \item{Take image as input}
-    \item{Extract approximately 2,000 region proposals from the image}
+    \item{Take image as input.}
+    \item{Extract approximately 2,000 region proposals from the image.}
     \item{Compute fixed length vectors of features for the regions using a convolutional
-        neural network}
-    \item{Use a Support Vector Machine (SVM) to classify these regions}
-    \item{Bounding box regression for final region proposals}
+        neural network.}
+    \item{Use a SVM to classify these regions.}
+    \item{Bounding box regression for final region proposals.}
 \end{itemize}
 
 This system utilised selective search to gather these region proposals, but they
@@ -43,7 +43,7 @@ RCNN was classified to be slow because of three main factors:
 		be trained.}
 	\item{In training of the SVM, each region proposal must be written to disk
 		and is therefore expensive.}
-	\item{Object detection takes 47 seconds per image}
+	\item{Object detection takes 47 seconds per image.}
 \end{itemize}
 
 Due to these problems with RCNN, a new algorithm, titled Fast RCNN was proposed.
@@ -108,7 +108,7 @@ COCO16         & An updated version of the COCO dataset was released in 2015.   
 \end{table}
 
 The most recent paper on this topic was also written by Ross Girshik while
-working with Facebook AI Research \parencite{maskRcnn}. Mask RCNN " extends Faster
+working with Facebook AI Research \parencite{maskRcnn}. Mask RCNN "extends Faster
 RCNN by adding a branch for predicting an object mask in parallel with the
 existing branch for bounding box regression" \parencite{maskRcnn}.
 Mask RCNN has two modules, like Faster RCNN, where the first module is the

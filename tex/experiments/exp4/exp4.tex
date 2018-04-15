@@ -1,10 +1,10 @@
 \tocless\subsection{Objective}
 For this experiment, it was decided to take inspiration from
-\parencite{yanaiFood}, where pre-training was used training a model for food
+\parencite{yanaiFood}, where pre-training was used for training a model for food
 classification. In order to achieve this, the final layer of the
 Inception V3 model which was trained on the ImageNet dataset had to be retrained. This is called
-Transfer Learning.
-A tutorial, created by Google, on the TensorFlow website was followed
+transfer learning.
+A tutorial created by Google, on the TensorFlow website, was followed
 for direction on this process \parencite{retrainInception}.
 
 Firstly, to retrain the final layer of a model, a dataset must be
@@ -12,15 +12,15 @@ prepared in the correct way. The Food-101 dataset \parencite{food101}
 was used for this experiment, which will be analysed below.
 
 This dataset contrasts with \parencite{yanaiFood} as they used the UECFOOD100 dataset.
-The food-101 dataset was chosen due to larger number of images per class.
-The UECFOOD100 dataset has 100 images per class while the food-101 dataset has 1,000 images per class.
+The Food-101 dataset was chosen due to larger number of images per class.
+The UECFOOD100 dataset has 100 images per class while the Food-101 dataset has 1,000 images per class.
 The dataset must be structured so that
-there is a separated directory for each class with the directory name as the class
+there is a separate directory for each class with the directory name as the class
 name. These directories should contain all the images for this class. 
 
 Once this dataset has been set up correctly, a directory can be found on GitHub
 which contains the necessary files for this tutorial. When the directory has
-been downloaded, the following command can be executed:
+been downloaded, the command in Figure \ref{lst:retrainCommand} can be executed.
 \begin{figure}
 \caption{Retrain Inception Command}
 \label{lst:retrainCommand}
@@ -44,7 +44,7 @@ At the final stage of the script, the model is run on a batch of test images not
 yet seen and a final test accuracy is displayed. This can be seen in the Script
 section below.
 
-The command used for using this model once it is trained is:
+The command used for using this model once it is trained can be seen in Figure \ref{lst:labelImage}.
 \begin{figure}
 \caption{Label Image Command}
 \label{lst:labelImage}
@@ -154,7 +154,7 @@ In contrast, Figure \ref{fig:pizza_unclassified} was not classified as a pizza.
 
 \tocless\subsection{Analysis}
 These poor results are not that surprising.
-This is because we have many classes to train for, 101, and no parameter tuning has been carried out on the running of this code.
-Figure \ref{fig:pizza_unclassified} was not classified correctly, this is most likely due to the fact that the pizza does not take up much of the image.
+This is because we have many classes to train for, 101, and no parameter tuning has been carried out on this code.
+Figure \ref{fig:pizza_unclassified} was not classified correctly and this is most likely due to the fact that the pizza does not take up much of the image.
 
 \afterpage{\clearpage}

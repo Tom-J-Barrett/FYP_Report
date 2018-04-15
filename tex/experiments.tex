@@ -67,13 +67,13 @@ In addition to this, change in dataset size was explored in relation to model ac
 
 \begin{table}[]
 \centering
-\caption{My caption}
+\caption{Summary of Results of Chapter 4}
 \label{my-label}
 \begin{tabular}{|p{3.5cm}|p{9cm}|}
 \hline
 \textbf{Experiment}                               & \textbf{Key Findings}                                                                                                                                \\ \hline
 Experiment 1 & A model was trained on the Food-101 dataset using the Inception-V3 architecture with a Top-1 accuracy of 54.8\%.                                     \\ \hline
-Experiment 2       & A model was trained on the Food-101+ dataset using the Inception-V3 architecture with a Top-1 accuracy of 54.8\%.                                    \\ \hline
+Experiment 2       & A model was trained on the Food-101+ dataset using the Inception-V3 architecture with a Top-1 accuracy of 55.3\%.                                    \\ \hline
 Experiment 3       & A model was trained on the Food-101+ dataset using the Inception-V3 architecture with a Top-1 accuracy of 66.3\% and a Top-5 accuracy of 85.96\%.    \\ \hline
 Experiment 4                          & A model was trained on the Food-101+ dataset using the MobileNet architecture with a Top-1 accuracy of 50.2\%                                        \\ \hline
 Experiment 5              & A model was trained on a subset Food-101+ dataset using the Inception-V3 architecture with a Top-1 accuracy of 92.6\% and a Top-5 accuracy of 100\%. \\ \hline
@@ -81,7 +81,7 @@ Experiment 5              & A model was trained on a subset Food-101+ dataset us
 \end{table}
 
 \section{Conclusion}
-The focus of this experiment has been to train TensorFlow models using the Inception-V3 architecture under various constraints.
+The focus of this chapter has been to train TensorFlow models using the Inception-V3 architecture under various constraints.
 These models have been trained using transfer learning.
 The highest accuracy for a model trained using the Food101+ dataset yielded a Top-1 accuracy of 66.6\% and a Top-1 accuracy of 85.96\%.
 Alternatively, a model was trained using a subset of the Food101+ dataset.
@@ -90,7 +90,7 @@ This CNN reached a Top-1 accuracy of 92.6\% and a Top-5 accuracy of 100\%.
 This exceeded or was comparable to the other methods researched.
 
 \chapter{Empirical Studies Part 2}
-The purpose of this chapter is to analyse the models trained previously to gain understanding and applicability to the problem statement.
+The purpose of this chapter is to analyse the models trained previously to gain understanding of them and to gauge applicability to the problem statement.
 
 \section{Experiment 6: Sliding Window}
 \label{slidingWindow}
@@ -121,7 +121,7 @@ The purpose of this chapter is to analyse the models trained previously to gain 
 \input{tex/experiments/exp14/exp14.tex}
 
 \section{Conclusion}
-This chapter has analysed the model trained in Chapter 4.
+This chapter has analysed the models trained in Chapter 4.
 Emphasis was placed on dealing with composite images through a sliding window approach.
 Once this had been completed, analysis into the results of the sliding window approach was carried out by using multiple test images and removing the background from the image.
 Recursive refinement on the sliding window approach for images containing grapes was carried out and the results were analysed.

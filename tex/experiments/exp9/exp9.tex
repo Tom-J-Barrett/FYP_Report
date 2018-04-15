@@ -3,7 +3,7 @@ After the sliding window code was run on Figure \ref{fig:fruit} in \ref{slidingW
 it was observed that a sliding window was predicting grapes correctly in
 regions that contained a bunch of grapes. Since it would make sense that the
 model would be able detect an individual grape, it was decided that
-recursive refinement would be ran on a window that contained a grape. Due to the model
+recursive refinement would be executed on a window that contained a grape. Due to the model
 requiring a 299 x 299 image size, the window could only be refined once as
 very small segments could not be resized up to 299 x 299. A window of 70 x 70 size was used.
 
@@ -11,11 +11,11 @@ very small segments could not be resized up to 299 x 299. A window of 70 x 70 si
 As you would think with recursive refinement, a recursive function would be used,
 but this was unnecessary due to image size restrictions. Instead, a
 conditional for loop was added to the existing code to break a window down further i.e. perform a sliding window approach on a window.
-This can be seen in Figure \ref{lst:rrCode}.
+This can be seen in Figure \ref{lst:rrCode1}.
 
 \begin{figure}[h]
 \caption{Recursive Refinement Code}
-\label{lst:rrCode}
+\label{lst:rrCode1}
 \begin{lstlisting}[style=Python]
 if top1 == "grape" and window_shape == "grid" and rr_grape:
 			for (x_grape, y_grape, grape_window) in sliding_window(window_resized, stepSize=64, windowSize=(70, 70)):
