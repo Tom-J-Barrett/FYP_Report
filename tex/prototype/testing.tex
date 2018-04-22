@@ -2,7 +2,7 @@ JUnit tests were used to test this prototype application.
 JUnit is a unit testing framework.
 Mockito is a framework for JUnit that was also utilised.
 Mockito makes mocks of objects for testing.
-This is very useful to test database instances as you can mock an SqlLite Database object.
+This is very useful to test database instances as you can mock an SQLite Database object.
 
 \tocless\subsection{Unit Tests}
 Evidence of some unit tests written for this prototype application can be seen in Figures \ref{lst:test1}, \ref{lst:test2} and \ref{lst:test3}.
@@ -40,7 +40,8 @@ public void shouldAssertCorrectValues() {
 @Before
     public void setUp() {
         host = new Host.HostBuilder("52.214.205.157")
-                .withDns("ec2-52-214-205-157.eu-west-1.compute.amazonaws.com")
+                .withDns("ec2-52-214-205-157
+                .eu-west-1.compute.amazonaws.com")
                 .withPort(5000)
                 .withRoute("/classifyImage/")
                 .build();
@@ -101,3 +102,5 @@ private void setTestLog() {
 }
 \end{lstlisting}
 \end{figure}
+
+\clearpage

@@ -1,5 +1,5 @@
 Due to the issues with composite images (images with multiple items) in food image recognition, an object detection approach may prove to be successful.
-If the objects (different food items) in an image could be classified seperately then the overall effiency of a nutrional assessment system, aided by deep learning, could be improved.
+If the objects (different food items) in an image could be classified separately then the overall efficiency of a nutritional assessment system, aided by deep learning, could be improved.
 Ross Girshik and other contributors had some very positive results in the area
 of object detection using region based convolutional neural networks. There were
 four iterations of papers based on this work by Ross and groups in UC Berkley,
@@ -8,19 +8,19 @@ completed his dissertation on the subject. These papers, their
 results (Table \ref{rcnnResults}) and the changes made through each iteration will be analysed thoroughly in the proceeding sections.
 
 In the first paper written by Ross Girshik, while researching at UC Berkeley,
-focused on two main insights. These were that " one can apply high-capacity convolutional neural networks (CNNs) to bottom-up region proposals in order to localize and segment objects" and that
+focused on two main insights. These were that "one can apply high-capacity convolutional neural networks (CNNs) to bottom-up region proposals in order to localize and segment objects" and that
 "when training data is scarce, supervised pre-training for n auxiliary task,
 followed by domain-specific fine-tuning, yields a significant performance boost"
 \parencite{rcnn}.
 
 The system that they developed followed these steps:
 \begin{itemize}
-    \item{Take image as input}
-    \item{Extract approximately 2,000 region proposals from the image}
+    \item{Take image as input.}
+    \item{Extract approximately 2,000 region proposals from the image.}
     \item{Compute fixed length vectors of features for the regions using a convolutional
-        neural network}
-    \item{Use a Support Vector Machine (SVM) to classify these regions}
-    \item{Bounding box regression for final region proposals}
+        neural network.}
+    \item{Use a SVM to classify these regions.}
+    \item{Bounding box regression for final region proposals.}
 \end{itemize}
 
 This system utilised selective search to gather these region proposals, but they
@@ -31,8 +31,8 @@ features which will remain constant regardless of inputs and additional outputs.
 The team evaluated their results on a few metrics and test sets as seen in Table
 \ref{rcnnResults}. Explanation of the datasets used can be seen in Table \ref{datasets}.
 
-Ross Girshik's next iteration of work on region based convolution neural
-networks took place in Microsoft Research. This paper was titled "Fast R-CNN" as
+Ross Girshik's next iteration of work on region-based convolution neural
+networks took place in Microsoft Research. This paper was titled 'Fast R-CNN' as
 its aim was to decrease training and testing time "while also increasing
 detection accuracy" \parencite{fastRcnn}.
 
@@ -43,7 +43,7 @@ RCNN was classified to be slow because of three main factors:
 		be trained.}
 	\item{In training of the SVM, each region proposal must be written to disk
 		and is therefore expensive.}
-	\item{Object detection takes 47 seconds per image}
+	\item{Object detection takes 47 seconds per image.}
 \end{itemize}
 
 Due to these problems with RCNN, a new algorithm, titled Fast RCNN was proposed.
@@ -108,7 +108,7 @@ COCO16         & An updated version of the COCO dataset was released in 2015.   
 \end{table}
 
 The most recent paper on this topic was also written by Ross Girshik while
-working with Facebook AI Research \parencite{maskRcnn}. Mask RCNN " extends Faster
+working with Facebook AI Research \parencite{maskRcnn}. Mask RCNN "extends Faster
 RCNN by adding a branch for predicting an object mask in parallel with the
 existing branch for bounding box regression" \parencite{maskRcnn}.
 Mask RCNN has two modules, like Faster RCNN, where the first module is the

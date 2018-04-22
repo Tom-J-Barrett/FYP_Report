@@ -1,9 +1,10 @@
 \tocless\subsection{Objective}
 In Section \ref{RR}, some false positives were obtained when attempting to run recursive refinement on an image with grapes in it.
 Originally it was meant to see if individual grapes could be recognised.
-On evaluation of the images used for training, it was found that bunches of grapes were used for training, not individual grapes. Therefore the results expected where never feasibly going to be obtained.
+On evaluation of the images used for training, it was found that bunches of grapes were used for training, not individual grapes.
+Therefore, the results expected where never feasibly going to be obtained.
 Even though this was the case, the script resulted in finding grapes in portions of the background, as seen in Figure \ref{fig:rr1}.
-The purpose of this experiment is to look into why this is occurring.
+The purpose of this experiment is to investigate why this is occurring.
 A new image of a fruit bowl (Figure \ref{fig:fruitFromPhone}), taken on a mobile phone was selected for this experiment.
 The image was used to run the script as defined in \ref{RR} but on two separate models.
 The model with tuned parameters, trained on 108 classes, with a final test accuracy of 66.3\% and the model trained on 13 classes, with a final accuracy of 92.6\%.

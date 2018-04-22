@@ -72,12 +72,12 @@ There is also a one to one dependency between views and presenters.
 As illustrated in Figure \ref{fig:packageDiagram}, the views in the application
 have a dependency only on their corresponding presenter.
 The presenters contain the business logic of the  application and have a dependency on all other packages.
-The packages of backgroundProcesses, calorieEstimation and storage have a dependancy on the presenters package for callback purposes and also database creation in Android requires context of the activity information.
+The packages of backgroundProcesses, calorieEstimation and storage have a dependency on the presenters package for callback purposes and also database creation in Android requires context of the activity information.
 
 \tocless\subsubsection{Marchitecture}
 In Figure \ref{fig:market}, a marchitecture diagram can be seen.
 This diagram represents the architecture of the system.
-NutriLog is an Android application that send an image to an AWS (Amazon Web Services) instance using the API OkHttp. The AWS instance is running a Python FLASK application that classifies the image using a TensorFlow model and sends a response back to NutriLog. The Nutritionix API is used to collect nutritional information of this classification.
+NutriLog is an Android application that sends an image to an AWS (Amazon Web Services) instance using the API OkHttp. The AWS instance is running a Python FLASK application that classifies the image using a TensorFlow model and sends a response back to NutriLog. The Nutritionix API is used to collect nutritional information of this classification.
 
 \begin{figure}[h]
     \centering
@@ -86,12 +86,12 @@ NutriLog is an Android application that send an image to an AWS (Amazon Web Serv
     \label{fig:market}
 \end{figure}
 
-The technologies used for this appliction were used for the following reasons:
+The technologies used for this application were used for the following reasons:
 
 \textbf{AWS}
 \linebreak
 Past experience was a large factor when it came to choosing a cloud provider to host the backend instance for this prototype application.
-AWS instances are very easy to set up once the process has been carried out a few times and this was a contributing factror to why AWS was chosen.
+AWS instances are very easy to set up once the process has been carried out a few times and this was a contributing factor to why AWS was chosen.
 AWS also has a free tier which provides all the necessary server space to host the backend service for this application.
 
 \textbf{OkHttp}
@@ -102,14 +102,14 @@ The learning curve for OkHttp is quite small and it doesn't require much code to
 
 \textbf{FLASK}
 \linebreak
-Python FLASK was used for the backend service in this FYP due to past experience and its simplicity.
+Python FLASK was used for the backend service in this FYP due to experience and its simplicity.
 
 \textbf{TensorFlow}
 \linebreak
 TensorFlow was chosen as the library to create neural networks for this FYP mostly because of its reputation.
 TensorFlow has been used by many researches in the computer vision industry.
-TensirFlow also has extensive documentation and a wide array or resources and tutorials.
+TensorFlow also has extensive documentation and a wide array of resources and tutorials.
 
 \textbf{Nutritionix}
 \linebreak
-Nutrionix was the best nutrional information API that was also free to use and this is why it was chosen.
+Nutrionix was the best nutritional information API that was also free to use and this is why it was chosen.

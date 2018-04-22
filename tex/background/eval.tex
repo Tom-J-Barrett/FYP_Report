@@ -3,8 +3,8 @@ of a classifier or segmentation algorithm, many of which we have seen in previou
 sections. These metrics will be examined below.
 
 There has been some research into the question of how to evaluate object
-detectors, one of which be discussed in detail \parencite{diagnosingErrors}.
-This paper in question " analyzes the influences of object characteristics on
+detectors, one of which will be discussed in detail \parencite{diagnosingErrors}.
+This paper in question "analyzes the influences of object characteristics on
 detection performance and the frequency and impact of different types of false
 positives" \parencite{diagnosingErrors}. They found that there were many effects
 that had influence on detectors as follows:
@@ -14,27 +14,27 @@ that had influence on detectors as follows:
     \item{aspect ratio}
     \item{visibility of parts}
     \item{viewpoint}
-    \item{localization error}
+    \item{localisation error}
     \item{confusion with semantically similar objects}
     \item{confusion with other labelled objects}
     \item{confusion with background}
 \end{itemize}
 
 The research team goes on to analyse false positives in object detectors.
-Localization errors were a large factor. This is where bounding boxes overlap to
+Localisation errors were a large factor. This is where bounding boxes overlap to
 other objects in the image. Confusion with similar objects had a large influence
 on false positives also by which, for example, a dog detector had a high score
 for a cat \parencite{diagnosingErrors}. Confusion with dissimilar objects and
 confusion with background are the categories of the rest of the false positives
 they measured.
 
-In conclusion the team would that " Most false positives are due to misaligned
+In conclusion the team found that "Most false positives are due to misaligned
 detection windows or confusion with similar objects"
-\parencite{diagnosingErrors}. They had some recommendations towards improves
+\parencite{diagnosingErrors}. They had some recommendations towards improving
 detectors as follows:
 \begin{itemize}
 	\item{Smaller objects are less likely to be detected}
-	\item{Localization could be improved}
+	\item{Localisation could be improved}
 	\item{Reduce confusion with similar categories}
 	\item{Robustness to object variation}
 	\item{More detailed analysis}
@@ -60,20 +60,23 @@ detectors as follows:
 % \tocless\subsection{Per-class segmentation accuracy}
 % The accuracy of segmentation at a class level is analysed. See \ref{fig:PCLASSA}.
 
+
 \tocless\subsection{Top-1 and Top-5 Accuracy}
-When a classifier is given an image it normally responds with a list of
+When a classifier is given an image, it normally responds with a list of
 predictions along with a decimal representation of the likelihood that it is of
 that class. The Top-1 accuracy is the top valued prediction and Top-5 accuracy
 is the top 5 predictions.
+
 
 \tocless\subsection{Cross-Validation}
 When cross-validation is utilised, the test set is used for gradient descent while a separate validation set is used to measure error \parencite{MLANN}.
 K-fold cross-validation is where k separate validation sets are created.
 These k different validation sets are used to test the model and the results are averaged.
 
+
 \tocless\subsection{Confusion Matrix}
 A proven, very successful way to measure how well a classifier is performing is by using a confusion matrix \parencite{handsOnML}.
-A confusion matrix simply counts the number of times an object is classifier correctly or incorrectly as in Table \ref{cm}.
+A confusion matrix simply counts the number of times an object is classified correctly or incorrectly as in Table \ref{cm}.
 
 \begin{table}[]
 \centering
@@ -86,4 +89,5 @@ NO                      & 55                     & 18                      \\ \h
 YES                     & 7                      & 120                     \\ \hline
 \end{tabular}
 \end{table}
+
 

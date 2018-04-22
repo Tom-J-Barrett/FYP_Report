@@ -3,13 +3,13 @@ classification with various network architectures and many have used a food imag
 Some of these papers will be looked at below.
 A summary of their results can be seen in Table \ref{cnn_summary}.
 
-\parencite{deepLearning} focused on a deep learning approach to food image recognition based
+\parencite{deepLearning} focused on a deep learning approach to food image recognition  and based
 their neural network architecture on Inception-ResNet and Inception V3.
 Deep learning is a term usually given to algorithms based on neural networks.
 They also used the Food-101 dataset. For this system, Google's
 TensorFlow was used for image pre-processing. Pre-processing was needed as the
 environmental background is different in many food images. Because of these
-" Grey World method and Histogram equalization" \parencite{deepLearning} were
+"Grey World method and Histogram equalization" \parencite{deepLearning} were
 used.
 Amazon Web Services (AWS) Graphics Processing Units (GPU) instances were used for training.
 AWS instances are cloud servers.
@@ -18,31 +18,29 @@ The results on completion were quite impressive with a Top-1 Accuracy of 72.55\%
 Another research team in Japan, \parencite{yanaiFood} researched this topic. This was built off previous research they had carried out in the field \parencite{kawano2014food}.
 They were aware of how
 difficult the problem was and therefore employed many techniques to solve the
-problem such as " pre-training with the large-scale ImageNet data, fine-tuning
+problem such as "pre-training with the large-scale ImageNet data, fine-tuning
 and activation features extracted from the pre-trained DCNN". 
-In conclusion, they found that the " fine-tuned DCNN which was pre-trained
+In conclusion, they found that the "fine-tuned DCNN which was pre-trained
 with 2,000 categories" from ImageNet was the best method. A
 DCNN is a Deep Convolution Neural Network. 
 A network can become a DCNN when the number of hidden layers is larger than three.
 While many of the CNNs discussed have been DCNN, most are just labelled as CNNs.
-The achieved results of 78.77\% for Top-1 Accuracy in the UECFOOD100 dataset.
+They achieved results of 78.77\% for Top-1 accuracy in the UECFOOD100 dataset.
 
 \parencite{kagayaFood} also employed the use of convolutional neural networks for
-image detection. They used a CNN for the " tasks of food detection and recognition
+image detection. They used a CNN for the "tasks of food detection and recognition
 through parameter optimization".
-They found that a CNN is much better suited to the task than a Support Vector
-Machine (SVM). They achieved an overall classification accuracy of 93.8\%
+They found that a CNN is much better suited to the task than a SVM. They achieved an overall classification accuracy of 93.8\%
 against their baseline accuracy of 89.7\%. This accuracy
 was calculated using a dataset that they created specifically for this task.
-When they had completed the task they analysed the trained convolutional kernels
-and came to an important conclusion. They found that " colour features are
+When they had completed the task, they analysed the trained convolutional kernels
+and came to an important conclusion. They found that "colour features are
 essential to food image recognition".
 
-The last paper that will be analysed, \parencite{deepFood}, oriented around using a Convolutional Neural
-Network for food image recognition, focuses on developing a dietary assessment
+The second last paper that will be analysed, \parencite{deepFood}, was oriented around using a CNN for food image recognition and focused on developing a dietary assessment
 application for use on a smart phone. They used the UEC-256 and Food-101 dataset
 for their experiments and achieved impressive results.
-They used a Convolutional Neural Network but " with a few major optimizations,
+They used a CNN but "with a few major optimizations,
 such as optimized model and an optimized convolution technique". 
 They used the Inception module for their CNN. After the
 inception module was complete, they made the GoogleNet architecture by combining modules. In
@@ -68,7 +66,7 @@ They achieved the results shown in Table \ref{resultsDeepFood}.
 The trained network was to be used to aid patients with Parkinson's disease in monitoring their diet.
 NutriNet was created based off the AlexNet architecture.
 The dataset used for this study consisted of approximately 500 images for each of over 500 classes.
-Through this dataset a Top-1 accuracy of 86.72\& and a Top-5 accuracy of 94.47\% was recorded.
+Through this dataset a Top-1 accuracy of 86.72\% and a Top-5 accuracy of 94.47\% was recorded.
 A smart phone application was used for real world testing which brought a Top-5 accuracy of 55\%.
 The application also saved these real-world images from the smart phone to increase their dataset size.
 In conclusion, the team found that there were modifications that could be made to the NutriNet architecture as real-world images didn't perform incredibly well due to occlusion and background noise in the images.
